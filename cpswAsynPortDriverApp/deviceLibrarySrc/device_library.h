@@ -10,25 +10,6 @@
 #include <AxiLtc2270.h>
 #include <AxiMicronP30.h>
 
-class   IdigFpga;
-typedef shared_ptr<IdigFpga> digFpga;
-
-class CdigFpgaImpl;
-typedef shared_ptr<CdigFpgaImpl> digFpgaImpl;
-
-
-class IdigFpga : public virtual IMMIODev {
-public:
-        static digFpga create(const char *name);
-};
-
-class CdigFpgaImpl : public CMMIODevImpl, public virtual IdigFpga {
-public:
-        CdigFpgaImpl(FKey);
-};
-
-
-
 class   IrootDev;
 typedef shared_ptr<IrootDev> rootDev;
 
