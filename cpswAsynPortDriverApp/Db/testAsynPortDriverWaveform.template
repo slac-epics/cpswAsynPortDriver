@@ -1,0 +1,9 @@
+record(waveform, "TEST:$(NAME)")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetRead")
+    field(FTVL, "CHAR")
+    field(NELM, "100")
+    field(INP,  "@asyn($(driver),0) $(NAME)")
+    field(SCAN, "Passive")
+}

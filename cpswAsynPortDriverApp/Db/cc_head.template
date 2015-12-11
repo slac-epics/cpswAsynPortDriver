@@ -1,0 +1,23 @@
+#include "$(driver)Driver.h"
+#include "asynPortDriver.h"
+#include "cpswAsynPortDriver.h"
+#include <device_library.h>
+#include <cpsw_api_user.h>
+#include <cpsw_api_builder.h>
+#include <cpsw_mmio_dev.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include <iocsh.h>
+#include <epicsThread.h>
+
+#include <epicsExport.h>
+
+static const char *driverName = "$(driver)Driver";
+
+
+$(driver)Driver::$(driver)Driver(const char *portName, Path p, int nelms)
+                 :cpswAsynDriver(portName, p, nelms, NUM_AXIV_PARAMS)
+{
+

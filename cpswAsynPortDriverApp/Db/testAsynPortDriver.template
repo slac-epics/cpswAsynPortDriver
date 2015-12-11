@@ -1,0 +1,7 @@
+record(ai, "TEST:$(NAME)")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(driver),0) $(NAME)")
+    field(SCAN, "Passive")
+}

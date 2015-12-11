@@ -1,0 +1,55 @@
+# RELEASE - Location of external products
+#
+# Note: This file will be scanned to automatically generate
+#       include path definitions etc.
+#       The order of the following declarations will be retained
+#       within those definitions.
+#
+# Note that "#!" marks lines that can be uncommented.
+#
+
+# Pickup variable definitions to be used below:
+include $(TOP)/RELEASE_SITE
+
+# =============================================================
+# If you don't want to install into $(TOP) then
+# define INSTALL_LOCATION_APP here
+# =============================================================
+#INSTALL_LOCATION_APP=<fullpathname>
+
+# =============================================================
+# Define location of module tree with respect to
+# EPICS_SITE_TOP -- comes from RELEASE_SITE
+# =============================================================
+EPICS_MODULES=$(MODULES_SITE_TOP)
+
+
+
+# If any motor controller communication mechanism besides the VME backplane is
+# required, then ASYN must be defined.
+# Recommended ASYN release: R4-13 or higher
+ASYN_MODULE_VERSION=asyn-R4-25_1-0
+
+
+# ==============================================================
+# Define the version of EPICS BASE that you will use
+# =============================================================
+# Recommended EPICS release: R3.14.11 or higher
+BASE_MODULE_VERSION=$(EPICS_BASE_VER)
+
+# ============================================================
+# External Support: Module Location
+# ============================================================
+ASYN=$(EPICS_MODULES)/asyn/$(ASYN_MODULE_VERSION)
+
+#SNCSEQ=$(EPICS_MODULES)/seq/$(SEQ_MODULE_VERSION)
+
+
+# =================================================================
+# Define EPICS_BASE
+# EPICS_BASE usually appears last so other apps can override stuff:
+# =================================================================
+EPICS_BASE=$(EPICS_SITE_TOP)/base/$(BASE_MODULE_VERSION)
+
+# End of file
+

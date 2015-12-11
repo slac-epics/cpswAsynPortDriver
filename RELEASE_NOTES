@@ -1,0 +1,67 @@
+modbus-R2-7_0-2:   Build against new asyn: asyn-R4-25_1-0 (ELW 18-Apr-2015)
+
+modbus-R2-7_0-1:   Added INT32_LE_ALT and INT32_BE_ALT to support alternative data format
+                   
+                   Standard data format:
+                   #  I/O Offset      High Byte    Low Byte
+                   #      3              -           -
+                   #      2              D3          D2
+                   #      1              D1          D0
+                   #      0              -           -
+                   
+                   Alternative data format:
+                   #  I/O Offset      High Byte    Low Byte
+                   #      3              D3          D2
+                   #      2              -           -
+                   #      1              D1          D0
+                   #      0              -           -
+
+modbus-R2-7_0-0:   update to modbusR2-7 from CARS
+                   
+                   See website for info:
+                   http://cars9.uchicago.edu/software/epics/modbusReleaseNotes.html
+
+                   Build against ASYN_MODULE_VERSION=asyn-R4-21_1-0; build all architectures
+                   
+modbus-R2-4_1-2:   Build against ASYN_MODULE_VERSION=asyn-R4-21_1-0; build all architectures
+modbus-R2-4_1-0-2: Build against ASYN_MODULE_VERSION=asyn-R4-21_1-0; build all architectures
+
+modbus-R2-4_1-1:   Build against ASYN_MODULE_VERSION=asyn-R4-20_1-1; build all architectures
+
+
+modbus-R2-4_1-0:   update to modbusR2-4 from CARS
+
+                   See website for info:
+                   http://cars9.uchicago.edu/software/epics/modbusReleaseNotes.html
+
+modbus-R2-2-lcls3: Build with asyn-R4-18-lcls1_OLD_IPAC
+                   Needed to use another version asyn due to 
+                   IPAC dependency in Magnet App; also the IPAC 
+                   software module versions need to be reconciled
+
+modbus-R2-2-lcls2: 
+Build with asyn version: asyn-R4-18-lcls1
+
+modbus-R2-2-lcls1: 
+Modbus Support from Mark Rivers with site specific mods to support SLAC build system.
+R2-0 introduced a 20 ms delay before each Modbus write. 
+This was not correct, delays should only be needed for serial RTU. 
+The Modicon Modbus Protocol Reference Guide says this must be at 
+least 3.5 character times, e.g. about 3.5ms at 9600 baud, for Serial RTU. 
+An additional writeDelayMsec parameter was added to modbusInterposeConfig. 
+It is the final parameter, so if it is not specified the default value is zero, 
+which is appropriate when not using Serial RTU. 
+In the startup script lines like the following:
+    modbusInterposeConfig("Koyo1",0,5000)
+    
+should be changed to:
+
+    modbusInterposeConfig("Koyo1",0,5000,0)
+    
+for no delay, or to:
+
+    modbusInterposeConfig("Koyo1",0,5000,20)
+    
+for a 20 ms delay.
+# ****************************************************************
+

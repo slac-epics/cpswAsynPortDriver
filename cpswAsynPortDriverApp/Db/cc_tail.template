@@ -1,0 +1,38 @@
+}
+
+extern "C" int $(driver)Create(const char *portName, const char *path)
+{
+  Path    p       = IPath::create();
+  //NoSsiDev     r  = INoSsiDev::create("root", "192.168.1.22");
+  NoSsiDev r  = INoSsiDev::create("root", "192.168.2.10");
+  digFpga digFpga = IdigFpga::create("digFpga");
+  //r->addAtAddress( digFpga, INoSsiDev::SRP_UDP_V1, 8192 );
+  r->addAtAddress( digFpga, INoSsiDev::SRP_UDP_V2, 8192 );
+  p = r->findByName(path);
+  Child c = p->tail();
+
+  new $(driver)Driver(portName, p, c->getNelms());
+  return(asynSuccess);
+}
+
+
+/** Code for iocsh registration */
+static const iocshArg $(driver)CreateArg0 = {"Port name", iocshArgString};
+static const iocshArg $(driver)CreateArg1 = {"ACR port name", iocshArgString};
+static const iocshArg * const $(driver)CreateArgs[] = {&$(driver)CreateArg0,
+                                                           &$(driver)CreateArg1};
+static const iocshFuncDef $(driver)CreateDef = {"$(driver)Create", 2, $(driver)CreateArgs};
+static void ACRCreateContollerCallFunc(const iocshArgBuf *args)
+{
+  $(driver)Create(args[0].sval, args[1].sval);
+}
+
+static void $(driver)Register(void)
+{
+  iocshRegister(&$(driver)CreateDef, ACRCreateContollerCallFunc);
+}
+
+extern "C" {
+epicsExportRegistrar($(driver)Register);
+}
+
