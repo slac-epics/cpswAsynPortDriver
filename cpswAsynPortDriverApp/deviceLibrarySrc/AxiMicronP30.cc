@@ -18,19 +18,19 @@ AXIMicronP30 IAXIMicronP30::create(const char *name)
 AXIMicronP30Impl v = CEntryImpl::create<AXIMicronP30Impl::element_type>(name);
 Field f;
         f = IIntField::create("Data", false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x00 );
+        v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize );
         f = IIntField::create("Addr", 32, false,  0);
-        v->CMMIODevImpl::addAtAddress( f,   0x01 );
+        v->CMMIODevImpl::addAtAddress( f,   0x01*addrSize  );
         f = IIntField::create("Read", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x02 );
+        v->CMMIODevImpl::addAtAddress( f , 0x02*addrSize  );
         f = IIntField::create("Test", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x03 );
+        v->CMMIODevImpl::addAtAddress( f , 0x03*addrSize  );
         f = IIntField::create("FastAddr", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x04 );
+        v->CMMIODevImpl::addAtAddress( f, 0x04*addrSize  );
         f = IIntField::create("FastProg", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x05 );
+        v->CMMIODevImpl::addAtAddress( f, 0x05*addrSize  );
         f = IIntField::create("BurstAddr", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x06 );
+        v->CMMIODevImpl::addAtAddress( f, 0x06*addrSize  );
 
         return v;
 }

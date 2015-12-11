@@ -19,33 +19,33 @@ AXILtc2270Impl v = CEntryImpl::create<AXILtc2270Impl::element_type>(name);
 Field f;
 std::stringstream tmp;
         f = IIntField::create("Reg00", false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x00 );
+        v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize  );
         f = IIntField::create("Reg01", 32, false,  0);
-        v->CMMIODevImpl::addAtAddress( f,   0x01 );
+        v->CMMIODevImpl::addAtAddress( f,   0x01*addrSize  );
         f = IIntField::create("Reg02", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x02 );
+        v->CMMIODevImpl::addAtAddress( f , 0x02*addrSize  );
         f = IIntField::create("Reg03", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x03 );
+        v->CMMIODevImpl::addAtAddress( f , 0x03*addrSize  );
         f = IIntField::create("Reg04", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x04 );
+        v->CMMIODevImpl::addAtAddress( f, 0x04*addrSize  );
 	for ( int i = 0; i < 2; i++ ) {
 		for (int j = 0; j < 8; j++ ) {
 			tmp.str("");
 			tmp << "adcData_"  << std::dec << i << "_" << j; 
         		f = IIntField::create((const char*) tmp.str().c_str(), 32, false, 0);
-		        v->CMMIODevImpl::addAtAddress( f, ( 0x60 + ( 8*i ) + j ) );
+		        v->CMMIODevImpl::addAtAddress( f, ( 0x60 + ( 8*i ) + j )*addrSize  );
 			tmp.str("");
 			tmp << "delayOut_data_"  << std::dec << i << "_" << j; 
         		f = IIntField::create((const char*) tmp.str().c_str(), 32, false, 0);
-		        v->CMMIODevImpl::addAtAddress( f, ( 0x80 + ( 8*i ) + j ) );
+		        v->CMMIODevImpl::addAtAddress( f, ( 0x80 + ( 8*i ) + j )*addrSize  );
 		}
 	}
 	f = IIntField::create("delayOut_rdy", 32, false, 0);
-	v->CMMIODevImpl::addAtAddress( f, 0x7F );
+	v->CMMIODevImpl::addAtAddress( f, 0x7F*addrSize  );
         f = IIntField::create("dmode", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x90 );
+        v->CMMIODevImpl::addAtAddress( f, 0x90*addrSize  );
         f = IIntField::create("debug", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0xA0 );
+        v->CMMIODevImpl::addAtAddress( f, 0xA0*addrSize  );
 
         return v;
 }

@@ -12,43 +12,44 @@
 #include "AxiCommon.h"
 
 #define addrSize 4
+
 AXICommon IAXICommon::create(const char *name)
 {
 AXICommonImpl v = CEntryImpl::create<AXICommonImpl::element_type>(name);
 Field f;
 std::stringstream tmp;
         f = IIntField::create("frontPanelDoutCnt0", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x00 );
+        v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize );
         f = IIntField::create("frontPanelDoutCnt1", 32, false,  0);
-        v->CMMIODevImpl::addAtAddress( f,   0x01 );
+        v->CMMIODevImpl::addAtAddress( f,   0x01*addrSize );
         f = IIntField::create("frontPanelDinCnt0", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x02 );
+        v->CMMIODevImpl::addAtAddress( f , 0x02*addrSize );
         f = IIntField::create("frontPanelDinCnt1", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f , 0x03 );
+        v->CMMIODevImpl::addAtAddress( f , 0x03*addrSize );
         f = IIntField::create("backPanelDoutCnt0", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x04 );
+        v->CMMIODevImpl::addAtAddress( f, 0x04*addrSize );
         f = IIntField::create("backPanelDoutCnt1", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x05 );
+        v->CMMIODevImpl::addAtAddress( f, 0x05*addrSize );
         f = IIntField::create("backPanelDinCnt0", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x06 );
+        v->CMMIODevImpl::addAtAddress( f, 0x06*addrSize );
         f = IIntField::create("backPanelDinCnt1", 32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x07 );
+        v->CMMIODevImpl::addAtAddress( f, 0x07*addrSize );
         f = IIntField::create("backPanelDinCnt2",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x08 );
+        v->CMMIODevImpl::addAtAddress( f, 0x08*addrSize );
         f = IIntField::create("backPanelDinCnt3",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x09 );
+        v->CMMIODevImpl::addAtAddress( f, 0x09*addrSize );
         f = IIntField::create("redCnt",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x0A );
+        v->CMMIODevImpl::addAtAddress( f, 0x0A*addrSize );
         f = IIntField::create("greenCnt",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x0B );
+        v->CMMIODevImpl::addAtAddress( f, 0x0B*addrSize );
         f = IIntField::create("blueCnt",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x0C );
+        v->CMMIODevImpl::addAtAddress( f, 0x0C*addrSize );
         f = IIntField::create("rxReadyCnt",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x0D );
+        v->CMMIODevImpl::addAtAddress( f, 0x0D*addrSize );
         f = IIntField::create("txReadyCnt",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x0E );
+        v->CMMIODevImpl::addAtAddress( f, 0x0E*addrSize );
         f = IIntField::create("packetSentCnt",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x0F );
+        v->CMMIODevImpl::addAtAddress( f, 0x0F*addrSize );
    
 /*	addRegisterLink(rl = new RegisterLink("REG40", baseAddress_ + 0x40*addrSize, 1, 16,
                                          "frontPanelDout0", Variable::Status, 0,  0x1,  // 0
@@ -69,39 +70,39 @@ std::stringstream tmp;
                                          "packetSent",      Variable::Status, 15, 0x1));// 15
 */
         f = IIntField::create("REG40",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0x40 );
+        v->CMMIODevImpl::addAtAddress( f, 0x40*addrSize  );
 
         for ( int i = 0; i < 16; i++ ) {
 	 tmp.str("");
 	 tmp << "DspStatus_" << std::dec << std::setw(2) << std::setfill('0') << i;
 	 f = IIntField::create((const char*) tmp.str().c_str(), 32, false, 0);
-	 v->CMMIODevImpl::addAtAddress( f, ( 0x70 + 8*i ) );
+	 v->CMMIODevImpl::addAtAddress( f, ( 0x70 + 8*i )*addrSize  );
 	 
 	 tmp.str("");
 	 tmp << "DspConfig_" << std::dec << std::setw(2) << std::setfill('0') << i;
 	 f = IIntField::create((const char*) tmp.str().c_str(), 32, false, 0);
-	 v->CMMIODevImpl::addAtAddress( f, ( 0x80 + 8*i ) );
+	 v->CMMIODevImpl::addAtAddress( f, ( 0x80 + 8*i )*addrSize  );
 	}
 	
 	for (int i = 0; i < 1; i++ ) {
 	 tmp.str("");
 	 tmp << "DspCmd_" << std::dec << std::setw(2) << std::setfill('0') << i;
 	 f = IIntField::create((const char*) tmp.str().c_str(), 32, false, 0);
-	 v->CMMIODevImpl::addAtAddress( f, ( 0xA0 + 8*i ) );
+	 v->CMMIODevImpl::addAtAddress( f, ( 0xA0 + 8*i )*addrSize  );
 	}
 	
         f = IIntField::create("BurstLength",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0xF2 );
+        v->CMMIODevImpl::addAtAddress( f, 0xF2*addrSize  );
 	f = IIntField::create("SoftTrig",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0xFB );
+        v->CMMIODevImpl::addAtAddress( f, 0xFB*addrSize  );
 	f = IIntField::create("SaveDspConfig",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0xFC );
+        v->CMMIODevImpl::addAtAddress( f, 0xFC*addrSize  );
 	f = IIntField::create("CounterReset",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0xFD );
+        v->CMMIODevImpl::addAtAddress( f, 0xFD*addrSize  );
 	f = IIntField::create("SoftReset",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0xFE );
+        v->CMMIODevImpl::addAtAddress( f, 0xFE*addrSize  );
 	f = IIntField::create("HardReset",  32, false, 0);
-        v->CMMIODevImpl::addAtAddress( f, 0xFF );
+        v->CMMIODevImpl::addAtAddress( f, 0xFF*addrSize  );
         return v;
 }
 
