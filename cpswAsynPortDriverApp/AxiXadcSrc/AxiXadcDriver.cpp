@@ -67,7 +67,7 @@ AxiXadcDriver::AxiXadcDriver(const char *portName, Path p, int nelms)
     createParam(VccpDdrMinString, asynParamInt32, &p_VccpDdrMin);
     createParam(FlagString, asynParamInt32, &p_Flag);
     createParam(VccpIntMaxString, asynParamInt32, &p_VccpIntMax);
-
+//poll every second
     startPoller(1);
 }
 
