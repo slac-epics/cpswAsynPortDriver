@@ -38,11 +38,6 @@ AxiVersionDriver::AxiVersionDriver(const char *portName, Path p, int nelms)
 extern "C" int AxiVersionCreate(const char *portName, const char *path)
 {
   
-  NoSsiDev r  = INoSsiDev::create("root", "192.168.2.10");
-  digFpga digFpga = IdigFpga::create("digFpga");
-  rootDev root = IrootDev::Instance();
-  r->addAtAddress( digFpga, INoSsiDev::SRP_UDP_V2, 8192 );
-  root->addAtAddress( r );
   Path p = IrootDev::Instance()->findByName(path);
   p->dump( stdout ); fputc('\n', stdout);
   Child c = p->tail();
