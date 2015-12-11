@@ -85,6 +85,31 @@ std::stringstream tmp;
         v->CMMIODevImpl::addAtAddress( f, ( 0x2B8 >> 2 )*addrSize  );
 	f = IIntField::create("Flag", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+
+/* Individual bits of flag */
+        f = IIntField::create("Flag_JTGD", 1, false, 11)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_JTGR", 1, false, 10)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_REF", 1, false, 9)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_VccDdr", 1, false, 7)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_VccAux", 1, false, 6)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_VccpInt", 1, false, 5)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_VccBram", 1, false, 4)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_VccBram", 1, false, 3)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_VccAux", 1, false, 2)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_VccInt", 1, false, 1)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+        f = IIntField::create("Flag_Temperature", 1, false, 0)
+        v->CMMIODevImpl::addAtAddress( f, ( 0x2FC >> 2 )*addrSize  );
+
 	
 #if ENABLE_AxiXadc_CONFIG
 	for (int i = 0; i < 8; i++ ) {
