@@ -2,8 +2,8 @@ TOP = ..
 include $(TOP)/configure/CONFIG
 DIRS += frameworkSrc
 DIRS += deviceLibrarySrc
+DIRS += Kc705TenGigEthSrc
 DIRS += src
-
 DIRS += AxiVersionSrc
 AxiVersionSrc_DEPEND_DIRS += src
 
