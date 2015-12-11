@@ -1,1 +1,0 @@
-    createParam($(NAME)String, $(TYPE=asynParamInt32), &p_$(NAME));

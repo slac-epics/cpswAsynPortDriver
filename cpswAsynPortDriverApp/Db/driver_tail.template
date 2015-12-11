@@ -1,7 +1,0 @@
-
- /* This class implements the AxiVersion driver. */
-class $(driver)Driver : public cpswAsynDriver {
-public:
-    $(driver)Driver(const char *portName, Path p, int nelms);
-
-protected:

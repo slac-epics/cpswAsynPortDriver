@@ -1,7 +1,0 @@
-#ifndef $(driver)_DRIVER_H
-#define $(driver)_DRIVER_H
-
-#include "asynPortDriver.h"
-#include "cpswAsynPortDriver.h"
-#include <cpsw_api_user.h>
-

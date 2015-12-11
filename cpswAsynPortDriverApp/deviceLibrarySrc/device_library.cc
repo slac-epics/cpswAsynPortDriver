@@ -5,7 +5,6 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
-
 #include <cpsw_api_user.h>
 #include <cpsw_api_builder.h>
 
@@ -53,15 +52,14 @@ CdigFpgaImpl::CdigFpgaImpl(FKey key) : CMMIODevImpl(key, 0x000B0000 >> 2, LE)
 }
 
 rootDev IrootDev::m_instance;
-
 rootDev IrootDev::Instance()
 {
  if ( !m_instance ) {
-   //lock
+   //add lock
    if ( !m_instance ) {
      rootDevImpl temp = CEntryImpl::create<rootDevImpl::element_type>("rootDev");
      IrootDev::m_instance = temp;
-   } 
+   }
  }
  return IrootDev::m_instance;
 }

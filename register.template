@@ -1,7 +1,0 @@
-record(ai, "$(DEV):$(NELM=0):$(REG)")
-{
-    field(PINI, "Yes")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(DEV),$(NELM=0)) $(REG)")
-    field(SCAN, "Passive")
-}
