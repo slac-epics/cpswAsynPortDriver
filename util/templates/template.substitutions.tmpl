@@ -1,0 +1,47 @@
+file testAsynPortDriverIn.template 
+{
+    pattern { NAME , driver}
+#for $p in $registers
+#if $p.has_key('dtype')
+  #if $p.dtype != "string"
+    #if $p.type == "Status"
+           { ${p.name} , ${name} }
+    #end if
+  #end if
+#else 
+  #if $p.type == "Status"
+           { ${p.name} , ${name} }
+  #end if
+#end if
+#end for
+}
+file testAsynPortDriverOut.template 
+{
+    pattern { NAME , driver}
+#for $p in $registers
+#if $p.has_key('dtype')
+  #if $p.dtype == "string"
+    #if $p.type == "Configuration"
+           { ${p.name} , ${name} }
+    #end if
+  #end if
+#else 
+  #if $p.type == "Configuration"
+           { ${p.name} , ${name} }
+  #end if
+#end if
+#end for
+}
+file testAsynPortWaveform.template
+{
+    pattern {NAME, driver}
+#for $p in $registers
+#if $p.has_key('dtype')
+  #if $p.dtype == "string"
+    #if $p.type == "Status"
+           { ${p.name} , ${name} }
+    #end if
+  #end if
+#end if
+#end for
+}

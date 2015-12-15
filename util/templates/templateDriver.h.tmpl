@@ -1,0 +1,31 @@
+#ifndef ${name.upper()}_DRIVER_H
+#define ${name.upper()}_DRIVER_H
+
+\#include "asynPortDriver.h"
+\#include "cpswAsynPortDriver.h"
+\#include <cpsw_api_user.h>
+
+#for $p in $registers
+#define ${p.name}String "${p.name}"
+#end for
+
+ /* This class implements the AxiVersion driver. */
+class ${name}Driver : public cpswAsynDriver {
+public:
+    ${name}Driver(const char *portName, Path p, int nelms);
+
+protected:
+#set $first = True
+#for $p in $registers
+    int p_${p.name};
+    #if $first == True
+    #define FIRST_${name.upper()}_PARAM p_${p.name}
+    #set $first = False
+    #end if
+#end for
+    #define LAST_${name.upper()}_PARAM p_${registers[-1].name}
+
+    #define NUM_${name.upper()}_PARAMS (&LAST_${name.upper()}_PARAM - &FIRST_${name.upper()}_PARAM + 1)
+};
+
+#endif

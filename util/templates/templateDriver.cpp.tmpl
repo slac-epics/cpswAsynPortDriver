@@ -1,0 +1,75 @@
+\#include "${name}Driver.h"
+\#include "asynPortDriver.h"
+\#include "cpswAsynPortDriver.h"
+\#include <device_library.h>
+\#include <cpsw_api_user.h>
+\#include <cpsw_api_builder.h>
+\#include <cpsw_mmio_dev.h>
+\#include <stdio.h>
+\#include <string.h>
+\#include <stdlib.h>
+
+\#include <iocsh.h>
+\#include <epicsThread.h>
+
+\#include <epicsExport.h>
+
+static const char *driverName = "${name}Driver";
+
+
+${name}Driver::${name}Driver(const char *portName, Path p, int nelms)
+                 :cpswAsynDriver(portName, p, nelms, NUM_${name.upper()}_PARAMS)
+{
+
+
+#for $p in $registers
+#if $p.has_key('dtype')
+   #if $p.dtype == "string"
+   createParam(${p.name}String, asynParamOctet, &p_${p.name});
+   #else
+   createParam(${p.name}String, asynParamInt32, &p_${p.name});
+#end if
+#else
+   createParam(${p.name}String, asynParamInt32, &p_${p.name});
+#end if
+#end for
+}
+
+extern "C" int ${name}Create(const char *portName, const char *path)
+{
+  
+  Path p = IDev::getRootDev()->findByName(path);
+  p->dump( stdout ); fputc('\n', stdout);
+  Child c = p->tail();
+  if (c == NULL) {
+    printf("Child is NULL\n");
+  }
+  else {
+  printf("Child found\n");
+  printf("Childl nelms:%d\n", c->getNelms());
+  new ${name}Driver(portName, p, c->getNelms());
+  }
+  return(asynSuccess);
+}
+
+
+/** Code for iocsh registration */
+static const iocshArg ${name}CreateArg0 = {"Port name", iocshArgString};
+static const iocshArg ${name}CreateArg1 = {"${name} port name", iocshArgString};
+static const iocshArg * const ${name}CreateArgs[] = {&${name}CreateArg0,
+                                                           &${name}CreateArg1};
+static const iocshFuncDef ${name}CreateDef = {"${name}Create", 2, ${name}CreateArgs};
+static void ${name}CreateContollerCallFunc(const iocshArgBuf *args)
+{
+  ${name}Create(args[0].sval, args[1].sval);
+}
+
+static void ${name}Register(void)
+{
+  iocshRegister(&${name}CreateDef, ${name}CreateContollerCallFunc);
+}
+
+extern "C" {
+epicsExportRegistrar(${name}Register);
+}
+

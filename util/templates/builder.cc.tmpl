@@ -1,0 +1,41 @@
+\#include <cpsw_mmio_dev.h>
+\#include <string.h>
+\#include <stdio.h>
+\#include <inttypes.h>
+\#include <string>
+\#include <sstream>
+\#include <iomanip>
+
+\#include <cpsw_api_user.h>
+\#include <cpsw_api_builder.h>
+
+\#include "${name}.h"
+
+\#define addrSize 4
+
+${name} I${name}::create(const char *name)
+{
+${name}Impl v = CEntryImpl::create<${name}Impl::element_type>(name);
+Field f;
+#for $p in $registers
+#if $p.has_key('size')
+   #if $p.has_key('lsBit')
+        f = IIntField::create("${p.name}", ${p.size}, false, ${p.lsBit});
+   #else
+        f = IIntField::create("${p.name}", ${p.size}, false, 0);
+   #end if
+#else
+        f = IIntField::create("${p.name}", 32, false, 0);
+#end if
+#if $p.has_key('nelms')
+        v->CMMIODevImpl::addAtAddress( f , ${p.address}*addrSize, ${p.nelms});
+#else
+        v->CMMIODevImpl::addAtAddress( f , ${p.address}*addrSize);
+#end if
+#end for
+        return v;
+}
+
+C${name}Impl::C${name}Impl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+{
+}
