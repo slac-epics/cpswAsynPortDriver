@@ -44,11 +44,8 @@ for i in range(0x100, 0x17D):
 		pass
 	else:
 		nme = "LmkReg"
-		addr = hex(i)
-		nme += str(hex(i))
-		print({ 'name'    : nme,
-                    'address' : addr,
-                    'type'    : "Configuration" } )
+		addr = "{0:#0{1}x}".format(i,6)
+		nme += str(addr)
 		d['registers'].append(
                    {'name'    : nme,
                     'address' : addr,
