@@ -18,22 +18,71 @@ static const char *driverName = "${name}Driver";
 
 
 ${name}Driver::${name}Driver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p, nelms, NUM_${name.upper()}_PARAMS)
+                 :cpswAsynDriver(portName, p->findByName("${name}"), nelms, NUM_${name.upper()}_PARAMS)
 {
 
-
+/* Registers */
 #for $p in $registers
 #if $p.has_key('dtype')
    #if $p.dtype == "string"
-   createParam(${p.name}String, asynParamOctet, &p_${p.name});
+   createParam(${p.name}String, asynParamOctet, &p_${p.name}, IScalVal::create);
    #else
-   createParam(${p.name}String, asynParamInt32, &p_${p.name});
+   createParam(${p.name}String, asynParamInt32, &p_${p.name}, IScalVal::create);
 #end if
 #else
-   createParam(${p.name}String, asynParamInt32, &p_${p.name});
+   createParam(${p.name}String, asynParamInt32, &p_${p.name}, IScalVal::create);
 #end if
 #end for
+#if $varExists('commands')
+
+/* Commands */
+#for $c in $commands
+   asynPortDriver::createParam(${c.name}String, asynParamIn32, &p_${c.name});
+#end for
+#end if
 }
+
+#if $varExists('commands')
+asynStatus ${name}Driver::writeInt32(asynUser *pasynUser, epicsInt32 value)
+{
+    int function = pasynUser->reason;
+    int addr=0;
+    asynStatus status = asynSuccess;
+    const char *paramName;
+#set $first = True
+#for $c in $commands
+  #if $first == True
+    if( function == p_${c.name} ) {
+        ${c.name}();
+    }
+    #set $first=False
+  #else
+    else if( function == p_${c.name} ) {
+        ${c.name}();
+    }
+  #end if
+#end for
+    else {
+        status = cpswAsynDriver::writeInt32(pasynUser, value);
+    }
+
+    return status;
+}
+
+#end if
+
+#if $varExists('commands')
+#for $c in $commands
+asynStatus ${name}Driver::${c.name}()
+{
+   asynStatus status = asynSuccess;
+/* Fill in command logic here */
+
+
+   return status;
+}
+#end for
+#end if
 
 extern "C" int ${name}Create(const char *portName, const char *path)
 {
