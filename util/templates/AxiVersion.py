@@ -45,7 +45,10 @@ d = { 'name': "AxiVersion",
                     'size'    : "8",
                     'nelms'   : "64",
                     'dtype'   : "string",
-                    'type'    : "Status" } ]
+                    'type'    : "Status" } ],
+     'commands': [{ 'name'   : "MasterReset"},
+                  { 'name'   : "FpgaReload"},
+                  { 'name'   : "CounterReset"} ]
    }
 
 
@@ -78,7 +81,7 @@ f=open('AxiVersion/AxiVersionSrc/AxiVersionDriver.h', 'w')
 print(Template( file='templateDriver.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
-f=open('AxiVersion/AxiVersionSrc/PrbsDriverSupportInclude.dbd', 'w')
+f=open('AxiVersion/AxiVersionSrc/AxiVersionDriverSupportInclude.dbd', 'w')
 print(Template( file='templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 

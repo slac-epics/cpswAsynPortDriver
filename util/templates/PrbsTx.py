@@ -50,7 +50,8 @@ d = { 'name': "PrbsTx",
                     'type'    : "Status" },
                    {'name'    : "RandomData",
                     'address' : "0x05",
-                    'type'    : "Status" } ]
+                    'type'    : "Status" } ],
+     'commands': [{ 'name'   : "OneShot"} ]
    }
 
 
@@ -83,7 +84,7 @@ f=open('PrbsTx/PrbsTxSrc/PrbsTxDriver.h', 'w')
 print(Template( file='templateDriver.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
-f=open('PrbsTx/PrbsTxSrc/PrbsDriverSupportInclude.dbd', 'w')
+f=open('PrbsTx/PrbsTxSrc/PrbsTxDriverSupportInclude.dbd', 'w')
 print(Template( file='templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 

@@ -35,7 +35,8 @@ d = { 'name': "AxiAd5780",
                     'type'    : "Status" },
                    {'name'    : "dacRst",
                     'address' : "0xFE",
-                    'type'    : "Configuration" } ]
+                    'type'    : "Configuration" } ],
+     'commands': [{ 'name'   : "dacRst"} ]
    }
 
 
@@ -68,7 +69,7 @@ f=open('AxiAd5780/AxiAd5780Src/AxiAd5780Driver.h', 'w')
 print(Template( file='templateDriver.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
-f=open('AxiAd5780/AxiAd5780Src/PrbsDriverSupportInclude.dbd', 'w')
+f=open('AxiAd5780/AxiAd5780Src/AxiAd5780DriverSupportInclude.dbd', 'w')
 print(Template( file='templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
