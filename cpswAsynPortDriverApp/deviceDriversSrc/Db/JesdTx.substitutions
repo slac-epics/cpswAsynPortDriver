@@ -1,0 +1,45 @@
+file testAsynPortDriverIn.template 
+{
+    pattern { NAME , driver}
+           { L1_Status , JesdTx }
+           { L1_GTXReady , JesdTx }
+           { L1_DataValid , JesdTx }
+           { L1_IlasActive , JesdTx }
+           { L1_nSync , JesdTx }
+           { L1_TxEnabled , JesdTx }
+           { L1_SysRefDetected , JesdTx }
+           { L2_Status , JesdTx }
+           { L2_GTXRdy , JesdTx }
+           { L2_DataValid , JesdTx }
+           { L2_IlasActive , JesdTx }
+           { L2_nSync , JesdTx }
+           { L2_TxEnabled , JesdTx }
+           { L2_SysRefDetected , JesdTx }
+}
+file testAsynPortDriverOut.template 
+{
+    pattern { NAME , driver}
+           { Enable , JesdTx }
+           { CommonControl , JesdTx }
+           { SubClass , JesdTx }
+           { ReplaceEnable , JesdTx }
+           { ResetGTs , JesdTx }
+           { InvertSync , JesdTx }
+           { EnableTestSig , JesdTx }
+           { PeriodRampStep , JesdTx }
+           { RampStep , JesdTx }
+           { SquarePeriod , JesdTx }
+           { LowAmplitudeVal , JesdTx }
+           { HighAmplitudeVal , JesdTx }
+           { L1_SignalSelect , JesdTx }
+           { L1_data_out_mux , JesdTx }
+           { L1_test_out_mux , JesdTx }
+           { L2_SignalSelect , JesdTx }
+           { L2_data_out_mux , JesdTx }
+           { L2_test_out_mux , JesdTx }
+}
+file testAsynPortWaveform.template
+{
+    pattern {NAME, driver}
+}
+

@@ -9,18 +9,18 @@ include $(TOP)/configure/CONFIG
 #==================================================
 # Build an IOC support library
 
-LIBRARY_IOC += AxiXadc
+LIBRARY_IOC += Dac38J84
 
-DBD += AxiXadcDriverSupport.dbd
+DBD += Dac38J84DriverSupport.dbd
 
 # The following are compiled and added to the Support library
-AxiXadc_SRCS += AxiXadcDriver.cpp
+Dac38J84_SRCS += Dac38J84Driver.cpp
 
-AxiXadc_LIBS += cpsw
-AxiXadc_LIBS += DeviceLibrary
-AxiXadc_LIBS += cpswAsynPortDriverSupport
-AxiXadc_LIBS += asyn
-AxiXadc_LIBS += $(EPICS_BASE_IOC_LIBS)
+Dac38J84_LIBS += cpsw
+Dac38J84_LIBS += DeviceLibrary
+Dac38J84_LIBS += cpswAsynPortDriverSupport
+Dac38J84_LIBS += asyn
+Dac38J84_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 include $(TOP)/configure/RULES
 #----------------------------------------

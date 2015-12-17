@@ -1,0 +1,155 @@
+file testAsynPortDriverIn.template 
+{
+    pattern { NAME , driver}
+           { ID_DEVICE_TYPE , Dac38J84 }
+           { ID_PROD_UPPER , Dac38J84 }
+           { ID_PROD_LOWER , Dac38J84 }
+           { ID_MASKREV , Dac38J84 }
+           { ID_VNDR_UPPER , Dac38J84 }
+           { ID_VNDR_LOWER , Dac38J84 }
+           { ADC_Status , Dac38J84 }
+           { Clock_ready , Dac38J84 }
+           { Calibration_done , Dac38J84 }
+           { PLL_lock , Dac38J84 }
+           { Aligned_to_sysref , Dac38J84 }
+           { Realigned_to_sysref , Dac38J84 }
+           { Sync_form_FPGA , Dac38J84 }
+           { Link_active , Dac38J84 }
+}
+file testAsynPortDriverOut.template 
+{
+    pattern { NAME , driver}
+           { AdcReg0x0100 , Dac38J84 }
+           { AdcReg0x0101 , Dac38J84 }
+           { AdcReg0x0102 , Dac38J84 }
+           { AdcReg0x0103 , Dac38J84 }
+           { AdcReg0x0104 , Dac38J84 }
+           { AdcReg0x0105 , Dac38J84 }
+           { AdcReg0x0106 , Dac38J84 }
+           { AdcReg0x0107 , Dac38J84 }
+           { AdcReg0x0108 , Dac38J84 }
+           { AdcReg0x0109 , Dac38J84 }
+           { AdcReg0x010a , Dac38J84 }
+           { AdcReg0x010b , Dac38J84 }
+           { AdcReg0x010c , Dac38J84 }
+           { AdcReg0x010d , Dac38J84 }
+           { AdcReg0x010e , Dac38J84 }
+           { AdcReg0x010f , Dac38J84 }
+           { AdcReg0x0110 , Dac38J84 }
+           { AdcReg0x0111 , Dac38J84 }
+           { AdcReg0x0112 , Dac38J84 }
+           { AdcReg0x0113 , Dac38J84 }
+           { AdcReg0x0114 , Dac38J84 }
+           { AdcReg0x0115 , Dac38J84 }
+           { AdcReg0x0116 , Dac38J84 }
+           { AdcReg0x0117 , Dac38J84 }
+           { AdcReg0x0118 , Dac38J84 }
+           { AdcReg0x0119 , Dac38J84 }
+           { AdcReg0x011a , Dac38J84 }
+           { AdcReg0x011b , Dac38J84 }
+           { AdcReg0x011c , Dac38J84 }
+           { AdcReg0x011d , Dac38J84 }
+           { AdcReg0x011e , Dac38J84 }
+           { AdcReg0x011f , Dac38J84 }
+           { AdcReg0x0120 , Dac38J84 }
+           { AdcReg0x0121 , Dac38J84 }
+           { AdcReg0x0122 , Dac38J84 }
+           { AdcReg0x0123 , Dac38J84 }
+           { AdcReg0x0124 , Dac38J84 }
+           { AdcReg0x0125 , Dac38J84 }
+           { AdcReg0x0126 , Dac38J84 }
+           { AdcReg0x0127 , Dac38J84 }
+           { AdcReg0x0128 , Dac38J84 }
+           { AdcReg0x0129 , Dac38J84 }
+           { AdcReg0x012a , Dac38J84 }
+           { AdcReg0x012b , Dac38J84 }
+           { AdcReg0x012c , Dac38J84 }
+           { AdcReg0x012d , Dac38J84 }
+           { AdcReg0x012e , Dac38J84 }
+           { AdcReg0x012f , Dac38J84 }
+           { AdcReg0x0130 , Dac38J84 }
+           { AdcReg0x0131 , Dac38J84 }
+           { AdcReg0x0132 , Dac38J84 }
+           { AdcReg0x0133 , Dac38J84 }
+           { AdcReg0x0134 , Dac38J84 }
+           { AdcReg0x0135 , Dac38J84 }
+           { AdcReg0x0136 , Dac38J84 }
+           { AdcReg0x0137 , Dac38J84 }
+           { AdcReg0x0138 , Dac38J84 }
+           { AdcReg0x0139 , Dac38J84 }
+           { AdcReg0x013a , Dac38J84 }
+           { AdcReg0x013b , Dac38J84 }
+           { AdcReg0x013c , Dac38J84 }
+           { AdcReg0x013d , Dac38J84 }
+           { AdcReg0x013e , Dac38J84 }
+           { AdcReg0x013f , Dac38J84 }
+           { AdcReg0x0140 , Dac38J84 }
+           { AdcReg0x0141 , Dac38J84 }
+           { AdcReg0x0142 , Dac38J84 }
+           { AdcReg0x0143 , Dac38J84 }
+           { AdcReg0x0144 , Dac38J84 }
+           { AdcReg0x0145 , Dac38J84 }
+           { AdcReg0x0146 , Dac38J84 }
+           { AdcReg0x0147 , Dac38J84 }
+           { AdcReg0x0148 , Dac38J84 }
+           { AdcReg0x0149 , Dac38J84 }
+           { AdcReg0x014a , Dac38J84 }
+           { AdcReg0x014b , Dac38J84 }
+           { AdcReg0x014c , Dac38J84 }
+           { AdcReg0x014d , Dac38J84 }
+           { AdcReg0x014e , Dac38J84 }
+           { AdcReg0x014f , Dac38J84 }
+           { AdcReg0x0150 , Dac38J84 }
+           { AdcReg0x0151 , Dac38J84 }
+           { AdcReg0x0152 , Dac38J84 }
+           { AdcReg0x0153 , Dac38J84 }
+           { AdcReg0x0154 , Dac38J84 }
+           { AdcReg0x0155 , Dac38J84 }
+           { AdcReg0x0156 , Dac38J84 }
+           { AdcReg0x0157 , Dac38J84 }
+           { AdcReg0x0158 , Dac38J84 }
+           { AdcReg0x0159 , Dac38J84 }
+           { AdcReg0x015a , Dac38J84 }
+           { AdcReg0x015b , Dac38J84 }
+           { AdcReg0x015c , Dac38J84 }
+           { AdcReg0x015d , Dac38J84 }
+           { AdcReg0x015e , Dac38J84 }
+           { AdcReg0x015f , Dac38J84 }
+           { AdcReg0x0160 , Dac38J84 }
+           { AdcReg0x0161 , Dac38J84 }
+           { AdcReg0x0162 , Dac38J84 }
+           { AdcReg0x0163 , Dac38J84 }
+           { AdcReg0x0164 , Dac38J84 }
+           { AdcReg0x0165 , Dac38J84 }
+           { AdcReg0x0166 , Dac38J84 }
+           { AdcReg0x0167 , Dac38J84 }
+           { AdcReg0x0168 , Dac38J84 }
+           { AdcReg0x0169 , Dac38J84 }
+           { AdcReg0x016a , Dac38J84 }
+           { AdcReg0x016b , Dac38J84 }
+           { AdcReg0x016c , Dac38J84 }
+           { AdcReg0x016d , Dac38J84 }
+           { AdcReg0x016e , Dac38J84 }
+           { AdcReg0x016f , Dac38J84 }
+           { AdcReg0x0170 , Dac38J84 }
+           { AdcReg0x0171 , Dac38J84 }
+           { AdcReg0x0172 , Dac38J84 }
+           { AdcReg0x0173 , Dac38J84 }
+           { AdcReg0x0174 , Dac38J84 }
+           { AdcReg0x0175 , Dac38J84 }
+           { AdcReg0x0176 , Dac38J84 }
+           { AdcReg0x0177 , Dac38J84 }
+           { AdcReg0x0178 , Dac38J84 }
+           { AdcReg0x0179 , Dac38J84 }
+           { AdcReg0x017a , Dac38J84 }
+           { AdcReg0x017b , Dac38J84 }
+           { AdcReg0x017c , Dac38J84 }
+#commands
+           { C_ClearDACAlarms, Dac38J84 }
+           { C_InitDAC_JESD, Dac38J84 }
+}
+file testAsynPortWaveform.template
+{
+    pattern {NAME, driver}
+}
+

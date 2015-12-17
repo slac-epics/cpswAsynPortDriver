@@ -9,18 +9,18 @@ include $(TOP)/configure/CONFIG
 #==================================================
 # Build an IOC support library
 
-LIBRARY_IOC += AxiXadc
+LIBRARY_IOC += TenGigEthReg
 
-DBD += AxiXadcDriverSupport.dbd
+DBD += TenGigEthRegDriverSupport.dbd
 
 # The following are compiled and added to the Support library
-AxiXadc_SRCS += AxiXadcDriver.cpp
+TenGigEthReg_SRCS += TenGigEthRegDriver.cpp
 
-AxiXadc_LIBS += cpsw
-AxiXadc_LIBS += DeviceLibrary
-AxiXadc_LIBS += cpswAsynPortDriverSupport
-AxiXadc_LIBS += asyn
-AxiXadc_LIBS += $(EPICS_BASE_IOC_LIBS)
+TenGigEthReg_LIBS += cpsw
+TenGigEthReg_LIBS += DeviceLibrary
+TenGigEthReg_LIBS += cpswAsynPortDriverSupport
+TenGigEthReg_LIBS += asyn
+TenGigEthReg_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 include $(TOP)/configure/RULES
 #----------------------------------------

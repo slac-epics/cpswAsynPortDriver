@@ -9,18 +9,18 @@ include $(TOP)/configure/CONFIG
 #==================================================
 # Build an IOC support library
 
-LIBRARY_IOC += AxiXadc
+LIBRARY_IOC += AmcGenericAdcDacCtrl
 
-DBD += AxiXadcDriverSupport.dbd
+DBD += AmcGenericAdcDacCtrlDriverSupport.dbd
 
 # The following are compiled and added to the Support library
-AxiXadc_SRCS += AxiXadcDriver.cpp
+AmcGenericAdcDacCtrl_SRCS += AmcGenericAdcDacCtrlDriver.cpp
 
-AxiXadc_LIBS += cpsw
-AxiXadc_LIBS += DeviceLibrary
-AxiXadc_LIBS += cpswAsynPortDriverSupport
-AxiXadc_LIBS += asyn
-AxiXadc_LIBS += $(EPICS_BASE_IOC_LIBS)
+AmcGenericAdcDacCtrl_LIBS += cpsw
+AmcGenericAdcDacCtrl_LIBS += DeviceLibrary
+AmcGenericAdcDacCtrl_LIBS += cpswAsynPortDriverSupport
+AmcGenericAdcDacCtrl_LIBS += asyn
+AmcGenericAdcDacCtrl_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 include $(TOP)/configure/RULES
 #----------------------------------------
