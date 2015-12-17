@@ -1,25 +1,24 @@
-#ifndef _AXI_XADC_H
-#define _AXI_XADC_H
+#ifndef _AXIXADC_H
+#define _AXIXADC_H
 
 #include <cpsw_api_builder.h>
 #include <cpsw_mmio_dev.h>
 
-//AxiXadc
-class   IAXIXadc;
-typedef shared_ptr<IAXIXadc> AXIXadc;
+//AxiVersion
+class   IAxiXadc;
+typedef shared_ptr<IAxiXadc> AxiXadc;
 
-class CAXIXadcImpl;
-typedef shared_ptr<CAXIXadcImpl> AXIXadcImpl;
+class CAxiXadcImpl;
+typedef shared_ptr<CAxiXadcImpl> AxiXadcImpl;
 
-
-class IAXIXadc : public virtual IMMIODev {
+class IAxiXadc : public virtual IMMIODev {
 public:
-        static AXIXadc create(const char *name);
+        static AxiXadc create(const char *name);
 };
 
-class CAXIXadcImpl : public CMMIODevImpl, public virtual IAXIXadc {
+class CAxiXadcImpl : public CMMIODevImpl, public virtual IAxiXadc {
 public:
-        CAXIXadcImpl(FKey);
+        CAxiXadcImpl(FKey);
 };
-
 #endif
+

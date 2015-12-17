@@ -9,6 +9,8 @@
 #include <AxiAd5780.h>
 #include <AxiLtc2270.h>
 #include <AxiMicronP30.h>
+#include <PrbsTx.h>
+#include <TenGigEthReg.h>
 
 class   IrootDev;
 typedef shared_ptr<IrootDev> rootDev;

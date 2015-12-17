@@ -1,23 +1,24 @@
-#ifndef _AXI_VERSION_H
-#define _AXI_VERSION_H
+#ifndef _AXIVERSION_H
+#define _AXIVERSION_H
 
 #include <cpsw_api_builder.h>
 #include <cpsw_mmio_dev.h>
 
 //AxiVersion
-class   IAXIVers;
-typedef shared_ptr<IAXIVers> AXIVers;
+class   IAxiVersion;
+typedef shared_ptr<IAxiVersion> AxiVersion;
 
-class CAXIVersImpl;
-typedef shared_ptr<CAXIVersImpl> AXIVersImpl;
+class CAxiVersionImpl;
+typedef shared_ptr<CAxiVersionImpl> AxiVersionImpl;
 
-class IAXIVers : public virtual IMMIODev {
+class IAxiVersion : public virtual IMMIODev {
 public:
-        static AXIVers create(const char *name);
+        static AxiVersion create(const char *name);
 };
 
-class CAXIVersImpl : public CMMIODevImpl, public virtual IAXIVers {
+class CAxiVersionImpl : public CMMIODevImpl, public virtual IAxiVersion {
 public:
-        CAXIVersImpl(FKey);
+        CAxiVersionImpl(FKey);
 };
 #endif
+
