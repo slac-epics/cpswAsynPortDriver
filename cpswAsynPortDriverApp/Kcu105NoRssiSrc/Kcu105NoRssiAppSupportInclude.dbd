@@ -1,0 +1,8 @@
+include "base.dbd"
+include "asyn.dbd"
+include "cpswAsynPortDriverInclude.dbd"
+include "AxiVersionDriverSupport.dbd"
+include "AxiXadcDriverSupport.dbd"
+include "PrbsTxDriverSupport.dbd"
+include "Kcu105NoRssiSupport.dbd"
+registrar(Kcu105NoRssiAppRegister)
