@@ -1,0 +1,133 @@
+file testAsynPortDriverIn.template 
+{
+    pattern { NAME , driver}
+           { ID_DEVICE_TYPE , Lmk04828 }
+           { ID_PROD_UPPER , Lmk04828 }
+           { ID_PROD_LOWER , Lmk04828 }
+           { ID_MASKREV , Lmk04828 }
+           { ID_VNDR_UPPER , Lmk04828 }
+           { ID_VNDR_LOWER , Lmk04828 }
+}
+file testAsynPortDriverOut.template 
+{
+    pattern { NAME , driver}
+           { SYS_REF_MUX , Lmk04828 }
+           { SYNC_EN , Lmk04828 }
+           { SYNC_DIS , Lmk04828 }
+           { LmkReg0x0100 , Lmk04828 }
+           { LmkReg0x0101 , Lmk04828 }
+           { LmkReg0x0103 , Lmk04828 }
+           { LmkReg0x0104 , Lmk04828 }
+           { LmkReg0x0105 , Lmk04828 }
+           { LmkReg0x0106 , Lmk04828 }
+           { LmkReg0x0107 , Lmk04828 }
+           { LmkReg0x0108 , Lmk04828 }
+           { LmkReg0x0109 , Lmk04828 }
+           { LmkReg0x010b , Lmk04828 }
+           { LmkReg0x010c , Lmk04828 }
+           { LmkReg0x010d , Lmk04828 }
+           { LmkReg0x010e , Lmk04828 }
+           { LmkReg0x010f , Lmk04828 }
+           { LmkReg0x0110 , Lmk04828 }
+           { LmkReg0x0111 , Lmk04828 }
+           { LmkReg0x0113 , Lmk04828 }
+           { LmkReg0x0114 , Lmk04828 }
+           { LmkReg0x0115 , Lmk04828 }
+           { LmkReg0x0116 , Lmk04828 }
+           { LmkReg0x0117 , Lmk04828 }
+           { LmkReg0x0118 , Lmk04828 }
+           { LmkReg0x0119 , Lmk04828 }
+           { LmkReg0x011a , Lmk04828 }
+           { LmkReg0x011b , Lmk04828 }
+           { LmkReg0x011c , Lmk04828 }
+           { LmkReg0x011d , Lmk04828 }
+           { LmkReg0x011e , Lmk04828 }
+           { LmkReg0x011f , Lmk04828 }
+           { LmkReg0x0120 , Lmk04828 }
+           { LmkReg0x0121 , Lmk04828 }
+           { LmkReg0x0123 , Lmk04828 }
+           { LmkReg0x0124 , Lmk04828 }
+           { LmkReg0x0125 , Lmk04828 }
+           { LmkReg0x0126 , Lmk04828 }
+           { LmkReg0x0127 , Lmk04828 }
+           { LmkReg0x0128 , Lmk04828 }
+           { LmkReg0x0129 , Lmk04828 }
+           { LmkReg0x012b , Lmk04828 }
+           { LmkReg0x012c , Lmk04828 }
+           { LmkReg0x012d , Lmk04828 }
+           { LmkReg0x012e , Lmk04828 }
+           { LmkReg0x012f , Lmk04828 }
+           { LmkReg0x0130 , Lmk04828 }
+           { LmkReg0x0131 , Lmk04828 }
+           { LmkReg0x0133 , Lmk04828 }
+           { LmkReg0x0134 , Lmk04828 }
+           { LmkReg0x0135 , Lmk04828 }
+           { LmkReg0x0136 , Lmk04828 }
+           { LmkReg0x0137 , Lmk04828 }
+           { LmkReg0x0138 , Lmk04828 }
+           { LmkReg0x0139 , Lmk04828 }
+           { LmkReg0x013a , Lmk04828 }
+           { LmkReg0x013b , Lmk04828 }
+           { LmkReg0x013c , Lmk04828 }
+           { LmkReg0x013d , Lmk04828 }
+           { LmkReg0x013e , Lmk04828 }
+           { LmkReg0x013f , Lmk04828 }
+           { LmkReg0x0140 , Lmk04828 }
+           { LmkReg0x0141 , Lmk04828 }
+           { LmkReg0x0142 , Lmk04828 }
+           { LmkReg0x0143 , Lmk04828 }
+           { LmkReg0x0144 , Lmk04828 }
+           { LmkReg0x0145 , Lmk04828 }
+           { LmkReg0x0146 , Lmk04828 }
+           { LmkReg0x0147 , Lmk04828 }
+           { LmkReg0x0148 , Lmk04828 }
+           { LmkReg0x0149 , Lmk04828 }
+           { LmkReg0x014a , Lmk04828 }
+           { LmkReg0x014b , Lmk04828 }
+           { LmkReg0x014c , Lmk04828 }
+           { LmkReg0x014d , Lmk04828 }
+           { LmkReg0x014e , Lmk04828 }
+           { LmkReg0x014f , Lmk04828 }
+           { LmkReg0x0150 , Lmk04828 }
+           { LmkReg0x0151 , Lmk04828 }
+           { LmkReg0x0152 , Lmk04828 }
+           { LmkReg0x0153 , Lmk04828 }
+           { LmkReg0x0154 , Lmk04828 }
+           { LmkReg0x0155 , Lmk04828 }
+           { LmkReg0x0156 , Lmk04828 }
+           { LmkReg0x0157 , Lmk04828 }
+           { LmkReg0x0158 , Lmk04828 }
+           { LmkReg0x0159 , Lmk04828 }
+           { LmkReg0x015a , Lmk04828 }
+           { LmkReg0x015b , Lmk04828 }
+           { LmkReg0x015c , Lmk04828 }
+           { LmkReg0x015d , Lmk04828 }
+           { LmkReg0x015e , Lmk04828 }
+           { LmkReg0x015f , Lmk04828 }
+           { LmkReg0x0160 , Lmk04828 }
+           { LmkReg0x0161 , Lmk04828 }
+           { LmkReg0x0162 , Lmk04828 }
+           { LmkReg0x0163 , Lmk04828 }
+           { LmkReg0x0164 , Lmk04828 }
+           { LmkReg0x0165 , Lmk04828 }
+           { LmkReg0x0166 , Lmk04828 }
+           { LmkReg0x0167 , Lmk04828 }
+           { LmkReg0x0168 , Lmk04828 }
+           { LmkReg0x0169 , Lmk04828 }
+           { LmkReg0x016a , Lmk04828 }
+           { LmkReg0x016b , Lmk04828 }
+           { LmkReg0x016c , Lmk04828 }
+           { LmkReg0x016d , Lmk04828 }
+           { LmkReg0x016e , Lmk04828 }
+           { LmkReg0x0173 , Lmk04828 }
+           { LmkReg0x0174 , Lmk04828 }
+           { LmkReg0x017c , Lmk04828 }
+#commands
+           { C_SyncClks, Lmk04828 }
+           { C_writeConfig, Lmk04828 }
+}
+file testAsynPortWaveform.template
+{
+    pattern {NAME, driver}
+}
+

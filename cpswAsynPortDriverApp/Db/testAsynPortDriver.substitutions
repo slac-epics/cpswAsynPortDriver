@@ -47,22 +47,4 @@ file testAsynPortDriver.template
     { Flag , AxiXadc}
     { VccpIntMax , AxiXadc}
 
-    {FpgaVersion, AxiVersion}
-    {ScratchPad, AxiVersion}
-    {DeviceDnaHigh, AxiVersion}
-    {DeviceDnaLow, AxiVersion}
-    {FdSerialHigh, AxiVersion}
-    {FdSerialLow, AxiVersion}
-    {MasterReset, AxiVersion}
-    {FpgaReload, AxiVersion}
-    {FpgaReloadAddress, AxiVersion}
-    {Counter, AxiVersion}
-    {FpgaReloadHalt, AxiVersion}
-    {UserConstants, AxiVersion}
-}
-
-file testAsynPortDriverWaveform.template
-{
-  pattern {NAME, driver}
-  {BuildStamp, AxiVersion}
 }

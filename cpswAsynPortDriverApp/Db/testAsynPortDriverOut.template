@@ -1,0 +1,8 @@
+record(ao, "TEST:$(NAME)")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(driver),0) $(NAME)")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}

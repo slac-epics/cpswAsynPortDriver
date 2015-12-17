@@ -1,0 +1,30 @@
+file testAsynPortDriverIn.template 
+{
+    pattern { NAME , driver}
+           { FpgaVersion , AxiVersion }
+           { DeviceDnaHigh , AxiVersion }
+           { DeviceDnaLow , AxiVersion }
+           { FdSerialHigh , AxiVersion }
+           { FdSerialLow , AxiVersion }
+           { Counter , AxiVersion }
+}
+file testAsynPortDriverOut.template 
+{
+    pattern { NAME , driver}
+           { ScratchPad , AxiVersion }
+           { MasterReset , AxiVersion }
+           { FpgaReload , AxiVersion }
+           { FpgaReloadAddress , AxiVersion }
+           { FpgaReloadHalt , AxiVersion }
+           { UserConstants , AxiVersion }
+#commands
+           { C_MasterReset, AxiVersion }
+           { C_FpgaReload, AxiVersion }
+           { C_CounterReset, AxiVersion }
+}
+file testAsynPortWaveform.template
+{
+    pattern {NAME, driver}
+           { BuildStamp , AxiVersion }
+}
+

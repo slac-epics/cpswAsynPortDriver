@@ -1,0 +1,109 @@
+file testAsynPortDriverIn.template 
+{
+    pattern { NAME , driver}
+           { L1_Status , JesdRx }
+           { L1_GTXReady , JesdRx }
+           { L1_DataValid , JesdRx }
+           { L1_AlignErr , JesdRx }
+           { L1_nSync , JesdRx }
+           { L1_RxBuffUfl , JesdRx }
+           { L1_RxBuffOfl , JesdRx }
+           { L1_PositionErr , JesdRx }
+           { L1_RxEnabled , JesdRx }
+           { L1_SysRefDetected , JesdRx }
+           { L1_CommaDetected , JesdRx }
+           { L1_DisparityErr , JesdRx }
+           { L1_DecErr , JesdRx }
+           { L1_ElBuffLatency , JesdRx }
+           { L2_Status , JesdRx }
+           { L2_GTXRdy , JesdRx }
+           { L2_DataValid , JesdRx }
+           { L2_AlignErr , JesdRx }
+           { L2_nSync , JesdRx }
+           { L2_RxBuffUfl , JesdRx }
+           { L2_RxBuffOfl , JesdRx }
+           { L2_PositionErr , JesdRx }
+           { L2_RxEnabled , JesdRx }
+           { L2_SysRefDetected , JesdRx }
+           { L2_CommaDetected , JesdRx }
+           { L2_DisparityErr , JesdRx }
+           { L2_DecErr , JesdRx }
+           { L3_Status , JesdRx }
+           { L3_GTXRdy , JesdRx }
+           { L3_DataValid , JesdRx }
+           { L3_AlignErr , JesdRx }
+           { L3_nSync , JesdRx }
+           { L3_RxBuffUfl , JesdRx }
+           { L3_RxBuffOfl , JesdRx }
+           { L3_PositionErr , JesdRx }
+           { L3_RxEnabled , JesdRx }
+           { L3_SysRefDetected , JesdRx }
+           { L3_CommaDetected , JesdRx }
+           { L3_DisparityErr , JesdRx }
+           { L3_DecErr , JesdRx }
+           { L4_Status , JesdRx }
+           { L4_GTXRdy , JesdRx }
+           { L4_DataValid , JesdRx }
+           { L4_AlignErr , JesdRx }
+           { L4_nSync , JesdRx }
+           { L4_RxBuffUfl , JesdRx }
+           { L4_RxBuffOfl , JesdRx }
+           { L4_PositionErr , JesdRx }
+           { L4_RxEnabled , JesdRx }
+           { L4_SysRefDetected , JesdRx }
+           { L4_CommaDetected , JesdRx }
+           { L4_DisparityErr , JesdRx }
+           { L4_DecErr , JesdRx }
+           { L5_Status , JesdRx }
+           { L5_GTXRdy , JesdRx }
+           { L5_DataValid , JesdRx }
+           { L5_AlignErr , JesdRx }
+           { L5_nSync , JesdRx }
+           { L5_RxBuffUfl , JesdRx }
+           { L5_RxBuffOfl , JesdRx }
+           { L5_PositionErr , JesdRx }
+           { L5_RxEnabled , JesdRx }
+           { L5_SysRefDetected , JesdRx }
+           { L5_CommaDetected , JesdRx }
+           { L5_DisparityErr , JesdRx }
+           { L5_DecErr , JesdRx }
+           { L6_Status , JesdRx }
+           { L6_GTXRdy , JesdRx }
+           { L6_DataValid , JesdRx }
+           { L6_AlignErr , JesdRx }
+           { L6_nSync , JesdRx }
+           { L6_RxBuffUfl , JesdRx }
+           { L6_RxBuffOfl , JesdRx }
+           { L6_PositionErr , JesdRx }
+           { L6_RxEnabled , JesdRx }
+           { L6_SysRefDetected , JesdRx }
+           { L6_CommaDetected , JesdRx }
+           { L6_DisparityErr , JesdRx }
+           { L6_DecErr , JesdRx }
+}
+file testAsynPortDriverOut.template 
+{
+    pattern { NAME , driver}
+           { Enable , JesdRx }
+           { SysrefDelay , JesdRx }
+           { CommonControl , JesdRx }
+           { SubClass , JesdRx }
+           { ReplaceEnable , JesdRx }
+           { ResetGTs , JesdRx }
+           { ClearErrors , JesdRx }
+           { InvertSync , JesdRx }
+           { L1_Test_thr , JesdRx }
+           { L1_Threshold_Low , JesdRx }
+           { L1_Threshold_High , JesdRx }
+           { L2_Test_thr , JesdRx }
+           { L2_Threshold_Low , JesdRx }
+           { L2_Threshold_High , JesdRx }
+#commands
+           { C_ClearErrors , JesdRx }
+           { C_RestartGTs, JesdRx }
+}
+file testAsynPortWaveform.template
+{
+    pattern {NAME, driver}
+}
+
