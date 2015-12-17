@@ -208,36 +208,36 @@ os.mkdir('AxiXadc/ui')
 
 #device library
 f=open('AxiXadc/deviceLibrary/AxiXadc.cc', 'w')
-print(Template( file='builder.cc.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('AxiXadc/deviceLibrary/AxiXadc.h', 'w')
-print(Template( file='builder.h.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #asyn driver
 f=open('AxiXadc/AxiXadcSrc/Makefile', 'w')
-print(Template( file='Makefile.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('AxiXadc/AxiXadcSrc/AxiXadcDriver.cpp', 'w')
-print(Template( file='templateDriver.cpp.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('AxiXadc/AxiXadcSrc/AxiXadcDriver.h', 'w')
-print(Template( file='templateDriver.h.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('AxiXadc/AxiXadcSrc/AxiXadcDriverSupportInclude.dbd', 'w')
-print(Template( file='templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #database substitutions
 f=open('AxiXadc/Db/AxiXadc.substitutions', 'w')
-print(Template( file='template.substitutions.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui
 f=open('AxiXadc/ui/AxiXadc.ui', 'w')
-print(Template( file='templateGui.ui.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
 f.close()

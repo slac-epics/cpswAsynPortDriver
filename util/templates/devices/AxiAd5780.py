@@ -49,36 +49,36 @@ os.mkdir('AxiAd5780/ui')
 
 #device library
 f=open('AxiAd5780/deviceLibrary/AxiAd5780.cc', 'w')
-print(Template( file='builder.cc.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('AxiAd5780/deviceLibrary/AxiAd5780.h', 'w')
-print(Template( file='builder.h.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #asyn driver
 f=open('AxiAd5780/AxiAd5780Src/Makefile', 'w')
-print(Template( file='Makefile.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('AxiAd5780/AxiAd5780Src/AxiAd5780Driver.cpp', 'w')
-print(Template( file='templateDriver.cpp.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('AxiAd5780/AxiAd5780Src/AxiAd5780Driver.h', 'w')
-print(Template( file='templateDriver.h.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('AxiAd5780/AxiAd5780Src/AxiAd5780DriverSupportInclude.dbd', 'w')
-print(Template( file='templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #database substitutions
 f=open('AxiAd5780/Db/AxiAd5780.substitutions', 'w')
-print(Template( file='template.substitutions.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui
 f=open('AxiAd5780/ui/AxiAd5780.ui', 'w')
-print(Template( file='templateGui.ui.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
 f.close()

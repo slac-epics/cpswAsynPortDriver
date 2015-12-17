@@ -64,36 +64,36 @@ os.mkdir('PrbsTx/ui')
 
 #device library
 f=open('PrbsTx/deviceLibrary/PrbsTx.cc', 'w')
-print(Template( file='builder.cc.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('PrbsTx/deviceLibrary/PrbsTx.h', 'w')
-print(Template( file='builder.h.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #asyn driver
 f=open('PrbsTx/PrbsTxSrc/Makefile', 'w')
-print(Template( file='Makefile.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('PrbsTx/PrbsTxSrc/PrbsTxDriver.cpp', 'w')
-print(Template( file='templateDriver.cpp.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('PrbsTx/PrbsTxSrc/PrbsTxDriver.h', 'w')
-print(Template( file='templateDriver.h.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('PrbsTx/PrbsTxSrc/PrbsTxDriverSupportInclude.dbd', 'w')
-print(Template( file='templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #database substitutions
 f=open('PrbsTx/Db/PrbsTx.substitutions', 'w')
-print(Template( file='template.substitutions.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui
 f=open('PrbsTx/ui/PrbsTx.ui', 'w')
-print(Template( file='templateGui.ui.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
 f.close()

@@ -100,36 +100,36 @@ os.mkdir('Dac38J84/ui')
 
 #device library
 f=open('Dac38J84/deviceLibrary/Dac38J84.cc', 'w')
-print(Template( file='builder.cc.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('Dac38J84/deviceLibrary/Dac38J84.h', 'w')
-print(Template( file='builder.h.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #asyn driver
 f=open('Dac38J84/Dac38J84Src/Makefile', 'w')
-print(Template( file='Makefile.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('Dac38J84/Dac38J84Src/Dac38J84Driver.cpp', 'w')
-print(Template( file='templateDriver.cpp.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('Dac38J84/Dac38J84Src/Dac38J84Driver.h', 'w')
-print(Template( file='templateDriver.h.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
 f=open('Dac38J84/Dac38J84Src/Dac38J84DriverSupportInclude.dbd', 'w')
-print(Template( file='templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #database substitutions
 f=open('Dac38J84/Db/Dac38J84.substitutions', 'w')
-print(Template( file='template.substitutions.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui
 f=open('Dac38J84/ui/Dac38J84.ui', 'w')
-print(Template( file='templateGui.ui.tmpl', searchList = [d] ), file=f)
+print(Template( file='../deviceTemplate/../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
 f.close()
