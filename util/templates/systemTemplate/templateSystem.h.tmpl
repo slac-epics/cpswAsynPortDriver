@@ -1,0 +1,24 @@
+#ifndef ${name.upper()}_DRIVER_H
+#define ${name.upper()}_DRIVER_H
+
+\#include <cpsw_api_builder.h>
+\#include <cpsw_mmio_dev.h>
+\#include <device_library.h>
+
+class   I${name};
+typedef shared_ptr<I${name}> ${name};
+
+class C${name}Impl;
+typedef shared_ptr<C${name}Impl> ${name}Impl;
+
+
+class I${name} : public virtual IMMIODev {
+public:
+        static ${name} create(const char *name);
+};
+
+class C${name}Impl : public CMMIODevImpl, public virtual I${name} {
+public:
+        C${name}Impl(FKey);
+};
+#endif

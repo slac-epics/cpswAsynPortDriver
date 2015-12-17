@@ -31,6 +31,12 @@ file testAsynPortDriverOut.template
   #end if
 #end if
 #end for
+#if $varExists('commands')
+\#commands
+#for $c in $commands
+           { C_${c.name}, ${name} }
+#end for
+#end if
 }
 file testAsynPortWaveform.template
 {

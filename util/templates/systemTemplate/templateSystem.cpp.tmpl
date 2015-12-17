@@ -1,0 +1,70 @@
+\#include <cpsw_mmio_dev.h>
+\#include <string.h>
+\#include <stdio.h>
+\#include <inttypes.h>
+\#include <string>
+\#include <sstream>
+\#include <iomanip>
+
+\#include <epicsExport.h>
+\#include <iocsh.h>
+
+\#include <cpsw_api_user.h>
+\#include <cpsw_api_builder.h>
+
+\#include "${name}.h"
+
+
+#for $p in $peripherals
+\#define ${p.name.upper()}_BASE_ADDR_C   ( ${p.address} )
+#end for
+
+${name} I${name}::create(const char *name)
+{
+${name}Impl v = CEntryImpl::create<${name}Impl::element_type>(name);
+#set i = 1
+#for $p in $peripherals
+
+        ${p.name} p${i} = I${p.name}::create("${p.name}");
+        v->CMMIODevImpl::addAtAddress( p${i}, ${p.name.upper()}_BASE_ADDR_C );
+#set i = i + 1
+#end for
+
+        return v;
+}
+
+C${name}Impl::C${name}Impl(FKey key) : CMMIODevImpl(key, 0x000B0000 , LE)
+{
+}
+
+extern "C" int ${name}Create(const char *ipAddr)
+{
+  
+  NoSsiDev r  = INoSsiDev::create("root", ipAddr);
+  ${name} ${name} = I${name}::create("${name}");
+  Dev root = IDev::getRootDev();
+  r->addAtAddress( ${name}, INoSsiDev::SRP_UDP_V2, 8192 );
+  root->addAtAddress( r );
+
+  return 1;
+}
+
+
+/** Code for iocsh registration */
+static const iocshArg ${name}CreateArg0 = {"IP Address", iocshArgString};
+static const iocshArg * const ${name}CreateArgs[] = {&${name}CreateArg0};
+static const iocshFuncDef ${name}CreateDef = {"${name}Create", 1, ${name}CreateArgs};
+static void ${name}CreateCallFunc(const iocshArgBuf *args)
+{
+  ${name}Create(args[0].sval);
+}
+
+static void ${name}Register(void)
+{
+  iocshRegister(&${name}CreateDef, ${name}CreateCallFunc);
+}
+
+extern "C" {
+epicsExportRegistrar(${name}Register);
+}
+

@@ -37,7 +37,7 @@ ${name}Driver::${name}Driver(const char *portName, Path p, int nelms)
 
 /* Commands */
 #for $c in $commands
-   asynPortDriver::createParam(${c.name}String, asynParamIn32, &p_${c.name});
+   asynPortDriver::createParam(C${c.name}String, asynParamInt32, &p_C_${c.name});
 #end for
 #end if
 }
@@ -52,12 +52,12 @@ asynStatus ${name}Driver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 #set $first = True
 #for $c in $commands
   #if $first == True
-    if( function == p_${c.name} ) {
+    if( function == p_C_${c.name} ) {
         ${c.name}();
     }
     #set $first=False
   #else
-    else if( function == p_${c.name} ) {
+    else if( function == p_C_${c.name} ) {
         ${c.name}();
     }
   #end if
@@ -77,7 +77,7 @@ asynStatus ${name}Driver::${c.name}()
 {
    asynStatus status = asynSuccess;
 /* Fill in command logic here */
-
+   printf("Command ${c.name} not yet implemented!\n");
 
    return status;
 }

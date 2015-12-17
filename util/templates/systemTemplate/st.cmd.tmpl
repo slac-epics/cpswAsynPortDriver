@@ -1,0 +1,23 @@
+#!../../bin/linux-x86_64/${name}App
+
+< envPaths
+
+cd \${TOP}
+
+## Register all support components
+dbLoadDatabase("dbd/${name}App.dbd")
+${name}App_registerRecordDeviceDriver(pdbbase)
+
+#create a ${name}
+${name}Create("192.168.2.10")
+
+
+#for $p in $peripherals
+${p.name}Create("${p.name}", "root/${name}" )
+#end for
+
+#for $p in $peripherals
+dbLoadRecords("db/${p.name}.db")
+#end for
+
+iocInit()

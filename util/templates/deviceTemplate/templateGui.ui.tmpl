@@ -125,6 +125,34 @@
 #end if
 #set $i = $i + 1
 #end for
+#if $varExists('commands')
+#for $c in $commands
+        <item row="$i" column="0">
+         <widget class="QLabel" name="${p.name}">
+          <property name="text">
+           <string> ${c.name} </string>
+          </property>
+         </widget>
+        </item>
+        <item row="$i" column="1">
+         <widget class="caMessageButton" name="${c.name}">
+          <property name="channel" stdset="0">
+           <string notr="true">\$(DEVICE):C_${c.name}.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+#set $i = $i + 1
+#end for
+#end if
        </layout>
       </widget>
      </widget>
