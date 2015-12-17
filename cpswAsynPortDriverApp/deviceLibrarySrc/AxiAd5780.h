@@ -1,23 +1,24 @@
-#ifndef _AXI_AD_5780_H
-#define _AXI_AD_5780_H
+#ifndef _AXIAD5780_H
+#define _AXIAD5780_H
 
 #include <cpsw_api_builder.h>
 #include <cpsw_mmio_dev.h>
 
-class   IAXIAd5780;
-typedef shared_ptr<IAXIAd5780> AXIAd5780;
+//AxiVersion
+class   IAxiAd5780;
+typedef shared_ptr<IAxiAd5780> AxiAd5780;
 
-class CAXIAd5780Impl;
-typedef shared_ptr<CAXIAd5780Impl> AXIAd5780Impl;
+class CAxiAd5780Impl;
+typedef shared_ptr<CAxiAd5780Impl> AxiAd5780Impl;
 
-
-class IAXIAd5780 : public virtual IMMIODev {
+class IAxiAd5780 : public virtual IMMIODev {
 public:
-        static AXIAd5780 create(const char *name);
+        static AxiAd5780 create(const char *name);
 };
 
-class CAXIAd5780Impl : public CMMIODevImpl, public virtual IAXIAd5780 {
+class CAxiAd5780Impl : public CMMIODevImpl, public virtual IAxiAd5780 {
 public:
-        CAXIAd5780Impl(FKey);
+        CAxiAd5780Impl(FKey);
 };
 #endif
+
