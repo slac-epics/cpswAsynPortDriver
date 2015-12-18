@@ -1,24 +1,25 @@
-#ifndef _KC705_H
-#define _KC705_H
+#ifndef KC705TENGIGETH_DRIVER_H
+#define KC705TENGIGETH_DRIVER_H
 
 #include <cpsw_api_builder.h>
 #include <cpsw_mmio_dev.h>
 #include <device_library.h>
 
-class   IdigFpga;
-typedef shared_ptr<IdigFpga> digFpga;
+class   IKc705TenGigEth;
+typedef shared_ptr<IKc705TenGigEth> Kc705TenGigEth;
 
-class CdigFpgaImpl;
-typedef shared_ptr<CdigFpgaImpl> digFpgaImpl;
+class CKc705TenGigEthImpl;
+typedef shared_ptr<CKc705TenGigEthImpl> Kc705TenGigEthImpl;
 
 
-class IdigFpga : public virtual IMMIODev {
+class IKc705TenGigEth : public virtual IMMIODev {
 public:
-        static digFpga create(const char *name);
+        static Kc705TenGigEth create(const char *name);
 };
 
-class CdigFpgaImpl : public CMMIODevImpl, public virtual IdigFpga {
+class CKc705TenGigEthImpl : public CMMIODevImpl, public virtual IKc705TenGigEth {
 public:
-        CdigFpgaImpl(FKey);
+        CKc705TenGigEthImpl(FKey);
 };
 #endif
+
