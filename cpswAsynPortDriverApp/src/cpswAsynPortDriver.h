@@ -47,6 +47,10 @@ public:
     virtual asynStatus readInt32(asynUser *pasynUser, epicsInt32 *value);
     virtual asynStatus readOctet(asynUser *pasynUser, char *value, size_t maxChars,
                                         size_t *nActual, int *eomReason);
+
+    virtual asynStatus createParam(          const char *name, asynParamType type, int *index, ScalVal(*create)(Path p));
+    virtual asynStatus createParam(int list, const char *name, asynParamType type, int *index, ScalVal(*create)(Path p));
+
     /* These are the methods that are new to this class */
     void cyclicTask(void);
     virtual asynStatus startPoller(double pollPeriod);
@@ -67,7 +71,7 @@ protected:
     double pollPeriod_;           /**< The time between polls */
     int shuttingDown_;
 
-        int NDPortNameSelf;
+    int NDPortNameSelf;
     #define FIRST_NDARRAY_PARAM NDPortNameSelf
     int NDArraySizeX;
     int NDArraySizeY;
@@ -112,6 +116,11 @@ protected:
     int NDPoolUsedMemory;
     #define LAST_NDARRAY_PARAM NDPoolUsedMemory
 
+
+    std::vector<ScalVal> ScalVals;
+
+    virtual asynStatus scalValToIntegerParam(int function, epicsInt32 *value);
+//    virtual asynStatus paramToScalVal(int function);
 
 private:
     /* Our data */

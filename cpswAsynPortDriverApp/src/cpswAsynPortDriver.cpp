@@ -52,7 +52,7 @@ cpswAsynDriver::cpswAsynDriver(const char *portName, Path p, int nelms, int nEnt
                     nEntries,
                     asynInt32Mask | asynFloat64Mask | asynOctetMask | asynDrvUserMask, /* Interface mask */
                     asynInt32Mask | asynFloat64Mask | asynOctetMask | asynEnumMask,  /* Interrupt mask */
-                    1, /* asynFlags.  This driver does not block and it is not multi-device, so flag is 0 */
+                    1, /* asynFlags.  This driver does block and it is not multi-device, so flag is 1 */
                     1, /* Autoconnect */
                     0, /* Default priority */
                     0), /* Default stack size*/   
@@ -61,6 +61,13 @@ cpswAsynDriver::cpswAsynDriver(const char *portName, Path p, int nelms, int nEnt
     asynStatus status;
     int i;
     const char *functionName = "cpswAsynDriver";
+    //ScalVals.resize(nEntries, (ScalVal) NULL);
+    ScalVals.reserve(nEntries);
+
+    if (ScalVals[0] == NULL)
+	printf("ScalVals initialized NULL\n");
+    else
+	printf("ScalVals NOT initialized NULL\n");
 
     pollEventId_ = epicsEventMustCreate(epicsEventEmpty);
     path_ = p;
@@ -79,23 +86,19 @@ asynStatus cpswAsynDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     const char *paramName;
     const char* functionName = "writeInt32";
 
-    ScalVal scalVal;
-    Path p;
-    char strPath[100];
     uint32_t u32 = (uint32_t) value;
     status = getAddress(pasynUser, &addr); if (status != asynSuccess) return(status);
     
     /* Fetch the parameter string name for possible use in debugging */
     getParamName(function, &paramName);
 
-    sprintf(strPath, "%s[%d]/%s", portName, addr, paramName);
-    try {
-        p = path_->findByName( strPath );
-        scalVal = IScalVal::create( p );
-        scalVal->setVal( &u32, 1 );
-    } catch (CPSWError &e ) {
-        printf("CPSW Error: %s\n", e.getInfo().c_str());
-        status = asynError;
+    if(ScalVals[function] != NULL) {
+        try {
+        ScalVals[function]->setVal( &u32, 1 );
+        } catch (CPSWError &e ) {
+            printf("CPSW Error: %s\n", e.getInfo().c_str());
+            status = asynError;
+        }
     }
     if (status != asynSuccess) return (status);
 
@@ -130,37 +133,18 @@ asynStatus cpswAsynDriver::readInt32(asynUser *pasynUser, epicsInt32 *value)
     const char *functionName = "readInt32";
     const char *paramName;
     
-    ScalVal scalVal;
-    Path p;
-    char strPath[100];
-
     uint32_t u32;
 
     status = getAddress(pasynUser, &addr); if (status != asynSuccess) return(status);
 
     /* Fetch the parameter string name for possible use in debugging */
     getParamName(function, &paramName);
-
-    sprintf(strPath, "%s[%d]/%s", portName, addr, paramName);
-    path_->dump( stdout ); fputc('\n', stdout);
-    //printf("%s:%s path: %s\n", driverName, functionName, strPath);
-    try { 
-        p = path_->findByName( strPath );
-        p->dump( stdout ); fputc('\n', stdout);
-        scalVal = IScalVal::create( p );
-        scalVal->getVal( &u32, 1 );
-    } catch (CPSWError &e ) {
-        printf("CPSW Error: %s\n", e.getInfo().c_str());
-        status = asynError;
+    if (ScalVals[function] != NULL) {
+        scalValToIntegerParam(function, value);
     }
     if (status != asynSuccess) return (status);
-    *value = (epicsInt32) u32;
-    //printf("Path %s: value %ul", strPath, u32);
+    
     /* Set the timestamp */
-    setIntegerParam(addr, function, *value); 
-
-    /* Do callbacks so higher layers see any changes */
-    status = (asynStatus) callParamCallbacks();
     pasynUser->timestamp = timeStamp;
 
 
@@ -184,26 +168,18 @@ asynStatus cpswAsynDriver::readOctet(asynUser *pasynUser, char *value, size_t ma
     epicsTimeStamp timeStamp; getTimeStamp(&timeStamp);
     const char *functionName = "readOctet";
     const char *paramName;
-    printf("ReadOctet\n"); 
-    ScalVal scalVal;
-    Path p;
-    char strPath[100];
     
 //    status = getAddress(pasynUser, &addr); if (status != asynSuccess) return(status);
     getAddress(pasynUser, &addr);
     /* Fetch the parameter string name for possible use in debugging */
     getParamName(function, &paramName);
-
-    sprintf(strPath, "%s[%d]/%s", portName, addr, paramName);
-    path_->dump( stdout ); fputc('\n', stdout);
-    printf("%s:%s path: %s\n", driverName, functionName, strPath);
-    try { 
-        p = path_->findByName( strPath );
-        scalVal = IScalVal::create( p );
-        *nActual = (size_t) scalVal->getVal( (uint8_t*)value, maxChars );
-    } catch (CPSWError &e ) {
-        printf("CPSW Error: %s\n", e.getInfo().c_str());
-        status = asynError;
+    if(ScalVals[function] != NULL) {
+        try { 
+            *nActual = (size_t) ScalVals[function]->getVal( (uint8_t*)value, maxChars );
+        } catch (CPSWError &e ) {
+            printf("CPSW Error: %s\n", e.getInfo().c_str());
+            status = asynError;
+         }
     }
     if (status != asynSuccess) return (status);
     /* Set the timestamp */
@@ -223,7 +199,30 @@ asynStatus cpswAsynDriver::readOctet(asynUser *pasynUser, char *value, size_t ma
               driverName, functionName, function);
     return status;
 }
-  
+ 
+asynStatus cpswAsynDriver::createParam(          const char *name, asynParamType type, int *index, ScalVal(*create)(Path p))
+{
+    int list;
+    asynStatus status;
+
+    // All parameters lists support the same parameters, so add the parameter name to all lists
+    for (list=0; list<this->maxAddr; list++) {
+        status = createParam(list, name, type, index, create);
+        if (status) return asynError;
+    }
+    return asynSuccess;
+}
+
+asynStatus cpswAsynDriver::createParam(int list, const char *name, asynParamType type, int *index, ScalVal(*create)(Path p))
+{
+    asynStatus status = asynSuccess;
+    Path pOut = path_->findByName(name);
+
+    asynPortDriver::createParam(list, name, type, index);
+    ScalVals[*index] = create(pOut);
+    return status;
+}
+
 /** Starts the poller thread.
  ** Derived classes will typically call this at near the end of their constructor.
  ** Derived classes can typically use the base class implementation of the poller thread,
@@ -408,6 +407,28 @@ int cpswAsynDriver::createFileName(int maxChars, char *filePath, char *fileName)
         status |= setIntegerParam(NDFileNumber, fileNumber);
     }
     return(status);   
+}
+
+/** Get a scalVal and syn to param asyn param library
+ *
+ * \param[in] function The integer function from asyn param library
+ * \param[out] value   The int32 value returned from ScalVal
+ *
+ * */
+asynStatus cpswAsynDriver::scalValToIntegerParam(int function, epicsInt32 *value)
+{
+    asynStatus status = asynSuccess;
+    uint32_t u32;
+    try {
+        ScalVals[function]->getVal( &u32, 1 );
+    }
+    catch(CPSWError &e) {
+        return asynError;
+    }
+    *value = (epicsInt32) u32;
+    setIntegerParam(0, function, *value);
+    callParamCallbacks();
+    return status;
 }
 
 extern "C" {
