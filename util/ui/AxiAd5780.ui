@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="dacRefreshRate">
+          <property name="text">
+           <string> dacRefreshRate </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):dacRefreshRate">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):dacRefreshRate</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="dacData">
+          <property name="text">
+           <string> dacData </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):dacData">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):dacData</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="halfSckPeriod">
+          <property name="text">
+           <string> halfSckPeriod </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):halfSckPeriod">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):halfSckPeriod</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="2" column="0">
+         <widget class="QLabel" name="debugMux">
+          <property name="text">
+           <string> debugMux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):debugMux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):debugMux</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="debugData">
+          <property name="text">
+           <string> debugData </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):debugData">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):debugData</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="sdoDisable">
+          <property name="text">
+           <string> sdoDisable </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):sdoDisable">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):sdoDisable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="binaryOffset">
+          <property name="text">
+           <string> binaryOffset </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):binaryOffset">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):binaryOffset</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="dacTriState">
+          <property name="text">
+           <string> dacTriState </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):dacTriState">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):dacTriState</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="rbuf">
+          <property name="text">
+           <string> rbuf </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):rbuf">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):rbuf</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="dacRst">
+          <property name="text">
+           <string> dacRst </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):dacRst">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):dacRst</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="dacRst">
+          <property name="text">
+           <string> dacRst </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caMessageButton" name="dacRst">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_dacRst.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+

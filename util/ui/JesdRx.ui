@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="14" column="0">
+         <widget class="QLabel" name="L1_Status">
+          <property name="text">
+           <string> L1_Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="L1_GTXReady">
+          <property name="text">
+           <string> L1_GTXReady </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_GTXReady">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_GTXReady</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="L1_DataValid">
+          <property name="text">
+           <string> L1_DataValid </string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_DataValid">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_DataValid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <widget class="QLabel" name="L1_AlignErr">
+          <property name="text">
+           <string> L1_AlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_AlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_AlignErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QLabel" name="L1_nSync">
+          <property name="text">
+           <string> L1_nSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_nSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_nSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="L1_RxBuffUfl">
+          <property name="text">
+           <string> L1_RxBuffUfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_RxBuffUfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_RxBuffUfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="L1_RxBuffOfl">
+          <property name="text">
+           <string> L1_RxBuffOfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_RxBuffOfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_RxBuffOfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="L1_PositionErr">
+          <property name="text">
+           <string> L1_PositionErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_PositionErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_PositionErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QLabel" name="L1_RxEnabled">
+          <property name="text">
+           <string> L1_RxEnabled </string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_RxEnabled">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_RxEnabled</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="0">
+         <widget class="QLabel" name="L1_SysRefDetected">
+          <property name="text">
+           <string> L1_SysRefDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_SysRefDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_SysRefDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="0">
+         <widget class="QLabel" name="L1_CommaDetected">
+          <property name="text">
+           <string> L1_CommaDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_CommaDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_CommaDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="0">
+         <widget class="QLabel" name="L1_DisparityErr">
+          <property name="text">
+           <string> L1_DisparityErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_DisparityErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_DisparityErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0">
+         <widget class="QLabel" name="L1_DecErr">
+          <property name="text">
+           <string> L1_DecErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_DecErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_DecErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="0">
+         <widget class="QLabel" name="L1_ElBuffLatency">
+          <property name="text">
+           <string> L1_ElBuffLatency </string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_ElBuffLatency">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_ElBuffLatency</string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="0">
+         <widget class="QLabel" name="L2_Status">
+          <property name="text">
+           <string> L2_Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="0">
+         <widget class="QLabel" name="L2_GTXRdy">
+          <property name="text">
+           <string> L2_GTXRdy </string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_GTXRdy">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_GTXRdy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="0">
+         <widget class="QLabel" name="L2_DataValid">
+          <property name="text">
+           <string> L2_DataValid </string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_DataValid">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_DataValid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="0">
+         <widget class="QLabel" name="L2_AlignErr">
+          <property name="text">
+           <string> L2_AlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_AlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_AlignErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="0">
+         <widget class="QLabel" name="L2_nSync">
+          <property name="text">
+           <string> L2_nSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_nSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_nSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="0">
+         <widget class="QLabel" name="L2_RxBuffUfl">
+          <property name="text">
+           <string> L2_RxBuffUfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_RxBuffUfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_RxBuffUfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="0">
+         <widget class="QLabel" name="L2_RxBuffOfl">
+          <property name="text">
+           <string> L2_RxBuffOfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_RxBuffOfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_RxBuffOfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="0">
+         <widget class="QLabel" name="L2_PositionErr">
+          <property name="text">
+           <string> L2_PositionErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_PositionErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_PositionErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="0">
+         <widget class="QLabel" name="L2_RxEnabled">
+          <property name="text">
+           <string> L2_RxEnabled </string>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_RxEnabled">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_RxEnabled</string>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="0">
+         <widget class="QLabel" name="L2_SysRefDetected">
+          <property name="text">
+           <string> L2_SysRefDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_SysRefDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_SysRefDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="38" column="0">
+         <widget class="QLabel" name="L2_CommaDetected">
+          <property name="text">
+           <string> L2_CommaDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="38" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_CommaDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_CommaDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="0">
+         <widget class="QLabel" name="L2_DisparityErr">
+          <property name="text">
+           <string> L2_DisparityErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_DisparityErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_DisparityErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="0">
+         <widget class="QLabel" name="L2_DecErr">
+          <property name="text">
+           <string> L2_DecErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_DecErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_DecErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="41" column="0">
+         <widget class="QLabel" name="L3_Status">
+          <property name="text">
+           <string> L3_Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="41" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="42" column="0">
+         <widget class="QLabel" name="L3_GTXRdy">
+          <property name="text">
+           <string> L3_GTXRdy </string>
+          </property>
+         </widget>
+        </item>
+        <item row="42" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_GTXRdy">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_GTXRdy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="43" column="0">
+         <widget class="QLabel" name="L3_DataValid">
+          <property name="text">
+           <string> L3_DataValid </string>
+          </property>
+         </widget>
+        </item>
+        <item row="43" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_DataValid">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_DataValid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="44" column="0">
+         <widget class="QLabel" name="L3_AlignErr">
+          <property name="text">
+           <string> L3_AlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="44" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_AlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_AlignErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="45" column="0">
+         <widget class="QLabel" name="L3_nSync">
+          <property name="text">
+           <string> L3_nSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="45" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_nSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_nSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="46" column="0">
+         <widget class="QLabel" name="L3_RxBuffUfl">
+          <property name="text">
+           <string> L3_RxBuffUfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="46" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_RxBuffUfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_RxBuffUfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="47" column="0">
+         <widget class="QLabel" name="L3_RxBuffOfl">
+          <property name="text">
+           <string> L3_RxBuffOfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="47" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_RxBuffOfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_RxBuffOfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="48" column="0">
+         <widget class="QLabel" name="L3_PositionErr">
+          <property name="text">
+           <string> L3_PositionErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="48" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_PositionErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_PositionErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="49" column="0">
+         <widget class="QLabel" name="L3_RxEnabled">
+          <property name="text">
+           <string> L3_RxEnabled </string>
+          </property>
+         </widget>
+        </item>
+        <item row="49" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_RxEnabled">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_RxEnabled</string>
+          </property>
+         </widget>
+        </item>
+        <item row="50" column="0">
+         <widget class="QLabel" name="L3_SysRefDetected">
+          <property name="text">
+           <string> L3_SysRefDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="50" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_SysRefDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_SysRefDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="51" column="0">
+         <widget class="QLabel" name="L3_CommaDetected">
+          <property name="text">
+           <string> L3_CommaDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="51" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_CommaDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_CommaDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="52" column="0">
+         <widget class="QLabel" name="L3_DisparityErr">
+          <property name="text">
+           <string> L3_DisparityErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="52" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_DisparityErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_DisparityErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="53" column="0">
+         <widget class="QLabel" name="L3_DecErr">
+          <property name="text">
+           <string> L3_DecErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="53" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L3_DecErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L3_DecErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="54" column="0">
+         <widget class="QLabel" name="L4_Status">
+          <property name="text">
+           <string> L4_Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="54" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="55" column="0">
+         <widget class="QLabel" name="L4_GTXRdy">
+          <property name="text">
+           <string> L4_GTXRdy </string>
+          </property>
+         </widget>
+        </item>
+        <item row="55" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_GTXRdy">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_GTXRdy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="56" column="0">
+         <widget class="QLabel" name="L4_DataValid">
+          <property name="text">
+           <string> L4_DataValid </string>
+          </property>
+         </widget>
+        </item>
+        <item row="56" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_DataValid">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_DataValid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="57" column="0">
+         <widget class="QLabel" name="L4_AlignErr">
+          <property name="text">
+           <string> L4_AlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="57" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_AlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_AlignErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="58" column="0">
+         <widget class="QLabel" name="L4_nSync">
+          <property name="text">
+           <string> L4_nSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="58" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_nSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_nSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="59" column="0">
+         <widget class="QLabel" name="L4_RxBuffUfl">
+          <property name="text">
+           <string> L4_RxBuffUfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="59" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_RxBuffUfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_RxBuffUfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="60" column="0">
+         <widget class="QLabel" name="L4_RxBuffOfl">
+          <property name="text">
+           <string> L4_RxBuffOfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="60" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_RxBuffOfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_RxBuffOfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="61" column="0">
+         <widget class="QLabel" name="L4_PositionErr">
+          <property name="text">
+           <string> L4_PositionErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="61" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_PositionErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_PositionErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="62" column="0">
+         <widget class="QLabel" name="L4_RxEnabled">
+          <property name="text">
+           <string> L4_RxEnabled </string>
+          </property>
+         </widget>
+        </item>
+        <item row="62" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_RxEnabled">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_RxEnabled</string>
+          </property>
+         </widget>
+        </item>
+        <item row="63" column="0">
+         <widget class="QLabel" name="L4_SysRefDetected">
+          <property name="text">
+           <string> L4_SysRefDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="63" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_SysRefDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_SysRefDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="64" column="0">
+         <widget class="QLabel" name="L4_CommaDetected">
+          <property name="text">
+           <string> L4_CommaDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="64" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_CommaDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_CommaDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="65" column="0">
+         <widget class="QLabel" name="L4_DisparityErr">
+          <property name="text">
+           <string> L4_DisparityErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="65" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_DisparityErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_DisparityErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="66" column="0">
+         <widget class="QLabel" name="L4_DecErr">
+          <property name="text">
+           <string> L4_DecErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="66" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L4_DecErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L4_DecErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="67" column="0">
+         <widget class="QLabel" name="L5_Status">
+          <property name="text">
+           <string> L5_Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="67" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="68" column="0">
+         <widget class="QLabel" name="L5_GTXRdy">
+          <property name="text">
+           <string> L5_GTXRdy </string>
+          </property>
+         </widget>
+        </item>
+        <item row="68" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_GTXRdy">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_GTXRdy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="69" column="0">
+         <widget class="QLabel" name="L5_DataValid">
+          <property name="text">
+           <string> L5_DataValid </string>
+          </property>
+         </widget>
+        </item>
+        <item row="69" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_DataValid">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_DataValid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="70" column="0">
+         <widget class="QLabel" name="L5_AlignErr">
+          <property name="text">
+           <string> L5_AlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="70" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_AlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_AlignErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="71" column="0">
+         <widget class="QLabel" name="L5_nSync">
+          <property name="text">
+           <string> L5_nSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="71" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_nSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_nSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="72" column="0">
+         <widget class="QLabel" name="L5_RxBuffUfl">
+          <property name="text">
+           <string> L5_RxBuffUfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="72" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_RxBuffUfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_RxBuffUfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="73" column="0">
+         <widget class="QLabel" name="L5_RxBuffOfl">
+          <property name="text">
+           <string> L5_RxBuffOfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="73" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_RxBuffOfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_RxBuffOfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="74" column="0">
+         <widget class="QLabel" name="L5_PositionErr">
+          <property name="text">
+           <string> L5_PositionErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="74" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_PositionErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_PositionErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="75" column="0">
+         <widget class="QLabel" name="L5_RxEnabled">
+          <property name="text">
+           <string> L5_RxEnabled </string>
+          </property>
+         </widget>
+        </item>
+        <item row="75" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_RxEnabled">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_RxEnabled</string>
+          </property>
+         </widget>
+        </item>
+        <item row="76" column="0">
+         <widget class="QLabel" name="L5_SysRefDetected">
+          <property name="text">
+           <string> L5_SysRefDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="76" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_SysRefDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_SysRefDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="77" column="0">
+         <widget class="QLabel" name="L5_CommaDetected">
+          <property name="text">
+           <string> L5_CommaDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="77" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_CommaDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_CommaDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="78" column="0">
+         <widget class="QLabel" name="L5_DisparityErr">
+          <property name="text">
+           <string> L5_DisparityErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="78" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_DisparityErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_DisparityErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="79" column="0">
+         <widget class="QLabel" name="L5_DecErr">
+          <property name="text">
+           <string> L5_DecErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="79" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L5_DecErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L5_DecErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="80" column="0">
+         <widget class="QLabel" name="L6_Status">
+          <property name="text">
+           <string> L6_Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="80" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="81" column="0">
+         <widget class="QLabel" name="L6_GTXRdy">
+          <property name="text">
+           <string> L6_GTXRdy </string>
+          </property>
+         </widget>
+        </item>
+        <item row="81" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_GTXRdy">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_GTXRdy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="82" column="0">
+         <widget class="QLabel" name="L6_DataValid">
+          <property name="text">
+           <string> L6_DataValid </string>
+          </property>
+         </widget>
+        </item>
+        <item row="82" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_DataValid">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_DataValid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="83" column="0">
+         <widget class="QLabel" name="L6_AlignErr">
+          <property name="text">
+           <string> L6_AlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="83" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_AlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_AlignErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="84" column="0">
+         <widget class="QLabel" name="L6_nSync">
+          <property name="text">
+           <string> L6_nSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="84" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_nSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_nSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="85" column="0">
+         <widget class="QLabel" name="L6_RxBuffUfl">
+          <property name="text">
+           <string> L6_RxBuffUfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="85" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_RxBuffUfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_RxBuffUfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="86" column="0">
+         <widget class="QLabel" name="L6_RxBuffOfl">
+          <property name="text">
+           <string> L6_RxBuffOfl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="86" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_RxBuffOfl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_RxBuffOfl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="87" column="0">
+         <widget class="QLabel" name="L6_PositionErr">
+          <property name="text">
+           <string> L6_PositionErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="87" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_PositionErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_PositionErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="88" column="0">
+         <widget class="QLabel" name="L6_RxEnabled">
+          <property name="text">
+           <string> L6_RxEnabled </string>
+          </property>
+         </widget>
+        </item>
+        <item row="88" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_RxEnabled">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_RxEnabled</string>
+          </property>
+         </widget>
+        </item>
+        <item row="89" column="0">
+         <widget class="QLabel" name="L6_SysRefDetected">
+          <property name="text">
+           <string> L6_SysRefDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="89" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_SysRefDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_SysRefDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="90" column="0">
+         <widget class="QLabel" name="L6_CommaDetected">
+          <property name="text">
+           <string> L6_CommaDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="90" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_CommaDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_CommaDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="91" column="0">
+         <widget class="QLabel" name="L6_DisparityErr">
+          <property name="text">
+           <string> L6_DisparityErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="91" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_DisparityErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_DisparityErr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="92" column="0">
+         <widget class="QLabel" name="L6_DecErr">
+          <property name="text">
+           <string> L6_DecErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="92" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L6_DecErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L6_DecErr</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Enable">
+          <property name="text">
+           <string> Enable </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):Enable">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Enable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="SysrefDelay">
+          <property name="text">
+           <string> SysrefDelay </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):SysrefDelay">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):SysrefDelay</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="CommonControl">
+          <property name="text">
+           <string> CommonControl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):CommonControl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):CommonControl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="SubClass">
+          <property name="text">
+           <string> SubClass </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):SubClass">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):SubClass</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="ReplaceEnable">
+          <property name="text">
+           <string> ReplaceEnable </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):ReplaceEnable">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):ReplaceEnable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="ResetGTs">
+          <property name="text">
+           <string> ResetGTs </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):ResetGTs">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):ResetGTs</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="ClearErrors">
+          <property name="text">
+           <string> ClearErrors </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):ClearErrors">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):ClearErrors</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="InvertSync">
+          <property name="text">
+           <string> InvertSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):InvertSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):InvertSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="L1_Test_thr">
+          <property name="text">
+           <string> L1_Test_thr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L1_Test_thr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_Test_thr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="L1_Threshold_Low">
+          <property name="text">
+           <string> L1_Threshold_Low </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L1_Threshold_Low">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_Threshold_Low</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="L1_Threshold_High">
+          <property name="text">
+           <string> L1_Threshold_High </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L1_Threshold_High">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_Threshold_High</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="L2_Test_thr">
+          <property name="text">
+           <string> L2_Test_thr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L2_Test_thr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_Test_thr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="L2_Threshold_Low">
+          <property name="text">
+           <string> L2_Threshold_Low </string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L2_Threshold_Low">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_Threshold_Low</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="L2_Threshold_High">
+          <property name="text">
+           <string> L2_Threshold_High </string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L2_Threshold_High">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_Threshold_High</string>
+          </property>
+         </widget>
+        </item>
+        <item row="93" column="0">
+         <widget class="QLabel" name="L6_DecErr">
+          <property name="text">
+           <string> ClearErrors </string>
+          </property>
+         </widget>
+        </item>
+        <item row="93" column="1">
+         <widget class="caMessageButton" name="ClearErrors">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_ClearErrors.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="94" column="0">
+         <widget class="QLabel" name="L6_DecErr">
+          <property name="text">
+           <string> RestartGTs </string>
+          </property>
+         </widget>
+        </item>
+        <item row="94" column="1">
+         <widget class="caMessageButton" name="RestartGTs">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_RestartGTs.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+

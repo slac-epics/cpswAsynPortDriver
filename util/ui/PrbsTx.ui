@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="3" column="0">
+         <widget class="QLabel" name="Busy">
+          <property name="text">
+           <string> Busy </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Busy">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Busy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="Overflow">
+          <property name="text">
+           <string> Overflow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Overflow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Overflow</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="DataCount">
+          <property name="text">
+           <string> DataCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):DataCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):DataCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="EventCount">
+          <property name="text">
+           <string> EventCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):EventCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):EventCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="RandomData">
+          <property name="text">
+           <string> RandomData </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RandomData">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RandomData</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="ConfigStatus">
+          <property name="text">
+           <string> ConfigStatus </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):ConfigStatus">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):ConfigStatus</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="AxiEn">
+          <property name="text">
+           <string> AxiEn </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):AxiEn">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):AxiEn</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="TxEn">
+          <property name="text">
+           <string> TxEn </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):TxEn">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxEn</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="PacketLength">
+          <property name="text">
+           <string> PacketLength </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):PacketLength">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):PacketLength</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="AxiStreamCfg">
+          <property name="text">
+           <string> AxiStreamCfg </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):AxiStreamCfg">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):AxiStreamCfg</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="tDest">
+          <property name="text">
+           <string> tDest </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):tDest">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):tDest</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="tId">
+          <property name="text">
+           <string> tId </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):tId">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):tId</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="RandomData">
+          <property name="text">
+           <string> OneShot </string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="caMessageButton" name="OneShot">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_OneShot.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+

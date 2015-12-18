@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="FpgaVersion">
+          <property name="text">
+           <string> FpgaVersion </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):FpgaVersion">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):FpgaVersion</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="DeviceDnaHigh">
+          <property name="text">
+           <string> DeviceDnaHigh </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):DeviceDnaHigh">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):DeviceDnaHigh</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="DeviceDnaLow">
+          <property name="text">
+           <string> DeviceDnaLow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):DeviceDnaLow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):DeviceDnaLow</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="FdSerialHigh">
+          <property name="text">
+           <string> FdSerialHigh </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):FdSerialHigh">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):FdSerialHigh</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="FdSerialLow">
+          <property name="text">
+           <string> FdSerialLow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):FdSerialLow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):FdSerialLow</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="Counter">
+          <property name="text">
+           <string> Counter </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Counter">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Counter</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="BuildStamp">
+          <property name="text">
+           <string> BuildStamp </string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):BuildStamp">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):BuildStamp</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QLabel" name="ScratchPad">
+          <property name="text">
+           <string> ScratchPad </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):ScratchPad">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):ScratchPad</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="MasterReset">
+          <property name="text">
+           <string> MasterReset </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):MasterReset">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):MasterReset</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="FpgaReload">
+          <property name="text">
+           <string> FpgaReload </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):FpgaReload">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):FpgaReload</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="FpgaReloadAddress">
+          <property name="text">
+           <string> FpgaReloadAddress </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):FpgaReloadAddress">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):FpgaReloadAddress</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="FpgaReloadHalt">
+          <property name="text">
+           <string> FpgaReloadHalt </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):FpgaReloadHalt">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):FpgaReloadHalt</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="UserConstants">
+          <property name="text">
+           <string> UserConstants </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):UserConstants">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):UserConstants</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="BuildStamp">
+          <property name="text">
+           <string> MasterReset </string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="caMessageButton" name="MasterReset">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_MasterReset.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="BuildStamp">
+          <property name="text">
+           <string> FpgaReload </string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="caMessageButton" name="FpgaReload">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_FpgaReload.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="BuildStamp">
+          <property name="text">
+           <string> CounterReset </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caMessageButton" name="CounterReset">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_CounterReset.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+

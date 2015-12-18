@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="12" column="0">
+         <widget class="QLabel" name="L1_Status">
+          <property name="text">
+           <string> L1_Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="L1_GTXReady">
+          <property name="text">
+           <string> L1_GTXReady </string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_GTXReady">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_GTXReady</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="L1_DataValid">
+          <property name="text">
+           <string> L1_DataValid </string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_DataValid">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_DataValid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="L1_IlasActive">
+          <property name="text">
+           <string> L1_IlasActive </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_IlasActive">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_IlasActive</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="L1_nSync">
+          <property name="text">
+           <string> L1_nSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_nSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_nSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <widget class="QLabel" name="L1_TxEnabled">
+          <property name="text">
+           <string> L1_TxEnabled </string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_TxEnabled">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_TxEnabled</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QLabel" name="L1_SysRefDetected">
+          <property name="text">
+           <string> L1_SysRefDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L1_SysRefDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_SysRefDetected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="L2_Status">
+          <property name="text">
+           <string> L2_Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="L2_GTXRdy">
+          <property name="text">
+           <string> L2_GTXRdy </string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_GTXRdy">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_GTXRdy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="L2_DataValid">
+          <property name="text">
+           <string> L2_DataValid </string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_DataValid">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_DataValid</string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QLabel" name="L2_IlasActive">
+          <property name="text">
+           <string> L2_IlasActive </string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_IlasActive">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_IlasActive</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="0">
+         <widget class="QLabel" name="L2_nSync">
+          <property name="text">
+           <string> L2_nSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_nSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_nSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="0">
+         <widget class="QLabel" name="L2_TxEnabled">
+          <property name="text">
+           <string> L2_TxEnabled </string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_TxEnabled">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_TxEnabled</string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="0">
+         <widget class="QLabel" name="L2_SysRefDetected">
+          <property name="text">
+           <string> L2_SysRefDetected </string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):L2_SysRefDetected">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_SysRefDetected</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Enable">
+          <property name="text">
+           <string> Enable </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):Enable">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Enable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="CommonControl">
+          <property name="text">
+           <string> CommonControl </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):CommonControl">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):CommonControl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="SubClass">
+          <property name="text">
+           <string> SubClass </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):SubClass">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):SubClass</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="ReplaceEnable">
+          <property name="text">
+           <string> ReplaceEnable </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):ReplaceEnable">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):ReplaceEnable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="ResetGTs">
+          <property name="text">
+           <string> ResetGTs </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):ResetGTs">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):ResetGTs</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="InvertSync">
+          <property name="text">
+           <string> InvertSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):InvertSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):InvertSync</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="EnableTestSig">
+          <property name="text">
+           <string> EnableTestSig </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):EnableTestSig">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):EnableTestSig</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="PeriodRampStep">
+          <property name="text">
+           <string> PeriodRampStep </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):PeriodRampStep">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):PeriodRampStep</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="RampStep">
+          <property name="text">
+           <string> RampStep </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):RampStep">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RampStep</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="SquarePeriod">
+          <property name="text">
+           <string> SquarePeriod </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):SquarePeriod">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):SquarePeriod</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="LowAmplitudeVal">
+          <property name="text">
+           <string> LowAmplitudeVal </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):LowAmplitudeVal">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):LowAmplitudeVal</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="HighAmplitudeVal">
+          <property name="text">
+           <string> HighAmplitudeVal </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):HighAmplitudeVal">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):HighAmplitudeVal</string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0">
+         <widget class="QLabel" name="L1_SignalSelect">
+          <property name="text">
+           <string> L1_SignalSelect </string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L1_SignalSelect">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_SignalSelect</string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="0">
+         <widget class="QLabel" name="L1_data_out_mux">
+          <property name="text">
+           <string> L1_data_out_mux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L1_data_out_mux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_data_out_mux</string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="0">
+         <widget class="QLabel" name="L1_test_out_mux">
+          <property name="text">
+           <string> L1_test_out_mux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L1_test_out_mux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L1_test_out_mux</string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="0">
+         <widget class="QLabel" name="L2_SignalSelect">
+          <property name="text">
+           <string> L2_SignalSelect </string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L2_SignalSelect">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_SignalSelect</string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="0">
+         <widget class="QLabel" name="L2_data_out_mux">
+          <property name="text">
+           <string> L2_data_out_mux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L2_data_out_mux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_data_out_mux</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="0">
+         <widget class="QLabel" name="L2_test_out_mux">
+          <property name="text">
+           <string> L2_test_out_mux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):L2_test_out_mux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):L2_test_out_mux</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+

@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Temperature">
+          <property name="text">
+           <string> Temperature </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Temperature">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Temperature</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="VccInt">
+          <property name="text">
+           <string> VccInt </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccInt">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccInt</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="VccAux">
+          <property name="text">
+           <string> VccAux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccAux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccAux</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="VrefP">
+          <property name="text">
+           <string> VrefP </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VrefP">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VrefP</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="VrefN">
+          <property name="text">
+           <string> VrefN </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VrefN">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VrefN</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="VccBram">
+          <property name="text">
+           <string> VccBram </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccBram">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccBram</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="SupplyOffsetA">
+          <property name="text">
+           <string> SupplyOffsetA </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):SupplyOffsetA">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):SupplyOffsetA</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="AdcOffsetA">
+          <property name="text">
+           <string> AdcOffsetA </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):AdcOffsetA">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):AdcOffsetA</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="AdcGainA">
+          <property name="text">
+           <string> AdcGainA </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):AdcGainA">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):AdcGainA</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="VccpInt">
+          <property name="text">
+           <string> VccpInt </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpInt">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpInt</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="VccpAux">
+          <property name="text">
+           <string> VccpAux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpAux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpAux</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="VccpDdr">
+          <property name="text">
+           <string> VccpDdr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpDdr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpDdr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="VinAux_0">
+          <property name="text">
+           <string> VinAux_0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux_0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux_0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="VinAux01">
+          <property name="text">
+           <string> VinAux01 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux01">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux01</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="VinAux02">
+          <property name="text">
+           <string> VinAux02 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux02">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux02</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="VinAux03">
+          <property name="text">
+           <string> VinAux03 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux03">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux03</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="VinAux04">
+          <property name="text">
+           <string> VinAux04 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux04">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux04</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <widget class="QLabel" name="VinAux05">
+          <property name="text">
+           <string> VinAux05 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux05">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux05</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QLabel" name="VinAux06">
+          <property name="text">
+           <string> VinAux06 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux06">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux06</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="VinAux07">
+          <property name="text">
+           <string> VinAux07 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux07">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux07</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="VinAux08">
+          <property name="text">
+           <string> VinAux08 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux08">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux08</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="VinAux09">
+          <property name="text">
+           <string> VinAux09 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux09">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux09</string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QLabel" name="VinAux10">
+          <property name="text">
+           <string> VinAux10 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux10">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux10</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="0">
+         <widget class="QLabel" name="VinAux11">
+          <property name="text">
+           <string> VinAux11 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux11">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux11</string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="0">
+         <widget class="QLabel" name="VinAux12">
+          <property name="text">
+           <string> VinAux12 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux12">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux12</string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="0">
+         <widget class="QLabel" name="VinAux13">
+          <property name="text">
+           <string> VinAux13 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux13">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux13</string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0">
+         <widget class="QLabel" name="VinAux14">
+          <property name="text">
+           <string> VinAux14 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux14">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux14</string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="0">
+         <widget class="QLabel" name="VinAux15">
+          <property name="text">
+           <string> VinAux15 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VinAux15">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VinAux15</string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="0">
+         <widget class="QLabel" name="TemperatureMax">
+          <property name="text">
+           <string> TemperatureMax </string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TemperatureMax">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TemperatureMax</string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="0">
+         <widget class="QLabel" name="VccIntMax">
+          <property name="text">
+           <string> VccIntMax </string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccIntMax">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccIntMax</string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="0">
+         <widget class="QLabel" name="VccAuxMax">
+          <property name="text">
+           <string> VccAuxMax </string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccAuxMax">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccAuxMax</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="0">
+         <widget class="QLabel" name="VccBramMax">
+          <property name="text">
+           <string> VccBramMax </string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccBramMax">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccBramMax</string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="0">
+         <widget class="QLabel" name="TemperatureMin">
+          <property name="text">
+           <string> TemperatureMin </string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TemperatureMin">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TemperatureMin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="0">
+         <widget class="QLabel" name="VccIntMin">
+          <property name="text">
+           <string> VccIntMin </string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccIntMin">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccIntMin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="0">
+         <widget class="QLabel" name="VccAuxMin">
+          <property name="text">
+           <string> VccAuxMin </string>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccAuxMin">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccAuxMin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="0">
+         <widget class="QLabel" name="VccBramMin">
+          <property name="text">
+           <string> VccBramMin </string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccBramMin">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccBramMin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="0">
+         <widget class="QLabel" name="VccpIntMax">
+          <property name="text">
+           <string> VccpIntMax </string>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpIntMax">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpIntMax</string>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="0">
+         <widget class="QLabel" name="VccpAuxMax">
+          <property name="text">
+           <string> VccpAuxMax </string>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpAuxMax">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpAuxMax</string>
+          </property>
+         </widget>
+        </item>
+        <item row="38" column="0">
+         <widget class="QLabel" name="VccpDdrMax">
+          <property name="text">
+           <string> VccpDdrMax </string>
+          </property>
+         </widget>
+        </item>
+        <item row="38" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpDdrMax">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpDdrMax</string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="0">
+         <widget class="QLabel" name="VccpIntMin">
+          <property name="text">
+           <string> VccpIntMin </string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpIntMin">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpIntMin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="0">
+         <widget class="QLabel" name="VccpAuxMin">
+          <property name="text">
+           <string> VccpAuxMin </string>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpAuxMin">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpAuxMin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="41" column="0">
+         <widget class="QLabel" name="VccpDdrMin">
+          <property name="text">
+           <string> VccpDdrMin </string>
+          </property>
+         </widget>
+        </item>
+        <item row="41" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):VccpDdrMin">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):VccpDdrMin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="42" column="0">
+         <widget class="QLabel" name="Flag">
+          <property name="text">
+           <string> Flag </string>
+          </property>
+         </widget>
+        </item>
+        <item row="42" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag</string>
+          </property>
+         </widget>
+        </item>
+        <item row="43" column="0">
+         <widget class="QLabel" name="Flag_JTGD">
+          <property name="text">
+           <string> Flag_JTGD </string>
+          </property>
+         </widget>
+        </item>
+        <item row="43" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_JTGD">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_JTGD</string>
+          </property>
+         </widget>
+        </item>
+        <item row="44" column="0">
+         <widget class="QLabel" name="Flag_JTGR">
+          <property name="text">
+           <string> Flag_JTGR </string>
+          </property>
+         </widget>
+        </item>
+        <item row="44" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_JTGR">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_JTGR</string>
+          </property>
+         </widget>
+        </item>
+        <item row="45" column="0">
+         <widget class="QLabel" name="Flag_REF">
+          <property name="text">
+           <string> Flag_REF </string>
+          </property>
+         </widget>
+        </item>
+        <item row="45" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_REF">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_REF</string>
+          </property>
+         </widget>
+        </item>
+        <item row="46" column="0">
+         <widget class="QLabel" name="Flag_VccpDdr">
+          <property name="text">
+           <string> Flag_VccpDdr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="46" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_VccpDdr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_VccpDdr</string>
+          </property>
+         </widget>
+        </item>
+        <item row="47" column="0">
+         <widget class="QLabel" name="Flag_VccpAux">
+          <property name="text">
+           <string> Flag_VccpAux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="47" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_VccpAux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_VccpAux</string>
+          </property>
+         </widget>
+        </item>
+        <item row="48" column="0">
+         <widget class="QLabel" name="Flag_VccpInt">
+          <property name="text">
+           <string> Flag_VccpInt </string>
+          </property>
+         </widget>
+        </item>
+        <item row="48" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_VccpInt">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_VccpInt</string>
+          </property>
+         </widget>
+        </item>
+        <item row="49" column="0">
+         <widget class="QLabel" name="Flag_VccBram">
+          <property name="text">
+           <string> Flag_VccBram </string>
+          </property>
+         </widget>
+        </item>
+        <item row="49" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_VccBram">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_VccBram</string>
+          </property>
+         </widget>
+        </item>
+        <item row="50" column="0">
+         <widget class="QLabel" name="Flag_VccAux">
+          <property name="text">
+           <string> Flag_VccAux </string>
+          </property>
+         </widget>
+        </item>
+        <item row="50" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_VccAux">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_VccAux</string>
+          </property>
+         </widget>
+        </item>
+        <item row="51" column="0">
+         <widget class="QLabel" name="Flag_VccInt">
+          <property name="text">
+           <string> Flag_VccInt </string>
+          </property>
+         </widget>
+        </item>
+        <item row="51" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_VccInt">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_VccInt</string>
+          </property>
+         </widget>
+        </item>
+        <item row="52" column="0">
+         <widget class="QLabel" name="Flag_Temperature">
+          <property name="text">
+           <string> Flag_Temperature </string>
+          </property>
+         </widget>
+        </item>
+        <item row="52" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Flag_Temperature">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flag_Temperature</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+

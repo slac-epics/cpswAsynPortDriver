@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Adc0_t0">
+          <property name="text">
+           <string> Adc0_t0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc0_t0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc0_t0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="Adc0_t1">
+          <property name="text">
+           <string> Adc0_t1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc0_t1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc0_t1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="Adc0_t2">
+          <property name="text">
+           <string> Adc0_t2 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc0_t2">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc0_t2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="Adc0_t3">
+          <property name="text">
+           <string> Adc0_t3 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc0_t3">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc0_t3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="Adc1_t0">
+          <property name="text">
+           <string> Adc1_t0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc1_t0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc1_t0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="Adc1_t1">
+          <property name="text">
+           <string> Adc1_t1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc1_t1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc1_t1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="Adc1_t2">
+          <property name="text">
+           <string> Adc1_t2 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc1_t2">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc1_t2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="Adc1_t3">
+          <property name="text">
+           <string> Adc1_t3 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc1_t3">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc1_t3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="Adc2_t0">
+          <property name="text">
+           <string> Adc2_t0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc2_t0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc2_t0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="Adc2_t1">
+          <property name="text">
+           <string> Adc2_t1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc2_t1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc2_t1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="Adc2_t2">
+          <property name="text">
+           <string> Adc2_t2 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc2_t2">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc2_t2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="Adc2_t3">
+          <property name="text">
+           <string> Adc2_t3 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc2_t3">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc2_t3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="Adc3_t0">
+          <property name="text">
+           <string> Adc3_t0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc3_t0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc3_t0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="Adc3_t1">
+          <property name="text">
+           <string> Adc3_t1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc3_t1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc3_t1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="Adc3_t2">
+          <property name="text">
+           <string> Adc3_t2 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc3_t2">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc3_t2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="Adc3_t3">
+          <property name="text">
+           <string> Adc3_t3 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Adc3_t3">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Adc3_t3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="Dac0_t0">
+          <property name="text">
+           <string> Dac0_t0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Dac0_t0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Dac0_t0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <widget class="QLabel" name="Dac0_t1">
+          <property name="text">
+           <string> Dac0_t1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Dac0_t1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Dac0_t1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QLabel" name="Dac0_t2">
+          <property name="text">
+           <string> Dac0_t2 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Dac0_t2">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Dac0_t2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="Dac0_t3">
+          <property name="text">
+           <string> Dac0_t3 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Dac0_t3">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Dac0_t3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="Dac1_t0">
+          <property name="text">
+           <string> Dac1_t0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Dac1_t0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Dac1_t0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="Dac1_t1">
+          <property name="text">
+           <string> Dac1_t1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Dac1_t1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Dac1_t1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QLabel" name="Dac1_t2">
+          <property name="text">
+           <string> Dac1_t2 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Dac1_t2">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Dac1_t2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="0">
+         <widget class="QLabel" name="Dac1_t3">
+          <property name="text">
+           <string> Dac1_t3 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Dac1_t3">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Dac1_t3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="0">
+         <widget class="QLabel" name="DacVco">
+          <property name="text">
+           <string> DacVco </string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):DacVco">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):DacVco</string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="0">
+         <widget class="QLabel" name="AmcClkFreq">
+          <property name="text">
+           <string> AmcClkFreq </string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):AmcClkFreq">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):AmcClkFreq</string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="0">
+         <widget class="QLabel" name="LmkStatus">
+          <property name="text">
+           <string> LmkStatus </string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):LmkStatus">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):LmkStatus</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="26" column="0">
+         <widget class="QLabel" name="LmkClkSel">
+          <property name="text">
+           <string> LmkClkSel </string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):LmkClkSel">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):LmkClkSel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="0">
+         <widget class="QLabel" name="LmkRst">
+          <property name="text">
+           <string> LmkRst </string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):LmkRst">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):LmkRst</string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="0">
+         <widget class="QLabel" name="lmkSync">
+          <property name="text">
+           <string> lmkSync </string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):lmkSync">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):lmkSync</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+
