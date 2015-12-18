@@ -1,6 +1,0 @@
-include "base.dbd"
-include "asyn.dbd"
-include "cpswAsynPortDriverInclude.dbd"
-include "AxiVersionDriverSupport.dbd"
-include "AxiXadcDriverSupport.dbd"
-registrar(appRegister)
