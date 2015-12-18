@@ -1,5 +1,4 @@
 include "base.dbd"
 include "asyn.dbd"
-include "cpswAsynPortDriverInclude.dbd"
 registrar(AmcGenericAdcDacCtrlRegister)
 

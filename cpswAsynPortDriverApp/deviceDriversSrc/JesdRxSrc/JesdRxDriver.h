@@ -101,7 +101,7 @@
 #define L6_DecErrString "L6_DecErr"
 
 /* Commands */
-#define CClearErrors String "C_ClearErrors "
+#define CClearErrorsString "C_ClearErrors"
 #define CRestartGTsString "C_RestartGTs"
 
 
@@ -210,7 +210,7 @@ protected:
     int p_L6_DisparityErr;
     int p_L6_DecErr;
 /* Commands */
-    int p_C_ClearErrors ;
+    int p_C_ClearErrors;
     int p_C_RestartGTs;
     #define LAST_JESDRX_PARAM p_C_RestartGTs
 
@@ -218,7 +218,7 @@ protected:
     #define NUM_JESDRX_PARAMS (&LAST_JESDRX_PARAM - &FIRST_JESDRX_PARAM + 1)
 
 private:
-    asynStatus ClearErrors ();
+    asynStatus ClearErrors();
     asynStatus RestartGTs();
 
 };

@@ -117,7 +117,7 @@ JesdRxDriver::JesdRxDriver(const char *portName, Path p, int nelms)
    createParam(L6_DecErrString, asynParamInt32, &p_L6_DecErr, IScalVal::create);
 
 /* Commands */
-   asynPortDriver::createParam(CClearErrors String, asynParamInt32, &p_C_ClearErrors );
+   asynPortDriver::createParam(CClearErrorsString, asynParamInt32, &p_C_ClearErrors);
    asynPortDriver::createParam(CRestartGTsString, asynParamInt32, &p_C_RestartGTs);
 }
 
@@ -127,8 +127,8 @@ asynStatus JesdRxDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     int addr=0;
     asynStatus status = asynSuccess;
     const char *paramName;
-    if( function == p_C_ClearErrors  ) {
-        ClearErrors ();
+    if( function == p_C_ClearErrors ) {
+        ClearErrors();
     }
     else if( function == p_C_RestartGTs ) {
         RestartGTs();
@@ -141,11 +141,11 @@ asynStatus JesdRxDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 }
 
 
-asynStatus JesdRxDriver::ClearErrors ()
+asynStatus JesdRxDriver::ClearErrors()
 {
    asynStatus status = asynSuccess;
 /* Fill in command logic here */
-   printf("Command ClearErrors  not yet implemented!\n");
+   printf("Command ClearErrors not yet implemented!\n");
 
    return status;
 }

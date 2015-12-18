@@ -99,7 +99,7 @@ file testAsynPortDriverOut.template
            { L2_Threshold_Low , JesdRx }
            { L2_Threshold_High , JesdRx }
 #commands
-           { C_ClearErrors , JesdRx }
+           { C_ClearErrors, JesdRx }
            { C_RestartGTs, JesdRx }
 }
 file testAsynPortWaveform.template
