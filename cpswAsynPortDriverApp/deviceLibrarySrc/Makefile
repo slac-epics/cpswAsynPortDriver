@@ -15,13 +15,16 @@ LIBRARY_IOC += DeviceLibrary
 #DBD += DeviceLibrary.dbd
 
 # The following are compiled and added to the Support library
-#DeviceLibrary_SRCS += device_library.cc AxiAd5780.cc  AxiCommon.cc  AxiLtc2270.cc  AxiMicronP30.cc  AxiVersion.cc  AxiXadc.cc PrbsTx.cc TenGigEthReg.cc
-DeviceLibrary_SRCS += $(wildcard ../*.cc)
+DeviceLibrary_SRCS += Adc16Dx370.cc            AxiAd5780.cc  AxiLtc2270.cc    AxiVersion.cc  Dac38J84.cc  JesdTx.cc    PrbsTx.cc        device_library.cc 
+DeviceLibrary_SRCS += AmcGenericAdcDacCtrl.cc  AxiCommon.cc  AxiMicronP30.cc  AxiXadc.cc     JesdRx.cc    Lmk04828.cc  TenGigEthReg.cc 
+#DeviceLibrary_SRCS = $(wildcard ../*.cc)
 DeviceLibrary_LIBS += cpsw
 DeviceLibrary_LIBS += $(EPICS_BASE_IOC_LIBS)
 
-#INC += device_library.h AxiAd5780.h  AxiCommon.h  AxiLtc2270.h  AxiMicronP30.h  AxiVersion.h  AxiXadc.h PrbsTx.h TenGigEthReg.h
-INC += $(wildcard ../*.h)
+INC += Adc16Dx370.h  AmcGenericAdcDacCtrl.h  AxiAd5780.h  AxiCommon.h  AxiLtc2270.h  AxiMicronP30.h  AxiVersion.h  AxiXadc.h  
+INC += Dac38J84.h  JesdRx.h  JesdTx.h  Lmk04828.h  PrbsTx.h  TenGigEthReg.h  device_library.h
+
+#INC += $(wildcard ../*.h)
 
 USER_INCLUDES += ../../frameworkSrc
 USER_INCLUDES += ../frameworkSrc
