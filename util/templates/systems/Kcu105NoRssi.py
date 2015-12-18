@@ -18,7 +18,7 @@ os.mkdir('Kcu105NoRssi/Kcu105NoRssiSrc')
 os.mkdir('Kcu105NoRssi/Db')
 os.mkdir('Kcu105NoRssi/ui')
 os.mkdir('Kcu105NoRssi/iocBoot')
-os.mkdir('Kcu105NoRssi/iocBoot/Kcu105NoRssi')
+os.mkdir('Kcu105NoRssi/iocBoot/iocKcu105NoRssi')
 
 #device library
 
@@ -27,15 +27,15 @@ f=open('Kcu105NoRssi/Kcu105NoRssiSrc/Makefile', 'w')
 print(Template( file='../systemTemplate/Makefile.System.tmpl', searchList = [d] ), file=f)
 f.close()
 
-f=open('Kcu105NoRssi/Kcu105NoRssiSrc/Kcu105NoRssiDriver.cpp', 'w')
+f=open('Kcu105NoRssi/Kcu105NoRssiSrc/Kcu105NoRssi.cpp', 'w')
 print(Template( file='../systemTemplate/templateSystem.cpp.tmpl', searchList = [d] ), file=f)
 f.close()
 
-f=open('Kcu105NoRssi/Kcu105NoRssiSrc/Kcu105NoRssiDriver.h', 'w')
+f=open('Kcu105NoRssi/Kcu105NoRssiSrc/Kcu105NoRssi.h', 'w')
 print(Template( file='../systemTemplate/templateSystem.h.tmpl', searchList = [d] ), file=f)
 f.close()
 
-f=open('Kcu105NoRssi/Kcu105NoRssiSrc/Kcu105NoRssiDriverSupportInclude.dbd', 'w')
+f=open('Kcu105NoRssi/Kcu105NoRssiSrc/Kcu105NoRssiSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
@@ -49,6 +49,10 @@ print(Template( file='../systemTemplate/templateSystem.ui.tmpl', searchList = [d
 f.close()
 
 #st.cmd
-f=open('Kcu105NoRssi/iocBoot/Kcu105NoRssi/st.cmd', 'w')
+f=open('Kcu105NoRssi/iocBoot/iocKcu105NoRssi/st.cmd', 'w')
 print(Template( file='../systemTemplate/st.cmd.tmpl', searchList = [d] ), file=f)
+f.close()
+
+f=open('Kcu105NoRssi/iocBoot/iocKcu105NoRssi/Makefile', 'w')
+print(Template( file='../systemTemplate/iocBoot.Makefile.tmpl', searchList = [d] ), file=f)
 f.close()

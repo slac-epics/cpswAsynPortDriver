@@ -1,4 +1,4 @@
-TOP=../..
+TOP=../../..
 
 include \$(TOP)/configure/CONFIG
 \#----------------------------------------
@@ -21,11 +21,6 @@ ${name}_LIBS += DeviceLibrary
 ${name}_LIBS += cpswAsynPortDriverSupport
 ${name}_LIBS += asyn
 ${name}_LIBS += \$(EPICS_BASE_IOC_LIBS)
-
-USER_INCLUDES += ../../frameworkSrc
-USER_INCLUDES += ../../src
-USER_INCLUDES += ../src
-USER_INCLUDES += ../../deviceLibrarySrc
 
 include \$(TOP)/configure/RULES
 \#----------------------------------------

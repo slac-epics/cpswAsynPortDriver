@@ -460,7 +460,7 @@ d = { 'name': "JesdRx",
                     'size'    : "4",
                     'lsBit'   : "14",
                     'type'    : "Status" }],
-     'commands': [{ 'name'   : "ClearErrors "},
+     'commands': [{ 'name'   : "ClearErrors"},
                   { 'name'   : "RestartGTs" }]
    }
 

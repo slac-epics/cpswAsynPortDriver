@@ -9,11 +9,7 @@ include \$(TOP)/configure/CONFIG
 \# Build an IOC support library
 
 LIBRARY_IOC += ${name}
-
-\# motorRecord.h will be created from motorRecord.dbd
-\# install devMotorSoft.dbd into <top>/dbd
 DBD += ${name}Support.dbd
-
 \# The following are compiled and added to the Support library
 ${name}_SRCS += ${name}.cc 
 ${name}_LIBS += cpsw
@@ -26,6 +22,7 @@ USER_INCLUDES += ../../frameworkSrc
 USER_INCLUDES += ../frameworkSrc
 
 PROD_IOC += ${name}App
+DBD += ${name}App.dbd
 ${name}App_DBD += base.dbd asyn.dbd
 ${name}App_DBD += ${name}Support.dbd
 #for $p in $peripherals
