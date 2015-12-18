@@ -1,14 +1,3 @@
-#include <cpsw_mmio_dev.h>
-#include <string.h>
-#include <stdio.h>
-#include <inttypes.h>
-#include <string>
-#include <sstream>
-#include <iomanip>
-
-#include <cpsw_api_user.h>
-#include <cpsw_api_builder.h>
-
 #include "JesdRx.h"
 
 #define addrSize 4

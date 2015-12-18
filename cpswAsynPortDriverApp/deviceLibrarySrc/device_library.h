@@ -18,24 +18,4 @@
 #include <JesdRx.h>
 #include <Lmk04828.h>
 
-class   IrootDev;
-typedef shared_ptr<IrootDev> rootDev;
-
-class CrootDevImpl;
-typedef shared_ptr<CrootDevImpl> rootDevImpl;
-
-
-class IrootDev : public virtual IDev {
-private:
-        static rootDev m_instance;
-public:
-	static rootDev Instance();
-};
-
-class CrootDevImpl : public CDevImpl, public virtual IrootDev {
-public:
-        CrootDevImpl(FKey);
-};
-
-
 #endif
