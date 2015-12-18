@@ -11,6 +11,12 @@
 #include <AxiMicronP30.h>
 #include <PrbsTx.h>
 #include <TenGigEthReg.h>
+#include <Adc16Dx370.h>
+#include <AmcGenericAdcDacCtrl.h>
+#include <Dac38J84.h>
+#include <JesdTx.h>
+#include <JesdRx.h>
+#include <Lmk04828.h>
 
 class   IrootDev;
 typedef shared_ptr<IrootDev> rootDev;
