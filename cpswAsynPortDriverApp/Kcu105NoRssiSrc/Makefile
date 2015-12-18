@@ -9,11 +9,7 @@ include $(TOP)/configure/CONFIG
 # Build an IOC support library
 
 LIBRARY_IOC += Kcu105NoRssi
-
-# motorRecord.h will be created from motorRecord.dbd
-# install devMotorSoft.dbd into <top>/dbd
 DBD += Kcu105NoRssiSupport.dbd
-
 # The following are compiled and added to the Support library
 Kcu105NoRssi_SRCS += Kcu105NoRssi.cc 
 Kcu105NoRssi_LIBS += cpsw
@@ -26,6 +22,7 @@ USER_INCLUDES += ../../frameworkSrc
 USER_INCLUDES += ../frameworkSrc
 
 PROD_IOC += Kcu105NoRssiApp
+DBD += Kcu105NoRssiApp.dbd
 Kcu105NoRssiApp_DBD += base.dbd asyn.dbd
 Kcu105NoRssiApp_DBD += Kcu105NoRssiSupport.dbd
 Kcu105NoRssiApp_DBD += AxiVersionDriverSupport.dbd
