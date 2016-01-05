@@ -33,7 +33,7 @@ AxiVersionDriver::AxiVersionDriver(const char *portName, Path p, int nelms)
    createParam(FpgaReloadAddressString, asynParamInt32, &p_FpgaReloadAddress, IScalVal::create);
    createParam(CounterString, asynParamInt32, &p_Counter, IScalVal::create);
    createParam(FpgaReloadHaltString, asynParamInt32, &p_FpgaReloadHalt, IScalVal::create);
-   createParam(UserConstantsString, asynParamInt32, &p_UserConstants, IScalVal::create);
+   createParam(UserConstantsString, asynParamInt32Array, &p_UserConstants, IScalVal::create);
    createParam(BuildStampString, asynParamOctet, &p_BuildStamp, IScalVal::create);
 
 /* Commands */
