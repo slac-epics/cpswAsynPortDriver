@@ -28,9 +28,13 @@ ${name}Driver::${name}Driver(const char *portName, Path p, int nelms)
    createParam(${p.name}String, asynParamOctet, &p_${p.name}, IScalVal::create);
    #else
    createParam(${p.name}String, asynParamInt32, &p_${p.name}, IScalVal::create);
-#end if
+   #end if
 #else
+   #if $p.has_key('nelms')
+   createParam(${p.name}String, asynParamInt32Array, &p_${p.name}, IScalVal::create);
+   #else
    createParam(${p.name}String, asynParamInt32, &p_${p.name}, IScalVal::create);
+   #end if
 #end if
 #end for
 #if $varExists('commands')
