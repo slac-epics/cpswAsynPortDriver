@@ -48,12 +48,12 @@ file testAsynPortDriverOut.template
 }
 file testAsynPortWaveform.template
 {
-    pattern {NAME, driver, DTYP, FTVL, NELMS}
+    pattern {NAME, driver, DTYP, FTVL, NELM}
 #for $p in $registers
 #if $p.has_key('dtype')
   #if $p.dtype == "string"
     #if $p.type == "Status"
-           { ${p.name} , ${name}, asynOctet, CHAR, ${p.nelms} }
+           { ${p.name} , ${name}, asynOctetRead, CHAR, ${p.nelms} }
     #end if
   #else
            { ${p.name} , ${name}, asynInt32ArrayIn, ULONG, ${p.nelms} }
