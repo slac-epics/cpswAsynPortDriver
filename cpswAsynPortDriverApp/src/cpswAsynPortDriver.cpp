@@ -1,15 +1,7 @@
 /*
  * cpswAsynDriver.cpp
  * 
- * Asyn driver that inherits from the asynPortDriver class to demonstrate its use.
- * It simulates a digital scope looking at a 1kHz 1000-point noisy sine wave.  Controls are
- * provided for time/division, volts/division, volt offset, trigger delay, noise amplitude, update time,
- * and run/stop.
- * Readbacks are provides for the waveform data, min, max and mean values.
- *
- * Author: Mark Rivers
- *
- * Created Feb. 5, 2009
+ * CPSW asyn driver base class that inherits from the asynPortDriver
  */
 
 #include <stdlib.h>
@@ -45,7 +37,11 @@ static void asynPollerC(void *drvPvt);
 /** Constructor for the cpswAsynDriver class.
   * Calls constructor for the asynPortDriver base class.
   * \param[in] portName The name of the asyn port driver to be created.
-  * \param[in] maxPoints The maximum  number of points in the volt and time arrays */
+  * \param[in] path The path to the peripherial as built by the builder api
+  * \param[in] nelms The number of elements of this device (max addr)
+  * \paarm[in] nEntries The number of asyn params to be created for each device
+  *
+  * */
 cpswAsynDriver::cpswAsynDriver(const char *portName, Path p, int nelms, int nEntries) 
    : asynPortDriver(portName, 
                     nelms, /* maxAddr */ 
@@ -61,20 +57,14 @@ cpswAsynDriver::cpswAsynDriver(const char *portName, Path p, int nelms, int nEnt
     asynStatus status;
     int i;
     const char *functionName = "cpswAsynDriver";
-    //ScalVals.resize(nEntries, (ScalVal) NULL);
-    ScalVals.reserve(nEntries);
 
-    if (ScalVals[0] == NULL)
-	printf("ScalVals initialized NULL\n");
-    else
-	printf("ScalVals NOT initialized NULL\n");
+    ScalVals.reserve(nEntries);
 
     pollEventId_ = epicsEventMustCreate(epicsEventEmpty);
     path_ = p;
 }
 
 /** Called when asyn clients call pasynInt32->write().
-  * This function sends a signal to the cyclicTask thread if the value of P_Run has changed.
   * For all parameters it sets the value in the parameter library and calls any registered callbacks..
   * \param[in] pasynUser pasynUser structure that encodes the reason and address.
   * \param[in] value Value to write. */
@@ -118,12 +108,9 @@ asynStatus cpswAsynDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     return status;
 }
 
-/** Called when asyn clients call pasynFloat64Array->read().
-  * Returns the value of the P_Waveform or P_TimeBase arrays.  
+/** Called when asyn clients call pasynInt32->read().
   * \param[in] pasynUser pasynUser structure that encodes the reason and address.
-  * \param[in] value Pointer to the array to read.
-  * \param[in] nElements Number of elements to read.
-  * \param[out] nIn Number of elements actually read. */
+  * \param[in] value Pointer to the value to read. */
 asynStatus cpswAsynDriver::readInt32(asynUser *pasynUser, epicsInt32 *value)
 {
     int function = pasynUser->reason;
@@ -159,6 +146,12 @@ asynStatus cpswAsynDriver::readInt32(asynUser *pasynUser, epicsInt32 *value)
     return status;
 }
 
+/** Called when asyn clients call pasynOctet->read().
+  * \param[in] pasynUser pasynUser structure that encodes the reason and address.
+  * \param[in] value Pointer to the value to read. 
+  * \param[in] maxChars The size of the buffer
+  * \param[in] nActual The number of characters actually read
+  * \param[in] eomReason End of message reason, why the read was terminated */
 asynStatus cpswAsynDriver::readOctet(asynUser *pasynUser, char *value, size_t maxChars,
                                         size_t *nActual, int *eomReason)
 {
@@ -286,133 +279,10 @@ void cpswAsynDriver::asynPoller()
   }
 }
 
-
-/** Build a file name from component parts.
-  * \param[in] maxChars  The size of the fullFileName string.
-  * \param[out] fullFileName The constructed file name including the file path.
-  * 
-  * This is a convenience function that constructs a complete file name
-  * from the NDFilePath, NDFileName, NDFileNumber, and
-  * NDFileTemplate parameters. If NDAutoIncrement is true then it increments the
-  * NDFileNumber after creating the file name.
-  */
-int cpswAsynDriver::createFileName(int maxChars, char *fullFileName)
-{
-    /* Formats a complete file name from the components defined in NDStdDriverParams */
-    int status = asynSuccess;
-    char filePath[MAX_FILENAME_LEN];
-    char fileName[MAX_FILENAME_LEN];
-    char fileTemplate[MAX_FILENAME_LEN];
-    int fileNumber;
-    int autoIncrement;
-    int len;
-    
-    this->checkPath();
-    status |= getStringParam(NDFilePath, sizeof(filePath), filePath);
-    status |= getStringParam(NDFileName, sizeof(fileName), fileName); 
-    status |= getStringParam(NDFileTemplate, sizeof(fileTemplate), fileTemplate); 
-    status |= getIntegerParam(NDFileNumber, &fileNumber);
-    status |= getIntegerParam(NDAutoIncrement, &autoIncrement);
-    if (status) return(status);
-    len = epicsSnprintf(fullFileName, maxChars, fileTemplate, 
-                        filePath, fileName, fileNumber);
-    if (len < 0) {
-        status |= asynError;
-        return(status);
-    }
-    if (autoIncrement) {
-        fileNumber++;
-        status |= setIntegerParam(NDFileNumber, fileNumber);
-    }
-    return(status);   
-}
-
-/** Checks whether the directory specified NDFilePath parameter exists.
-  * 
-  * This is a convenience function that determinesthe directory specified NDFilePath parameter exists.
-  * It sets the value of NDFilePathExists to 0 (does not exist) or 1 (exists).  
-  * It also adds a trailing '/' character to the path if one is not present.
-  * Returns a error status if the directory does not exist.
-  */
-int cpswAsynDriver::checkPath()
-{
-    /* Formats a complete file name from the components defined in NDStdDriverParams */
-    int status = asynError;
-    char filePath[MAX_FILENAME_LEN];
-    int hasTerminator=0;
-    struct stat buff;
-    size_t len;
-    int isDir=0;
-    int pathExists=0;
-    
-    status = getStringParam(NDFilePath, sizeof(filePath), filePath);
-    len = strlen(filePath);
-    if (len == 0) return(asynSuccess);
-    /* If the path contains a trailing '/' or '\' remove it, because Windows won't find
-     * the directory if it has that trailing character */
-    if ((filePath[len-1] == '/') || (filePath[len-1] == '\\')) {
-        filePath[len-1] = 0;
-        len--;
-        hasTerminator=1;
-    }
-    status = stat(filePath, &buff);
-    if (!status) isDir = (S_IFDIR & buff.st_mode);
-    if (!status && isDir) {
-        pathExists = 1;
-        status = asynSuccess;
-    }
-    /* If the path did not have a trailing terminator then add it if there is room */
-    if (!hasTerminator) {
-        if (len < MAX_FILENAME_LEN-2) strcat(filePath, "/");
-        setStringParam(NDFilePath, filePath);
-    }
-    setIntegerParam(NDFilePathExists, pathExists);
-    return(status);   
-}
-/** Build a file name from component parts.
-  * \param[in] maxChars  The size of the fullFileName string.
-  * \param[out] filePath The file path.
-  * \param[out] fileName The constructed file name without file file path.
-  * 
-  * This is a convenience function that constructs a file path and file name
-  * from the NDFilePath, NDFileName, NDFileNumber, and
-  * NDFileTemplate parameters. If NDAutoIncrement is true then it increments the
-  * NDFileNumber after creating the file name.
-  */
-int cpswAsynDriver::createFileName(int maxChars, char *filePath, char *fileName)
-{
-    /* Formats a complete file name from the components defined in NDStdDriverParams */
-    int status = asynSuccess;
-    char fileTemplate[MAX_FILENAME_LEN];
-    char name[MAX_FILENAME_LEN];
-    int fileNumber;
-    int autoIncrement;
-    int len;
-    
-    this->checkPath();
-    status |= getStringParam(NDFilePath, maxChars, filePath); 
-    status |= getStringParam(NDFileName, sizeof(name), name); 
-    status |= getStringParam(NDFileTemplate, sizeof(fileTemplate), fileTemplate); 
-    status |= getIntegerParam(NDFileNumber, &fileNumber);
-    status |= getIntegerParam(NDAutoIncrement, &autoIncrement);
-    if (status) return(status);
-    len = epicsSnprintf(fileName, maxChars, fileTemplate, 
-                        name, fileNumber);
-    if (len < 0) {
-        status |= asynError;
-        return(status);
-    }
-    if (autoIncrement) {
-        fileNumber++;
-        status |= setIntegerParam(NDFileNumber, fileNumber);
-    }
-    return(status);   
-}
-
-/** Get a scalVal and syn to param asyn param library
+/** Get a scalVal and set the asyn param in the param library
  *
- * \param[in] function The integer function from asyn param library
- * \param[out] value   The int32 value returned from ScalVal
+ * \param[in]  function The integer function from asyn param library
+ * \param[out] value    The int32 value returned from ScalVal
  *
  * */
 asynStatus cpswAsynDriver::scalValToIntegerParam(int function, epicsInt32 *value)
@@ -428,6 +298,29 @@ asynStatus cpswAsynDriver::scalValToIntegerParam(int function, epicsInt32 *value
     *value = (epicsInt32) u32;
     setIntegerParam(0, function, *value);
     callParamCallbacks();
+    return status;
+}
+
+/** Get a scalVal and set the asyn param in the param library
+ *
+ * \param[in]  function The integer function from asyn param library
+ * \param[out] value    The int32 value returned from the param library
+ */ 
+asynStatus cpswAsynDriver::integerParamToScalVal(int function, epicsInt32 *value)
+{
+    asynStatus status = asynSuccess;
+    uint32_t u32;
+    status = getIntegerParam(0, function, value);
+    if (status != asynSuccess)
+        goto bail;
+    u32 = (uint32_t) *value;
+    try {
+        ScalVals[function]->setVal( &u32, 1);
+    }
+    catch(CPSWError &e) {
+        return asynError;
+    }
+bail:
     return status;
 }
 
