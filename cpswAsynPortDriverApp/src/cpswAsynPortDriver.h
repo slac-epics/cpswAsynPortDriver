@@ -29,6 +29,10 @@ public:
     virtual asynStatus readInt32(asynUser *pasynUser, epicsInt32 *value);
     virtual asynStatus readOctet(asynUser *pasynUser, char *value, size_t maxChars,
                                         size_t *nActual, int *eomReason);
+    virtual asynStatus readInt32Array(asynUser *pasynUser, epicsInt32 *value,
+                                        size_t nElements, size_t *nIn);
+    virtual asynStatus writeInt32Array(asynUser *pasynUser, epicsInt32 *value,
+                                        size_t nElements);
 
     virtual asynStatus createParam(          const char *name, asynParamType type, int *index, ScalVal(*create)(Path p));
     virtual asynStatus createParam(int list, const char *name, asynParamType type, int *index, ScalVal(*create)(Path p));

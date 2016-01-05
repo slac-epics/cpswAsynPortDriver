@@ -46,8 +46,8 @@ cpswAsynDriver::cpswAsynDriver(const char *portName, Path p, int nelms, int nEnt
    : asynPortDriver(portName, 
                     nelms, /* maxAddr */ 
                     nEntries,
-                    asynInt32Mask | asynFloat64Mask | asynOctetMask | asynDrvUserMask, /* Interface mask */
-                    asynInt32Mask | asynFloat64Mask | asynOctetMask | asynEnumMask,  /* Interrupt mask */
+                    asynInt32Mask | asynFloat64Mask | asynOctetMask | asynDrvUserMask | asynInt32ArrayMask, /* Interface mask */
+                    asynInt32Mask | asynFloat64Mask | asynOctetMask | asynEnumMask | asynInt32ArrayMask,  /* Interrupt mask */
                     1, /* asynFlags.  This driver does block and it is not multi-device, so flag is 1 */
                     1, /* Autoconnect */
                     0, /* Default priority */
@@ -192,6 +192,78 @@ asynStatus cpswAsynDriver::readOctet(asynUser *pasynUser, char *value, size_t ma
               driverName, functionName, function);
     return status;
 }
+
+/* Called when asyn clients call pasynInt32Array->read().
+ * The base class implementation simply prints an error message.  
+ * Derived classes may reimplement this function if required.
+ * \param[in] pasynUser pasynUser structure that encodes the reason and address.
+ * \param[in] value Pointer to the array to read.
+ * \param[in] nElements Number of elements to read.
+ * \param[out] nIn Number of elements actually read. */
+
+asynStatus cpswAsynDriver::readInt32Array(asynUser *pasynUser, epicsInt32 *value, size_t nElements, size_t *nIn)
+{
+    int function = pasynUser->reason;
+    int addr = 0;
+    asynStatus status = asynSuccess;
+    epicsTimeStamp timeStamp; getTimeStamp(&timeStamp);
+    const char *functionName = "readInt32Array";
+    const char *paramName;
+//    status = getAddress(pasynUser, &addr); if (status != asynSuccess) return(status);
+    getAddress(pasynUser, &addr);
+    /* Fetch the parameter string name for possible use in debugging */
+    getParamName(function, &paramName);
+
+    try {
+        if (ScalVals[function] != NULL) {
+            ScalVals[function]->getVal( (uint32_t *) value, nElements );
+        }
+    }
+    catch (CPSWError &e) {
+        return asynError;
+    }
+
+    /* Do callbacks so higher layers see any changes */
+    status = (asynStatus) callParamCallbacks();
+    pasynUser->timestamp = timeStamp;
+
+    if (status)
+        epicsSnprintf(pasynUser->errorMessage, pasynUser->errorMessageSize,
+                  "%s:%s: status=%d, function=%d",
+                  driverName, functionName, status, function);
+    else
+        asynPrint(pasynUser, ASYN_TRACEIO_DRIVER,
+              "%s:%s: function=%d\n",
+              driverName, functionName, function);
+
+    return status;
+}
+
+
+asynStatus cpswAsynDriver::writeInt32Array(asynUser *pasynUser, epicsInt32 *value, size_t nElements)
+{
+    int function = pasynUser->reason;
+    int addr = 0;
+    asynStatus status = asynSuccess;
+    epicsTimeStamp timeStamp; getTimeStamp(&timeStamp);
+    const char *functionName = "readInt32Array";
+    const char *paramName;
+//    status = getAddress(pasynUser, &addr); if (status != asynSuccess) return(status);
+    getAddress(pasynUser, &addr);
+    /* Fetch the parameter string name for possible use in debugging */
+
+    if (status)
+        epicsSnprintf(pasynUser->errorMessage, pasynUser->errorMessageSize,
+                  "%s:%s: status=%d, function=%d",
+                  driverName, functionName, status, function);
+    else
+        asynPrint(pasynUser, ASYN_TRACEIO_DRIVER,
+              "%s:%s: function=%d\n",
+              driverName, functionName, function);
+
+    return status;
+}
+
  
 asynStatus cpswAsynDriver::createParam(          const char *name, asynParamType type, int *index, ScalVal(*create)(Path p))
 {
