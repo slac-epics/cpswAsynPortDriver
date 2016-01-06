@@ -1,0 +1,66 @@
+#for $p in $registers
+  #if $p.has_key('nelms')
+record(waveform, "\$(DEVICE):${p.name}")
+{
+    field(PINI, "YES")
+    #if $p.type == "Status"
+      #if $p.has_key('dtype')
+        #if $p.dtype == "string"
+    field(DTYP, "asynOctetRead")
+    field(FTVL, "CHAR")
+        #end if
+      #else
+    field(DTYP, "asynInt32ArrayIn")
+    field(FTVL, "ULONG")
+      #end if
+    #else
+      #if $p.has_key('dtype')
+        #if $p.dtype == "string"
+    field(DTYP, "asynOctetWrite")
+    field(FTVL, "CHAR")
+        #end if
+      #else
+    field(DTYP, "asynInt32ArrayOut")
+    field(FTVL, "ULONG")
+      #end if
+    #end if
+    field(NELM, "${p.nelms}")
+    field(INP,  "@asyn(\$(PORT),0) ${p.name}")
+    field(SCAN, "Passive")
+}
+
+  #else
+    #if $p.type == "Status"
+record(ai, "\$(DEVICE):${p.name}")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn(\$(PORT),0) ${p.name}")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+    #else if $p.type == "Configuration"
+record(ao, "\$(DEVICE):${p.name}")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn(\$(PORT),0) ${p.name}")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+    #end if
+  #end if
+#end for
+
+#if $varExists('commands')
+  #for $c in $commands
+record(ao, "\$(DEVICE):${c.name}")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn(\$(PORT),0) ${c.name}")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+  #end for
+#end if
