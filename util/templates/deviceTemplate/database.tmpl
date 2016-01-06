@@ -54,11 +54,11 @@ record(ao, "\$(DEVICE):${p.name}")
 
 #if $varExists('commands')
   #for $c in $commands
-record(ao, "\$(DEVICE):${c.name}")
+record(ao, "\$(DEVICE):C_${c.name}")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn(\$(PORT),0) ${c.name}")
+    field(OUT,  "@asyn(\$(PORT),0) C_${c.name}")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
