@@ -1,0 +1,106 @@
+record(ao, "$(DEVICE):ConfigStatus")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) ConfigStatus")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):AxiEn")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) AxiEn")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):TxEn")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) TxEn")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):Busy")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Busy")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):Overflow")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Overflow")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):PacketLength")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) PacketLength")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):AxiStreamCfg")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) AxiStreamCfg")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):tDest")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) tDest")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):tId")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) tId")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):DataCount")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) DataCount")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):EventCount")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) EventCount")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):RandomData")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) RandomData")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+
+record(ao, "$(DEVICE):C_OneShot")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) C_OneShot")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+

@@ -1,0 +1,954 @@
+record(ai, "$(DEVICE):ID_DEVICE_TYPE")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) ID_DEVICE_TYPE")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):ID_PROD_UPPER")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) ID_PROD_UPPER")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):ID_PROD_LOWER")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) ID_PROD_LOWER")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):ID_MASKREV")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) ID_MASKREV")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):ID_VNDR_UPPER")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) ID_VNDR_UPPER")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):ID_VNDR_LOWER")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) ID_VNDR_LOWER")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):SYS_REF_MUX")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) SYS_REF_MUX")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):SYNC_EN")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) SYNC_EN")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):SYNC_DIS")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) SYNC_DIS")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0100")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0100")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0101")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0101")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0103")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0103")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0104")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0104")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0105")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0105")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0106")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0106")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0107")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0107")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0108")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0108")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0109")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0109")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x010b")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x010b")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x010c")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x010c")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x010d")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x010d")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x010e")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x010e")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x010f")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x010f")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0110")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0110")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0111")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0111")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0113")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0113")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0114")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0114")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0115")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0115")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0116")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0116")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0117")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0117")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0118")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0118")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0119")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0119")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x011a")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x011a")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x011b")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x011b")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x011c")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x011c")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x011d")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x011d")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x011e")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x011e")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x011f")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x011f")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0120")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0120")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0121")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0121")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0123")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0123")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0124")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0124")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0125")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0125")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0126")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0126")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0127")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0127")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0128")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0128")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0129")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0129")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x012b")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x012b")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x012c")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x012c")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x012d")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x012d")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x012e")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x012e")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x012f")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x012f")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0130")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0130")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0131")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0131")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0133")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0133")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0134")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0134")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0135")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0135")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0136")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0136")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0137")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0137")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0138")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0138")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0139")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0139")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x013a")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x013a")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x013b")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x013b")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x013c")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x013c")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x013d")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x013d")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x013e")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x013e")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x013f")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x013f")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0140")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0140")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0141")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0141")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0142")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0142")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0143")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0143")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0144")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0144")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0145")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0145")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0146")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0146")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0147")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0147")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0148")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0148")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0149")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0149")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x014a")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x014a")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x014b")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x014b")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x014c")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x014c")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x014d")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x014d")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x014e")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x014e")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x014f")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x014f")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0150")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0150")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0151")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0151")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0152")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0152")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0153")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0153")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0154")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0154")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0155")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0155")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0156")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0156")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0157")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0157")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0158")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0158")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0159")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0159")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x015a")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x015a")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x015b")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x015b")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x015c")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x015c")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x015d")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x015d")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x015e")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x015e")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x015f")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x015f")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0160")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0160")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0161")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0161")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0162")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0162")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0163")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0163")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0164")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0164")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0165")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0165")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0166")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0166")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0167")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0167")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0168")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0168")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0169")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0169")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x016a")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x016a")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x016b")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x016b")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x016c")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x016c")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x016d")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x016d")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x016e")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x016e")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0173")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0173")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x0174")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x0174")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):LmkReg0x017c")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkReg0x017c")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+
+record(ao, "$(DEVICE):C_SyncClks")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) C_SyncClks")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):C_writeConfig")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) C_writeConfig")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+
