@@ -15,9 +15,9 @@ AxiVersionCreate("AxiVersion", "root/Kcu105NoRssi" )
 TenGigEthRegCreate("TenGigEthReg", "root/Kcu105NoRssi" )
 PrbsTxCreate("PrbsTx", "root/Kcu105NoRssi" )
 
-dbLoadRecords("db/AxiVersion.db")
-dbLoadRecords("db/TenGigEthReg.db")
-dbLoadRecords("db/PrbsTx.db")
+dbLoadRecords("db/AxiVersion.db", "DEVICE=TEST,PORT=AxiVersion")
+dbLoadRecords("db/TenGigEthReg.db", "DEVICE=TEST,PORT=TenGigEthReg")
+dbLoadRecords("db/PrbsTx.db", "DEVICE=TEST,PORT=PrbsTx")
 
 iocInit()
 
