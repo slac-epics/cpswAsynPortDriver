@@ -185,9 +185,9 @@ f=open('AmcGenericAdcDacCtrl/AmcGenericAdcDacCtrlSrc/AmcGenericAdcDacCtrlDriverS
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
-f=open('AmcGenericAdcDacCtrl/Db/AmcGenericAdcDacCtrl.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+#database.template
+f=open('AmcGenericAdcDacCtrl/Db/AmcGenericAdcDacCtrl.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

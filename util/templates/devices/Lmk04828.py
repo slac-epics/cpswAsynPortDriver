@@ -99,9 +99,9 @@ f=open('Lmk04828/Lmk04828Src/Lmk04828DriverSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
-f=open('Lmk04828/Db/Lmk04828.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+#database.template
+f=open('Lmk04828/Db/Lmk04828.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

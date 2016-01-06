@@ -40,7 +40,6 @@ d = { 'name': "AxiAd5780",
    }
 
 
-
 os.mkdir('AxiAd5780')
 os.mkdir('AxiAd5780/deviceLibrary')
 os.mkdir('AxiAd5780/AxiAd5780Src')
@@ -73,9 +72,9 @@ f=open('AxiAd5780/AxiAd5780Src/AxiAd5780DriverSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
-f=open('AxiAd5780/Db/AxiAd5780.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+#database.template
+f=open('AxiAd5780/Db/AxiAd5780.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

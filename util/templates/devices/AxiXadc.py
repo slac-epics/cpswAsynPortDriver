@@ -199,7 +199,6 @@ d = { 'name': "AxiXadc",
    }
 
 
-
 os.mkdir('AxiXadc')
 os.mkdir('AxiXadc/deviceLibrary')
 os.mkdir('AxiXadc/AxiXadcSrc')
@@ -232,9 +231,9 @@ f=open('AxiXadc/AxiXadcSrc/AxiXadcDriverSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
-f=open('AxiXadc/Db/AxiXadc.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+#database.template
+f=open('AxiXadc/Db/AxiXadc.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

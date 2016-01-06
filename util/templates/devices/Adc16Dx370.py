@@ -128,10 +128,10 @@ f=open('Adc16Dx370/Adc16Dx370Src/Adc16Dx370DriverSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
+#database.template
 os.mkdir('Adc16Dx370/Db')
-f=open('Adc16Dx370/Db/Adc16Dx370.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+f=open('Adc16Dx370/Db/Adc16Dx370.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

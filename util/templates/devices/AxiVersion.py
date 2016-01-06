@@ -52,7 +52,6 @@ d = { 'name': "AxiVersion",
    }
 
 
-
 os.mkdir('AxiVersion')
 os.mkdir('AxiVersion/deviceLibrary')
 os.mkdir('AxiVersion/AxiVersionSrc')
@@ -86,8 +85,8 @@ print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', 
 f.close()
 
 #database substitutions
-f=open('AxiVersion/Db/AxiVersion.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+f=open('AxiVersion/Db/AxiVersion.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

@@ -162,7 +162,6 @@ d = { 'name': "TenGigEthReg",
    }
 
 
-
 os.mkdir('TenGigEthReg')
 os.mkdir('TenGigEthReg/deviceLibrary')
 os.mkdir('TenGigEthReg/TenGigEthRegSrc')
@@ -195,9 +194,9 @@ f=open('TenGigEthReg/TenGigEthRegSrc/TenGigEthRegDriverSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
-f=open('TenGigEthReg/Db/TenGigEthReg.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+#database.template
+f=open('TenGigEthReg/Db/TenGigEthReg.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

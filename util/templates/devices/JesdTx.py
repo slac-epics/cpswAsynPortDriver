@@ -172,7 +172,6 @@ d = { 'name': "JesdTx",
    }
 
 
-
 os.mkdir('JesdTx')
 os.mkdir('JesdTx/deviceLibrary')
 os.mkdir('JesdTx/JesdTxSrc')
@@ -205,9 +204,9 @@ f=open('JesdTx/JesdTxSrc/JesdTxDriverSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
-f=open('JesdTx/Db/JesdTx.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+#database
+f=open('JesdTx/Db/JesdTx.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

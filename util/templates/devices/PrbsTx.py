@@ -55,7 +55,6 @@ d = { 'name': "PrbsTx",
    }
 
 
-
 os.mkdir('PrbsTx')
 os.mkdir('PrbsTx/deviceLibrary')
 os.mkdir('PrbsTx/PrbsTxSrc')
@@ -88,9 +87,9 @@ f=open('PrbsTx/PrbsTxSrc/PrbsTxDriverSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
-f=open('PrbsTx/Db/PrbsTx.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+#database.template
+f=open('PrbsTx/Db/PrbsTx.template', 'w')
+print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui

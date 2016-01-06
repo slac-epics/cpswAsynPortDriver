@@ -124,9 +124,9 @@ f=open('Dac38J84/Dac38J84Src/Dac38J84DriverSupportInclude.dbd', 'w')
 print(Template( file='../deviceTemplate/../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 f.close()
 
-#database substitutions
-f=open('Dac38J84/Db/Dac38J84.substitutions', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+#database.template
+f=open('Dac38J84/Db/Dac38J84.template', 'w')
+print(Template( file='../deviceTemplate/../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 f.close()
 
 #gui
