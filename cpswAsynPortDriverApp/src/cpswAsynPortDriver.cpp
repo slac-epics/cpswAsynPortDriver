@@ -220,7 +220,7 @@ asynStatus cpswAsynDriver::readInt32Array(asynUser *pasynUser, epicsInt32 *value
         }
     }
     catch (CPSWError &e) {
-        return asynError;
+        status = asynError;
     }
 
     /* Do callbacks so higher layers see any changes */
@@ -251,6 +251,19 @@ asynStatus cpswAsynDriver::writeInt32Array(asynUser *pasynUser, epicsInt32 *valu
 //    status = getAddress(pasynUser, &addr); if (status != asynSuccess) return(status);
     getAddress(pasynUser, &addr);
     /* Fetch the parameter string name for possible use in debugging */
+    try {
+        if (ScalVals[function] != NULL) {
+            if (ScalVals[function]->getNelms() == nElements) {
+                ScalVals[function]->setVal( (uint32_t *) value, nElements );
+            }
+            else {
+                status = asynError;
+            }
+        }
+    }
+    catch (CPSWError &e) {
+        status = asynError;
+    }
 
     if (status)
         epicsSnprintf(pasynUser->errorMessage, pasynUser->errorMessageSize,
