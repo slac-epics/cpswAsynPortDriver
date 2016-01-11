@@ -1,7 +1,3 @@
-from __future__ import print_function
-import os
-from Cheetah.Template import Template
-
 d = { 'name': "Dac38J84",
      'registers': [{ 'name'   : "ID_DEVICE_TYPE",
                     'address' : "0x003",
@@ -91,45 +87,3 @@ for i in range(0x100, 0x17D):
                    {'name'    : nme,
                     'address' : addr,
                     'type'    : "Configuration" } )
-
-os.mkdir('Dac38J84')
-os.mkdir('Dac38J84/deviceLibrary')
-os.mkdir('Dac38J84/Dac38J84Src')
-os.mkdir('Dac38J84/Db')
-os.mkdir('Dac38J84/ui')
-
-#device library
-f=open('Dac38J84/deviceLibrary/Dac38J84.cc', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Dac38J84/deviceLibrary/Dac38J84.h', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#asyn driver
-f=open('Dac38J84/Dac38J84Src/Makefile', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Dac38J84/Dac38J84Src/Dac38J84Driver.cpp', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Dac38J84/Dac38J84Src/Dac38J84Driver.h', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Dac38J84/Dac38J84Src/Dac38J84DriverSupportInclude.dbd', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#database.template
-f=open('Dac38J84/Db/Dac38J84.template', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#gui
-f=open('Dac38J84/ui/Dac38J84.ui', 'w')
-print(Template( file='../deviceTemplate/../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
-f.close()

@@ -1,7 +1,3 @@
-from __future__ import print_function
-import os
-from Cheetah.Template import Template
-
 d = { 'name': "Lmk04828",
      'registers': [{ 'name'   : "ID_DEVICE_TYPE",
                     'address' : "0x003",
@@ -66,45 +62,3 @@ for i in range(0x100, 0x17D):
                    {'name'    : nme,
                     'address' : addr,
                     'type'    : "Configuration" } )
-
-os.mkdir('Lmk04828')
-os.mkdir('Lmk04828/deviceLibrary')
-os.mkdir('Lmk04828/Lmk04828Src')
-os.mkdir('Lmk04828/Db')
-os.mkdir('Lmk04828/ui')
-
-#device library
-f=open('Lmk04828/deviceLibrary/Lmk04828.cc', 'w')
-print(Template( file='../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Lmk04828/deviceLibrary/Lmk04828.h', 'w')
-print(Template( file='../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#asyn driver
-f=open('Lmk04828/Lmk04828Src/Makefile', 'w')
-print(Template( file='../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Lmk04828/Lmk04828Src/Lmk04828Driver.cpp', 'w')
-print(Template( file='../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Lmk04828/Lmk04828Src/Lmk04828Driver.h', 'w')
-print(Template( file='../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Lmk04828/Lmk04828Src/Lmk04828DriverSupportInclude.dbd', 'w')
-print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#database.template
-f=open('Lmk04828/Db/Lmk04828.template', 'w')
-print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#gui
-f=open('Lmk04828/ui/Lmk04828.ui', 'w')
-print(Template( file='../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
-f.close()

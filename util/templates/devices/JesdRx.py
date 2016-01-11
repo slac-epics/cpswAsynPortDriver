@@ -1,7 +1,3 @@
-from __future__ import print_function
-import os
-from Cheetah.Template import Template
-
 d = { 'name': "JesdRx",
      'registers': [{ 'name'   : "Enable",
                     'address' : "0x00",
@@ -463,46 +459,3 @@ d = { 'name': "JesdRx",
      'commands': [{ 'name'   : "ClearErrors"},
                   { 'name'   : "RestartGTs" }]
    }
-
-
-os.mkdir('JesdRx')
-os.mkdir('JesdRx/deviceLibrary')
-os.mkdir('JesdRx/JesdRxSrc')
-os.mkdir('JesdRx/Db')
-os.mkdir('JesdRx/ui')
-
-#device library
-f=open('JesdRx/deviceLibrary/JesdRx.cc', 'w')
-print(Template( file='../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('JesdRx/deviceLibrary/JesdRx.h', 'w')
-print(Template( file='../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#asyn driver
-f=open('JesdRx/JesdRxSrc/Makefile', 'w')
-print(Template( file='../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('JesdRx/JesdRxSrc/JesdRxDriver.cpp', 'w')
-print(Template( file='../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('JesdRx/JesdRxSrc/JesdRxDriver.h', 'w')
-print(Template( file='../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('JesdRx/JesdRxSrc/JesdRxDriverSupportInclude.dbd', 'w')
-print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#database.template
-f=open('JesdRx/Db/JesdRx.template', 'w')
-print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#gui
-f=open('JesdRx/ui/JesdRx.ui', 'w')
-print(Template( file='../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
-f.close()
