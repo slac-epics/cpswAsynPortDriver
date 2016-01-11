@@ -1,7 +1,3 @@
-from __future__ import print_function
-import os
-from Cheetah.Template import Template
-
 d = { 'name': "TenGigEthReg",
      'registers': [{ 'name'   : "PhyReadyCnt",
                     'address' : "0x00",
@@ -160,47 +156,3 @@ d = { 'name': "TenGigEthReg",
                     'lsBit'   : "18",
                     'type'    : "Status" }]
    }
-
-
-
-os.mkdir('TenGigEthReg')
-os.mkdir('TenGigEthReg/deviceLibrary')
-os.mkdir('TenGigEthReg/TenGigEthRegSrc')
-os.mkdir('TenGigEthReg/Db')
-os.mkdir('TenGigEthReg/ui')
-
-#device library
-f=open('TenGigEthReg/deviceLibrary/TenGigEthReg.cc', 'w')
-print(Template( file='../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('TenGigEthReg/deviceLibrary/TenGigEthReg.h', 'w')
-print(Template( file='../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#asyn driver
-f=open('TenGigEthReg/TenGigEthRegSrc/Makefile', 'w')
-print(Template( file='../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('TenGigEthReg/TenGigEthRegSrc/TenGigEthRegDriver.cpp', 'w')
-print(Template( file='../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('TenGigEthReg/TenGigEthRegSrc/TenGigEthRegDriver.h', 'w')
-print(Template( file='../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('TenGigEthReg/TenGigEthRegSrc/TenGigEthRegDriverSupportInclude.dbd', 'w')
-print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#database substitutions
-f=open('TenGigEthReg/Db/TenGigEthReg.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#gui
-f=open('TenGigEthReg/ui/TenGigEthReg.ui', 'w')
-print(Template( file='../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
-f.close()

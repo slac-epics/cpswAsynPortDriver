@@ -1,14 +1,3 @@
-#!/afs/slac/g/lcls/package/python/python2.7.9/linux-x86_64/bin/python
-from __future__ import print_function
-import os
-import getopt, sys
-from Cheetah.Template import Template
-
-usage="""
-    This script will generate all EPICS files including: asyn driver,
-    database template, cpsw builder class, and ui file.
-"""
-
 d = { 'name': "Adc16Dx370",
      'registers': [{ 'name'   : "ID_DEVICE_TYPE",
                     'address' : "0x003",
@@ -97,45 +86,3 @@ for i in range(0x100, 0x17D):
                    {'name'    : nme,
                     'address' : addr,
                     'type'    : "Configuration" } )
-
-os.mkdir('Adc16Dx370')
-
-#device library
-os.mkdir('Adc16Dx370/deviceLibrary')
-f=open('Adc16Dx370/deviceLibrary/Adc16Dx370.cc', 'w')
-print(Template( file='../deviceTemplate/builder.cc.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Adc16Dx370/deviceLibrary/Adc16Dx370.h', 'w')
-print(Template( file='../deviceTemplate/builder.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#asyn driver
-os.mkdir('Adc16Dx370/Adc16Dx370Src')
-f=open('Adc16Dx370/Adc16Dx370Src/Makefile', 'w')
-print(Template( file='../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Adc16Dx370/Adc16Dx370Src/Adc16Dx370Driver.cpp', 'w')
-print(Template( file='../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Adc16Dx370/Adc16Dx370Src/Adc16Dx370Driver.h', 'w')
-print(Template( file='../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
-f.close()
-
-f=open('Adc16Dx370/Adc16Dx370Src/Adc16Dx370DriverSupportInclude.dbd', 'w')
-print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#database substitutions
-os.mkdir('Adc16Dx370/Db')
-f=open('Adc16Dx370/Db/Adc16Dx370.substitutions', 'w')
-print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
-f.close()
-
-#gui
-os.mkdir('Adc16Dx370/ui')
-f=open('Adc16Dx370/ui/Adc16Dx370.ui', 'w')
-print(Template( file='../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
-f.close()
