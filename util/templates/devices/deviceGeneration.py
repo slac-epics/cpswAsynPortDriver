@@ -44,14 +44,14 @@ def makeDatabase(d):
 	print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
 	f.close()
 
-def usage(progname):
-	print("%s:  Make EPICS files for peripheral", progname)
-
 #gui
 def makeGui(d):
 	f=open(d['name']+'/ui/'+d['name']+'.ui', 'w')
 	print(Template( file='../deviceTemplate/templateGui.ui.tmpl', searchList = [d] ), file=f)
 	f.close()
+
+def usage(progname):
+	print("%s:  Make EPICS files for peripheral", progname)
 
 if __name__ == "__main__":
 	import getopt
@@ -76,3 +76,6 @@ if __name__ == "__main__":
 	else:
 		makeDirectory(d)
 		makeDeviceLibrary(d)
+		makeAsynDriver(d)
+		makeDatabase(d)
+		makeGui(d)
