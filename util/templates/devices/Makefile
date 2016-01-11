@@ -7,6 +7,9 @@ all: $(PY_FILES)
 		python deviceGeneration.py -d $$i ; \
 	done  ; \
 
+% : %.py
+	python deviceGeneration.py -d $^
+
 clean:
 	rm -f *.pyc
 	for i in $(DIRS) ; do \
