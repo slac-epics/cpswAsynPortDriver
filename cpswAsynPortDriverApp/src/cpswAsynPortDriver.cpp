@@ -374,15 +374,19 @@ asynStatus cpswAsynDriver::scalValToIntegerParam(int function, epicsInt32 *value
 {
     asynStatus status = asynSuccess;
     uint32_t u32;
+    lock();
     try {
         ScalVals[function]->getVal( &u32, 1 );
     }
     catch(CPSWError &e) {
-        return asynError;
+        status = asynError;
+        goto bail;
     }
     *value = (epicsInt32) u32;
     setIntegerParam(0, function, *value);
     callParamCallbacks();
+bail:
+    unlock();
     return status;
 }
 
@@ -395,6 +399,7 @@ asynStatus cpswAsynDriver::integerParamToScalVal(int function, epicsInt32 *value
 {
     asynStatus status = asynSuccess;
     uint32_t u32;
+    lock();
     status = getIntegerParam(0, function, value);
     if (status != asynSuccess)
         goto bail;
@@ -403,9 +408,11 @@ asynStatus cpswAsynDriver::integerParamToScalVal(int function, epicsInt32 *value
         ScalVals[function]->setVal( &u32, 1);
     }
     catch(CPSWError &e) {
-        return asynError;
+        status = asynError;
+        goto bail;
     }
 bail:
+    unlock();
     return status;
 }
 
