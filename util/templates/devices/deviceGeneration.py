@@ -38,10 +38,10 @@ def makeAsynDriver(d):
 	print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 	f.close()
 
-#database substitutions
+#database template
 def makeDatabase(d):
-	f=open(d['name']+'/Db/'+d['name']+'.substitutions', 'w')
-	print(Template( file='../deviceTemplate/template.substitutions.tmpl', searchList = [d] ), file=f)
+	f=open(d['name']+'/Db/'+d['name']+'.template', 'w')
+	print(Template( file='../deviceTemplate/database.tmpl', searchList = [d] ), file=f)
 	f.close()
 
 #gui
