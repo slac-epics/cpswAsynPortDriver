@@ -17,7 +17,7 @@ ${p.name}Create("${p.name}", "root/${name}" )
 #end for
 
 #for $p in $peripherals
-dbLoadRecords("db/${p.name}.db")
+dbLoadRecords("db/${p.name}.db", "DEVICE=TEST,PORT=${p.name}")
 #end for
 
 iocInit()
