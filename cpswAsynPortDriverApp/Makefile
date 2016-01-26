@@ -1,7 +1,6 @@
 TOP = ..
 include $(TOP)/configure/CONFIG
 #framework, builder
-DIRS += frameworkSrc
 DIRS += deviceLibrarySrc
 #cpsw asyn driver
 DIRS += src
