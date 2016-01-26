@@ -16,12 +16,11 @@ DBD += JesdRxDriverSupport.dbd
 # The following are compiled and added to the Support library
 JesdRx_SRCS += JesdRxDriver.cpp
 
-JesdRx_LIBS += cpsw
 JesdRx_LIBS += DeviceLibrary
 JesdRx_LIBS += cpswAsynPortDriverSupport
 JesdRx_LIBS += asyn
 JesdRx_LIBS += $(EPICS_BASE_IOC_LIBS)
-
+USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
 include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE

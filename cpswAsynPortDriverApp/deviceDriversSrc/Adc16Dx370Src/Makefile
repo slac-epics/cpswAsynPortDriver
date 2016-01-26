@@ -16,12 +16,11 @@ DBD += Adc16Dx370DriverSupport.dbd
 # The following are compiled and added to the Support library
 Adc16Dx370_SRCS += Adc16Dx370Driver.cpp
 
-Adc16Dx370_LIBS += cpsw
 Adc16Dx370_LIBS += DeviceLibrary
 Adc16Dx370_LIBS += cpswAsynPortDriverSupport
 Adc16Dx370_LIBS += asyn
 Adc16Dx370_LIBS += $(EPICS_BASE_IOC_LIBS)
-
+USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
 include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE

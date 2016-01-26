@@ -16,12 +16,11 @@ DBD += TenGigEthRegDriverSupport.dbd
 # The following are compiled and added to the Support library
 TenGigEthReg_SRCS += TenGigEthRegDriver.cpp
 
-TenGigEthReg_LIBS += cpsw
 TenGigEthReg_LIBS += DeviceLibrary
 TenGigEthReg_LIBS += cpswAsynPortDriverSupport
 TenGigEthReg_LIBS += asyn
 TenGigEthReg_LIBS += $(EPICS_BASE_IOC_LIBS)
-
+USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
 include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
