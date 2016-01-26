@@ -26,15 +26,15 @@ def makeAsynDriver(d):
 	print(Template( file='../deviceTemplate/Makefile.tmpl', searchList = [d] ), file=f)
 	f.close()
 	
-	f=open(d['name']+'/'+d['name']+'Src/'+d['name']+'driver.cpp', 'w')
+	f=open(d['name']+'/'+d['name']+'Src/'+d['name']+'Driver.cpp', 'w')
 	print(Template( file='../deviceTemplate/templateDriver.cpp.tmpl', searchList = [d] ), file=f)
 	f.close()
 	
-	f=open(d['name']+'/'+d['name']+'Src/'+d['name']+'driver.h', 'w')
+	f=open(d['name']+'/'+d['name']+'Src/'+d['name']+'Driver.h', 'w')
 	print(Template( file='../deviceTemplate/templateDriver.h.tmpl', searchList = [d] ), file=f)
 	f.close()
 	
-	f=open(d['name']+'/'+d['name']+'Src/'+d['name']+'driverSupportInclude.dbd', 'w')
+	f=open(d['name']+'/'+d['name']+'Src/'+d['name']+'DriverSupportInclude.dbd', 'w')
 	print(Template( file='../deviceTemplate/templateDriverSupportInclude.dbd.tmpl', searchList = [d] ), file=f)
 	f.close()
 
