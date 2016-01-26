@@ -19,7 +19,7 @@ public:
 
 class CKc705TenGigEthImpl : public CMMIODevImpl, public virtual IKc705TenGigEth {
 public:
-        CKc705TenGigEthImpl(FKey);
+        CKc705TenGigEthImpl(Key &key, const char *name);
 };
 #endif
 

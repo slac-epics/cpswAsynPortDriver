@@ -21,7 +21,7 @@
 
 Kcu105NoRssi IKcu105NoRssi::create(const char *name)
 {
-Kcu105NoRssiImpl v = CEntryImpl::create<Kcu105NoRssiImpl::element_type>(name);
+Kcu105NoRssiImpl v = CShObj::create<Kcu105NoRssiImpl>(name);
 
         AxiVersion p1 = IAxiVersion::create("AxiVersion");
         v->CMMIODevImpl::addAtAddress( p1, AXIVERSION_BASE_ADDR_C );
@@ -35,7 +35,7 @@ Kcu105NoRssiImpl v = CEntryImpl::create<Kcu105NoRssiImpl::element_type>(name);
         return v;
 }
 
-CKcu105NoRssiImpl::CKcu105NoRssiImpl(FKey key) : CMMIODevImpl(key, 0x000B0000 , LE)
+CKcu105NoRssiImpl::CKcu105NoRssiImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x000B0000 , LE)
 {
 }
 

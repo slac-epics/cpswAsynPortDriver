@@ -12,14 +12,16 @@ LIBRARY_IOC += Kcu105NoRssi
 DBD += Kcu105NoRssiSupport.dbd
 # The following are compiled and added to the Support library
 Kcu105NoRssi_SRCS += Kcu105NoRssi.cc 
-Kcu105NoRssi_LIBS += cpsw
 Kcu105NoRssi_LIBS += DeviceLibrary
 Kcu105NoRssi_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 INC += Kcu105NoRssi.h
 
-USER_INCLUDES += ../../frameworkSrc
-USER_INCLUDES += ../frameworkSrc
+USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
+cpsw_DIR += /afs/slac/g/lcls/package/cpsw/framework
+
+USR_INCLUDES += -I/afs/slac/g/lcls/package/boost/1.57.0/linux-x86_64/include
+boost_system_DIR += /afs/slac/g/lcls/package/boost/1.57.0/linux-x86_64/lib
 
 PROD_IOC += Kcu105NoRssiApp
 DBD += Kcu105NoRssiApp.dbd
@@ -34,9 +36,15 @@ Kcu105NoRssiApp_LIBS += Kcu105NoRssi
 Kcu105NoRssiApp_LIBS += AxiVersion
 Kcu105NoRssiApp_LIBS += TenGigEthReg
 Kcu105NoRssiApp_LIBS += PrbsTx
-Kcu105NoRssiApp_LIBS += cpsw
 Kcu105NoRssiApp_LIBS += asyn
-PROD_LIBS += cpsw
+
+Kcu105NoRssiApp_LIBS += cpsw
+Kcu105NoRssiApp_LIBS += boost_system
+
+include $(TOP)/configure/RULES
+#----------------------------------------
+#  ADD RULES AFTER THIS LINE
+
 
 include $(TOP)/configure/RULES
 #----------------------------------------

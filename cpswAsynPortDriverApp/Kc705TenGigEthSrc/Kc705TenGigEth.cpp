@@ -20,7 +20,7 @@
 
 Kc705TenGigEth IKc705TenGigEth::create(const char *name)
 {
-Kc705TenGigEthImpl v = CEntryImpl::create<Kc705TenGigEthImpl::element_type>(name);
+Kc705TenGigEthImpl v = CShObj::create<Kc705TenGigEthImpl>(name);
 
         AxiVersion p1 = IAxiVersion::create("AxiVersion");
         v->CMMIODevImpl::addAtAddress( p1, AXIVERSION_BASE_ADDR_C );
@@ -31,7 +31,7 @@ Kc705TenGigEthImpl v = CEntryImpl::create<Kc705TenGigEthImpl::element_type>(name
         return v;
 }
 
-CKc705TenGigEthImpl::CKc705TenGigEthImpl(FKey key) : CMMIODevImpl(key, 0x000B0000 , LE)
+CKc705TenGigEthImpl::CKc705TenGigEthImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x000B0000 , LE)
 {
 }
 

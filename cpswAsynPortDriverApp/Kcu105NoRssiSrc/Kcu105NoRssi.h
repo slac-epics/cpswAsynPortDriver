@@ -19,7 +19,7 @@ public:
 
 class CKcu105NoRssiImpl : public CMMIODevImpl, public virtual IKcu105NoRssi {
 public:
-        CKcu105NoRssiImpl(FKey);
+        CKcu105NoRssiImpl(Key &key, const char *name);
 };
 #endif
 
