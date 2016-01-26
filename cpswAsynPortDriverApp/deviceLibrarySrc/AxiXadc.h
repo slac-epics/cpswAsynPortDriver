@@ -18,7 +18,7 @@ public:
 
 class CAxiXadcImpl : public CMMIODevImpl, public virtual IAxiXadc {
 public:
-        CAxiXadcImpl(FKey);
+        CAxiXadcImpl(Key &key, const char* name);
 };
 #endif
 

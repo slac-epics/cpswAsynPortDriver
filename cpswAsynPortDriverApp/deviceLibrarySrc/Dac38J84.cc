@@ -4,7 +4,7 @@
 
 Dac38J84 IDac38J84::create(const char *name)
 {
-Dac38J84Impl v = CEntryImpl::create<Dac38J84Impl::element_type>(name);
+Dac38J84Impl v = CShObj::create<Dac38J84Impl>(name);
 Field f;
         f = IIntField::create("ID_DEVICE_TYPE", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x003*addrSize);
@@ -287,7 +287,7 @@ Field f;
         return v;
 }
 
-CDac38J84Impl::CDac38J84Impl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CDac38J84Impl::CDac38J84Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

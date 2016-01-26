@@ -18,7 +18,7 @@ public:
 
 class CPrbsTxImpl : public CMMIODevImpl, public virtual IPrbsTx {
 public:
-        CPrbsTxImpl(FKey);
+        CPrbsTxImpl(Key &key, const char* name);
 };
 #endif
 

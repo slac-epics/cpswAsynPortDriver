@@ -4,7 +4,7 @@
 
 Adc16Dx370 IAdc16Dx370::create(const char *name)
 {
-Adc16Dx370Impl v = CEntryImpl::create<Adc16Dx370Impl::element_type>(name);
+Adc16Dx370Impl v = CShObj::create<Adc16Dx370Impl>(name);
 Field f;
         f = IIntField::create("ID_DEVICE_TYPE", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x003*addrSize);
@@ -287,7 +287,7 @@ Field f;
         return v;
 }
 
-CAdc16Dx370Impl::CAdc16Dx370Impl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CAdc16Dx370Impl::CAdc16Dx370Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

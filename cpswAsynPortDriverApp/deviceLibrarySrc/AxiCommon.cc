@@ -15,7 +15,7 @@
 
 AXICommon IAXICommon::create(const char *name)
 {
-AXICommonImpl v = CEntryImpl::create<AXICommonImpl::element_type>(name);
+AXICommonImpl v = CShObj::create<AXICommonImpl>(name);
 Field f;
 std::stringstream tmp;
         f = IIntField::create("frontPanelDoutCnt0", 32, false, 0);
@@ -106,6 +106,6 @@ std::stringstream tmp;
         return v;
 }
 
-CAXICommonImpl::CAXICommonImpl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CAXICommonImpl::CAXICommonImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }

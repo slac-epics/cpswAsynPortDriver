@@ -18,6 +18,6 @@ public:
 
 class CAXICommonImpl : public CMMIODevImpl, public virtual IAXICommon {
 public:
-        CAXICommonImpl(FKey);
+        CAXICommonImpl(Key &key, const char *name);
 };
 #endif

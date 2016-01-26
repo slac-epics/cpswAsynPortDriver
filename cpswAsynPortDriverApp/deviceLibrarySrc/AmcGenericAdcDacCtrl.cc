@@ -4,7 +4,7 @@
 
 AmcGenericAdcDacCtrl IAmcGenericAdcDacCtrl::create(const char *name)
 {
-AmcGenericAdcDacCtrlImpl v = CEntryImpl::create<AmcGenericAdcDacCtrlImpl::element_type>(name);
+AmcGenericAdcDacCtrlImpl v = CShObj::create<AmcGenericAdcDacCtrlImpl>(name);
 Field f;
         f = IIntField::create("Adc0_t0", 16, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x40*addrSize);
@@ -69,7 +69,7 @@ Field f;
         return v;
 }
 
-CAmcGenericAdcDacCtrlImpl::CAmcGenericAdcDacCtrlImpl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CAmcGenericAdcDacCtrlImpl::CAmcGenericAdcDacCtrlImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

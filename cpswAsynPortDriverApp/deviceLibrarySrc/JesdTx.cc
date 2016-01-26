@@ -4,7 +4,7 @@
 
 JesdTx IJesdTx::create(const char *name)
 {
-JesdTxImpl v = CEntryImpl::create<JesdTxImpl::element_type>(name);
+JesdTxImpl v = CShObj::create<JesdTxImpl>(name);
 Field f;
         f = IIntField::create("Enable", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize);
@@ -73,7 +73,7 @@ Field f;
         return v;
 }
 
-CJesdTxImpl::CJesdTxImpl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CJesdTxImpl::CJesdTxImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

@@ -18,7 +18,7 @@ public:
 
 class CLmk04828Impl : public CMMIODevImpl, public virtual ILmk04828 {
 public:
-        CLmk04828Impl(FKey);
+        CLmk04828Impl(Key &key, const char* name);
 };
 #endif
 

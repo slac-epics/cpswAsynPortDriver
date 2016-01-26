@@ -18,7 +18,7 @@ public:
 
 class CAxiAd5780Impl : public CMMIODevImpl, public virtual IAxiAd5780 {
 public:
-        CAxiAd5780Impl(FKey);
+        CAxiAd5780Impl(Key &key, const char* name);
 };
 #endif
 

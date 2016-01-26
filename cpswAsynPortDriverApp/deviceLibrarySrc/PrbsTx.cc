@@ -4,7 +4,7 @@
 
 PrbsTx IPrbsTx::create(const char *name)
 {
-PrbsTxImpl v = CEntryImpl::create<PrbsTxImpl::element_type>(name);
+PrbsTxImpl v = CShObj::create<PrbsTxImpl>(name);
 Field f;
         f = IIntField::create("ConfigStatus", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize);
@@ -33,7 +33,7 @@ Field f;
         return v;
 }
 
-CPrbsTxImpl::CPrbsTxImpl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CPrbsTxImpl::CPrbsTxImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

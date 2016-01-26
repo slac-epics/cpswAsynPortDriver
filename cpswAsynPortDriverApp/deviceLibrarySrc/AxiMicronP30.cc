@@ -15,7 +15,7 @@
 
 AXIMicronP30 IAXIMicronP30::create(const char *name)
 {
-AXIMicronP30Impl v = CEntryImpl::create<AXIMicronP30Impl::element_type>(name);
+AXIMicronP30Impl v = CShObj::create<AXIMicronP30Impl>(name);
 Field f;
         f = IIntField::create("Data", false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize );
@@ -35,6 +35,6 @@ Field f;
         return v;
 }
 
-CAXIMicronP30Impl::CAXIMicronP30Impl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CAXIMicronP30Impl::CAXIMicronP30Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }

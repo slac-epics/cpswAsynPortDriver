@@ -4,7 +4,7 @@
 
 AxiAd5780 IAxiAd5780::create(const char *name)
 {
-AxiAd5780Impl v = CEntryImpl::create<AxiAd5780Impl::element_type>(name);
+AxiAd5780Impl v = CShObj::create<AxiAd5780Impl>(name);
 Field f;
         f = IIntField::create("dacRefreshRate", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x10*addrSize);
@@ -31,7 +31,7 @@ Field f;
         return v;
 }
 
-CAxiAd5780Impl::CAxiAd5780Impl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CAxiAd5780Impl::CAxiAd5780Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

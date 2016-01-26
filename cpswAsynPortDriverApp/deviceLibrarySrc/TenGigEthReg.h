@@ -18,7 +18,7 @@ public:
 
 class CTenGigEthRegImpl : public CMMIODevImpl, public virtual ITenGigEthReg {
 public:
-        CTenGigEthRegImpl(FKey);
+        CTenGigEthRegImpl(Key &key, const char* name);
 };
 #endif
 

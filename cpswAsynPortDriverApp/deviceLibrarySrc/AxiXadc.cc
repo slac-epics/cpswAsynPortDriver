@@ -4,7 +4,7 @@
 
 AxiXadc IAxiXadc::create(const char *name)
 {
-AxiXadcImpl v = CEntryImpl::create<AxiXadcImpl::element_type>(name);
+AxiXadcImpl v = CShObj::create<AxiXadcImpl>(name);
 Field f;
         f = IIntField::create("Temperature", 24, false, 4);
         v->CMMIODevImpl::addAtAddress( f , 0x200*addrSize);
@@ -115,7 +115,7 @@ Field f;
         return v;
 }
 
-CAxiXadcImpl::CAxiXadcImpl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CAxiXadcImpl::CAxiXadcImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

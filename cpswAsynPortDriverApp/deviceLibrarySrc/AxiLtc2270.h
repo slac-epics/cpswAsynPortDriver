@@ -18,6 +18,6 @@ public:
 
 class CAXILtc2270Impl : public CMMIODevImpl, public virtual IAXILtc2270 {
 public:
-        CAXILtc2270Impl(FKey);
+        CAXILtc2270Impl(Key &key, const char *name);
 };
 #endif

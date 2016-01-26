@@ -4,7 +4,7 @@
 
 Lmk04828 ILmk04828::create(const char *name)
 {
-Lmk04828Impl v = CEntryImpl::create<Lmk04828Impl::element_type>(name);
+Lmk04828Impl v = CShObj::create<Lmk04828Impl>(name);
 Field f;
         f = IIntField::create("ID_DEVICE_TYPE", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x003*addrSize);
@@ -243,7 +243,7 @@ Field f;
         return v;
 }
 
-CLmk04828Impl::CLmk04828Impl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CLmk04828Impl::CLmk04828Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

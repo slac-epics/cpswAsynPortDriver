@@ -18,7 +18,7 @@ public:
 
 class CAxiVersionImpl : public CMMIODevImpl, public virtual IAxiVersion {
 public:
-        CAxiVersionImpl(FKey);
+        CAxiVersionImpl(Key &key, const char* name);
 };
 #endif
 

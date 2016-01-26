@@ -4,7 +4,7 @@
 
 TenGigEthReg ITenGigEthReg::create(const char *name)
 {
-TenGigEthRegImpl v = CEntryImpl::create<TenGigEthRegImpl::element_type>(name);
+TenGigEthRegImpl v = CShObj::create<TenGigEthRegImpl>(name);
 Field f;
         f = IIntField::create("PhyReadyCnt", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize);
@@ -87,7 +87,7 @@ Field f;
         return v;
 }
 
-CTenGigEthRegImpl::CTenGigEthRegImpl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CTenGigEthRegImpl::CTenGigEthRegImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

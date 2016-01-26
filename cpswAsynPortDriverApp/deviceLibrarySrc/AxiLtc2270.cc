@@ -15,7 +15,7 @@
 
 AXILtc2270 IAXILtc2270::create(const char *name)
 {
-AXILtc2270Impl v = CEntryImpl::create<AXILtc2270Impl::element_type>(name);
+AXILtc2270Impl v = CShObj::create<AXILtc2270Impl>(name);
 Field f;
 std::stringstream tmp;
         f = IIntField::create("Reg00", false, 0);
@@ -50,6 +50,6 @@ std::stringstream tmp;
         return v;
 }
 
-CAXILtc2270Impl::CAXILtc2270Impl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CAXILtc2270Impl::CAXILtc2270Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }

@@ -18,7 +18,7 @@ public:
 
 class CAmcGenericAdcDacCtrlImpl : public CMMIODevImpl, public virtual IAmcGenericAdcDacCtrl {
 public:
-        CAmcGenericAdcDacCtrlImpl(FKey);
+        CAmcGenericAdcDacCtrlImpl(Key &key, const char* name);
 };
 #endif
 

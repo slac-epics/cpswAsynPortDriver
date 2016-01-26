@@ -18,7 +18,7 @@ public:
 
 class CAdc16Dx370Impl : public CMMIODevImpl, public virtual IAdc16Dx370 {
 public:
-        CAdc16Dx370Impl(FKey);
+        CAdc16Dx370Impl(Key &key, const char* name);
 };
 #endif
 

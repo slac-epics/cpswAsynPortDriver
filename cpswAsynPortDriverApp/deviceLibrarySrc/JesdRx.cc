@@ -4,7 +4,7 @@
 
 JesdRx IJesdRx::create(const char *name)
 {
-JesdRxImpl v = CEntryImpl::create<JesdRxImpl::element_type>(name);
+JesdRxImpl v = CShObj::create<JesdRxImpl>(name);
 Field f;
         f = IIntField::create("Enable", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize);
@@ -195,7 +195,7 @@ Field f;
         return v;
 }
 
-CJesdRxImpl::CJesdRxImpl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CJesdRxImpl::CJesdRxImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

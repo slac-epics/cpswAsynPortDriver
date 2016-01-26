@@ -18,7 +18,7 @@ public:
 
 class CDac38J84Impl : public CMMIODevImpl, public virtual IDac38J84 {
 public:
-        CDac38J84Impl(FKey);
+        CDac38J84Impl(Key &key, const char* name);
 };
 #endif
 

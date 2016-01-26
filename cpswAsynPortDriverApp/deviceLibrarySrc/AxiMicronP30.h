@@ -18,6 +18,6 @@ public:
 
 class CAXIMicronP30Impl : public CMMIODevImpl, public virtual IAXIMicronP30 {
 public:
-        CAXIMicronP30Impl(FKey);
+        CAXIMicronP30Impl(Key &key, const char *name);
 };
 #endif

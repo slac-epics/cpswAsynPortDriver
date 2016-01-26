@@ -4,7 +4,7 @@
 
 AxiVersion IAxiVersion::create(const char *name)
 {
-AxiVersionImpl v = CEntryImpl::create<AxiVersionImpl::element_type>(name);
+AxiVersionImpl v = CShObj::create<AxiVersionImpl>(name);
 Field f;
         f = IIntField::create("FpgaVersion", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize);
@@ -35,7 +35,7 @@ Field f;
         return v;
 }
 
-CAxiVersionImpl::CAxiVersionImpl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+CAxiVersionImpl::CAxiVersionImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }
 

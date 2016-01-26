@@ -18,7 +18,7 @@ public:
 
 class CJesdTxImpl : public CMMIODevImpl, public virtual IJesdTx {
 public:
-        CJesdTxImpl(FKey);
+        CJesdTxImpl(Key &key, const char* name);
 };
 #endif
 
