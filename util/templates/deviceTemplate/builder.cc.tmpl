@@ -4,7 +4,7 @@
 
 ${name} I${name}::create(const char *name)
 {
-${name}Impl v = CEntryImpl::create<${name}Impl::element_type>(name);
+${name}Impl v = CShObj::create<${name}Impl>(name);
 Field f;
 #for $p in $registers
 #if $p.has_key('size')
@@ -25,6 +25,6 @@ Field f;
         return v;
 }
 
-C${name}Impl::C${name}Impl(FKey key) : CMMIODevImpl(key, 0x00010000 >> 2, LE)
+C${name}Impl::C${name}Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
 {
 }

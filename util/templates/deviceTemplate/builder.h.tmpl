@@ -18,6 +18,6 @@ public:
 
 class C${name}Impl : public CMMIODevImpl, public virtual I${name} {
 public:
-        C${name}Impl(FKey);
+        C${name}Impl(Key &key, const char* name);
 };
 #endif

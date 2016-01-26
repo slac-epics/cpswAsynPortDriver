@@ -16,12 +16,11 @@ DBD += ${name}DriverSupport.dbd
 \# The following are compiled and added to the Support library
 ${name}_SRCS += ${name}Driver.cpp
 
-${name}_LIBS += cpsw
 ${name}_LIBS += DeviceLibrary
 ${name}_LIBS += cpswAsynPortDriverSupport
 ${name}_LIBS += asyn
 ${name}_LIBS += \$(EPICS_BASE_IOC_LIBS)
-
+USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
 include \$(TOP)/configure/RULES
 \#----------------------------------------
 \#  ADD RULES AFTER THIS LINE
