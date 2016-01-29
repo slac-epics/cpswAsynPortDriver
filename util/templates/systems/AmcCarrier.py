@@ -1,0 +1,16 @@
+d = { 'name': "AmcCarrier",
+     'peripherals': [{ 'name'  : "JesdRx",
+                    'address'  : "0x00000000 >> 2" },
+                     { 'name'  : "JesdTx",
+                    'address'  : "0x00100000 >> 2" },
+                     { 'name'  : "Lmk04828",
+                    'address'  : "0x00200000 >> 2" },
+                     { 'name'  : "Adc16Dx370",
+                    'address'  : "0x00300000 >> 2" },
+                     { 'name'  : "Adc16Dx370",
+                    'address'  : "0x00400000 >> 2" },
+                     { 'name'  : "Dac38J84",
+                    'address'  : "0x00500000 >> 2" },
+                     { 'name'  : "AmcGenericAdcDacCtrl",
+                    'address'  : "0x00600000" }]
+   }
