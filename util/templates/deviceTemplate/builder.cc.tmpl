@@ -25,6 +25,6 @@ Field f;
         return v;
 }
 
-C${name}Impl::C${name}Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
+C${name}Impl::C${name}Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000, LE)
 {
 }
