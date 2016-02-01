@@ -287,7 +287,7 @@ Field f;
         return v;
 }
 
-CAdc16Dx370Impl::CAdc16Dx370Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
+CAdc16Dx370Impl::CAdc16Dx370Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000, LE)
 {
 }
 

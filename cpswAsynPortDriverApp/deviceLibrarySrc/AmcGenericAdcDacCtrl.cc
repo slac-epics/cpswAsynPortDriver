@@ -6,6 +6,16 @@ AmcGenericAdcDacCtrl IAmcGenericAdcDacCtrl::create(const char *name)
 {
 AmcGenericAdcDacCtrlImpl v = CShObj::create<AmcGenericAdcDacCtrlImpl>(name);
 Field f;
+        f = IIntField::create("AdcValid0", 32, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0x00*addrSize);
+        f = IIntField::create("AdcValid1", 32, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0x01*addrSize);
+        f = IIntField::create("AdcValid2", 32, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0x02*addrSize);
+        f = IIntField::create("AdcValid3", 32, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0x03*addrSize);
+        f = IIntField::create("StatusReg", 4, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0x3F*addrSize);
         f = IIntField::create("Adc0_t0", 16, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x40*addrSize);
         f = IIntField::create("Adc0_t1", 16, false, 0);
@@ -66,10 +76,14 @@ Field f;
         v->CMMIODevImpl::addAtAddress( f , 0x82*addrSize);
         f = IIntField::create("LmkStatus", 2, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x83*addrSize);
+        f = IIntField::create("loopback", 1, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0x84*addrSize);
+        f = IIntField::create("CounterReset", 32, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0xFF*addrSize);
         return v;
 }
 
-CAmcGenericAdcDacCtrlImpl::CAmcGenericAdcDacCtrlImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
+CAmcGenericAdcDacCtrlImpl::CAmcGenericAdcDacCtrlImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000, LE)
 {
 }
 
