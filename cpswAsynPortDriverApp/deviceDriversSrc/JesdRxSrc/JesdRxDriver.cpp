@@ -144,16 +144,32 @@ asynStatus JesdRxDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 asynStatus JesdRxDriver::ClearErrors()
 {
    asynStatus status = asynSuccess;
-/* Fill in command logic here */
-   printf("Command ClearErrors not yet implemented!\n");
+   uint32_t u32 = 1;
+
+   try {
+     ScalVals[p_ClearErrors]->setVal( &u32, 1 );
+     u32 = 0;
+     ScalVals[p_ClearErrors]->setVal( &u32, 1 );
+
+   } catch (CPSWError &e) {
+     status = asynError;
+   }
 
    return status;
 }
 asynStatus JesdRxDriver::RestartGTs()
 {
    asynStatus status = asynSuccess;
-/* Fill in command logic here */
-   printf("Command RestartGTs not yet implemented!\n");
+   uint32_t u32 = 1;
+
+   try {
+     ScalVals[p_ResetGTs]->setVal( &u32, 1 );
+     u32 = 0;
+     ScalVals[p_ResetGTs]->setVal( &u32, 1 );
+
+   } catch (CPSWError &e) {
+     status = asynError;
+   }
 
    return status;
 }
@@ -168,8 +184,6 @@ extern "C" int JesdRxCreate(const char *portName, const char *path)
     printf("Child is NULL\n");
   }
   else {
-  printf("Child found\n");
-  printf("Childl nelms:%d\n", c->getNelms());
   new JesdRxDriver(portName, p, c->getNelms());
   }
   return(asynSuccess);
