@@ -56,7 +56,6 @@ record(ao, "\$(DEVICE):\$(PORT):${p.name}")
   #for $c in $commands
 record(ao, "\$(DEVICE):\$(PORT):C_${c.name}")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn(\$(PORT),0) C_${c.name}")
     field(SCAN, "Passive")
