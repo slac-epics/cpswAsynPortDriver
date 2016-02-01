@@ -18,8 +18,8 @@
 #define JESDRX_BASE_ADDR_C   ( 0x00000000 >> 2 )
 #define JESDTX_BASE_ADDR_C   ( 0x00100000 >> 2 )
 #define LMK04828_BASE_ADDR_C   ( 0x00200000 >> 2 )
-#define ADC16DX370_BASE_ADDR_C   ( 0x00300000 >> 2 )
-#define ADC16DX370_BASE_ADDR_C   ( 0x00400000 >> 2 )
+#define ADC16DX370_0_BASE_ADDR_C   ( 0x00300000 >> 2 )
+#define ADC16DX370_1_BASE_ADDR_C   ( 0x00400000 >> 2 )
 #define DAC38J84_BASE_ADDR_C   ( 0x00500000 >> 2 )
 #define AMCGENERICADCDACCTRL_BASE_ADDR_C   ( 0x00600000 >> 2 )
 
@@ -36,11 +36,11 @@ AmcCarrierImpl v = CShObj::create<AmcCarrierImpl>(name);
         Lmk04828 p3 = ILmk04828::create("Lmk04828");
         v->CMMIODevImpl::addAtAddress( p3, LMK04828_BASE_ADDR_C );
 
-        Adc16Dx370 p4 = IAdc16Dx370::create("Adc16Dx370");
-        v->CMMIODevImpl::addAtAddress( p4, ADC16DX370_BASE_ADDR_C );
+        Adc16Dx370 p4 = IAdc16Dx370::create("Adc16Dx370_0");
+        v->CMMIODevImpl::addAtAddress( p4, ADC16DX370_0_BASE_ADDR_C );
 
-        Adc16Dx370 p5 = IAdc16Dx370::create("Adc16Dx370");
-        v->CMMIODevImpl::addAtAddress( p5, ADC16DX370_BASE_ADDR_C );
+        Adc16Dx370 p5 = IAdc16Dx370::create("Adc16Dx370_1");
+        v->CMMIODevImpl::addAtAddress( p5, ADC16DX370_1_BASE_ADDR_C );
 
         Dac38J84 p6 = IDac38J84::create("Dac38J84");
         v->CMMIODevImpl::addAtAddress( p6, DAC38J84_BASE_ADDR_C );
@@ -51,7 +51,7 @@ AmcCarrierImpl v = CShObj::create<AmcCarrierImpl>(name);
         return v;
 }
 
-CAmcCarrierImpl::CAmcCarrierImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x000B0000 , LE)
+CAmcCarrierImpl::CAmcCarrierImpl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00800000 , LE)
 {
 }
 
