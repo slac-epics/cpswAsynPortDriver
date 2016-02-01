@@ -18,7 +18,7 @@ static const char *driverName = "AxiVersionDriver";
 
 
 AxiVersionDriver::AxiVersionDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName("AxiVersion"), nelms, NUM_AXIVERSION_PARAMS)
+                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_AXIVERSION_PARAMS)
 {
 
 /* Registers */
@@ -68,24 +68,39 @@ asynStatus AxiVersionDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 asynStatus AxiVersionDriver::MasterReset()
 {
    asynStatus status = asynSuccess;
-/* Fill in command logic here */
-   printf("Command MasterReset not yet implemented!\n");
+   uint32_t u32 = 1;
+
+   try {
+     ScalVals[p_MasterReset]->setVal( &u32, 1 );
+   } catch (CPSWError &e) {
+     status = asynError;
+   }
 
    return status;
 }
 asynStatus AxiVersionDriver::FpgaReload()
 {
    asynStatus status = asynSuccess;
-/* Fill in command logic here */
-   printf("Command FpgaReload not yet implemented!\n");
+   uint32_t u32 = 1;
+
+   try {
+     ScalVals[p_FpgaReload]->setVal( &u32, 1 );
+   } catch (CPSWError &e) {
+     status = asynError;
+   }
 
    return status;
 }
 asynStatus AxiVersionDriver::CounterReset()
 {
    asynStatus status = asynSuccess;
-/* Fill in command logic here */
-   printf("Command CounterReset not yet implemented!\n");
+   uint32_t u32 = 0;
+
+   try {
+     ScalVals[p_Counter]->setVal( &u32, 1 );
+   } catch (CPSWError &e) {
+     status = asynError;
+   }
 
    return status;
 }
