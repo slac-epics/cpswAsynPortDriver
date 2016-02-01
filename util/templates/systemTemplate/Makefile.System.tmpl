@@ -17,11 +17,11 @@ ${name}_LIBS += \$(EPICS_BASE_IOC_LIBS)
 
 INC += ${name}.h
 
-USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
-cpsw_DIR += /afs/slac/g/lcls/package/cpsw/framework
+USR_INCLUDES += \$(CPSW_FRAMEWORK_INCLUDE)
+cpsw_DIR += \$(CPSW_FRAMEWORK_LIB)
 
-USR_INCLUDES += -I/afs/slac/g/lcls/package/boost/1.57.0/linux-x86_64/include
-boost_system_DIR += /afs/slac/g/lcls/package/boost/1.57.0/linux-x86_64/lib
+USR_INCLUDES += \$(BOOST_INCLUDE)
+boost_system_DIR += \$(BOOST_LIB)
 
 PROD_IOC += ${name}App
 DBD += ${name}App.dbd
@@ -36,10 +36,14 @@ ${name}App_LIBS += ${name}
 #for $p in $peripherals
 ${name}App_LIBS += ${p.name}
 #end for
+${name}App_LIBS += DeviceLibrary
+${name}App_LIBS += cpswAsynPortDriverSupport
 ${name}App_LIBS += asyn
 
 ${name}App_LIBS += cpsw
 ${name}App_LIBS += boost_system
+
+${name}App_LIBS += \$(EPICS_BASE_IOC_LIBS)
 
 include \$(TOP)/configure/RULES
 \#----------------------------------------
