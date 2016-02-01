@@ -1,0 +1,44 @@
+record(ao, "$(DEVICE):$(PORT):Test")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) Test")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):addr32BitMode")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) addr32BitMode")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):ADDR")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) ADDR")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):CMD")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) CMD")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(waveform, "$(DEVICE):$(PORT):DATA")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32ArrayOut")
+    field(FTVL, "ULONG")
+    field(NELM, "64")
+    field(INP,  "@asyn($(PORT),0) DATA")
+    field(SCAN, "Passive")
+}
+
+
+
