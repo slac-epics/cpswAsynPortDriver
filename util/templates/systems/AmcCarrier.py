@@ -12,5 +12,5 @@ d = { 'name': "AmcCarrier",
                      { 'name'  : "Dac38J84",
                     'address'  : "0x00500000 >> 2" },
                      { 'name'  : "AmcGenericAdcDacCtrl",
-                    'address'  : "0x00600000" }]
+                    'address'  : "0x00600000 >> 2" }]
    }
