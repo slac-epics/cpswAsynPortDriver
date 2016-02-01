@@ -52,16 +52,16 @@
          <number>6</number>
         </property>
         <item row="0" column="0">
-         <widget class="QLabel" name="ID_DEVICE_TYPE">
+         <widget class="QLabel" name="IntStatus">
           <property name="text">
-           <string> ID_DEVICE_TYPE </string>
+           <string> IntStatus </string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ID_DEVICE_TYPE">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):IntStatus">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):ID_DEVICE_TYPE</string>
+           <string notr="true">$(DEVICE):$(PORT):IntStatus</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -69,16 +69,16 @@
          </widget>
         </item>
         <item row="1" column="0">
-         <widget class="QLabel" name="ID_PROD_UPPER">
+         <widget class="QLabel" name="LaneBufferDelay">
           <property name="text">
-           <string> ID_PROD_UPPER </string>
+           <string> LaneBufferDelay </string>
           </property>
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ID_PROD_UPPER">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):LaneBufferDelay">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):ID_PROD_UPPER</string>
+           <string notr="true">$(DEVICE):$(PORT):LaneBufferDelay</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -86,16 +86,16 @@
          </widget>
         </item>
         <item row="2" column="0">
-         <widget class="QLabel" name="ID_PROD_LOWER">
+         <widget class="QLabel" name="Temperature">
           <property name="text">
-           <string> ID_PROD_LOWER </string>
+           <string> Temperature </string>
           </property>
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ID_PROD_LOWER">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Temperature">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):ID_PROD_LOWER</string>
+           <string notr="true">$(DEVICE):$(PORT):Temperature</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -103,16 +103,16 @@
          </widget>
         </item>
         <item row="3" column="0">
-         <widget class="QLabel" name="ID_MASKREV">
+         <widget class="QLabel" name="L1ErrCnt">
           <property name="text">
-           <string> ID_MASKREV </string>
+           <string> L1ErrCnt </string>
           </property>
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ID_MASKREV">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1ErrCnt">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):ID_MASKREV</string>
+           <string notr="true">$(DEVICE):$(PORT):L1ErrCnt</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -120,16 +120,16 @@
          </widget>
         </item>
         <item row="4" column="0">
-         <widget class="QLabel" name="ID_VNDR_UPPER">
+         <widget class="QLabel" name="L2ErrCnt">
           <property name="text">
-           <string> ID_VNDR_UPPER </string>
+           <string> L2ErrCnt </string>
           </property>
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ID_VNDR_UPPER">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2ErrCnt">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):ID_VNDR_UPPER</string>
+           <string notr="true">$(DEVICE):$(PORT):L2ErrCnt</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -137,16 +137,16 @@
          </widget>
         </item>
         <item row="5" column="0">
-         <widget class="QLabel" name="ID_VNDR_LOWER">
+         <widget class="QLabel" name="L1SERDES_alarm">
           <property name="text">
-           <string> ID_VNDR_LOWER </string>
+           <string> L1SERDES_alarm </string>
           </property>
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ID_VNDR_LOWER">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1SERDES_alarm">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):ID_VNDR_LOWER</string>
+           <string notr="true">$(DEVICE):$(PORT):L1SERDES_alarm</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -154,16 +154,16 @@
          </widget>
         </item>
         <item row="6" column="0">
-         <widget class="QLabel" name="ADC_Status">
+         <widget class="QLabel" name="L1ReadFifoEmpty">
           <property name="text">
-           <string> ADC_Status </string>
+           <string> L1ReadFifoEmpty </string>
           </property>
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ADC_Status">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1ReadFifoEmpty">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):ADC_Status</string>
+           <string notr="true">$(DEVICE):$(PORT):L1ReadFifoEmpty</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -171,16 +171,16 @@
          </widget>
         </item>
         <item row="7" column="0">
-         <widget class="QLabel" name="Clock_ready">
+         <widget class="QLabel" name="L1ReadFifoUnderflow">
           <property name="text">
-           <string> Clock_ready </string>
+           <string> L1ReadFifoUnderflow </string>
           </property>
          </widget>
         </item>
         <item row="7" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Clock_ready">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1ReadFifoUnderflow">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Clock_ready</string>
+           <string notr="true">$(DEVICE):$(PORT):L1ReadFifoUnderflow</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -188,16 +188,16 @@
          </widget>
         </item>
         <item row="8" column="0">
-         <widget class="QLabel" name="Calibration_done">
+         <widget class="QLabel" name="L1ReadFifoFull">
           <property name="text">
-           <string> Calibration_done </string>
+           <string> L1ReadFifoFull </string>
           </property>
          </widget>
         </item>
         <item row="8" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Calibration_done">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1ReadFifoFull">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Calibration_done</string>
+           <string notr="true">$(DEVICE):$(PORT):L1ReadFifoFull</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -205,16 +205,16 @@
          </widget>
         </item>
         <item row="9" column="0">
-         <widget class="QLabel" name="PLL_lock">
+         <widget class="QLabel" name="L1ReadFifoOverflow">
           <property name="text">
-           <string> PLL_lock </string>
+           <string> L1ReadFifoOverflow </string>
           </property>
          </widget>
         </item>
         <item row="9" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):PLL_lock">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1ReadFifoOverflow">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):PLL_lock</string>
+           <string notr="true">$(DEVICE):$(PORT):L1ReadFifoOverflow</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -222,16 +222,16 @@
          </widget>
         </item>
         <item row="10" column="0">
-         <widget class="QLabel" name="Aligned_to_sysref">
+         <widget class="QLabel" name="L1DispErr">
           <property name="text">
-           <string> Aligned_to_sysref </string>
+           <string> L1DispErr </string>
           </property>
          </widget>
         </item>
         <item row="10" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Aligned_to_sysref">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1DispErr">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Aligned_to_sysref</string>
+           <string notr="true">$(DEVICE):$(PORT):L1DispErr</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -239,16 +239,16 @@
          </widget>
         </item>
         <item row="11" column="0">
-         <widget class="QLabel" name="Realigned_to_sysref">
+         <widget class="QLabel" name="L1NotitableErr">
           <property name="text">
-           <string> Realigned_to_sysref </string>
+           <string> L1NotitableErr </string>
           </property>
          </widget>
         </item>
         <item row="11" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Realigned_to_sysref">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1NotitableErr">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Realigned_to_sysref</string>
+           <string notr="true">$(DEVICE):$(PORT):L1NotitableErr</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -256,16 +256,16 @@
          </widget>
         </item>
         <item row="12" column="0">
-         <widget class="QLabel" name="Sync_form_FPGA">
+         <widget class="QLabel" name="L1CodeSyncErr">
           <property name="text">
-           <string> Sync_form_FPGA </string>
+           <string> L1CodeSyncErr </string>
           </property>
          </widget>
         </item>
         <item row="12" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Sync_form_FPGA">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1CodeSyncErr">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Sync_form_FPGA</string>
+           <string notr="true">$(DEVICE):$(PORT):L1CodeSyncErr</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -273,16 +273,577 @@
          </widget>
         </item>
         <item row="13" column="0">
-         <widget class="QLabel" name="Link_active">
+         <widget class="QLabel" name="L1FirstDataMatchErr">
           <property name="text">
-           <string> Link_active </string>
+           <string> L1FirstDataMatchErr </string>
           </property>
          </widget>
         </item>
         <item row="13" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Link_active">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1FirstDataMatchErr">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Link_active</string>
+           <string notr="true">$(DEVICE):$(PORT):L1FirstDataMatchErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="L1ElasticBuffOverflow">
+          <property name="text">
+           <string> L1ElasticBuffOverflow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1ElasticBuffOverflow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L1ElasticBuffOverflow</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="L1LinkConfigErr">
+          <property name="text">
+           <string> L1LinkConfigErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1LinkConfigErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L1LinkConfigErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="L1FrameAlignErr">
+          <property name="text">
+           <string> L1FrameAlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1FrameAlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L1FrameAlignErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <widget class="QLabel" name="L1MultiFrameAlignErr">
+          <property name="text">
+           <string> L1MultiFrameAlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1MultiFrameAlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L1MultiFrameAlignErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QLabel" name="L2SERDES_alarm">
+          <property name="text">
+           <string> L2SERDES_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2SERDES_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2SERDES_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="L2ReadFifoEmpty">
+          <property name="text">
+           <string> L2ReadFifoEmpty </string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2ReadFifoEmpty">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2ReadFifoEmpty</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="L2ReadFifoUnderflow">
+          <property name="text">
+           <string> L2ReadFifoUnderflow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2ReadFifoUnderflow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2ReadFifoUnderflow</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="L2ReadFifoFull">
+          <property name="text">
+           <string> L2ReadFifoFull </string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2ReadFifoFull">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2ReadFifoFull</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QLabel" name="L2ReadFifoOverflow">
+          <property name="text">
+           <string> L2ReadFifoOverflow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2ReadFifoOverflow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2ReadFifoOverflow</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="0">
+         <widget class="QLabel" name="L2DispErr">
+          <property name="text">
+           <string> L2DispErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2DispErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2DispErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="0">
+         <widget class="QLabel" name="L2NotitableErr">
+          <property name="text">
+           <string> L2NotitableErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2NotitableErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2NotitableErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="0">
+         <widget class="QLabel" name="L2CodeSyncErr">
+          <property name="text">
+           <string> L2CodeSyncErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2CodeSyncErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2CodeSyncErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0">
+         <widget class="QLabel" name="L2FirstDataMatchErr">
+          <property name="text">
+           <string> L2FirstDataMatchErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2FirstDataMatchErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2FirstDataMatchErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="0">
+         <widget class="QLabel" name="L2ElasticBuffOverflow">
+          <property name="text">
+           <string> L2ElasticBuffOverflow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2ElasticBuffOverflow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2ElasticBuffOverflow</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="0">
+         <widget class="QLabel" name="L2LinkConfigErr">
+          <property name="text">
+           <string> L2LinkConfigErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2LinkConfigErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2LinkConfigErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="0">
+         <widget class="QLabel" name="L2FrameAlignErr">
+          <property name="text">
+           <string> L2FrameAlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2FrameAlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2FrameAlignErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="0">
+         <widget class="QLabel" name="L2MultiFrameAlignErr">
+          <property name="text">
+           <string> L2MultiFrameAlignErr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2MultiFrameAlignErr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L2MultiFrameAlignErr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="0">
+         <widget class="QLabel" name="L3SERDES_alarm">
+          <property name="text">
+           <string> L3SERDES_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L3SERDES_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L3SERDES_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="0">
+         <widget class="QLabel" name="L4SERDES_alarm">
+          <property name="text">
+           <string> L4SERDES_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L4SERDES_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L4SERDES_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="0">
+         <widget class="QLabel" name="L5SERDES_alarm">
+          <property name="text">
+           <string> L5SERDES_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L5SERDES_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L5SERDES_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="0">
+         <widget class="QLabel" name="L6SERDES_alarm">
+          <property name="text">
+           <string> L6SERDES_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L6SERDES_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L6SERDES_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="0">
+         <widget class="QLabel" name="L7SERDES_alarm">
+          <property name="text">
+           <string> L7SERDES_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L7SERDES_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L7SERDES_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="0">
+         <widget class="QLabel" name="L8SERDES_alarm">
+          <property name="text">
+           <string> L8SERDES_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L8SERDES_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):L8SERDES_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="0">
+         <widget class="QLabel" name="Sysref_alarm">
+          <property name="text">
+           <string> Sysref_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Sysref_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Sysref_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="38" column="0">
+         <widget class="QLabel" name="Serdes1pllAlarm">
+          <property name="text">
+           <string> Serdes1pllAlarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="38" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Serdes1pllAlarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Serdes1pllAlarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="0">
+         <widget class="QLabel" name="Serdes0pllAlarm">
+          <property name="text">
+           <string> Serdes0pllAlarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Serdes0pllAlarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Serdes0pllAlarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="0">
+         <widget class="QLabel" name="SysRefAlarms">
+          <property name="text">
+           <string> SysRefAlarms </string>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):SysRefAlarms">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):SysRefAlarms</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="41" column="0">
+         <widget class="QLabel" name="Lane_alarm">
+          <property name="text">
+           <string> Lane_alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="41" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Lane_alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Lane_alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="42" column="0">
+         <widget class="QLabel" name="Lane1Loss">
+          <property name="text">
+           <string> Lane1Loss </string>
+          </property>
+         </widget>
+        </item>
+        <item row="42" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Lane1Loss">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Lane1Loss</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="43" column="0">
+         <widget class="QLabel" name="Lane2Loss">
+          <property name="text">
+           <string> Lane2Loss </string>
+          </property>
+         </widget>
+        </item>
+        <item row="43" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Lane2Loss">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Lane2Loss</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="44" column="0">
+         <widget class="QLabel" name="Lane1Alarm">
+          <property name="text">
+           <string> Lane1Alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="44" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Lane1Alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Lane1Alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="45" column="0">
+         <widget class="QLabel" name="Lane2Alarm">
+          <property name="text">
+           <string> Lane2Alarm </string>
+          </property>
+         </widget>
+        </item>
+        <item row="45" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Lane2Alarm">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Lane2Alarm</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="46" column="0">
+         <widget class="QLabel" name="IDs">
+          <property name="text">
+           <string> IDs </string>
+          </property>
+         </widget>
+        </item>
+        <item row="46" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):IDs">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):IDs</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -323,578 +884,17 @@
         <property name="spacing">
          <number>6</number>
         </property>
-        <item row="14" column="0">
-         <widget class="QLabel" name="AdcReg0x0100">
-          <property name="text">
-           <string> AdcReg0x0100 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="14" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0100">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0100</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="15" column="0">
-         <widget class="QLabel" name="AdcReg0x0101">
-          <property name="text">
-           <string> AdcReg0x0101 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="15" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0101">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0101</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="16" column="0">
-         <widget class="QLabel" name="AdcReg0x0102">
-          <property name="text">
-           <string> AdcReg0x0102 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="16" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0102">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0102</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="17" column="0">
-         <widget class="QLabel" name="AdcReg0x0103">
-          <property name="text">
-           <string> AdcReg0x0103 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="17" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0103">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0103</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="0">
-         <widget class="QLabel" name="AdcReg0x0104">
-          <property name="text">
-           <string> AdcReg0x0104 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0104">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0104</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="19" column="0">
-         <widget class="QLabel" name="AdcReg0x0105">
-          <property name="text">
-           <string> AdcReg0x0105 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="19" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0105">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0105</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="20" column="0">
-         <widget class="QLabel" name="AdcReg0x0106">
-          <property name="text">
-           <string> AdcReg0x0106 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="20" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0106">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0106</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="21" column="0">
-         <widget class="QLabel" name="AdcReg0x0107">
-          <property name="text">
-           <string> AdcReg0x0107 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="21" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0107">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0107</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="22" column="0">
-         <widget class="QLabel" name="AdcReg0x0108">
-          <property name="text">
-           <string> AdcReg0x0108 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="22" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0108">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0108</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="23" column="0">
-         <widget class="QLabel" name="AdcReg0x0109">
-          <property name="text">
-           <string> AdcReg0x0109 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="23" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0109">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0109</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="24" column="0">
-         <widget class="QLabel" name="AdcReg0x010a">
-          <property name="text">
-           <string> AdcReg0x010a </string>
-          </property>
-         </widget>
-        </item>
-        <item row="24" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x010a">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x010a</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="25" column="0">
-         <widget class="QLabel" name="AdcReg0x010b">
-          <property name="text">
-           <string> AdcReg0x010b </string>
-          </property>
-         </widget>
-        </item>
-        <item row="25" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x010b">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x010b</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="26" column="0">
-         <widget class="QLabel" name="AdcReg0x010c">
-          <property name="text">
-           <string> AdcReg0x010c </string>
-          </property>
-         </widget>
-        </item>
-        <item row="26" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x010c">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x010c</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="27" column="0">
-         <widget class="QLabel" name="AdcReg0x010d">
-          <property name="text">
-           <string> AdcReg0x010d </string>
-          </property>
-         </widget>
-        </item>
-        <item row="27" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x010d">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x010d</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="28" column="0">
-         <widget class="QLabel" name="AdcReg0x010e">
-          <property name="text">
-           <string> AdcReg0x010e </string>
-          </property>
-         </widget>
-        </item>
-        <item row="28" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x010e">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x010e</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="29" column="0">
-         <widget class="QLabel" name="AdcReg0x010f">
-          <property name="text">
-           <string> AdcReg0x010f </string>
-          </property>
-         </widget>
-        </item>
-        <item row="29" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x010f">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x010f</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="30" column="0">
-         <widget class="QLabel" name="AdcReg0x0110">
-          <property name="text">
-           <string> AdcReg0x0110 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="30" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0110">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0110</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="31" column="0">
-         <widget class="QLabel" name="AdcReg0x0111">
-          <property name="text">
-           <string> AdcReg0x0111 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="31" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0111">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0111</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="32" column="0">
-         <widget class="QLabel" name="AdcReg0x0112">
-          <property name="text">
-           <string> AdcReg0x0112 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="32" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0112">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0112</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="33" column="0">
-         <widget class="QLabel" name="AdcReg0x0113">
-          <property name="text">
-           <string> AdcReg0x0113 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="33" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0113">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0113</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="34" column="0">
-         <widget class="QLabel" name="AdcReg0x0114">
-          <property name="text">
-           <string> AdcReg0x0114 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="34" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0114">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0114</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="35" column="0">
-         <widget class="QLabel" name="AdcReg0x0115">
-          <property name="text">
-           <string> AdcReg0x0115 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="35" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0115">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0115</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="36" column="0">
-         <widget class="QLabel" name="AdcReg0x0116">
-          <property name="text">
-           <string> AdcReg0x0116 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="36" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0116">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0116</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="37" column="0">
-         <widget class="QLabel" name="AdcReg0x0117">
-          <property name="text">
-           <string> AdcReg0x0117 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="37" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0117">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0117</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="38" column="0">
-         <widget class="QLabel" name="AdcReg0x0118">
-          <property name="text">
-           <string> AdcReg0x0118 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="38" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0118">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0118</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="39" column="0">
-         <widget class="QLabel" name="AdcReg0x0119">
-          <property name="text">
-           <string> AdcReg0x0119 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="39" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0119">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0119</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="40" column="0">
-         <widget class="QLabel" name="AdcReg0x011a">
-          <property name="text">
-           <string> AdcReg0x011a </string>
-          </property>
-         </widget>
-        </item>
-        <item row="40" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x011a">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x011a</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="41" column="0">
-         <widget class="QLabel" name="AdcReg0x011b">
-          <property name="text">
-           <string> AdcReg0x011b </string>
-          </property>
-         </widget>
-        </item>
-        <item row="41" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x011b">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x011b</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="42" column="0">
-         <widget class="QLabel" name="AdcReg0x011c">
-          <property name="text">
-           <string> AdcReg0x011c </string>
-          </property>
-         </widget>
-        </item>
-        <item row="42" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x011c">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x011c</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="43" column="0">
-         <widget class="QLabel" name="AdcReg0x011d">
-          <property name="text">
-           <string> AdcReg0x011d </string>
-          </property>
-         </widget>
-        </item>
-        <item row="43" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x011d">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x011d</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="44" column="0">
-         <widget class="QLabel" name="AdcReg0x011e">
-          <property name="text">
-           <string> AdcReg0x011e </string>
-          </property>
-         </widget>
-        </item>
-        <item row="44" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x011e">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x011e</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="45" column="0">
-         <widget class="QLabel" name="AdcReg0x011f">
-          <property name="text">
-           <string> AdcReg0x011f </string>
-          </property>
-         </widget>
-        </item>
-        <item row="45" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x011f">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x011f</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="46" column="0">
-         <widget class="QLabel" name="AdcReg0x0120">
-          <property name="text">
-           <string> AdcReg0x0120 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="46" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0120">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0120</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
         <item row="47" column="0">
-         <widget class="QLabel" name="AdcReg0x0121">
+         <widget class="QLabel" name="DacReg0x0000">
           <property name="text">
-           <string> AdcReg0x0121 </string>
+           <string> DacReg0x0000 </string>
           </property>
          </widget>
         </item>
         <item row="47" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0121">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DacReg0x0000">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0121</string>
+           <string notr="true">$(DEVICE):$(PORT):DacReg0x0000</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -902,16 +902,16 @@
          </widget>
         </item>
         <item row="48" column="0">
-         <widget class="QLabel" name="AdcReg0x0122">
+         <widget class="QLabel" name="DacReg0x0001">
           <property name="text">
-           <string> AdcReg0x0122 </string>
+           <string> DacReg0x0001 </string>
           </property>
          </widget>
         </item>
         <item row="48" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0122">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DacReg0x0001">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0122</string>
+           <string notr="true">$(DEVICE):$(PORT):DacReg0x0001</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -919,16 +919,16 @@
          </widget>
         </item>
         <item row="49" column="0">
-         <widget class="QLabel" name="AdcReg0x0123">
+         <widget class="QLabel" name="DacReg0x0002">
           <property name="text">
-           <string> AdcReg0x0123 </string>
+           <string> DacReg0x0002 </string>
           </property>
          </widget>
         </item>
         <item row="49" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0123">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DacReg0x0002">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0123</string>
+           <string notr="true">$(DEVICE):$(PORT):DacReg0x0002</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -936,16 +936,16 @@
          </widget>
         </item>
         <item row="50" column="0">
-         <widget class="QLabel" name="AdcReg0x0124">
+         <widget class="QLabel" name="DacReg0x0003">
           <property name="text">
-           <string> AdcReg0x0124 </string>
+           <string> DacReg0x0003 </string>
           </property>
          </widget>
         </item>
         <item row="50" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0124">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DacReg0x0003">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0124</string>
+           <string notr="true">$(DEVICE):$(PORT):DacReg0x0003</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -953,16 +953,16 @@
          </widget>
         </item>
         <item row="51" column="0">
-         <widget class="QLabel" name="AdcReg0x0125">
+         <widget class="QLabel" name="DacReg0x0004">
           <property name="text">
-           <string> AdcReg0x0125 </string>
+           <string> DacReg0x0004 </string>
           </property>
          </widget>
         </item>
         <item row="51" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0125">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DacReg0x0004">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0125</string>
+           <string notr="true">$(DEVICE):$(PORT):DacReg0x0004</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -970,16 +970,16 @@
          </widget>
         </item>
         <item row="52" column="0">
-         <widget class="QLabel" name="AdcReg0x0126">
+         <widget class="QLabel" name="DacReg0x0005">
           <property name="text">
-           <string> AdcReg0x0126 </string>
+           <string> DacReg0x0005 </string>
           </property>
          </widget>
         </item>
         <item row="52" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0126">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DacReg0x0005">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0126</string>
+           <string notr="true">$(DEVICE):$(PORT):DacReg0x0005</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -987,16 +987,16 @@
          </widget>
         </item>
         <item row="53" column="0">
-         <widget class="QLabel" name="AdcReg0x0127">
+         <widget class="QLabel" name="DacReg0x0006">
           <property name="text">
-           <string> AdcReg0x0127 </string>
+           <string> DacReg0x0006 </string>
           </property>
          </widget>
         </item>
         <item row="53" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0127">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DacReg0x0006">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0127</string>
+           <string notr="true">$(DEVICE):$(PORT):DacReg0x0006</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -1004,1458 +1004,13 @@
          </widget>
         </item>
         <item row="54" column="0">
-         <widget class="QLabel" name="AdcReg0x0128">
-          <property name="text">
-           <string> AdcReg0x0128 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="54" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0128">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0128</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="55" column="0">
-         <widget class="QLabel" name="AdcReg0x0129">
-          <property name="text">
-           <string> AdcReg0x0129 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="55" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0129">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0129</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="56" column="0">
-         <widget class="QLabel" name="AdcReg0x012a">
-          <property name="text">
-           <string> AdcReg0x012a </string>
-          </property>
-         </widget>
-        </item>
-        <item row="56" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x012a">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x012a</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="57" column="0">
-         <widget class="QLabel" name="AdcReg0x012b">
-          <property name="text">
-           <string> AdcReg0x012b </string>
-          </property>
-         </widget>
-        </item>
-        <item row="57" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x012b">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x012b</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="58" column="0">
-         <widget class="QLabel" name="AdcReg0x012c">
-          <property name="text">
-           <string> AdcReg0x012c </string>
-          </property>
-         </widget>
-        </item>
-        <item row="58" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x012c">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x012c</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="59" column="0">
-         <widget class="QLabel" name="AdcReg0x012d">
-          <property name="text">
-           <string> AdcReg0x012d </string>
-          </property>
-         </widget>
-        </item>
-        <item row="59" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x012d">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x012d</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="60" column="0">
-         <widget class="QLabel" name="AdcReg0x012e">
-          <property name="text">
-           <string> AdcReg0x012e </string>
-          </property>
-         </widget>
-        </item>
-        <item row="60" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x012e">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x012e</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="61" column="0">
-         <widget class="QLabel" name="AdcReg0x012f">
-          <property name="text">
-           <string> AdcReg0x012f </string>
-          </property>
-         </widget>
-        </item>
-        <item row="61" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x012f">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x012f</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="62" column="0">
-         <widget class="QLabel" name="AdcReg0x0130">
-          <property name="text">
-           <string> AdcReg0x0130 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="62" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0130">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0130</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="63" column="0">
-         <widget class="QLabel" name="AdcReg0x0131">
-          <property name="text">
-           <string> AdcReg0x0131 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="63" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0131">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0131</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="64" column="0">
-         <widget class="QLabel" name="AdcReg0x0132">
-          <property name="text">
-           <string> AdcReg0x0132 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="64" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0132">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0132</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="65" column="0">
-         <widget class="QLabel" name="AdcReg0x0133">
-          <property name="text">
-           <string> AdcReg0x0133 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="65" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0133">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0133</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="66" column="0">
-         <widget class="QLabel" name="AdcReg0x0134">
-          <property name="text">
-           <string> AdcReg0x0134 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="66" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0134">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0134</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="67" column="0">
-         <widget class="QLabel" name="AdcReg0x0135">
-          <property name="text">
-           <string> AdcReg0x0135 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="67" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0135">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0135</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="68" column="0">
-         <widget class="QLabel" name="AdcReg0x0136">
-          <property name="text">
-           <string> AdcReg0x0136 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="68" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0136">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0136</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="69" column="0">
-         <widget class="QLabel" name="AdcReg0x0137">
-          <property name="text">
-           <string> AdcReg0x0137 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="69" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0137">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0137</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="70" column="0">
-         <widget class="QLabel" name="AdcReg0x0138">
-          <property name="text">
-           <string> AdcReg0x0138 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="70" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0138">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0138</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="71" column="0">
-         <widget class="QLabel" name="AdcReg0x0139">
-          <property name="text">
-           <string> AdcReg0x0139 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="71" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0139">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0139</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="72" column="0">
-         <widget class="QLabel" name="AdcReg0x013a">
-          <property name="text">
-           <string> AdcReg0x013a </string>
-          </property>
-         </widget>
-        </item>
-        <item row="72" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x013a">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x013a</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="73" column="0">
-         <widget class="QLabel" name="AdcReg0x013b">
-          <property name="text">
-           <string> AdcReg0x013b </string>
-          </property>
-         </widget>
-        </item>
-        <item row="73" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x013b">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x013b</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="74" column="0">
-         <widget class="QLabel" name="AdcReg0x013c">
-          <property name="text">
-           <string> AdcReg0x013c </string>
-          </property>
-         </widget>
-        </item>
-        <item row="74" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x013c">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x013c</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="75" column="0">
-         <widget class="QLabel" name="AdcReg0x013d">
-          <property name="text">
-           <string> AdcReg0x013d </string>
-          </property>
-         </widget>
-        </item>
-        <item row="75" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x013d">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x013d</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="76" column="0">
-         <widget class="QLabel" name="AdcReg0x013e">
-          <property name="text">
-           <string> AdcReg0x013e </string>
-          </property>
-         </widget>
-        </item>
-        <item row="76" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x013e">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x013e</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="77" column="0">
-         <widget class="QLabel" name="AdcReg0x013f">
-          <property name="text">
-           <string> AdcReg0x013f </string>
-          </property>
-         </widget>
-        </item>
-        <item row="77" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x013f">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x013f</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="78" column="0">
-         <widget class="QLabel" name="AdcReg0x0140">
-          <property name="text">
-           <string> AdcReg0x0140 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="78" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0140">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0140</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="79" column="0">
-         <widget class="QLabel" name="AdcReg0x0141">
-          <property name="text">
-           <string> AdcReg0x0141 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="79" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0141">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0141</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="80" column="0">
-         <widget class="QLabel" name="AdcReg0x0142">
-          <property name="text">
-           <string> AdcReg0x0142 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="80" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0142">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0142</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="81" column="0">
-         <widget class="QLabel" name="AdcReg0x0143">
-          <property name="text">
-           <string> AdcReg0x0143 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="81" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0143">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0143</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="82" column="0">
-         <widget class="QLabel" name="AdcReg0x0144">
-          <property name="text">
-           <string> AdcReg0x0144 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="82" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0144">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0144</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="83" column="0">
-         <widget class="QLabel" name="AdcReg0x0145">
-          <property name="text">
-           <string> AdcReg0x0145 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="83" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0145">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0145</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="84" column="0">
-         <widget class="QLabel" name="AdcReg0x0146">
-          <property name="text">
-           <string> AdcReg0x0146 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="84" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0146">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0146</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="85" column="0">
-         <widget class="QLabel" name="AdcReg0x0147">
-          <property name="text">
-           <string> AdcReg0x0147 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="85" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0147">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0147</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="86" column="0">
-         <widget class="QLabel" name="AdcReg0x0148">
-          <property name="text">
-           <string> AdcReg0x0148 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="86" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0148">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0148</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="87" column="0">
-         <widget class="QLabel" name="AdcReg0x0149">
-          <property name="text">
-           <string> AdcReg0x0149 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="87" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0149">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0149</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="88" column="0">
-         <widget class="QLabel" name="AdcReg0x014a">
-          <property name="text">
-           <string> AdcReg0x014a </string>
-          </property>
-         </widget>
-        </item>
-        <item row="88" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x014a">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x014a</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="89" column="0">
-         <widget class="QLabel" name="AdcReg0x014b">
-          <property name="text">
-           <string> AdcReg0x014b </string>
-          </property>
-         </widget>
-        </item>
-        <item row="89" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x014b">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x014b</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="90" column="0">
-         <widget class="QLabel" name="AdcReg0x014c">
-          <property name="text">
-           <string> AdcReg0x014c </string>
-          </property>
-         </widget>
-        </item>
-        <item row="90" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x014c">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x014c</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="91" column="0">
-         <widget class="QLabel" name="AdcReg0x014d">
-          <property name="text">
-           <string> AdcReg0x014d </string>
-          </property>
-         </widget>
-        </item>
-        <item row="91" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x014d">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x014d</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="92" column="0">
-         <widget class="QLabel" name="AdcReg0x014e">
-          <property name="text">
-           <string> AdcReg0x014e </string>
-          </property>
-         </widget>
-        </item>
-        <item row="92" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x014e">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x014e</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="93" column="0">
-         <widget class="QLabel" name="AdcReg0x014f">
-          <property name="text">
-           <string> AdcReg0x014f </string>
-          </property>
-         </widget>
-        </item>
-        <item row="93" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x014f">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x014f</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="94" column="0">
-         <widget class="QLabel" name="AdcReg0x0150">
-          <property name="text">
-           <string> AdcReg0x0150 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="94" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0150">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0150</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="95" column="0">
-         <widget class="QLabel" name="AdcReg0x0151">
-          <property name="text">
-           <string> AdcReg0x0151 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="95" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0151">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0151</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="96" column="0">
-         <widget class="QLabel" name="AdcReg0x0152">
-          <property name="text">
-           <string> AdcReg0x0152 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="96" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0152">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0152</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="97" column="0">
-         <widget class="QLabel" name="AdcReg0x0153">
-          <property name="text">
-           <string> AdcReg0x0153 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="97" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0153">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0153</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="98" column="0">
-         <widget class="QLabel" name="AdcReg0x0154">
-          <property name="text">
-           <string> AdcReg0x0154 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="98" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0154">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0154</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="99" column="0">
-         <widget class="QLabel" name="AdcReg0x0155">
-          <property name="text">
-           <string> AdcReg0x0155 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="99" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0155">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0155</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="100" column="0">
-         <widget class="QLabel" name="AdcReg0x0156">
-          <property name="text">
-           <string> AdcReg0x0156 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="100" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0156">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0156</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="101" column="0">
-         <widget class="QLabel" name="AdcReg0x0157">
-          <property name="text">
-           <string> AdcReg0x0157 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="101" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0157">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0157</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="102" column="0">
-         <widget class="QLabel" name="AdcReg0x0158">
-          <property name="text">
-           <string> AdcReg0x0158 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="102" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0158">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0158</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="103" column="0">
-         <widget class="QLabel" name="AdcReg0x0159">
-          <property name="text">
-           <string> AdcReg0x0159 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="103" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0159">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0159</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="104" column="0">
-         <widget class="QLabel" name="AdcReg0x015a">
-          <property name="text">
-           <string> AdcReg0x015a </string>
-          </property>
-         </widget>
-        </item>
-        <item row="104" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x015a">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x015a</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="105" column="0">
-         <widget class="QLabel" name="AdcReg0x015b">
-          <property name="text">
-           <string> AdcReg0x015b </string>
-          </property>
-         </widget>
-        </item>
-        <item row="105" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x015b">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x015b</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="106" column="0">
-         <widget class="QLabel" name="AdcReg0x015c">
-          <property name="text">
-           <string> AdcReg0x015c </string>
-          </property>
-         </widget>
-        </item>
-        <item row="106" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x015c">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x015c</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="107" column="0">
-         <widget class="QLabel" name="AdcReg0x015d">
-          <property name="text">
-           <string> AdcReg0x015d </string>
-          </property>
-         </widget>
-        </item>
-        <item row="107" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x015d">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x015d</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="108" column="0">
-         <widget class="QLabel" name="AdcReg0x015e">
-          <property name="text">
-           <string> AdcReg0x015e </string>
-          </property>
-         </widget>
-        </item>
-        <item row="108" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x015e">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x015e</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="109" column="0">
-         <widget class="QLabel" name="AdcReg0x015f">
-          <property name="text">
-           <string> AdcReg0x015f </string>
-          </property>
-         </widget>
-        </item>
-        <item row="109" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x015f">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x015f</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="110" column="0">
-         <widget class="QLabel" name="AdcReg0x0160">
-          <property name="text">
-           <string> AdcReg0x0160 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="110" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0160">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0160</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="111" column="0">
-         <widget class="QLabel" name="AdcReg0x0161">
-          <property name="text">
-           <string> AdcReg0x0161 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="111" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0161">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0161</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="112" column="0">
-         <widget class="QLabel" name="AdcReg0x0162">
-          <property name="text">
-           <string> AdcReg0x0162 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="112" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0162">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0162</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="113" column="0">
-         <widget class="QLabel" name="AdcReg0x0163">
-          <property name="text">
-           <string> AdcReg0x0163 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="113" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0163">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0163</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="114" column="0">
-         <widget class="QLabel" name="AdcReg0x0164">
-          <property name="text">
-           <string> AdcReg0x0164 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="114" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0164">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0164</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="115" column="0">
-         <widget class="QLabel" name="AdcReg0x0165">
-          <property name="text">
-           <string> AdcReg0x0165 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="115" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0165">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0165</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="116" column="0">
-         <widget class="QLabel" name="AdcReg0x0166">
-          <property name="text">
-           <string> AdcReg0x0166 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="116" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0166">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0166</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="117" column="0">
-         <widget class="QLabel" name="AdcReg0x0167">
-          <property name="text">
-           <string> AdcReg0x0167 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="117" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0167">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0167</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="118" column="0">
-         <widget class="QLabel" name="AdcReg0x0168">
-          <property name="text">
-           <string> AdcReg0x0168 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="118" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0168">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0168</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="119" column="0">
-         <widget class="QLabel" name="AdcReg0x0169">
-          <property name="text">
-           <string> AdcReg0x0169 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="119" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0169">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0169</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="120" column="0">
-         <widget class="QLabel" name="AdcReg0x016a">
-          <property name="text">
-           <string> AdcReg0x016a </string>
-          </property>
-         </widget>
-        </item>
-        <item row="120" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x016a">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x016a</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="121" column="0">
-         <widget class="QLabel" name="AdcReg0x016b">
-          <property name="text">
-           <string> AdcReg0x016b </string>
-          </property>
-         </widget>
-        </item>
-        <item row="121" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x016b">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x016b</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="122" column="0">
-         <widget class="QLabel" name="AdcReg0x016c">
-          <property name="text">
-           <string> AdcReg0x016c </string>
-          </property>
-         </widget>
-        </item>
-        <item row="122" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x016c">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x016c</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="123" column="0">
-         <widget class="QLabel" name="AdcReg0x016d">
-          <property name="text">
-           <string> AdcReg0x016d </string>
-          </property>
-         </widget>
-        </item>
-        <item row="123" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x016d">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x016d</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="124" column="0">
-         <widget class="QLabel" name="AdcReg0x016e">
-          <property name="text">
-           <string> AdcReg0x016e </string>
-          </property>
-         </widget>
-        </item>
-        <item row="124" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x016e">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x016e</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="125" column="0">
-         <widget class="QLabel" name="AdcReg0x016f">
-          <property name="text">
-           <string> AdcReg0x016f </string>
-          </property>
-         </widget>
-        </item>
-        <item row="125" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x016f">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x016f</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="126" column="0">
-         <widget class="QLabel" name="AdcReg0x0170">
-          <property name="text">
-           <string> AdcReg0x0170 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="126" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0170">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0170</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="127" column="0">
-         <widget class="QLabel" name="AdcReg0x0171">
-          <property name="text">
-           <string> AdcReg0x0171 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="127" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0171">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0171</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="128" column="0">
-         <widget class="QLabel" name="AdcReg0x0172">
-          <property name="text">
-           <string> AdcReg0x0172 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="128" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0172">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0172</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="129" column="0">
-         <widget class="QLabel" name="AdcReg0x0173">
-          <property name="text">
-           <string> AdcReg0x0173 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="129" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0173">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0173</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="130" column="0">
-         <widget class="QLabel" name="AdcReg0x0174">
-          <property name="text">
-           <string> AdcReg0x0174 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="130" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0174">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0174</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="131" column="0">
-         <widget class="QLabel" name="AdcReg0x0175">
-          <property name="text">
-           <string> AdcReg0x0175 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="131" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0175">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0175</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="132" column="0">
-         <widget class="QLabel" name="AdcReg0x0176">
-          <property name="text">
-           <string> AdcReg0x0176 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="132" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0176">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0176</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="133" column="0">
-         <widget class="QLabel" name="AdcReg0x0177">
-          <property name="text">
-           <string> AdcReg0x0177 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="133" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0177">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0177</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="134" column="0">
-         <widget class="QLabel" name="AdcReg0x0178">
-          <property name="text">
-           <string> AdcReg0x0178 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="134" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0178">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0178</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="135" column="0">
-         <widget class="QLabel" name="AdcReg0x0179">
-          <property name="text">
-           <string> AdcReg0x0179 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="135" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x0179">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x0179</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="136" column="0">
-         <widget class="QLabel" name="AdcReg0x017a">
-          <property name="text">
-           <string> AdcReg0x017a </string>
-          </property>
-         </widget>
-        </item>
-        <item row="136" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x017a">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x017a</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="137" column="0">
-         <widget class="QLabel" name="AdcReg0x017b">
-          <property name="text">
-           <string> AdcReg0x017b </string>
-          </property>
-         </widget>
-        </item>
-        <item row="137" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x017b">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x017b</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="138" column="0">
-         <widget class="QLabel" name="AdcReg0x017c">
-          <property name="text">
-           <string> AdcReg0x017c </string>
-          </property>
-         </widget>
-        </item>
-        <item row="138" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AdcReg0x017c">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AdcReg0x017c</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="139" column="0">
-         <widget class="QLabel" name="AdcReg0x017c">
+         <widget class="QLabel" name="DacReg0x0006">
           <property name="text">
            <string> ClearDACAlarms </string>
           </property>
          </widget>
         </item>
-        <item row="139" column="1">
+        <item row="54" column="1">
          <widget class="caMessageButton" name="ClearDACAlarms">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):C_ClearDACAlarms.PROC</string>
@@ -2471,14 +1026,14 @@
           </property>
          </widget>
         </item>
-        <item row="140" column="0">
-         <widget class="QLabel" name="AdcReg0x017c">
+        <item row="55" column="0">
+         <widget class="QLabel" name="DacReg0x0006">
           <property name="text">
            <string> InitDAC_JESD </string>
           </property>
          </widget>
         </item>
-        <item row="140" column="1">
+        <item row="55" column="1">
          <widget class="caMessageButton" name="InitDAC_JESD">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):C_InitDAC_JESD.PROC</string>
