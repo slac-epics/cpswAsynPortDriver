@@ -1,105 +1,97 @@
-record(ao, "$(DEVICE):$(PORT):ConfigStatus")
+record(ao, "$(DEVICE):$(PORT):CounterReset")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn($(PORT),0) ConfigStatus")
+    field(OUT,  "@asyn($(PORT),0) CounterReset")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):$(PORT):AxiEn")
+record(ai, "$(DEVICE):$(PORT):MsgErrCounter")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn($(PORT),0) AxiEn")
+    field(INP,  "@asyn($(PORT),0) MsgErrCounter")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):$(PORT):TxEn")
+record(ai, "$(DEVICE):$(PORT):MsgOverflowCounter")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn($(PORT),0) TxEn")
+    field(INP,  "@asyn($(PORT),0) MsgOverflowCounter")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):Busy")
+record(ao, "$(DEVICE):$(PORT):DigitalInputMask0")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Busy")
+    field(OUT,  "@asyn($(PORT),0) DigitalInputMask0")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):Overflow")
+record(ao, "$(DEVICE):$(PORT):DigitalInputMask1")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Overflow")
+    field(OUT,  "@asyn($(PORT),0) DigitalInputMask1")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):$(PORT):PacketLength")
+record(ao, "$(DEVICE):$(PORT):DigitalInputMask2")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn($(PORT),0) PacketLength")
+    field(OUT,  "@asyn($(PORT),0) DigitalInputMask2")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):$(PORT):AxiStreamCfg")
+record(ao, "$(DEVICE):$(PORT):ForceMitMsgEn")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn($(PORT),0) AxiStreamCfg")
+    field(OUT,  "@asyn($(PORT),0) ForceMitMsgEn")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):$(PORT):tDest")
+record(ao, "$(DEVICE):$(PORT):ForceMitMsgVal")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn($(PORT),0) tDest")
+    field(OUT,  "@asyn($(PORT),0) ForceMitMsgVal")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):$(PORT):tId")
+record(ai, "$(DEVICE):$(PORT):DigitalInputState0")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn($(PORT),0) tId")
+    field(INP,  "@asyn($(PORT),0) DigitalInputState0")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):DataCount")
+record(ai, "$(DEVICE):$(PORT):DigitalInputState1")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) DataCount")
+    field(INP,  "@asyn($(PORT),0) DigitalInputState1")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):EventCount")
+record(ai, "$(DEVICE):$(PORT):DigitalInputState2")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) EventCount")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):RandomData")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) RandomData")
+    field(INP,  "@asyn($(PORT),0) DigitalInputState2")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
 
-record(ao, "$(DEVICE):$(PORT):C_OneShot")
+record(ao, "$(DEVICE):$(PORT):C_CounterReset")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn($(PORT),0) C_OneShot")
+    field(OUT,  "@asyn($(PORT),0) C_CounterReset")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }

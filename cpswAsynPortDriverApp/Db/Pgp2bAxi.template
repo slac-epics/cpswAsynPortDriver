@@ -1,4 +1,4 @@
-record(ao, "$(DEVICE):CountReset")
+record(ao, "$(DEVICE):$(PORT):CountReset")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -6,7 +6,7 @@ record(ao, "$(DEVICE):CountReset")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):ResetRx")
+record(ao, "$(DEVICE):$(PORT):ResetRx")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -14,7 +14,7 @@ record(ao, "$(DEVICE):ResetRx")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):Flush")
+record(ao, "$(DEVICE):$(PORT):Flush")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -22,7 +22,7 @@ record(ao, "$(DEVICE):Flush")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):Loopback")
+record(ao, "$(DEVICE):$(PORT):Loopback")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -30,7 +30,7 @@ record(ao, "$(DEVICE):Loopback")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):LocData")
+record(ao, "$(DEVICE):$(PORT):LocData")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -38,7 +38,7 @@ record(ao, "$(DEVICE):LocData")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):AutoStatus")
+record(ao, "$(DEVICE):$(PORT):AutoStatus")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -46,7 +46,7 @@ record(ao, "$(DEVICE):AutoStatus")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Status")
+record(ai, "$(DEVICE):$(PORT):Status")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -54,7 +54,7 @@ record(ai, "$(DEVICE):Status")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxPhyReady")
+record(ai, "$(DEVICE):$(PORT):RxPhyReady")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -62,7 +62,7 @@ record(ai, "$(DEVICE):RxPhyReady")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxPhyReady")
+record(ai, "$(DEVICE):$(PORT):TxPhyReady")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -70,7 +70,7 @@ record(ai, "$(DEVICE):TxPhyReady")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxLocalLinkReady")
+record(ai, "$(DEVICE):$(PORT):RxLocalLinkReady")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -78,7 +78,7 @@ record(ai, "$(DEVICE):RxLocalLinkReady")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRemLinkReady")
+record(ai, "$(DEVICE):$(PORT):RxRemLinkReady")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -86,7 +86,7 @@ record(ai, "$(DEVICE):RxRemLinkReady")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxLinkReady")
+record(ai, "$(DEVICE):$(PORT):TxLinkReady")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -94,7 +94,7 @@ record(ai, "$(DEVICE):TxLinkReady")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxLinkPolarity")
+record(ai, "$(DEVICE):$(PORT):RxLinkPolarity")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -102,7 +102,7 @@ record(ai, "$(DEVICE):RxLinkPolarity")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRemPause")
+record(ai, "$(DEVICE):$(PORT):RxRemPause")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -110,7 +110,7 @@ record(ai, "$(DEVICE):RxRemPause")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxLocPause")
+record(ai, "$(DEVICE):$(PORT):TxLocPause")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -118,7 +118,7 @@ record(ai, "$(DEVICE):TxLocPause")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRemOverflow")
+record(ai, "$(DEVICE):$(PORT):RxRemOverflow")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -126,7 +126,7 @@ record(ai, "$(DEVICE):RxRemOverflow")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxLocOverflow")
+record(ai, "$(DEVICE):$(PORT):TxLocOverflow")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -134,7 +134,7 @@ record(ai, "$(DEVICE):TxLocOverflow")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRemLinkData")
+record(ai, "$(DEVICE):$(PORT):RxRemLinkData")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -142,7 +142,7 @@ record(ai, "$(DEVICE):RxRemLinkData")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxCellErrorCount")
+record(ai, "$(DEVICE):$(PORT):RxCellErrorCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -150,7 +150,7 @@ record(ai, "$(DEVICE):RxCellErrorCount")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxLinkDownCount")
+record(ai, "$(DEVICE):$(PORT):RxLinkDownCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -158,7 +158,7 @@ record(ai, "$(DEVICE):RxLinkDownCount")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxLinkErrorCount")
+record(ai, "$(DEVICE):$(PORT):RxLinkErrorCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -166,7 +166,7 @@ record(ai, "$(DEVICE):RxLinkErrorCount")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRemOverflow0Count")
+record(ai, "$(DEVICE):$(PORT):RxRemOverflow0Count")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -174,7 +174,7 @@ record(ai, "$(DEVICE):RxRemOverflow0Count")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRemOverflow1Count")
+record(ai, "$(DEVICE):$(PORT):RxRemOverflow1Count")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -182,7 +182,7 @@ record(ai, "$(DEVICE):RxRemOverflow1Count")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRemOverflow2Count")
+record(ai, "$(DEVICE):$(PORT):RxRemOverflow2Count")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -190,7 +190,7 @@ record(ai, "$(DEVICE):RxRemOverflow2Count")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRemOverflow3Count")
+record(ai, "$(DEVICE):$(PORT):RxRemOverflow3Count")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -198,7 +198,7 @@ record(ai, "$(DEVICE):RxRemOverflow3Count")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxFrameErrorCount")
+record(ai, "$(DEVICE):$(PORT):RxFrameErrorCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -206,7 +206,7 @@ record(ai, "$(DEVICE):RxFrameErrorCount")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxFrameCount")
+record(ai, "$(DEVICE):$(PORT):RxFrameCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -214,7 +214,7 @@ record(ai, "$(DEVICE):RxFrameCount")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxLocOverflow0Count")
+record(ai, "$(DEVICE):$(PORT):TxLocOverflow0Count")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -222,7 +222,7 @@ record(ai, "$(DEVICE):TxLocOverflow0Count")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxLocOverflow1Count")
+record(ai, "$(DEVICE):$(PORT):TxLocOverflow1Count")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -230,7 +230,7 @@ record(ai, "$(DEVICE):TxLocOverflow1Count")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxLocOverflow2Count")
+record(ai, "$(DEVICE):$(PORT):TxLocOverflow2Count")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -238,7 +238,7 @@ record(ai, "$(DEVICE):TxLocOverflow2Count")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxLocOverflow3Count")
+record(ai, "$(DEVICE):$(PORT):TxLocOverflow3Count")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -246,7 +246,7 @@ record(ai, "$(DEVICE):TxLocOverflow3Count")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxFrameErrorCount")
+record(ai, "$(DEVICE):$(PORT):TxFrameErrorCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -254,7 +254,7 @@ record(ai, "$(DEVICE):TxFrameErrorCount")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxFrameCount")
+record(ai, "$(DEVICE):$(PORT):TxFrameCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -262,7 +262,7 @@ record(ai, "$(DEVICE):TxFrameCount")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxClkFreq")
+record(ai, "$(DEVICE):$(PORT):RxClkFreq")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -270,7 +270,7 @@ record(ai, "$(DEVICE):RxClkFreq")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxClkFreq")
+record(ai, "$(DEVICE):$(PORT):TxClkFreq")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -278,7 +278,7 @@ record(ai, "$(DEVICE):TxClkFreq")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxOpCodeStatus")
+record(ai, "$(DEVICE):$(PORT):TxOpCodeStatus")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -286,7 +286,7 @@ record(ai, "$(DEVICE):TxOpCodeStatus")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):LastTxOpCode")
+record(ai, "$(DEVICE):$(PORT):LastTxOpCode")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -294,7 +294,7 @@ record(ai, "$(DEVICE):LastTxOpCode")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxOpCodeStatus")
+record(ai, "$(DEVICE):$(PORT):RxOpCodeStatus")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -302,7 +302,7 @@ record(ai, "$(DEVICE):RxOpCodeStatus")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):LastRxOpCode")
+record(ai, "$(DEVICE):$(PORT):LastRxOpCode")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -310,7 +310,7 @@ record(ai, "$(DEVICE):LastRxOpCode")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxOpCodeCount")
+record(ai, "$(DEVICE):$(PORT):TxOpCodeCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -318,7 +318,7 @@ record(ai, "$(DEVICE):TxOpCodeCount")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxOpCodeCount")
+record(ai, "$(DEVICE):$(PORT):RxOpCodeCount")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -327,7 +327,7 @@ record(ai, "$(DEVICE):RxOpCodeCount")
     info(asyn:READBACK, "1")
 }
 
-record(ao, "$(DEVICE):C_ResetRx")
+record(ao, "$(DEVICE):$(PORT):C_ResetRx")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -335,7 +335,7 @@ record(ao, "$(DEVICE):C_ResetRx")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):C_Flush")
+record(ao, "$(DEVICE):$(PORT):C_Flush")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")

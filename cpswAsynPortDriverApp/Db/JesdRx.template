@@ -1,4 +1,4 @@
-record(ao, "$(DEVICE):Enable")
+record(ao, "$(DEVICE):$(PORT):Enable")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -6,7 +6,7 @@ record(ao, "$(DEVICE):Enable")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):SysrefDelay")
+record(ao, "$(DEVICE):$(PORT):SysrefDelay")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -14,7 +14,7 @@ record(ao, "$(DEVICE):SysrefDelay")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):CommonControl")
+record(ao, "$(DEVICE):$(PORT):CommonControl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -22,7 +22,7 @@ record(ao, "$(DEVICE):CommonControl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):SubClass")
+record(ao, "$(DEVICE):$(PORT):SubClass")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -30,7 +30,7 @@ record(ao, "$(DEVICE):SubClass")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):ReplaceEnable")
+record(ao, "$(DEVICE):$(PORT):ReplaceEnable")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -38,7 +38,7 @@ record(ao, "$(DEVICE):ReplaceEnable")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):ResetGTs")
+record(ao, "$(DEVICE):$(PORT):ResetGTs")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -46,7 +46,7 @@ record(ao, "$(DEVICE):ResetGTs")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):ClearErrors")
+record(ao, "$(DEVICE):$(PORT):ClearErrors")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -54,7 +54,7 @@ record(ao, "$(DEVICE):ClearErrors")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):InvertSync")
+record(ao, "$(DEVICE):$(PORT):InvertSync")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -62,7 +62,7 @@ record(ao, "$(DEVICE):InvertSync")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):L1_Test_thr")
+record(ao, "$(DEVICE):$(PORT):L1_Test_thr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -70,7 +70,7 @@ record(ao, "$(DEVICE):L1_Test_thr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):L1_Threshold_Low")
+record(ao, "$(DEVICE):$(PORT):L1_Threshold_Low")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -78,7 +78,7 @@ record(ao, "$(DEVICE):L1_Threshold_Low")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):L1_Threshold_High")
+record(ao, "$(DEVICE):$(PORT):L1_Threshold_High")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -86,7 +86,7 @@ record(ao, "$(DEVICE):L1_Threshold_High")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):L2_Test_thr")
+record(ao, "$(DEVICE):$(PORT):L2_Test_thr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -94,7 +94,7 @@ record(ao, "$(DEVICE):L2_Test_thr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):L2_Threshold_Low")
+record(ao, "$(DEVICE):$(PORT):L2_Threshold_Low")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -102,7 +102,7 @@ record(ao, "$(DEVICE):L2_Threshold_Low")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):L2_Threshold_High")
+record(ao, "$(DEVICE):$(PORT):L2_Threshold_High")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -110,7 +110,7 @@ record(ao, "$(DEVICE):L2_Threshold_High")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_Status")
+record(ai, "$(DEVICE):$(PORT):L1_Status")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -118,7 +118,7 @@ record(ai, "$(DEVICE):L1_Status")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_GTXReady")
+record(ai, "$(DEVICE):$(PORT):L1_GTXReady")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -126,7 +126,7 @@ record(ai, "$(DEVICE):L1_GTXReady")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_DataValid")
+record(ai, "$(DEVICE):$(PORT):L1_DataValid")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -134,7 +134,7 @@ record(ai, "$(DEVICE):L1_DataValid")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_AlignErr")
+record(ai, "$(DEVICE):$(PORT):L1_AlignErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -142,7 +142,7 @@ record(ai, "$(DEVICE):L1_AlignErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_nSync")
+record(ai, "$(DEVICE):$(PORT):L1_nSync")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -150,7 +150,7 @@ record(ai, "$(DEVICE):L1_nSync")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_RxBuffUfl")
+record(ai, "$(DEVICE):$(PORT):L1_RxBuffUfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -158,7 +158,7 @@ record(ai, "$(DEVICE):L1_RxBuffUfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_RxBuffOfl")
+record(ai, "$(DEVICE):$(PORT):L1_RxBuffOfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -166,7 +166,7 @@ record(ai, "$(DEVICE):L1_RxBuffOfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_PositionErr")
+record(ai, "$(DEVICE):$(PORT):L1_PositionErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -174,7 +174,7 @@ record(ai, "$(DEVICE):L1_PositionErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_RxEnabled")
+record(ai, "$(DEVICE):$(PORT):L1_RxEnabled")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -182,7 +182,7 @@ record(ai, "$(DEVICE):L1_RxEnabled")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_SysRefDetected")
+record(ai, "$(DEVICE):$(PORT):L1_SysRefDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -190,7 +190,7 @@ record(ai, "$(DEVICE):L1_SysRefDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_CommaDetected")
+record(ai, "$(DEVICE):$(PORT):L1_CommaDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -198,7 +198,7 @@ record(ai, "$(DEVICE):L1_CommaDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_DisparityErr")
+record(ai, "$(DEVICE):$(PORT):L1_DisparityErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -206,7 +206,7 @@ record(ai, "$(DEVICE):L1_DisparityErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_DecErr")
+record(ai, "$(DEVICE):$(PORT):L1_DecErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -214,7 +214,7 @@ record(ai, "$(DEVICE):L1_DecErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L1_ElBuffLatency")
+record(ai, "$(DEVICE):$(PORT):L1_ElBuffLatency")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -222,7 +222,7 @@ record(ai, "$(DEVICE):L1_ElBuffLatency")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_Status")
+record(ai, "$(DEVICE):$(PORT):L2_Status")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -230,7 +230,7 @@ record(ai, "$(DEVICE):L2_Status")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_GTXRdy")
+record(ai, "$(DEVICE):$(PORT):L2_GTXRdy")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -238,7 +238,7 @@ record(ai, "$(DEVICE):L2_GTXRdy")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_DataValid")
+record(ai, "$(DEVICE):$(PORT):L2_DataValid")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -246,7 +246,7 @@ record(ai, "$(DEVICE):L2_DataValid")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_AlignErr")
+record(ai, "$(DEVICE):$(PORT):L2_AlignErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -254,7 +254,7 @@ record(ai, "$(DEVICE):L2_AlignErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_nSync")
+record(ai, "$(DEVICE):$(PORT):L2_nSync")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -262,7 +262,7 @@ record(ai, "$(DEVICE):L2_nSync")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_RxBuffUfl")
+record(ai, "$(DEVICE):$(PORT):L2_RxBuffUfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -270,7 +270,7 @@ record(ai, "$(DEVICE):L2_RxBuffUfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_RxBuffOfl")
+record(ai, "$(DEVICE):$(PORT):L2_RxBuffOfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -278,7 +278,7 @@ record(ai, "$(DEVICE):L2_RxBuffOfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_PositionErr")
+record(ai, "$(DEVICE):$(PORT):L2_PositionErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -286,7 +286,7 @@ record(ai, "$(DEVICE):L2_PositionErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_RxEnabled")
+record(ai, "$(DEVICE):$(PORT):L2_RxEnabled")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -294,7 +294,7 @@ record(ai, "$(DEVICE):L2_RxEnabled")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_SysRefDetected")
+record(ai, "$(DEVICE):$(PORT):L2_SysRefDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -302,7 +302,7 @@ record(ai, "$(DEVICE):L2_SysRefDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_CommaDetected")
+record(ai, "$(DEVICE):$(PORT):L2_CommaDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -310,7 +310,7 @@ record(ai, "$(DEVICE):L2_CommaDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_DisparityErr")
+record(ai, "$(DEVICE):$(PORT):L2_DisparityErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -318,7 +318,7 @@ record(ai, "$(DEVICE):L2_DisparityErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L2_DecErr")
+record(ai, "$(DEVICE):$(PORT):L2_DecErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -326,7 +326,7 @@ record(ai, "$(DEVICE):L2_DecErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_Status")
+record(ai, "$(DEVICE):$(PORT):L3_Status")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -334,7 +334,7 @@ record(ai, "$(DEVICE):L3_Status")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_GTXRdy")
+record(ai, "$(DEVICE):$(PORT):L3_GTXRdy")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -342,7 +342,7 @@ record(ai, "$(DEVICE):L3_GTXRdy")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_DataValid")
+record(ai, "$(DEVICE):$(PORT):L3_DataValid")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -350,7 +350,7 @@ record(ai, "$(DEVICE):L3_DataValid")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_AlignErr")
+record(ai, "$(DEVICE):$(PORT):L3_AlignErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -358,7 +358,7 @@ record(ai, "$(DEVICE):L3_AlignErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_nSync")
+record(ai, "$(DEVICE):$(PORT):L3_nSync")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -366,7 +366,7 @@ record(ai, "$(DEVICE):L3_nSync")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_RxBuffUfl")
+record(ai, "$(DEVICE):$(PORT):L3_RxBuffUfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -374,7 +374,7 @@ record(ai, "$(DEVICE):L3_RxBuffUfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_RxBuffOfl")
+record(ai, "$(DEVICE):$(PORT):L3_RxBuffOfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -382,7 +382,7 @@ record(ai, "$(DEVICE):L3_RxBuffOfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_PositionErr")
+record(ai, "$(DEVICE):$(PORT):L3_PositionErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -390,7 +390,7 @@ record(ai, "$(DEVICE):L3_PositionErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_RxEnabled")
+record(ai, "$(DEVICE):$(PORT):L3_RxEnabled")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -398,7 +398,7 @@ record(ai, "$(DEVICE):L3_RxEnabled")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_SysRefDetected")
+record(ai, "$(DEVICE):$(PORT):L3_SysRefDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -406,7 +406,7 @@ record(ai, "$(DEVICE):L3_SysRefDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_CommaDetected")
+record(ai, "$(DEVICE):$(PORT):L3_CommaDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -414,7 +414,7 @@ record(ai, "$(DEVICE):L3_CommaDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_DisparityErr")
+record(ai, "$(DEVICE):$(PORT):L3_DisparityErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -422,7 +422,7 @@ record(ai, "$(DEVICE):L3_DisparityErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L3_DecErr")
+record(ai, "$(DEVICE):$(PORT):L3_DecErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -430,7 +430,7 @@ record(ai, "$(DEVICE):L3_DecErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_Status")
+record(ai, "$(DEVICE):$(PORT):L4_Status")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -438,7 +438,7 @@ record(ai, "$(DEVICE):L4_Status")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_GTXRdy")
+record(ai, "$(DEVICE):$(PORT):L4_GTXRdy")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -446,7 +446,7 @@ record(ai, "$(DEVICE):L4_GTXRdy")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_DataValid")
+record(ai, "$(DEVICE):$(PORT):L4_DataValid")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -454,7 +454,7 @@ record(ai, "$(DEVICE):L4_DataValid")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_AlignErr")
+record(ai, "$(DEVICE):$(PORT):L4_AlignErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -462,7 +462,7 @@ record(ai, "$(DEVICE):L4_AlignErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_nSync")
+record(ai, "$(DEVICE):$(PORT):L4_nSync")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -470,7 +470,7 @@ record(ai, "$(DEVICE):L4_nSync")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_RxBuffUfl")
+record(ai, "$(DEVICE):$(PORT):L4_RxBuffUfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -478,7 +478,7 @@ record(ai, "$(DEVICE):L4_RxBuffUfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_RxBuffOfl")
+record(ai, "$(DEVICE):$(PORT):L4_RxBuffOfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -486,7 +486,7 @@ record(ai, "$(DEVICE):L4_RxBuffOfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_PositionErr")
+record(ai, "$(DEVICE):$(PORT):L4_PositionErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -494,7 +494,7 @@ record(ai, "$(DEVICE):L4_PositionErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_RxEnabled")
+record(ai, "$(DEVICE):$(PORT):L4_RxEnabled")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -502,7 +502,7 @@ record(ai, "$(DEVICE):L4_RxEnabled")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_SysRefDetected")
+record(ai, "$(DEVICE):$(PORT):L4_SysRefDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -510,7 +510,7 @@ record(ai, "$(DEVICE):L4_SysRefDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_CommaDetected")
+record(ai, "$(DEVICE):$(PORT):L4_CommaDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -518,7 +518,7 @@ record(ai, "$(DEVICE):L4_CommaDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_DisparityErr")
+record(ai, "$(DEVICE):$(PORT):L4_DisparityErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -526,7 +526,7 @@ record(ai, "$(DEVICE):L4_DisparityErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L4_DecErr")
+record(ai, "$(DEVICE):$(PORT):L4_DecErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -534,7 +534,7 @@ record(ai, "$(DEVICE):L4_DecErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_Status")
+record(ai, "$(DEVICE):$(PORT):L5_Status")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -542,7 +542,7 @@ record(ai, "$(DEVICE):L5_Status")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_GTXRdy")
+record(ai, "$(DEVICE):$(PORT):L5_GTXRdy")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -550,7 +550,7 @@ record(ai, "$(DEVICE):L5_GTXRdy")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_DataValid")
+record(ai, "$(DEVICE):$(PORT):L5_DataValid")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -558,7 +558,7 @@ record(ai, "$(DEVICE):L5_DataValid")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_AlignErr")
+record(ai, "$(DEVICE):$(PORT):L5_AlignErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -566,7 +566,7 @@ record(ai, "$(DEVICE):L5_AlignErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_nSync")
+record(ai, "$(DEVICE):$(PORT):L5_nSync")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -574,7 +574,7 @@ record(ai, "$(DEVICE):L5_nSync")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_RxBuffUfl")
+record(ai, "$(DEVICE):$(PORT):L5_RxBuffUfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -582,7 +582,7 @@ record(ai, "$(DEVICE):L5_RxBuffUfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_RxBuffOfl")
+record(ai, "$(DEVICE):$(PORT):L5_RxBuffOfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -590,7 +590,7 @@ record(ai, "$(DEVICE):L5_RxBuffOfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_PositionErr")
+record(ai, "$(DEVICE):$(PORT):L5_PositionErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -598,7 +598,7 @@ record(ai, "$(DEVICE):L5_PositionErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_RxEnabled")
+record(ai, "$(DEVICE):$(PORT):L5_RxEnabled")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -606,7 +606,7 @@ record(ai, "$(DEVICE):L5_RxEnabled")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_SysRefDetected")
+record(ai, "$(DEVICE):$(PORT):L5_SysRefDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -614,7 +614,7 @@ record(ai, "$(DEVICE):L5_SysRefDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_CommaDetected")
+record(ai, "$(DEVICE):$(PORT):L5_CommaDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -622,7 +622,7 @@ record(ai, "$(DEVICE):L5_CommaDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_DisparityErr")
+record(ai, "$(DEVICE):$(PORT):L5_DisparityErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -630,7 +630,7 @@ record(ai, "$(DEVICE):L5_DisparityErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L5_DecErr")
+record(ai, "$(DEVICE):$(PORT):L5_DecErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -638,7 +638,7 @@ record(ai, "$(DEVICE):L5_DecErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_Status")
+record(ai, "$(DEVICE):$(PORT):L6_Status")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -646,7 +646,7 @@ record(ai, "$(DEVICE):L6_Status")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_GTXRdy")
+record(ai, "$(DEVICE):$(PORT):L6_GTXRdy")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -654,7 +654,7 @@ record(ai, "$(DEVICE):L6_GTXRdy")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_DataValid")
+record(ai, "$(DEVICE):$(PORT):L6_DataValid")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -662,7 +662,7 @@ record(ai, "$(DEVICE):L6_DataValid")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_AlignErr")
+record(ai, "$(DEVICE):$(PORT):L6_AlignErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -670,7 +670,7 @@ record(ai, "$(DEVICE):L6_AlignErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_nSync")
+record(ai, "$(DEVICE):$(PORT):L6_nSync")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -678,7 +678,7 @@ record(ai, "$(DEVICE):L6_nSync")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_RxBuffUfl")
+record(ai, "$(DEVICE):$(PORT):L6_RxBuffUfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -686,7 +686,7 @@ record(ai, "$(DEVICE):L6_RxBuffUfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_RxBuffOfl")
+record(ai, "$(DEVICE):$(PORT):L6_RxBuffOfl")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -694,7 +694,7 @@ record(ai, "$(DEVICE):L6_RxBuffOfl")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_PositionErr")
+record(ai, "$(DEVICE):$(PORT):L6_PositionErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -702,7 +702,7 @@ record(ai, "$(DEVICE):L6_PositionErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_RxEnabled")
+record(ai, "$(DEVICE):$(PORT):L6_RxEnabled")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -710,7 +710,7 @@ record(ai, "$(DEVICE):L6_RxEnabled")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_SysRefDetected")
+record(ai, "$(DEVICE):$(PORT):L6_SysRefDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -718,7 +718,7 @@ record(ai, "$(DEVICE):L6_SysRefDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_CommaDetected")
+record(ai, "$(DEVICE):$(PORT):L6_CommaDetected")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -726,7 +726,7 @@ record(ai, "$(DEVICE):L6_CommaDetected")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_DisparityErr")
+record(ai, "$(DEVICE):$(PORT):L6_DisparityErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -734,7 +734,7 @@ record(ai, "$(DEVICE):L6_DisparityErr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):L6_DecErr")
+record(ai, "$(DEVICE):$(PORT):L6_DecErr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -743,7 +743,7 @@ record(ai, "$(DEVICE):L6_DecErr")
     info(asyn:READBACK, "1")
 }
 
-record(ao, "$(DEVICE):C_ClearErrors")
+record(ao, "$(DEVICE):$(PORT):C_ClearErrors")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -751,7 +751,7 @@ record(ao, "$(DEVICE):C_ClearErrors")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):C_RestartGTs")
+record(ao, "$(DEVICE):$(PORT):C_RestartGTs")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")

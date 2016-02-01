@@ -1,4 +1,4 @@
-record(ai, "$(DEVICE):PhyReadyCnt")
+record(ai, "$(DEVICE):$(PORT):PhyReadyCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -6,7 +6,7 @@ record(ai, "$(DEVICE):PhyReadyCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxPauseCnt")
+record(ai, "$(DEVICE):$(PORT):RxPauseCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -14,7 +14,7 @@ record(ai, "$(DEVICE):RxPauseCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxPauseCnt")
+record(ai, "$(DEVICE):$(PORT):TxPauseCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -22,7 +22,7 @@ record(ai, "$(DEVICE):TxPauseCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxCountEnCnt")
+record(ai, "$(DEVICE):$(PORT):RxCountEnCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -30,7 +30,7 @@ record(ai, "$(DEVICE):RxCountEnCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxOverFlowCnt")
+record(ai, "$(DEVICE):$(PORT):RxOverFlowCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -38,7 +38,7 @@ record(ai, "$(DEVICE):RxOverFlowCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxCrcErrorCnt")
+record(ai, "$(DEVICE):$(PORT):RxCrcErrorCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -46,7 +46,7 @@ record(ai, "$(DEVICE):RxCrcErrorCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxCountEnCnt")
+record(ai, "$(DEVICE):$(PORT):TxCountEnCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -54,7 +54,7 @@ record(ai, "$(DEVICE):TxCountEnCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxUnderRunCnt")
+record(ai, "$(DEVICE):$(PORT):TxUnderRunCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -62,7 +62,7 @@ record(ai, "$(DEVICE):TxUnderRunCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxNotReadyCnt")
+record(ai, "$(DEVICE):$(PORT):TxNotReadyCnt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -70,7 +70,7 @@ record(ai, "$(DEVICE):TxNotReadyCnt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxDisable")
+record(ai, "$(DEVICE):$(PORT):TxDisable")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -78,7 +78,7 @@ record(ai, "$(DEVICE):TxDisable")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):SigDet")
+record(ai, "$(DEVICE):$(PORT):SigDet")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -86,7 +86,7 @@ record(ai, "$(DEVICE):SigDet")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxFault")
+record(ai, "$(DEVICE):$(PORT):TxFault")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -94,7 +94,7 @@ record(ai, "$(DEVICE):TxFault")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):GtTxRst")
+record(ai, "$(DEVICE):$(PORT):GtTxRst")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -102,7 +102,7 @@ record(ai, "$(DEVICE):GtTxRst")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):GtRxRst")
+record(ai, "$(DEVICE):$(PORT):GtRxRst")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -110,7 +110,7 @@ record(ai, "$(DEVICE):GtRxRst")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RstCntDone")
+record(ai, "$(DEVICE):$(PORT):RstCntDone")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -118,7 +118,7 @@ record(ai, "$(DEVICE):RstCntDone")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Qplllock")
+record(ai, "$(DEVICE):$(PORT):Qplllock")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -126,7 +126,7 @@ record(ai, "$(DEVICE):Qplllock")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxRstdone")
+record(ai, "$(DEVICE):$(PORT):TxRstdone")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -134,7 +134,7 @@ record(ai, "$(DEVICE):TxRstdone")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):RxRstdone")
+record(ai, "$(DEVICE):$(PORT):RxRstdone")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -142,7 +142,7 @@ record(ai, "$(DEVICE):RxRstdone")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TxUsrRdy")
+record(ai, "$(DEVICE):$(PORT):TxUsrRdy")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -150,7 +150,7 @@ record(ai, "$(DEVICE):TxUsrRdy")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Status")
+record(ai, "$(DEVICE):$(PORT):Status")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -158,7 +158,7 @@ record(ai, "$(DEVICE):Status")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_PhyReady")
+record(ai, "$(DEVICE):$(PORT):FLAG_PhyReady")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -166,7 +166,7 @@ record(ai, "$(DEVICE):FLAG_PhyReady")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_RxPause")
+record(ai, "$(DEVICE):$(PORT):FLAG_RxPause")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -174,7 +174,7 @@ record(ai, "$(DEVICE):FLAG_RxPause")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_TxPause")
+record(ai, "$(DEVICE):$(PORT):FLAG_TxPause")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -182,7 +182,7 @@ record(ai, "$(DEVICE):FLAG_TxPause")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_RxCountEn")
+record(ai, "$(DEVICE):$(PORT):FLAG_RxCountEn")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -190,7 +190,7 @@ record(ai, "$(DEVICE):FLAG_RxCountEn")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_RxOverFlow")
+record(ai, "$(DEVICE):$(PORT):FLAG_RxOverFlow")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -198,7 +198,7 @@ record(ai, "$(DEVICE):FLAG_RxOverFlow")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_RxCrcError")
+record(ai, "$(DEVICE):$(PORT):FLAG_RxCrcError")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -206,7 +206,7 @@ record(ai, "$(DEVICE):FLAG_RxCrcError")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_TxCountEn")
+record(ai, "$(DEVICE):$(PORT):FLAG_TxCountEn")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -214,7 +214,7 @@ record(ai, "$(DEVICE):FLAG_TxCountEn")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_TxUnderRun")
+record(ai, "$(DEVICE):$(PORT):FLAG_TxUnderRun")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -222,7 +222,7 @@ record(ai, "$(DEVICE):FLAG_TxUnderRun")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_TxNotReady")
+record(ai, "$(DEVICE):$(PORT):FLAG_TxNotReady")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -230,7 +230,7 @@ record(ai, "$(DEVICE):FLAG_TxNotReady")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_TxDisable")
+record(ai, "$(DEVICE):$(PORT):FLAG_TxDisable")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -238,7 +238,7 @@ record(ai, "$(DEVICE):FLAG_TxDisable")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_SigDet")
+record(ai, "$(DEVICE):$(PORT):FLAG_SigDet")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -246,7 +246,7 @@ record(ai, "$(DEVICE):FLAG_SigDet")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_TxFault")
+record(ai, "$(DEVICE):$(PORT):FLAG_TxFault")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -254,7 +254,7 @@ record(ai, "$(DEVICE):FLAG_TxFault")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_GtTxRst")
+record(ai, "$(DEVICE):$(PORT):FLAG_GtTxRst")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -262,7 +262,7 @@ record(ai, "$(DEVICE):FLAG_GtTxRst")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_GtRxRst")
+record(ai, "$(DEVICE):$(PORT):FLAG_GtRxRst")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -270,7 +270,7 @@ record(ai, "$(DEVICE):FLAG_GtRxRst")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_RstCntDone")
+record(ai, "$(DEVICE):$(PORT):FLAG_RstCntDone")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -278,7 +278,7 @@ record(ai, "$(DEVICE):FLAG_RstCntDone")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_Qplllock")
+record(ai, "$(DEVICE):$(PORT):FLAG_Qplllock")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -286,7 +286,7 @@ record(ai, "$(DEVICE):FLAG_Qplllock")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_TxRstdone")
+record(ai, "$(DEVICE):$(PORT):FLAG_TxRstdone")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -294,7 +294,7 @@ record(ai, "$(DEVICE):FLAG_TxRstdone")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_RxRstdone")
+record(ai, "$(DEVICE):$(PORT):FLAG_RxRstdone")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -302,7 +302,7 @@ record(ai, "$(DEVICE):FLAG_RxRstdone")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FLAG_TxUsrRdy")
+record(ai, "$(DEVICE):$(PORT):FLAG_TxUsrRdy")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")

@@ -1,4 +1,4 @@
-record(ai, "$(DEVICE):Temperature")
+record(ai, "$(DEVICE):$(PORT):Temperature")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -6,7 +6,7 @@ record(ai, "$(DEVICE):Temperature")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccInt")
+record(ai, "$(DEVICE):$(PORT):VccInt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -14,7 +14,7 @@ record(ai, "$(DEVICE):VccInt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccAux")
+record(ai, "$(DEVICE):$(PORT):VccAux")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -22,7 +22,7 @@ record(ai, "$(DEVICE):VccAux")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VrefP")
+record(ai, "$(DEVICE):$(PORT):VrefP")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -30,7 +30,7 @@ record(ai, "$(DEVICE):VrefP")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VrefN")
+record(ai, "$(DEVICE):$(PORT):VrefN")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -38,7 +38,7 @@ record(ai, "$(DEVICE):VrefN")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccBram")
+record(ai, "$(DEVICE):$(PORT):VccBram")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -46,7 +46,7 @@ record(ai, "$(DEVICE):VccBram")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):SupplyOffsetA")
+record(ai, "$(DEVICE):$(PORT):SupplyOffsetA")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -54,7 +54,7 @@ record(ai, "$(DEVICE):SupplyOffsetA")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):AdcOffsetA")
+record(ai, "$(DEVICE):$(PORT):AdcOffsetA")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -62,7 +62,7 @@ record(ai, "$(DEVICE):AdcOffsetA")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):AdcGainA")
+record(ai, "$(DEVICE):$(PORT):AdcGainA")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -70,7 +70,7 @@ record(ai, "$(DEVICE):AdcGainA")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpInt")
+record(ai, "$(DEVICE):$(PORT):VccpInt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -78,7 +78,7 @@ record(ai, "$(DEVICE):VccpInt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpAux")
+record(ai, "$(DEVICE):$(PORT):VccpAux")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -86,7 +86,7 @@ record(ai, "$(DEVICE):VccpAux")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpDdr")
+record(ai, "$(DEVICE):$(PORT):VccpDdr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -94,7 +94,7 @@ record(ai, "$(DEVICE):VccpDdr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux_0")
+record(ai, "$(DEVICE):$(PORT):VinAux_0")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -102,7 +102,7 @@ record(ai, "$(DEVICE):VinAux_0")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux01")
+record(ai, "$(DEVICE):$(PORT):VinAux01")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -110,7 +110,7 @@ record(ai, "$(DEVICE):VinAux01")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux02")
+record(ai, "$(DEVICE):$(PORT):VinAux02")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -118,7 +118,7 @@ record(ai, "$(DEVICE):VinAux02")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux03")
+record(ai, "$(DEVICE):$(PORT):VinAux03")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -126,7 +126,7 @@ record(ai, "$(DEVICE):VinAux03")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux04")
+record(ai, "$(DEVICE):$(PORT):VinAux04")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -134,7 +134,7 @@ record(ai, "$(DEVICE):VinAux04")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux05")
+record(ai, "$(DEVICE):$(PORT):VinAux05")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -142,7 +142,7 @@ record(ai, "$(DEVICE):VinAux05")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux06")
+record(ai, "$(DEVICE):$(PORT):VinAux06")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -150,7 +150,7 @@ record(ai, "$(DEVICE):VinAux06")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux07")
+record(ai, "$(DEVICE):$(PORT):VinAux07")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -158,7 +158,7 @@ record(ai, "$(DEVICE):VinAux07")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux08")
+record(ai, "$(DEVICE):$(PORT):VinAux08")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -166,7 +166,7 @@ record(ai, "$(DEVICE):VinAux08")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux09")
+record(ai, "$(DEVICE):$(PORT):VinAux09")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -174,7 +174,7 @@ record(ai, "$(DEVICE):VinAux09")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux10")
+record(ai, "$(DEVICE):$(PORT):VinAux10")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -182,7 +182,7 @@ record(ai, "$(DEVICE):VinAux10")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux11")
+record(ai, "$(DEVICE):$(PORT):VinAux11")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -190,7 +190,7 @@ record(ai, "$(DEVICE):VinAux11")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux12")
+record(ai, "$(DEVICE):$(PORT):VinAux12")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -198,7 +198,7 @@ record(ai, "$(DEVICE):VinAux12")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux13")
+record(ai, "$(DEVICE):$(PORT):VinAux13")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -206,7 +206,7 @@ record(ai, "$(DEVICE):VinAux13")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux14")
+record(ai, "$(DEVICE):$(PORT):VinAux14")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -214,7 +214,7 @@ record(ai, "$(DEVICE):VinAux14")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VinAux15")
+record(ai, "$(DEVICE):$(PORT):VinAux15")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -222,7 +222,7 @@ record(ai, "$(DEVICE):VinAux15")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TemperatureMax")
+record(ai, "$(DEVICE):$(PORT):TemperatureMax")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -230,7 +230,7 @@ record(ai, "$(DEVICE):TemperatureMax")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccIntMax")
+record(ai, "$(DEVICE):$(PORT):VccIntMax")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -238,7 +238,7 @@ record(ai, "$(DEVICE):VccIntMax")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccAuxMax")
+record(ai, "$(DEVICE):$(PORT):VccAuxMax")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -246,7 +246,7 @@ record(ai, "$(DEVICE):VccAuxMax")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccBramMax")
+record(ai, "$(DEVICE):$(PORT):VccBramMax")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -254,7 +254,7 @@ record(ai, "$(DEVICE):VccBramMax")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):TemperatureMin")
+record(ai, "$(DEVICE):$(PORT):TemperatureMin")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -262,7 +262,7 @@ record(ai, "$(DEVICE):TemperatureMin")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccIntMin")
+record(ai, "$(DEVICE):$(PORT):VccIntMin")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -270,7 +270,7 @@ record(ai, "$(DEVICE):VccIntMin")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccAuxMin")
+record(ai, "$(DEVICE):$(PORT):VccAuxMin")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -278,7 +278,7 @@ record(ai, "$(DEVICE):VccAuxMin")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccBramMin")
+record(ai, "$(DEVICE):$(PORT):VccBramMin")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -286,7 +286,7 @@ record(ai, "$(DEVICE):VccBramMin")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpIntMax")
+record(ai, "$(DEVICE):$(PORT):VccpIntMax")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -294,7 +294,7 @@ record(ai, "$(DEVICE):VccpIntMax")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpAuxMax")
+record(ai, "$(DEVICE):$(PORT):VccpAuxMax")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -302,7 +302,7 @@ record(ai, "$(DEVICE):VccpAuxMax")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpDdrMax")
+record(ai, "$(DEVICE):$(PORT):VccpDdrMax")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -310,7 +310,7 @@ record(ai, "$(DEVICE):VccpDdrMax")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpIntMin")
+record(ai, "$(DEVICE):$(PORT):VccpIntMin")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -318,7 +318,7 @@ record(ai, "$(DEVICE):VccpIntMin")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpAuxMin")
+record(ai, "$(DEVICE):$(PORT):VccpAuxMin")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -326,7 +326,7 @@ record(ai, "$(DEVICE):VccpAuxMin")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):VccpDdrMin")
+record(ai, "$(DEVICE):$(PORT):VccpDdrMin")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -334,7 +334,7 @@ record(ai, "$(DEVICE):VccpDdrMin")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag")
+record(ai, "$(DEVICE):$(PORT):Flag")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -342,7 +342,7 @@ record(ai, "$(DEVICE):Flag")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_JTGD")
+record(ai, "$(DEVICE):$(PORT):Flag_JTGD")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -350,7 +350,7 @@ record(ai, "$(DEVICE):Flag_JTGD")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_JTGR")
+record(ai, "$(DEVICE):$(PORT):Flag_JTGR")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -358,7 +358,7 @@ record(ai, "$(DEVICE):Flag_JTGR")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_REF")
+record(ai, "$(DEVICE):$(PORT):Flag_REF")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -366,7 +366,7 @@ record(ai, "$(DEVICE):Flag_REF")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_VccpDdr")
+record(ai, "$(DEVICE):$(PORT):Flag_VccpDdr")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -374,7 +374,7 @@ record(ai, "$(DEVICE):Flag_VccpDdr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_VccpAux")
+record(ai, "$(DEVICE):$(PORT):Flag_VccpAux")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -382,7 +382,7 @@ record(ai, "$(DEVICE):Flag_VccpAux")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_VccpInt")
+record(ai, "$(DEVICE):$(PORT):Flag_VccpInt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -390,7 +390,7 @@ record(ai, "$(DEVICE):Flag_VccpInt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_VccBram")
+record(ai, "$(DEVICE):$(PORT):Flag_VccBram")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -398,7 +398,7 @@ record(ai, "$(DEVICE):Flag_VccBram")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_VccAux")
+record(ai, "$(DEVICE):$(PORT):Flag_VccAux")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -406,7 +406,7 @@ record(ai, "$(DEVICE):Flag_VccAux")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_VccInt")
+record(ai, "$(DEVICE):$(PORT):Flag_VccInt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -414,7 +414,7 @@ record(ai, "$(DEVICE):Flag_VccInt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Flag_Temperature")
+record(ai, "$(DEVICE):$(PORT):Flag_Temperature")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")

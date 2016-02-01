@@ -1,4 +1,4 @@
-record(ai, "$(DEVICE):dacRefreshRate")
+record(ai, "$(DEVICE):$(PORT):dacRefreshRate")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -6,7 +6,7 @@ record(ai, "$(DEVICE):dacRefreshRate")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):dacData")
+record(ai, "$(DEVICE):$(PORT):dacData")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -14,7 +14,7 @@ record(ai, "$(DEVICE):dacData")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):debugMux")
+record(ao, "$(DEVICE):$(PORT):debugMux")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -22,7 +22,7 @@ record(ao, "$(DEVICE):debugMux")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):debugData")
+record(ao, "$(DEVICE):$(PORT):debugData")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -30,7 +30,7 @@ record(ao, "$(DEVICE):debugData")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):sdoDisable")
+record(ao, "$(DEVICE):$(PORT):sdoDisable")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -38,7 +38,7 @@ record(ao, "$(DEVICE):sdoDisable")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):binaryOffset")
+record(ao, "$(DEVICE):$(PORT):binaryOffset")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -46,7 +46,7 @@ record(ao, "$(DEVICE):binaryOffset")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):dacTriState")
+record(ao, "$(DEVICE):$(PORT):dacTriState")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -54,7 +54,7 @@ record(ao, "$(DEVICE):dacTriState")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):rbuf")
+record(ao, "$(DEVICE):$(PORT):rbuf")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -62,7 +62,7 @@ record(ao, "$(DEVICE):rbuf")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):halfSckPeriod")
+record(ai, "$(DEVICE):$(PORT):halfSckPeriod")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -70,7 +70,7 @@ record(ai, "$(DEVICE):halfSckPeriod")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):dacRst")
+record(ao, "$(DEVICE):$(PORT):dacRst")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -79,7 +79,7 @@ record(ao, "$(DEVICE):dacRst")
     info(asyn:READBACK, "1")
 }
 
-record(ao, "$(DEVICE):C_dacRst")
+record(ao, "$(DEVICE):$(PORT):C_dacRst")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")

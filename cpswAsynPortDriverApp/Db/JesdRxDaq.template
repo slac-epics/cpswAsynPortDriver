@@ -1,0 +1,186 @@
+record(ao, "$(DEVICE):$(PORT):SwDaqTrigger")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) SwDaqTrigger")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):SwDaqTrigger0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) SwDaqTrigger0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):SampleDecimation")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) SampleDecimation")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):DaqBufferSize")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) DaqBufferSize")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):S1ChannelSelect")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) S1ChannelSelect")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):S2ChannelSelect")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) S2ChannelSelect")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):StatusStream0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) StatusStream0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Pause0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Pause0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Idle0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Idle0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Overflow0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Overflow0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Error0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Error0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):JESDValid0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) JESDValid0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Enable0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Enable0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):PacketCnt0")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) PacketCnt0")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):StatusStream1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) StatusStream1")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Pause1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Pause1")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Idle1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Idle1")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Overflow1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Overflow1")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Error1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Error1")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):JESDValid1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) JESDValid1")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Enable1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Enable1")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):PacketCnt1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) PacketCnt1")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+
+record(ao, "$(DEVICE):$(PORT):C_TriggerDAQ")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) C_TriggerDAQ")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+

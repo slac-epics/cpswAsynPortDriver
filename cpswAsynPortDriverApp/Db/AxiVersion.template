@@ -1,4 +1,4 @@
-record(ai, "$(DEVICE):FpgaVersion")
+record(ai, "$(DEVICE):$(PORT):FpgaVersion")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -6,7 +6,7 @@ record(ai, "$(DEVICE):FpgaVersion")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):ScratchPad")
+record(ao, "$(DEVICE):$(PORT):ScratchPad")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -14,7 +14,7 @@ record(ao, "$(DEVICE):ScratchPad")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):DeviceDnaHigh")
+record(ai, "$(DEVICE):$(PORT):DeviceDnaHigh")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -22,7 +22,7 @@ record(ai, "$(DEVICE):DeviceDnaHigh")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):DeviceDnaLow")
+record(ai, "$(DEVICE):$(PORT):DeviceDnaLow")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -30,7 +30,7 @@ record(ai, "$(DEVICE):DeviceDnaLow")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FdSerialHigh")
+record(ai, "$(DEVICE):$(PORT):FdSerialHigh")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -38,7 +38,7 @@ record(ai, "$(DEVICE):FdSerialHigh")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):FdSerialLow")
+record(ai, "$(DEVICE):$(PORT):FdSerialLow")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -46,7 +46,7 @@ record(ai, "$(DEVICE):FdSerialLow")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):MasterReset")
+record(ao, "$(DEVICE):$(PORT):MasterReset")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -54,7 +54,7 @@ record(ao, "$(DEVICE):MasterReset")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):FpgaReload")
+record(ao, "$(DEVICE):$(PORT):FpgaReload")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -62,7 +62,7 @@ record(ao, "$(DEVICE):FpgaReload")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):FpgaReloadAddress")
+record(ao, "$(DEVICE):$(PORT):FpgaReloadAddress")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -70,7 +70,7 @@ record(ao, "$(DEVICE):FpgaReloadAddress")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):Counter")
+record(ai, "$(DEVICE):$(PORT):Counter")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -78,7 +78,7 @@ record(ai, "$(DEVICE):Counter")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):FpgaReloadHalt")
+record(ao, "$(DEVICE):$(PORT):FpgaReloadHalt")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -86,7 +86,7 @@ record(ao, "$(DEVICE):FpgaReloadHalt")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(waveform, "$(DEVICE):UserConstants")
+record(waveform, "$(DEVICE):$(PORT):UserConstants")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32ArrayOut")
@@ -96,7 +96,7 @@ record(waveform, "$(DEVICE):UserConstants")
     field(SCAN, "Passive")
 }
 
-record(waveform, "$(DEVICE):BuildStamp")
+record(waveform, "$(DEVICE):$(PORT):BuildStamp")
 {
     field(PINI, "YES")
     field(DTYP, "asynOctetRead")
@@ -107,7 +107,7 @@ record(waveform, "$(DEVICE):BuildStamp")
 }
 
 
-record(ao, "$(DEVICE):C_MasterReset")
+record(ao, "$(DEVICE):$(PORT):C_MasterReset")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -115,7 +115,7 @@ record(ao, "$(DEVICE):C_MasterReset")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):C_FpgaReload")
+record(ao, "$(DEVICE):$(PORT):C_FpgaReload")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -123,7 +123,7 @@ record(ao, "$(DEVICE):C_FpgaReload")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ao, "$(DEVICE):C_CounterReset")
+record(ao, "$(DEVICE):$(PORT):C_CounterReset")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")

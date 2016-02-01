@@ -1,0 +1,42 @@
+record(ao, "$(DEVICE):$(PORT):CounterReset")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) CounterReset")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):MsgErrCounter")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) MsgErrCounter")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):MsgOverflowCounter")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) MsgOverflowCounter")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):MitigationMsgRcvd")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) MitigationMsgRcvd")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+
+record(ao, "$(DEVICE):$(PORT):C_CounterReset")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) C_CounterReset")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+
