@@ -1,0 +1,18 @@
+d = { 'name': "AxiMicronN25Q",
+     'registers': [{ 'name'   : "Test",
+                    'address' : "0x00",
+                    'type'    : "Configuration" },
+                   {'name'    : "addr32BitMode",
+                    'address' : "0x01",
+                    'type'    : "Configuration" },
+                   {'name'    : "ADDR",
+                    'address' : "0x02",
+                    'type'    : "Configuration" },
+                   {'name'    : "CMD",
+                    'address' : "0x03",
+                    'type'    : "Configuration" },
+                   {'name'    : "DATA",
+                    'address' : "0x80",
+                    'nelms'   : "64",
+                    'type'    : "Configuration" }]
+   }

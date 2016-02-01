@@ -1,0 +1,17 @@
+d = { 'name': "MitigationNode",
+     'registers': [{ 'name'   : "CounterReset",
+                    'address' : "0x00",
+                    'type'    : "Configuration" },
+                   {'name'    : "MsgErrCounter",
+                    'address' : "0x01",
+                    'type'    : "Status" },
+                   {'name'    : "MsgOverflowCounter",
+                    'address' : "0x02",
+                    'type'    : "Status" },
+                   {'name'    : "MitigationMsgRcvd",
+                    'address' : "0x03",
+                    'size'    : "8",
+                    'lsBit'   : "0",
+                    'type'    : "Status" }],
+     'commands': [{ 'name'   : "CounterReset"} ] 
+   }
