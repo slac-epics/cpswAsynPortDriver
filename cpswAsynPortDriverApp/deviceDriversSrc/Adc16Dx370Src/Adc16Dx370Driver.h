@@ -7,6 +7,7 @@
 
 /* Registers */
 #define ID_DEVICE_TYPEString "ID_DEVICE_TYPE"
+#define PD_MODEString "PD_MODE"
 #define ID_PROD_UPPERString "ID_PROD_UPPER"
 #define ID_PROD_LOWERString "ID_PROD_LOWER"
 #define ID_MASKREVString "ID_MASKREV"
@@ -162,6 +163,7 @@ protected:
 /* Registers */
     int p_ID_DEVICE_TYPE;
     #define FIRST_ADC16DX370_PARAM p_ID_DEVICE_TYPE
+    int p_PD_MODE;
     int p_ID_PROD_UPPER;
     int p_ID_PROD_LOWER;
     int p_ID_MASKREV;
