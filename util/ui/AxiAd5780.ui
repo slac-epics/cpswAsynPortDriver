@@ -59,9 +59,12 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):dacRefreshRate">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):dacRefreshRate">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):dacRefreshRate</string>
+           <string notr="true">$(DEVICE):$(PORT):dacRefreshRate</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -73,9 +76,12 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):dacData">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):dacData">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):dacData</string>
+           <string notr="true">$(DEVICE):$(PORT):dacData</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -87,9 +93,12 @@
          </widget>
         </item>
         <item row="9" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):halfSckPeriod">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):halfSckPeriod">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):halfSckPeriod</string>
+           <string notr="true">$(DEVICE):$(PORT):halfSckPeriod</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -135,9 +144,12 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):debugMux">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):debugMux">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):debugMux</string>
+           <string notr="true">$(DEVICE):$(PORT):debugMux</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -149,9 +161,12 @@
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):debugData">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):debugData">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):debugData</string>
+           <string notr="true">$(DEVICE):$(PORT):debugData</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -163,9 +178,12 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):sdoDisable">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):sdoDisable">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):sdoDisable</string>
+           <string notr="true">$(DEVICE):$(PORT):sdoDisable</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -177,9 +195,12 @@
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):binaryOffset">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):binaryOffset">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):binaryOffset</string>
+           <string notr="true">$(DEVICE):$(PORT):binaryOffset</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -191,9 +212,12 @@
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):dacTriState">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):dacTriState">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):dacTriState</string>
+           <string notr="true">$(DEVICE):$(PORT):dacTriState</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -205,9 +229,12 @@
          </widget>
         </item>
         <item row="8" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):rbuf">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):rbuf">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):rbuf</string>
+           <string notr="true">$(DEVICE):$(PORT):rbuf</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -219,9 +246,12 @@
          </widget>
         </item>
         <item row="10" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):dacRst">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):dacRst">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):dacRst</string>
+           <string notr="true">$(DEVICE):$(PORT):dacRst</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -235,7 +265,7 @@
         <item row="11" column="1">
          <widget class="caMessageButton" name="dacRst">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):C_dacRst.PROC</string>
+           <string notr="true">$(DEVICE):$(PORT):C_dacRst.PROC</string>
           </property>
           <property name="label">
            <string notr="true">Execute</string>

@@ -59,9 +59,12 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):FpgaVersion">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):FpgaVersion">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):FpgaVersion</string>
+           <string notr="true">$(DEVICE):$(PORT):FpgaVersion</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -73,9 +76,12 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):DeviceDnaHigh">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):DeviceDnaHigh">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):DeviceDnaHigh</string>
+           <string notr="true">$(DEVICE):$(PORT):DeviceDnaHigh</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -87,9 +93,12 @@
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):DeviceDnaLow">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):DeviceDnaLow">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):DeviceDnaLow</string>
+           <string notr="true">$(DEVICE):$(PORT):DeviceDnaLow</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -101,9 +110,12 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):FdSerialHigh">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):FdSerialHigh">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):FdSerialHigh</string>
+           <string notr="true">$(DEVICE):$(PORT):FdSerialHigh</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -115,9 +127,12 @@
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):FdSerialLow">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):FdSerialLow">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):FdSerialLow</string>
+           <string notr="true">$(DEVICE):$(PORT):FdSerialLow</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -129,9 +144,12 @@
          </widget>
         </item>
         <item row="9" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):Counter">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Counter">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):Counter</string>
+           <string notr="true">$(DEVICE):$(PORT):Counter</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -143,9 +161,12 @@
          </widget>
         </item>
         <item row="12" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):BuildStamp">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):BuildStamp">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):BuildStamp</string>
+           <string notr="true">$(DEVICE):$(PORT):BuildStamp</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -191,9 +212,12 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):ScratchPad">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):ScratchPad">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):ScratchPad</string>
+           <string notr="true">$(DEVICE):$(PORT):ScratchPad</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -205,9 +229,12 @@
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):MasterReset">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):MasterReset">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):MasterReset</string>
+           <string notr="true">$(DEVICE):$(PORT):MasterReset</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -219,9 +246,12 @@
          </widget>
         </item>
         <item row="7" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):FpgaReload">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):FpgaReload">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):FpgaReload</string>
+           <string notr="true">$(DEVICE):$(PORT):FpgaReload</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -233,9 +263,12 @@
          </widget>
         </item>
         <item row="8" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):FpgaReloadAddress">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):FpgaReloadAddress">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):FpgaReloadAddress</string>
+           <string notr="true">$(DEVICE):$(PORT):FpgaReloadAddress</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -247,9 +280,12 @@
          </widget>
         </item>
         <item row="10" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):FpgaReloadHalt">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):FpgaReloadHalt">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):FpgaReloadHalt</string>
+           <string notr="true">$(DEVICE):$(PORT):FpgaReloadHalt</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -261,9 +297,12 @@
          </widget>
         </item>
         <item row="11" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):UserConstants">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):UserConstants">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):UserConstants</string>
+           <string notr="true">$(DEVICE):$(PORT):UserConstants</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -277,7 +316,7 @@
         <item row="13" column="1">
          <widget class="caMessageButton" name="MasterReset">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):C_MasterReset.PROC</string>
+           <string notr="true">$(DEVICE):$(PORT):C_MasterReset.PROC</string>
           </property>
           <property name="label">
            <string notr="true">Execute</string>
@@ -300,7 +339,7 @@
         <item row="14" column="1">
          <widget class="caMessageButton" name="FpgaReload">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):C_FpgaReload.PROC</string>
+           <string notr="true">$(DEVICE):$(PORT):C_FpgaReload.PROC</string>
           </property>
           <property name="label">
            <string notr="true">Execute</string>
@@ -323,7 +362,7 @@
         <item row="15" column="1">
          <widget class="caMessageButton" name="CounterReset">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):C_CounterReset.PROC</string>
+           <string notr="true">$(DEVICE):$(PORT):C_CounterReset.PROC</string>
           </property>
           <property name="label">
            <string notr="true">Execute</string>

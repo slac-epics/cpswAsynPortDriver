@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>448</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="caInclude" name="AxiVersion">
+       <attribute name="title">
+        <string>AxiVersion</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=AxiVersion</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">AxiVersion.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="Pgp2bAxi">
+       <attribute name="title">
+        <string>Pgp2bAxi</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=Pgp2bAxi</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">Pgp2bAxi.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="JesdRx">
+       <attribute name="title">
+        <string>JesdRx</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=JesdRx</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">JesdRx.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="JesdTx">
+       <attribute name="title">
+        <string>JesdTx</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=JesdTx</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">JesdTx.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="Lmk04828">
+       <attribute name="title">
+        <string>Lmk04828</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=Lmk04828</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">Lmk04828.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="Adc16Dx370">
+       <attribute name="title">
+        <string>Adc16Dx370_0</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=Adc16Dx370_0</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">Adc16Dx370.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="Adc16Dx370">
+       <attribute name="title">
+        <string>Adc16Dx370_1</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=Adc16Dx370_1</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">Adc16Dx370.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="Dac38J84">
+       <attribute name="title">
+        <string>Dac38J84</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=Dac38J84</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">Dac38J84.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="AmcGenericAdcDacCtrl">
+       <attribute name="title">
+        <string>AmcGenericAdcDacCtrl</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=AmcGenericAdcDacCtrl</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">AmcGenericAdcDacCtrl.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="JesdRxDaq">
+       <attribute name="title">
+        <string>JesdRxDaq</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=JesdRxDaq</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">JesdRxDaq.ui</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>448</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+

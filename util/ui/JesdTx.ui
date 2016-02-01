@@ -59,9 +59,12 @@
          </widget>
         </item>
         <item row="12" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L1_Status">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1_Status">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_Status</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_Status</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -73,9 +76,12 @@
          </widget>
         </item>
         <item row="13" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L1_GTXReady">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1_GTXReady">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_GTXReady</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_GTXReady</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -87,9 +93,12 @@
          </widget>
         </item>
         <item row="14" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L1_DataValid">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1_DataValid">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_DataValid</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_DataValid</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -101,9 +110,12 @@
          </widget>
         </item>
         <item row="15" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L1_IlasActive">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1_IlasActive">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_IlasActive</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_IlasActive</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -115,9 +127,12 @@
          </widget>
         </item>
         <item row="16" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L1_nSync">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1_nSync">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_nSync</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_nSync</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -129,9 +144,12 @@
          </widget>
         </item>
         <item row="17" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L1_TxEnabled">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1_TxEnabled">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_TxEnabled</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_TxEnabled</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -143,9 +161,12 @@
          </widget>
         </item>
         <item row="18" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L1_SysRefDetected">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L1_SysRefDetected">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_SysRefDetected</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_SysRefDetected</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -157,9 +178,12 @@
          </widget>
         </item>
         <item row="19" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L2_Status">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2_Status">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_Status</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_Status</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -171,9 +195,12 @@
          </widget>
         </item>
         <item row="20" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L2_GTXRdy">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2_GTXRdy">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_GTXRdy</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_GTXRdy</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -185,9 +212,12 @@
          </widget>
         </item>
         <item row="21" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L2_DataValid">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2_DataValid">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_DataValid</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_DataValid</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -199,9 +229,12 @@
          </widget>
         </item>
         <item row="22" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L2_IlasActive">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2_IlasActive">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_IlasActive</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_IlasActive</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -213,9 +246,12 @@
          </widget>
         </item>
         <item row="23" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L2_nSync">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2_nSync">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_nSync</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_nSync</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -227,9 +263,12 @@
          </widget>
         </item>
         <item row="24" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L2_TxEnabled">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2_TxEnabled">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_TxEnabled</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_TxEnabled</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -241,9 +280,12 @@
          </widget>
         </item>
         <item row="25" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):L2_SysRefDetected">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):L2_SysRefDetected">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_SysRefDetected</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_SysRefDetected</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -289,9 +331,12 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):Enable">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):Enable">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):Enable</string>
+           <string notr="true">$(DEVICE):$(PORT):Enable</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -303,9 +348,12 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):CommonControl">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):CommonControl">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):CommonControl</string>
+           <string notr="true">$(DEVICE):$(PORT):CommonControl</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -317,9 +365,12 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):SubClass">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):SubClass">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):SubClass</string>
+           <string notr="true">$(DEVICE):$(PORT):SubClass</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -331,9 +382,12 @@
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):ReplaceEnable">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):ReplaceEnable">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):ReplaceEnable</string>
+           <string notr="true">$(DEVICE):$(PORT):ReplaceEnable</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -345,9 +399,12 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):ResetGTs">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):ResetGTs">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):ResetGTs</string>
+           <string notr="true">$(DEVICE):$(PORT):ResetGTs</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -359,9 +416,12 @@
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):InvertSync">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):InvertSync">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):InvertSync</string>
+           <string notr="true">$(DEVICE):$(PORT):InvertSync</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -373,9 +433,12 @@
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):EnableTestSig">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):EnableTestSig">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):EnableTestSig</string>
+           <string notr="true">$(DEVICE):$(PORT):EnableTestSig</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -387,9 +450,12 @@
          </widget>
         </item>
         <item row="7" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):PeriodRampStep">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):PeriodRampStep">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):PeriodRampStep</string>
+           <string notr="true">$(DEVICE):$(PORT):PeriodRampStep</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -401,9 +467,12 @@
          </widget>
         </item>
         <item row="8" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):RampStep">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):RampStep">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RampStep</string>
+           <string notr="true">$(DEVICE):$(PORT):RampStep</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -415,9 +484,12 @@
          </widget>
         </item>
         <item row="9" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):SquarePeriod">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):SquarePeriod">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):SquarePeriod</string>
+           <string notr="true">$(DEVICE):$(PORT):SquarePeriod</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -429,9 +501,12 @@
          </widget>
         </item>
         <item row="10" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):LowAmplitudeVal">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):LowAmplitudeVal">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):LowAmplitudeVal</string>
+           <string notr="true">$(DEVICE):$(PORT):LowAmplitudeVal</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -443,9 +518,12 @@
          </widget>
         </item>
         <item row="11" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):HighAmplitudeVal">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):HighAmplitudeVal">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):HighAmplitudeVal</string>
+           <string notr="true">$(DEVICE):$(PORT):HighAmplitudeVal</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -457,9 +535,12 @@
          </widget>
         </item>
         <item row="26" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):L1_SignalSelect">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):L1_SignalSelect">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_SignalSelect</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_SignalSelect</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -471,9 +552,12 @@
          </widget>
         </item>
         <item row="27" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):L1_data_out_mux">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):L1_data_out_mux">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_data_out_mux</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_data_out_mux</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -485,9 +569,12 @@
          </widget>
         </item>
         <item row="28" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):L1_test_out_mux">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):L1_test_out_mux">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L1_test_out_mux</string>
+           <string notr="true">$(DEVICE):$(PORT):L1_test_out_mux</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -499,9 +586,12 @@
          </widget>
         </item>
         <item row="29" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):L2_SignalSelect">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):L2_SignalSelect">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_SignalSelect</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_SignalSelect</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -513,9 +603,12 @@
          </widget>
         </item>
         <item row="30" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):L2_data_out_mux">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):L2_data_out_mux">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_data_out_mux</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_data_out_mux</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -527,9 +620,12 @@
          </widget>
         </item>
         <item row="31" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):L2_test_out_mux">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):L2_test_out_mux">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):L2_test_out_mux</string>
+           <string notr="true">$(DEVICE):$(PORT):L2_test_out_mux</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>

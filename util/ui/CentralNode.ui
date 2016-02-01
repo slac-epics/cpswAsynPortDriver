@@ -51,34 +51,51 @@
         <property name="spacing">
          <number>6</number>
         </property>
-        <item row="3" column="0">
-         <widget class="QLabel" name="Busy">
+        <item row="1" column="0">
+         <widget class="QLabel" name="MsgErrCounter">
           <property name="text">
-           <string> Busy </string>
+           <string> MsgErrCounter </string>
           </property>
          </widget>
         </item>
-        <item row="3" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Busy">
+        <item row="1" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):MsgErrCounter">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Busy</string>
+           <string notr="true">$(DEVICE):$(PORT):MsgErrCounter</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
-        <item row="4" column="0">
-         <widget class="QLabel" name="Overflow">
+        <item row="2" column="0">
+         <widget class="QLabel" name="MsgOverflowCounter">
           <property name="text">
-           <string> Overflow </string>
+           <string> MsgOverflowCounter </string>
           </property>
          </widget>
         </item>
-        <item row="4" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Overflow">
+        <item row="2" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):MsgOverflowCounter">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Overflow</string>
+           <string notr="true">$(DEVICE):$(PORT):MsgOverflowCounter</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="DigitalInputState0">
+          <property name="text">
+           <string> DigitalInputState0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):DigitalInputState0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):DigitalInputState0</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -86,16 +103,16 @@
          </widget>
         </item>
         <item row="9" column="0">
-         <widget class="QLabel" name="DataCount">
+         <widget class="QLabel" name="DigitalInputState1">
           <property name="text">
-           <string> DataCount </string>
+           <string> DigitalInputState1 </string>
           </property>
          </widget>
         </item>
         <item row="9" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):DataCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):DigitalInputState1">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):DataCount</string>
+           <string notr="true">$(DEVICE):$(PORT):DigitalInputState1</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -103,33 +120,16 @@
          </widget>
         </item>
         <item row="10" column="0">
-         <widget class="QLabel" name="EventCount">
+         <widget class="QLabel" name="DigitalInputState2">
           <property name="text">
-           <string> EventCount </string>
+           <string> DigitalInputState2 </string>
           </property>
          </widget>
         </item>
         <item row="10" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):EventCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):DigitalInputState2">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):EventCount</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="0">
-         <widget class="QLabel" name="RandomData">
-          <property name="text">
-           <string> RandomData </string>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RandomData">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):RandomData</string>
+           <string notr="true">$(DEVICE):$(PORT):DigitalInputState2</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -171,50 +171,50 @@
          <number>6</number>
         </property>
         <item row="0" column="0">
-         <widget class="QLabel" name="ConfigStatus">
+         <widget class="QLabel" name="CounterReset">
           <property name="text">
-           <string> ConfigStatus </string>
+           <string> CounterReset </string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):ConfigStatus">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):CounterReset">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):ConfigStatus</string>
+           <string notr="true">$(DEVICE):$(PORT):CounterReset</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="AxiEn">
+        <item row="3" column="0">
+         <widget class="QLabel" name="DigitalInputMask0">
           <property name="text">
-           <string> AxiEn </string>
+           <string> DigitalInputMask0 </string>
           </property>
          </widget>
         </item>
-        <item row="1" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AxiEn">
+        <item row="3" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DigitalInputMask0">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AxiEn</string>
+           <string notr="true">$(DEVICE):$(PORT):DigitalInputMask0</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="TxEn">
+        <item row="4" column="0">
+         <widget class="QLabel" name="DigitalInputMask1">
           <property name="text">
-           <string> TxEn </string>
+           <string> DigitalInputMask1 </string>
           </property>
          </widget>
         </item>
-        <item row="2" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):TxEn">
+        <item row="4" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DigitalInputMask1">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):TxEn</string>
+           <string notr="true">$(DEVICE):$(PORT):DigitalInputMask1</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -222,16 +222,16 @@
          </widget>
         </item>
         <item row="5" column="0">
-         <widget class="QLabel" name="PacketLength">
+         <widget class="QLabel" name="DigitalInputMask2">
           <property name="text">
-           <string> PacketLength </string>
+           <string> DigitalInputMask2 </string>
           </property>
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):PacketLength">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DigitalInputMask2">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):PacketLength</string>
+           <string notr="true">$(DEVICE):$(PORT):DigitalInputMask2</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -239,16 +239,16 @@
          </widget>
         </item>
         <item row="6" column="0">
-         <widget class="QLabel" name="AxiStreamCfg">
+         <widget class="QLabel" name="ForceMitMsgEn">
           <property name="text">
-           <string> AxiStreamCfg </string>
+           <string> ForceMitMsgEn </string>
           </property>
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AxiStreamCfg">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):ForceMitMsgEn">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):AxiStreamCfg</string>
+           <string notr="true">$(DEVICE):$(PORT):ForceMitMsgEn</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -256,50 +256,33 @@
          </widget>
         </item>
         <item row="7" column="0">
-         <widget class="QLabel" name="tDest">
+         <widget class="QLabel" name="ForceMitMsgVal">
           <property name="text">
-           <string> tDest </string>
+           <string> ForceMitMsgVal </string>
           </property>
          </widget>
         </item>
         <item row="7" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):tDest">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):ForceMitMsgVal">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):tDest</string>
+           <string notr="true">$(DEVICE):$(PORT):ForceMitMsgVal</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
-        <item row="8" column="0">
-         <widget class="QLabel" name="tId">
+        <item row="11" column="0">
+         <widget class="QLabel" name="DigitalInputState2">
           <property name="text">
-           <string> tId </string>
+           <string> CounterReset </string>
           </property>
          </widget>
         </item>
-        <item row="8" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):tId">
+        <item row="11" column="1">
+         <widget class="caMessageButton" name="CounterReset">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):tId</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="12" column="0">
-         <widget class="QLabel" name="RandomData">
-          <property name="text">
-           <string> OneShot </string>
-          </property>
-         </widget>
-        </item>
-        <item row="12" column="1">
-         <widget class="caMessageButton" name="OneShot">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):C_OneShot.PROC</string>
+           <string notr="true">$(DEVICE):$(PORT):C_CounterReset.PROC</string>
           </property>
           <property name="label">
            <string notr="true">Execute</string>

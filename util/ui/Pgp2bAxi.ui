@@ -59,9 +59,12 @@
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):Status">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Status">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):Status</string>
+           <string notr="true">$(DEVICE):$(PORT):Status</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -73,9 +76,12 @@
          </widget>
         </item>
         <item row="7" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxPhyReady">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxPhyReady">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxPhyReady</string>
+           <string notr="true">$(DEVICE):$(PORT):RxPhyReady</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -87,9 +93,12 @@
          </widget>
         </item>
         <item row="8" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxPhyReady">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxPhyReady">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxPhyReady</string>
+           <string notr="true">$(DEVICE):$(PORT):TxPhyReady</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -101,9 +110,12 @@
          </widget>
         </item>
         <item row="9" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxLocalLinkReady">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxLocalLinkReady">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxLocalLinkReady</string>
+           <string notr="true">$(DEVICE):$(PORT):RxLocalLinkReady</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -115,9 +127,12 @@
          </widget>
         </item>
         <item row="10" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxRemLinkReady">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxRemLinkReady">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxRemLinkReady</string>
+           <string notr="true">$(DEVICE):$(PORT):RxRemLinkReady</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -129,9 +144,12 @@
          </widget>
         </item>
         <item row="11" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxLinkReady">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxLinkReady">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxLinkReady</string>
+           <string notr="true">$(DEVICE):$(PORT):TxLinkReady</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -143,9 +161,12 @@
          </widget>
         </item>
         <item row="12" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxLinkPolarity">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxLinkPolarity">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxLinkPolarity</string>
+           <string notr="true">$(DEVICE):$(PORT):RxLinkPolarity</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -157,9 +178,12 @@
          </widget>
         </item>
         <item row="13" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxRemPause">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxRemPause">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxRemPause</string>
+           <string notr="true">$(DEVICE):$(PORT):RxRemPause</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -171,9 +195,12 @@
          </widget>
         </item>
         <item row="14" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxLocPause">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxLocPause">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxLocPause</string>
+           <string notr="true">$(DEVICE):$(PORT):TxLocPause</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -185,9 +212,12 @@
          </widget>
         </item>
         <item row="15" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxRemOverflow">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxRemOverflow</string>
+           <string notr="true">$(DEVICE):$(PORT):RxRemOverflow</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -199,9 +229,12 @@
          </widget>
         </item>
         <item row="16" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxLocOverflow">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxLocOverflow</string>
+           <string notr="true">$(DEVICE):$(PORT):TxLocOverflow</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -213,9 +246,12 @@
          </widget>
         </item>
         <item row="17" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxRemLinkData">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxRemLinkData">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxRemLinkData</string>
+           <string notr="true">$(DEVICE):$(PORT):RxRemLinkData</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -227,9 +263,12 @@
          </widget>
         </item>
         <item row="18" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxCellErrorCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxCellErrorCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxCellErrorCount</string>
+           <string notr="true">$(DEVICE):$(PORT):RxCellErrorCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -241,9 +280,12 @@
          </widget>
         </item>
         <item row="19" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxLinkDownCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxLinkDownCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxLinkDownCount</string>
+           <string notr="true">$(DEVICE):$(PORT):RxLinkDownCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -255,9 +297,12 @@
          </widget>
         </item>
         <item row="20" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxLinkErrorCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxLinkErrorCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxLinkErrorCount</string>
+           <string notr="true">$(DEVICE):$(PORT):RxLinkErrorCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -269,9 +314,12 @@
          </widget>
         </item>
         <item row="21" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow0Count">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxRemOverflow0Count">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxRemOverflow0Count</string>
+           <string notr="true">$(DEVICE):$(PORT):RxRemOverflow0Count</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -283,9 +331,12 @@
          </widget>
         </item>
         <item row="22" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow1Count">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxRemOverflow1Count">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxRemOverflow1Count</string>
+           <string notr="true">$(DEVICE):$(PORT):RxRemOverflow1Count</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -297,9 +348,12 @@
          </widget>
         </item>
         <item row="23" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow2Count">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxRemOverflow2Count">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxRemOverflow2Count</string>
+           <string notr="true">$(DEVICE):$(PORT):RxRemOverflow2Count</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -311,9 +365,12 @@
          </widget>
         </item>
         <item row="24" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow3Count">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxRemOverflow3Count">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxRemOverflow3Count</string>
+           <string notr="true">$(DEVICE):$(PORT):RxRemOverflow3Count</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -325,9 +382,12 @@
          </widget>
         </item>
         <item row="25" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxFrameErrorCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxFrameErrorCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxFrameErrorCount</string>
+           <string notr="true">$(DEVICE):$(PORT):RxFrameErrorCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -339,9 +399,12 @@
          </widget>
         </item>
         <item row="26" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxFrameCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxFrameCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxFrameCount</string>
+           <string notr="true">$(DEVICE):$(PORT):RxFrameCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -353,9 +416,12 @@
          </widget>
         </item>
         <item row="27" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow0Count">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxLocOverflow0Count">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxLocOverflow0Count</string>
+           <string notr="true">$(DEVICE):$(PORT):TxLocOverflow0Count</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -367,9 +433,12 @@
          </widget>
         </item>
         <item row="28" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow1Count">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxLocOverflow1Count">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxLocOverflow1Count</string>
+           <string notr="true">$(DEVICE):$(PORT):TxLocOverflow1Count</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -381,9 +450,12 @@
          </widget>
         </item>
         <item row="29" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow2Count">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxLocOverflow2Count">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxLocOverflow2Count</string>
+           <string notr="true">$(DEVICE):$(PORT):TxLocOverflow2Count</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -395,9 +467,12 @@
          </widget>
         </item>
         <item row="30" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow3Count">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxLocOverflow3Count">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxLocOverflow3Count</string>
+           <string notr="true">$(DEVICE):$(PORT):TxLocOverflow3Count</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -409,9 +484,12 @@
          </widget>
         </item>
         <item row="31" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxFrameErrorCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxFrameErrorCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxFrameErrorCount</string>
+           <string notr="true">$(DEVICE):$(PORT):TxFrameErrorCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -423,9 +501,12 @@
          </widget>
         </item>
         <item row="32" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxFrameCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxFrameCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxFrameCount</string>
+           <string notr="true">$(DEVICE):$(PORT):TxFrameCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -437,9 +518,12 @@
          </widget>
         </item>
         <item row="33" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxClkFreq">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxClkFreq">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxClkFreq</string>
+           <string notr="true">$(DEVICE):$(PORT):RxClkFreq</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -451,9 +535,12 @@
          </widget>
         </item>
         <item row="34" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxClkFreq">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxClkFreq">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxClkFreq</string>
+           <string notr="true">$(DEVICE):$(PORT):TxClkFreq</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -465,9 +552,12 @@
          </widget>
         </item>
         <item row="35" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxOpCodeStatus">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxOpCodeStatus">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxOpCodeStatus</string>
+           <string notr="true">$(DEVICE):$(PORT):TxOpCodeStatus</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -479,9 +569,12 @@
          </widget>
         </item>
         <item row="36" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):LastTxOpCode">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):LastTxOpCode">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):LastTxOpCode</string>
+           <string notr="true">$(DEVICE):$(PORT):LastTxOpCode</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -493,9 +586,12 @@
          </widget>
         </item>
         <item row="37" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxOpCodeStatus">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxOpCodeStatus">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxOpCodeStatus</string>
+           <string notr="true">$(DEVICE):$(PORT):RxOpCodeStatus</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -507,9 +603,12 @@
          </widget>
         </item>
         <item row="38" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):LastRxOpCode">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):LastRxOpCode">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):LastRxOpCode</string>
+           <string notr="true">$(DEVICE):$(PORT):LastRxOpCode</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -521,9 +620,12 @@
          </widget>
         </item>
         <item row="39" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):TxOpCodeCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):TxOpCodeCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):TxOpCodeCount</string>
+           <string notr="true">$(DEVICE):$(PORT):TxOpCodeCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -535,9 +637,12 @@
          </widget>
         </item>
         <item row="40" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):RxOpCodeCount">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RxOpCodeCount">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):RxOpCodeCount</string>
+           <string notr="true">$(DEVICE):$(PORT):RxOpCodeCount</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -583,9 +688,12 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):CountReset">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):CountReset">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):CountReset</string>
+           <string notr="true">$(DEVICE):$(PORT):CountReset</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -597,9 +705,12 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):ResetRx">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):ResetRx">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):ResetRx</string>
+           <string notr="true">$(DEVICE):$(PORT):ResetRx</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -611,9 +722,12 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):Flush">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):Flush">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):Flush</string>
+           <string notr="true">$(DEVICE):$(PORT):Flush</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -625,9 +739,12 @@
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):Loopback">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):Loopback">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):Loopback</string>
+           <string notr="true">$(DEVICE):$(PORT):Loopback</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -639,9 +756,12 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):LocData">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):LocData">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):LocData</string>
+           <string notr="true">$(DEVICE):$(PORT):LocData</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -653,9 +773,12 @@
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):AutoStatus">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):AutoStatus">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):AutoStatus</string>
+           <string notr="true">$(DEVICE):$(PORT):AutoStatus</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -669,7 +792,7 @@
         <item row="41" column="1">
          <widget class="caMessageButton" name="ResetRx">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):C_ResetRx.PROC</string>
+           <string notr="true">$(DEVICE):$(PORT):C_ResetRx.PROC</string>
           </property>
           <property name="label">
            <string notr="true">Execute</string>
@@ -692,7 +815,7 @@
         <item row="42" column="1">
          <widget class="caMessageButton" name="Flush">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):C_Flush.PROC</string>
+           <string notr="true">$(DEVICE):$(PORT):C_Flush.PROC</string>
           </property>
           <property name="label">
            <string notr="true">Execute</string>

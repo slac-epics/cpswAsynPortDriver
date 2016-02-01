@@ -28,7 +28,7 @@
         <string>AxiVersion</string>
        </attribute>
        <property name="macro">
-        <string notr="true">DEVICE=$(DEVICE)</string>
+        <string notr="true">DEVICE=$(DEVICE),PORT=AxiVersion</string>
        </property>
        <property name="filename" stdset="0">
         <string notr="true">AxiVersion.ui</string>
@@ -39,7 +39,7 @@
         <string>AxiXadc</string>
        </attribute>
        <property name="macro">
-        <string notr="true">DEVICE=$(DEVICE)</string>
+        <string notr="true">DEVICE=$(DEVICE),PORT=AxiXadc</string>
        </property>
        <property name="filename" stdset="0">
         <string notr="true">AxiXadc.ui</string>

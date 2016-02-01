@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="6" column="0">
+         <widget class="QLabel" name="StatusStream0">
+          <property name="text">
+           <string> StatusStream0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):StatusStream0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):StatusStream0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="Pause0">
+          <property name="text">
+           <string> Pause0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Pause0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Pause0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="Idle0">
+          <property name="text">
+           <string> Idle0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Idle0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Idle0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="Overflow0">
+          <property name="text">
+           <string> Overflow0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Overflow0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Overflow0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="Error0">
+          <property name="text">
+           <string> Error0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Error0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Error0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="JESDValid0">
+          <property name="text">
+           <string> JESDValid0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):JESDValid0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):JESDValid0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="Enable0">
+          <property name="text">
+           <string> Enable0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Enable0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Enable0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="PacketCnt0">
+          <property name="text">
+           <string> PacketCnt0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):PacketCnt0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):PacketCnt0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="StatusStream1">
+          <property name="text">
+           <string> StatusStream1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):StatusStream1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):StatusStream1</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="Pause1">
+          <property name="text">
+           <string> Pause1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Pause1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Pause1</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="Idle1">
+          <property name="text">
+           <string> Idle1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Idle1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Idle1</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <widget class="QLabel" name="Overflow1">
+          <property name="text">
+           <string> Overflow1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Overflow1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Overflow1</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QLabel" name="Error1">
+          <property name="text">
+           <string> Error1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Error1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Error1</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="JESDValid1">
+          <property name="text">
+           <string> JESDValid1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):JESDValid1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):JESDValid1</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="Enable1">
+          <property name="text">
+           <string> Enable1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Enable1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Enable1</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="PacketCnt1">
+          <property name="text">
+           <string> PacketCnt1 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):PacketCnt1">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):PacketCnt1</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="SwDaqTrigger">
+          <property name="text">
+           <string> SwDaqTrigger </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):SwDaqTrigger">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):SwDaqTrigger</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="SwDaqTrigger0">
+          <property name="text">
+           <string> SwDaqTrigger0 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):SwDaqTrigger0">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):SwDaqTrigger0</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="SampleDecimation">
+          <property name="text">
+           <string> SampleDecimation </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):SampleDecimation">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):SampleDecimation</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="DaqBufferSize">
+          <property name="text">
+           <string> DaqBufferSize </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DaqBufferSize">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):DaqBufferSize</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="S1ChannelSelect">
+          <property name="text">
+           <string> S1ChannelSelect </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):S1ChannelSelect">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):S1ChannelSelect</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="S2ChannelSelect">
+          <property name="text">
+           <string> S2ChannelSelect </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):S2ChannelSelect">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):S2ChannelSelect</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QLabel" name="PacketCnt1">
+          <property name="text">
+           <string> TriggerDAQ </string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1">
+         <widget class="caMessageButton" name="TriggerDAQ">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):C_TriggerDAQ.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+
