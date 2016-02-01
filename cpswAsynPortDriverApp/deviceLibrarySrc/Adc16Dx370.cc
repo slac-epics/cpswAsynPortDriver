@@ -8,6 +8,8 @@ Adc16Dx370Impl v = CShObj::create<Adc16Dx370Impl>(name);
 Field f;
         f = IIntField::create("ID_DEVICE_TYPE", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x003*addrSize);
+        f = IIntField::create("PD_MODE", 2, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0x002*addrSize);
         f = IIntField::create("ID_PROD_UPPER", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x004*addrSize);
         f = IIntField::create("ID_PROD_LOWER", 32, false, 0);

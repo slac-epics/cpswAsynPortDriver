@@ -6,6 +6,14 @@ record(ai, "$(DEVICE):$(PORT):ID_DEVICE_TYPE")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
+record(ao, "$(DEVICE):$(PORT):PD_MODE")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) PD_MODE")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
 record(ai, "$(DEVICE):$(PORT):ID_PROD_UPPER")
 {
     field(PINI, "YES")
