@@ -1,6 +1,6 @@
 #for $p in $registers
   #if $p.has_key('nelms')
-record(waveform, "\$(DEVICE):${p.name}")
+record(waveform, "\$(DEVICE):\$(PORT):${p.name}")
 {
     field(PINI, "YES")
     #if $p.type == "Status"
@@ -31,7 +31,7 @@ record(waveform, "\$(DEVICE):${p.name}")
 
   #else
     #if $p.type == "Status"
-record(ai, "\$(DEVICE):${p.name}")
+record(ai, "\$(DEVICE):\$(PORT):${p.name}")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -40,7 +40,7 @@ record(ai, "\$(DEVICE):${p.name}")
     info(asyn:READBACK, "1")
 }
     #else if $p.type == "Configuration"
-record(ao, "\$(DEVICE):${p.name}")
+record(ao, "\$(DEVICE):\$(PORT):${p.name}")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
@@ -54,7 +54,7 @@ record(ao, "\$(DEVICE):${p.name}")
 
 #if $varExists('commands')
   #for $c in $commands
-record(ao, "\$(DEVICE):C_${c.name}")
+record(ao, "\$(DEVICE):\$(PORT):C_${c.name}")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
