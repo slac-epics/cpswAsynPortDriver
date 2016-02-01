@@ -6,6 +6,11 @@
 #include <cpsw_api_user.h>
 
 /* Registers */
+#define AdcValid0String "AdcValid0"
+#define AdcValid1String "AdcValid1"
+#define AdcValid2String "AdcValid2"
+#define AdcValid3String "AdcValid3"
+#define StatusRegString "StatusReg"
 #define Adc0_t0String "Adc0_t0"
 #define Adc0_t1String "Adc0_t1"
 #define Adc0_t2String "Adc0_t2"
@@ -36,6 +41,8 @@
 #define LmkRstString "LmkRst"
 #define lmkSyncString "lmkSync"
 #define LmkStatusString "LmkStatus"
+#define loopbackString "loopback"
+#define CounterResetString "CounterReset"
 
 /* Commands */
 
@@ -49,8 +56,13 @@ public:
 
 protected:
 /* Registers */
+    int p_AdcValid0;
+    #define FIRST_AMCGENERICADCDACCTRL_PARAM p_AdcValid0
+    int p_AdcValid1;
+    int p_AdcValid2;
+    int p_AdcValid3;
+    int p_StatusReg;
     int p_Adc0_t0;
-    #define FIRST_AMCGENERICADCDACCTRL_PARAM p_Adc0_t0
     int p_Adc0_t1;
     int p_Adc0_t2;
     int p_Adc0_t3;
@@ -80,7 +92,9 @@ protected:
     int p_LmkRst;
     int p_lmkSync;
     int p_LmkStatus;
-    #define LAST_AMCGENERICADCDACCTRL_PARAM p_LmkStatus
+    int p_loopback;
+    int p_CounterReset;
+    #define LAST_AMCGENERICADCDACCTRL_PARAM p_CounterReset
 
 
     #define NUM_AMCGENERICADCDACCTRL_PARAMS (&LAST_AMCGENERICADCDACCTRL_PARAM - &FIRST_AMCGENERICADCDACCTRL_PARAM + 1)

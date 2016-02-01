@@ -22,6 +22,11 @@ AmcGenericAdcDacCtrlDriver::AmcGenericAdcDacCtrlDriver(const char *portName, Pat
 {
 
 /* Registers */
+   createParam(AdcValid0String, asynParamInt32, &p_AdcValid0, IScalVal::create);
+   createParam(AdcValid1String, asynParamInt32, &p_AdcValid1, IScalVal::create);
+   createParam(AdcValid2String, asynParamInt32, &p_AdcValid2, IScalVal::create);
+   createParam(AdcValid3String, asynParamInt32, &p_AdcValid3, IScalVal::create);
+   createParam(StatusRegString, asynParamInt32, &p_StatusReg, IScalVal::create);
    createParam(Adc0_t0String, asynParamInt32, &p_Adc0_t0, IScalVal::create);
    createParam(Adc0_t1String, asynParamInt32, &p_Adc0_t1, IScalVal::create);
    createParam(Adc0_t2String, asynParamInt32, &p_Adc0_t2, IScalVal::create);
@@ -52,6 +57,8 @@ AmcGenericAdcDacCtrlDriver::AmcGenericAdcDacCtrlDriver(const char *portName, Pat
    createParam(LmkRstString, asynParamInt32, &p_LmkRst, IScalVal::create);
    createParam(lmkSyncString, asynParamInt32, &p_lmkSync, IScalVal::create);
    createParam(LmkStatusString, asynParamInt32, &p_LmkStatus, IScalVal::create);
+   createParam(loopbackString, asynParamInt32, &p_loopback, IScalVal::create);
+   createParam(CounterResetString, asynParamInt32, &p_CounterReset, IScalVal::create);
 }
 
 

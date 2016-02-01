@@ -20,7 +20,8 @@ AmcGenericAdcDacCtrl_LIBS += DeviceLibrary
 AmcGenericAdcDacCtrl_LIBS += cpswAsynPortDriverSupport
 AmcGenericAdcDacCtrl_LIBS += asyn
 AmcGenericAdcDacCtrl_LIBS += $(EPICS_BASE_IOC_LIBS)
-USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
+USR_INCLUDES += $(CPSW_FRAMEWORK_INCLUDE)
+USR_INCLUDES += $(BOOST_INCLUDE)
 include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
