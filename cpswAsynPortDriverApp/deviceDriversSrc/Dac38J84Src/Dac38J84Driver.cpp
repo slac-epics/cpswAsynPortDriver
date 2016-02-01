@@ -116,7 +116,7 @@ asynStatus Dac38J84Driver::ClearDACAlarms()
      ScalVals[p_L6SERDES_alarm]->setVal( &u32, 1 );
      ScalVals[p_L7SERDES_alarm]->setVal( &u32, 1 );
      ScalVals[p_L8SERDES_alarm]->setVal( &u32, 1 );
-     ScalVals[p_Sysref_alarm,]->setVal( &u32, 1 );
+     ScalVals[p_Sysref_alarm]->setVal( &u32, 1 );
    } catch (CPSWError &e) {
      printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
@@ -130,13 +130,13 @@ asynStatus Dac38J84Driver::InitDAC_JESD()
    uint32_t u32 = 0x0;
 
    try {
-     ScalVals[p_DacReg0003]->setVal( &u32, 1 );
+     ScalVals[p_DacReg0x0003]->setVal( &u32, 1 );
      u32 = 0x1E;
-     ScalVals[p_DacReg0004]->setVal( &u32, 1 );
+     ScalVals[p_DacReg0x0004]->setVal( &u32, 1 );
      u32 = 0x1;
-     ScalVals[p_DacReg0004]->setVal( &u32, 1 );
+     ScalVals[p_DacReg0x0004]->setVal( &u32, 1 );
      u32 = 0x1;
-     ScalVals[p_DacReg0003]->setVal( &u32, 1 );
+     ScalVals[p_DacReg0x0003]->setVal( &u32, 1 );
    } catch (CPSWError &e) {
      printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
