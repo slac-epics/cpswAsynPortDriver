@@ -23,6 +23,7 @@ Adc16Dx370Driver::Adc16Dx370Driver(const char *portName, Path p, int nelms)
 
 /* Registers */
    createParam(ID_DEVICE_TYPEString, asynParamInt32, &p_ID_DEVICE_TYPE, IScalVal::create);
+   createParam(PD_MODEString, asynParamInt32, &p_PD_MODE, IScalVal::create);
    createParam(ID_PROD_UPPERString, asynParamInt32, &p_ID_PROD_UPPER, IScalVal::create);
    createParam(ID_PROD_LOWERString, asynParamInt32, &p_ID_PROD_LOWER, IScalVal::create);
    createParam(ID_MASKREVString, asynParamInt32, &p_ID_MASKREV, IScalVal::create);
@@ -186,8 +187,16 @@ asynStatus Adc16Dx370Driver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 asynStatus Adc16Dx370Driver::CalibrateADC()
 {
    asynStatus status = asynSuccess;
-/* Fill in command logic here */
-   printf("Command CalibrateADC not yet implemented!\n");
+   uint32_t u32 = 3;
+  
+   try {
+     ScalVals[p_PD_MODE]->setVal( &u32, 1);
+     epicsThreadSleep(0.1);
+     u32 = 0;
+     ScalVals[p_PD_MODE]->setVal( &u32, 1);
+   } catch (CPSWError &e) {
+     status = asynError;
+   }
 
    return status;
 }
