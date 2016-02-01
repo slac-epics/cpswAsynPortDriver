@@ -2,7 +2,6 @@
 #define KC705TENGIGETH_DRIVER_H
 
 #include <cpsw_api_builder.h>
-#include <cpsw_mmio_dev.h>
 #include <device_library.h>
 
 class   IKc705TenGigEth;

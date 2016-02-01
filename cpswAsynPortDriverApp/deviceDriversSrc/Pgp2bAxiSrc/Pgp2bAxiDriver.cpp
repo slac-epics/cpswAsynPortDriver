@@ -18,7 +18,7 @@ static const char *driverName = "Pgp2bAxiDriver";
 
 
 Pgp2bAxiDriver::Pgp2bAxiDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName("Pgp2bAxi"), nelms, NUM_PGP2BAXI_PARAMS)
+                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_PGP2BAXI_PARAMS)
 {
 
 /* Registers */
@@ -92,8 +92,16 @@ asynStatus Pgp2bAxiDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 asynStatus Pgp2bAxiDriver::ResetRx()
 {
    asynStatus status = asynSuccess;
-/* Fill in command logic here */
-   printf("Command ResetRx not yet implemented!\n");
+   uint32_t u32 = 1;
+
+   try {
+     ScalVals[p_ResetRx]->setVal( &u32, 1 );
+     u32 = 0; 
+     ScalVals[p_ResetRx]->setVal( &u32, 1 );
+
+   } catch (CPSWError &e) {
+     status = asynError;
+   }
 
    return status;
 }

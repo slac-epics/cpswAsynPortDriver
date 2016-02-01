@@ -18,7 +18,7 @@ static const char *driverName = "AmcGenericAdcDacCtrlDriver";
 
 
 AmcGenericAdcDacCtrlDriver::AmcGenericAdcDacCtrlDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName("AmcGenericAdcDacCtrl"), nelms, NUM_AMCGENERICADCDACCTRL_PARAMS)
+                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_AMCGENERICADCDACCTRL_PARAMS)
 {
 
 /* Registers */

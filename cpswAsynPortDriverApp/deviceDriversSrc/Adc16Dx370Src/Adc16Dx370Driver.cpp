@@ -18,7 +18,7 @@ static const char *driverName = "Adc16Dx370Driver";
 
 
 Adc16Dx370Driver::Adc16Dx370Driver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName("Adc16Dx370"), nelms, NUM_ADC16DX370_PARAMS)
+                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_ADC16DX370_PARAMS)
 {
 
 /* Registers */
