@@ -17,12 +17,11 @@ Kc705TenGigEth_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 INC += Kc705TenGigEth.h
 
+USR_INCLUDES += $(CPSW_FRAMEWORK_INCLUDE)
+cpsw_DIR += $(CPSW_FRAMEWORK_LIB)
 
-USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
-cpsw_DIR += /afs/slac/g/lcls/package/cpsw/framework
-
-USR_INCLUDES += -I/afs/slac/g/lcls/package/boost/1.57.0/linux-x86_64/include
-boost_system_DIR += /afs/slac/g/lcls/package/boost/1.57.0/linux-x86_64/lib
+USR_INCLUDES += $(BOOST_INCLUDE)
+boost_system_DIR += $(BOOST_LIB)
 
 PROD_IOC += Kc705TenGigEthApp
 DBD += Kc705TenGigEthApp.dbd
@@ -35,10 +34,14 @@ Kc705TenGigEthApp_SRCS_DEFAULT += Kc705TenGigEthApp_registerRecordDeviceDriver.c
 Kc705TenGigEthApp_LIBS += Kc705TenGigEth
 Kc705TenGigEthApp_LIBS += AxiVersion
 Kc705TenGigEthApp_LIBS += AxiXadc
+Kc705TenGigEthApp_LIBS += DeviceLibrary
+Kc705TenGigEthApp_LIBS += cpswAsynPortDriverSupport
 Kc705TenGigEthApp_LIBS += asyn
 
 Kc705TenGigEthApp_LIBS += cpsw
 Kc705TenGigEthApp_LIBS += boost_system
+
+Kc705TenGigEthApp_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 include $(TOP)/configure/RULES
 #----------------------------------------

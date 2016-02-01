@@ -20,7 +20,8 @@ AxiVersion_LIBS += DeviceLibrary
 AxiVersion_LIBS += cpswAsynPortDriverSupport
 AxiVersion_LIBS += asyn
 AxiVersion_LIBS += $(EPICS_BASE_IOC_LIBS)
-USR_INCLUDES += -I/afs/slac/g/lcls/package/cpsw/framework
+USR_INCLUDES += $(CPSW_FRAMEWORK_INCLUDE)
+USR_INCLUDES += $(BOOST_INCLUDE)
 include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE

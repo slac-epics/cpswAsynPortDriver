@@ -12,4 +12,5 @@ DB += Lmk04828.db
 DB += Adc16Dx370.db
 DB += AxiAd5780.db
 DB += Dac38J84.db
+DB += Pgp2bAxi.db
 include $(TOP)/configure/RULES
