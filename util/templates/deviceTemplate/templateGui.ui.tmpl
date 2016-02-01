@@ -62,9 +62,12 @@
          </widget>
         </item>
         <item row="$i" column="1">
-         <widget class="caLineEdit" name="\$(DEVICE):${p.name}">
+         <widget class="caLineEdit" name="\$(DEVICE):\$(PORT):${p.name}">
           <property name="channel" stdset="0">
-           <string notr="true">\$(DEVICE):${p.name}</string>
+           <string notr="true">\$(DEVICE):\$(PORT):${p.name}</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -116,9 +119,12 @@
          </widget>
         </item>
         <item row="$i" column="1">
-         <widget class="caTextEntry" name="\$(DEVICE):${p.name}">
+         <widget class="caTextEntry" name="\$(DEVICE):\$(PORT):${p.name}">
           <property name="channel" stdset="0">
-           <string notr="true">\$(DEVICE):${p.name}</string>
+           <string notr="true">\$(DEVICE):\$(PORT):${p.name}</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
           </property>
          </widget>
         </item>
@@ -137,7 +143,7 @@
         <item row="$i" column="1">
          <widget class="caMessageButton" name="${c.name}">
           <property name="channel" stdset="0">
-           <string notr="true">\$(DEVICE):C_${c.name}.PROC</string>
+           <string notr="true">\$(DEVICE):\$(PORT):C_${c.name}.PROC</string>
           </property>
           <property name="label">
            <string notr="true">Execute</string>
