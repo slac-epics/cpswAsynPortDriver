@@ -937,7 +937,6 @@ record(ao, "$(DEVICE):$(PORT):LmkReg0x017c")
 
 record(ao, "$(DEVICE):$(PORT):C_SyncClks")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_SyncClks")
     field(SCAN, "Passive")
@@ -945,7 +944,6 @@ record(ao, "$(DEVICE):$(PORT):C_SyncClks")
 }
 record(ao, "$(DEVICE):$(PORT):C_writeConfig")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_writeConfig")
     field(SCAN, "Passive")

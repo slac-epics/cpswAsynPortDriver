@@ -33,7 +33,6 @@ record(ai, "$(DEVICE):$(PORT):MitigationMsgRcvd")
 
 record(ao, "$(DEVICE):$(PORT):C_CounterReset")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_CounterReset")
     field(SCAN, "Passive")

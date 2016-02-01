@@ -745,7 +745,6 @@ record(ai, "$(DEVICE):$(PORT):L6_DecErr")
 
 record(ao, "$(DEVICE):$(PORT):C_ClearErrors")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_ClearErrors")
     field(SCAN, "Passive")
@@ -753,7 +752,6 @@ record(ao, "$(DEVICE):$(PORT):C_ClearErrors")
 }
 record(ao, "$(DEVICE):$(PORT):C_RestartGTs")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_RestartGTs")
     field(SCAN, "Passive")

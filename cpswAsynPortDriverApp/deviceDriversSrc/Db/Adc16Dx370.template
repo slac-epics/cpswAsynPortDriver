@@ -1121,7 +1121,6 @@ record(ao, "$(DEVICE):$(PORT):AdcReg0x017c")
 
 record(ao, "$(DEVICE):$(PORT):C_CalibrateADC")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_CalibrateADC")
     field(SCAN, "Passive")

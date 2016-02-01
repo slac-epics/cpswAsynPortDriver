@@ -329,7 +329,6 @@ record(ai, "$(DEVICE):$(PORT):RxOpCodeCount")
 
 record(ao, "$(DEVICE):$(PORT):C_ResetRx")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_ResetRx")
     field(SCAN, "Passive")
@@ -337,7 +336,6 @@ record(ao, "$(DEVICE):$(PORT):C_ResetRx")
 }
 record(ao, "$(DEVICE):$(PORT):C_Flush")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_Flush")
     field(SCAN, "Passive")

@@ -109,7 +109,6 @@ record(waveform, "$(DEVICE):$(PORT):BuildStamp")
 
 record(ao, "$(DEVICE):$(PORT):C_MasterReset")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_MasterReset")
     field(SCAN, "Passive")
@@ -117,7 +116,6 @@ record(ao, "$(DEVICE):$(PORT):C_MasterReset")
 }
 record(ao, "$(DEVICE):$(PORT):C_FpgaReload")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_FpgaReload")
     field(SCAN, "Passive")
@@ -125,7 +123,6 @@ record(ao, "$(DEVICE):$(PORT):C_FpgaReload")
 }
 record(ao, "$(DEVICE):$(PORT):C_CounterReset")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_CounterReset")
     field(SCAN, "Passive")

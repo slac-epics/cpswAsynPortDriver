@@ -81,7 +81,6 @@ record(ao, "$(DEVICE):$(PORT):dacRst")
 
 record(ao, "$(DEVICE):$(PORT):C_dacRst")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_dacRst")
     field(SCAN, "Passive")

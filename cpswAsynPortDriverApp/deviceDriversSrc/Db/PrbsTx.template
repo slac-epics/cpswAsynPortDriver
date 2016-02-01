@@ -97,7 +97,6 @@ record(ai, "$(DEVICE):$(PORT):RandomData")
 
 record(ao, "$(DEVICE):$(PORT):C_OneShot")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_OneShot")
     field(SCAN, "Passive")

@@ -177,7 +177,6 @@ record(ai, "$(DEVICE):$(PORT):PacketCnt1")
 
 record(ao, "$(DEVICE):$(PORT):C_TriggerDAQ")
 {
-    field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) C_TriggerDAQ")
     field(SCAN, "Passive")
