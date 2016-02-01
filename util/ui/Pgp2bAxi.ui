@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="6" column="0">
+         <widget class="QLabel" name="Status">
+          <property name="text">
+           <string> Status </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):Status">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Status</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="RxPhyReady">
+          <property name="text">
+           <string> RxPhyReady </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxPhyReady">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxPhyReady</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="TxPhyReady">
+          <property name="text">
+           <string> TxPhyReady </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxPhyReady">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxPhyReady</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="RxLocalLinkReady">
+          <property name="text">
+           <string> RxLocalLinkReady </string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxLocalLinkReady">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxLocalLinkReady</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="RxRemLinkReady">
+          <property name="text">
+           <string> RxRemLinkReady </string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxRemLinkReady">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxRemLinkReady</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="TxLinkReady">
+          <property name="text">
+           <string> TxLinkReady </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxLinkReady">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxLinkReady</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="RxLinkPolarity">
+          <property name="text">
+           <string> RxLinkPolarity </string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxLinkPolarity">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxLinkPolarity</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="RxRemPause">
+          <property name="text">
+           <string> RxRemPause </string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxRemPause">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxRemPause</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="TxLocPause">
+          <property name="text">
+           <string> TxLocPause </string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxLocPause">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxLocPause</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="RxRemOverflow">
+          <property name="text">
+           <string> RxRemOverflow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxRemOverflow</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="TxLocOverflow">
+          <property name="text">
+           <string> TxLocOverflow </string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxLocOverflow</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <widget class="QLabel" name="RxRemLinkData">
+          <property name="text">
+           <string> RxRemLinkData </string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxRemLinkData">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxRemLinkData</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QLabel" name="RxCellErrorCount">
+          <property name="text">
+           <string> RxCellErrorCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxCellErrorCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxCellErrorCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="RxLinkDownCount">
+          <property name="text">
+           <string> RxLinkDownCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxLinkDownCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxLinkDownCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="RxLinkErrorCount">
+          <property name="text">
+           <string> RxLinkErrorCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxLinkErrorCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxLinkErrorCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="RxRemOverflow0Count">
+          <property name="text">
+           <string> RxRemOverflow0Count </string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow0Count">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxRemOverflow0Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QLabel" name="RxRemOverflow1Count">
+          <property name="text">
+           <string> RxRemOverflow1Count </string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow1Count">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxRemOverflow1Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="0">
+         <widget class="QLabel" name="RxRemOverflow2Count">
+          <property name="text">
+           <string> RxRemOverflow2Count </string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow2Count">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxRemOverflow2Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="0">
+         <widget class="QLabel" name="RxRemOverflow3Count">
+          <property name="text">
+           <string> RxRemOverflow3Count </string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxRemOverflow3Count">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxRemOverflow3Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="0">
+         <widget class="QLabel" name="RxFrameErrorCount">
+          <property name="text">
+           <string> RxFrameErrorCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxFrameErrorCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxFrameErrorCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0">
+         <widget class="QLabel" name="RxFrameCount">
+          <property name="text">
+           <string> RxFrameCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxFrameCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxFrameCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="0">
+         <widget class="QLabel" name="TxLocOverflow0Count">
+          <property name="text">
+           <string> TxLocOverflow0Count </string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow0Count">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxLocOverflow0Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="0">
+         <widget class="QLabel" name="TxLocOverflow1Count">
+          <property name="text">
+           <string> TxLocOverflow1Count </string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow1Count">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxLocOverflow1Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="0">
+         <widget class="QLabel" name="TxLocOverflow2Count">
+          <property name="text">
+           <string> TxLocOverflow2Count </string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow2Count">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxLocOverflow2Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="0">
+         <widget class="QLabel" name="TxLocOverflow3Count">
+          <property name="text">
+           <string> TxLocOverflow3Count </string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxLocOverflow3Count">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxLocOverflow3Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="0">
+         <widget class="QLabel" name="TxFrameErrorCount">
+          <property name="text">
+           <string> TxFrameErrorCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxFrameErrorCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxFrameErrorCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="0">
+         <widget class="QLabel" name="TxFrameCount">
+          <property name="text">
+           <string> TxFrameCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxFrameCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxFrameCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="0">
+         <widget class="QLabel" name="RxClkFreq">
+          <property name="text">
+           <string> RxClkFreq </string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxClkFreq">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxClkFreq</string>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="0">
+         <widget class="QLabel" name="TxClkFreq">
+          <property name="text">
+           <string> TxClkFreq </string>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxClkFreq">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxClkFreq</string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="0">
+         <widget class="QLabel" name="TxOpCodeStatus">
+          <property name="text">
+           <string> TxOpCodeStatus </string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxOpCodeStatus">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxOpCodeStatus</string>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="0">
+         <widget class="QLabel" name="LastTxOpCode">
+          <property name="text">
+           <string> LastTxOpCode </string>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):LastTxOpCode">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):LastTxOpCode</string>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="0">
+         <widget class="QLabel" name="RxOpCodeStatus">
+          <property name="text">
+           <string> RxOpCodeStatus </string>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxOpCodeStatus">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxOpCodeStatus</string>
+          </property>
+         </widget>
+        </item>
+        <item row="38" column="0">
+         <widget class="QLabel" name="LastRxOpCode">
+          <property name="text">
+           <string> LastRxOpCode </string>
+          </property>
+         </widget>
+        </item>
+        <item row="38" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):LastRxOpCode">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):LastRxOpCode</string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="0">
+         <widget class="QLabel" name="TxOpCodeCount">
+          <property name="text">
+           <string> TxOpCodeCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):TxOpCodeCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):TxOpCodeCount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="0">
+         <widget class="QLabel" name="RxOpCodeCount">
+          <property name="text">
+           <string> RxOpCodeCount </string>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):RxOpCodeCount">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):RxOpCodeCount</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="CountReset">
+          <property name="text">
+           <string> CountReset </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):CountReset">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):CountReset</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="ResetRx">
+          <property name="text">
+           <string> ResetRx </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):ResetRx">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):ResetRx</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="Flush">
+          <property name="text">
+           <string> Flush </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):Flush">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Flush</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="Loopback">
+          <property name="text">
+           <string> Loopback </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):Loopback">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):Loopback</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="LocData">
+          <property name="text">
+           <string> LocData </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):LocData">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):LocData</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="AutoStatus">
+          <property name="text">
+           <string> AutoStatus </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):AutoStatus">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):AutoStatus</string>
+          </property>
+         </widget>
+        </item>
+        <item row="41" column="0">
+         <widget class="QLabel" name="RxOpCodeCount">
+          <property name="text">
+           <string> ResetRx </string>
+          </property>
+         </widget>
+        </item>
+        <item row="41" column="1">
+         <widget class="caMessageButton" name="ResetRx">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_ResetRx.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="42" column="0">
+         <widget class="QLabel" name="RxOpCodeCount">
+          <property name="text">
+           <string> Flush </string>
+          </property>
+         </widget>
+        </item>
+        <item row="42" column="1">
+         <widget class="caMessageButton" name="Flush">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):C_Flush.PROC</string>
+          </property>
+          <property name="label">
+           <string notr="true">Execute</string>
+          </property>
+          <property name="releaseMessage">
+           <string notr="true"/>
+          </property>
+          <property name="pressMessage">
+           <string notr="true">1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+
