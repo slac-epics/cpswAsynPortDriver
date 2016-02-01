@@ -195,7 +195,7 @@ asynStatus Adc16Dx370Driver::CalibrateADC()
      u32 = 0;
      ScalVals[p_PD_MODE]->setVal( &u32, 1);
    } catch (CPSWError &e) {
-     printf("Childl nelms:%d\n", c->getNelms());
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
    }
 
