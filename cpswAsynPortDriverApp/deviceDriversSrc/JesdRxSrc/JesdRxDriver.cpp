@@ -18,7 +18,7 @@ static const char *driverName = "JesdRxDriver";
 
 
 JesdRxDriver::JesdRxDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName("JesdRx"), nelms, NUM_JESDRX_PARAMS)
+                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_JESDRX_PARAMS)
 {
 
 /* Registers */
@@ -128,10 +128,10 @@ asynStatus JesdRxDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     asynStatus status = asynSuccess;
     const char *paramName;
     if( function == p_C_ClearErrors ) {
-        ClearErrors();
+        status = ClearErrors();
     }
     else if( function == p_C_RestartGTs ) {
-        RestartGTs();
+        status = RestartGTs();
     }
     else {
         status = cpswAsynDriver::writeInt32(pasynUser, value);
@@ -152,6 +152,7 @@ asynStatus JesdRxDriver::ClearErrors()
      ScalVals[p_ClearErrors]->setVal( &u32, 1 );
 
    } catch (CPSWError &e) {
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
    }
 
@@ -168,6 +169,7 @@ asynStatus JesdRxDriver::RestartGTs()
      ScalVals[p_ResetGTs]->setVal( &u32, 1 );
 
    } catch (CPSWError &e) {
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
    }
 

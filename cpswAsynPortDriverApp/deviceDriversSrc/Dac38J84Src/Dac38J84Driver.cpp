@@ -190,8 +190,13 @@ asynStatus Dac38J84Driver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 asynStatus Dac38J84Driver::ClearDACAlarms()
 {
    asynStatus status = asynSuccess;
-/* Fill in command logic here */
-   printf("Command ClearDACAlarms not yet implemented!\n");
+   uint32_t u32 = 0;
+
+   try {
+
+   } catch (CPSWError &e) {
+     status = asynError;
+   }
 
    return status;
 }

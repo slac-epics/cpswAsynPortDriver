@@ -76,10 +76,10 @@ asynStatus Pgp2bAxiDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     asynStatus status = asynSuccess;
     const char *paramName;
     if( function == p_C_ResetRx ) {
-        ResetRx();
+        status = ResetRx();
     }
     else if( function == p_C_Flush ) {
-        Flush();
+        status = Flush();
     }
     else {
         status = cpswAsynDriver::writeInt32(pasynUser, value);
@@ -100,6 +100,7 @@ asynStatus Pgp2bAxiDriver::ResetRx()
      ScalVals[p_ResetRx]->setVal( &u32, 1 );
 
    } catch (CPSWError &e) {
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
    }
 

@@ -174,7 +174,7 @@ asynStatus Adc16Dx370Driver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     asynStatus status = asynSuccess;
     const char *paramName;
     if( function == p_C_CalibrateADC ) {
-        CalibrateADC();
+        status = CalibrateADC();
     }
     else {
         status = cpswAsynDriver::writeInt32(pasynUser, value);
@@ -195,6 +195,7 @@ asynStatus Adc16Dx370Driver::CalibrateADC()
      u32 = 0;
      ScalVals[p_PD_MODE]->setVal( &u32, 1);
    } catch (CPSWError &e) {
+     printf("Childl nelms:%d\n", c->getNelms());
      status = asynError;
    }
 
@@ -211,8 +212,6 @@ extern "C" int Adc16Dx370Create(const char *portName, const char *path)
     printf("Child is NULL\n");
   }
   else {
-  printf("Child found\n");
-  printf("Childl nelms:%d\n", c->getNelms());
   new Adc16Dx370Driver(portName, p, c->getNelms());
   }
   return(asynSuccess);

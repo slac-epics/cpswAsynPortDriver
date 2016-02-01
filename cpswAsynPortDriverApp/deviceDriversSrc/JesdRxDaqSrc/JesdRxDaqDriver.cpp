@@ -56,7 +56,7 @@ asynStatus JesdRxDaqDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     asynStatus status = asynSuccess;
     const char *paramName;
     if( function == p_C_TriggerDAQ ) {
-        TriggerDAQ();
+        status = TriggerDAQ();
     }
     else {
         status = cpswAsynDriver::writeInt32(pasynUser, value);
@@ -76,6 +76,7 @@ asynStatus JesdRxDaqDriver::TriggerDAQ()
      u32 = 0;
      ScalVals[p_SwDaqTrigger0]->setVal( &u32, 1 );
    } catch (CPSWError e) {
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
    }
 

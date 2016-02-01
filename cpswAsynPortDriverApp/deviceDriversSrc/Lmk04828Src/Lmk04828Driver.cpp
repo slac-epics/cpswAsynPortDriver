@@ -152,10 +152,10 @@ asynStatus Lmk04828Driver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     asynStatus status = asynSuccess;
     const char *paramName;
     if( function == p_C_SyncClks ) {
-        SyncClks();
+        status = SyncClks();
     }
     else if( function == p_C_writeConfig ) {
-        writeConfig();
+        status = writeConfig();
     }
     else {
         status = cpswAsynDriver::writeInt32(pasynUser, value);
@@ -198,6 +198,7 @@ asynStatus Lmk04828Driver::writeConfig()
        ScalVals[p_SYNC_DIS]->setVal( &u32, 1 );
    }
    catch(CPSWError &e) {
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
       return asynError;
    }
 

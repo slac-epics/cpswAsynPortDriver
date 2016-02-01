@@ -49,13 +49,13 @@ asynStatus AxiVersionDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     asynStatus status = asynSuccess;
     const char *paramName;
     if( function == p_C_MasterReset ) {
-        MasterReset();
+        status = MasterReset();
     }
     else if( function == p_C_FpgaReload ) {
-        FpgaReload();
+        status = FpgaReload();
     }
     else if( function == p_C_CounterReset ) {
-        CounterReset();
+        status = CounterReset();
     }
     else {
         status = cpswAsynDriver::writeInt32(pasynUser, value);
@@ -73,6 +73,7 @@ asynStatus AxiVersionDriver::MasterReset()
    try {
      ScalVals[p_MasterReset]->setVal( &u32, 1 );
    } catch (CPSWError &e) {
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
    }
 
@@ -86,6 +87,7 @@ asynStatus AxiVersionDriver::FpgaReload()
    try {
      ScalVals[p_FpgaReload]->setVal( &u32, 1 );
    } catch (CPSWError &e) {
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
    }
 
@@ -99,6 +101,7 @@ asynStatus AxiVersionDriver::CounterReset()
    try {
      ScalVals[p_Counter]->setVal( &u32, 1 );
    } catch (CPSWError &e) {
+     printf("CPSWError: %s\n", e.getInfo().c_str());     
      status = asynError;
    }
 
@@ -115,8 +118,6 @@ extern "C" int AxiVersionCreate(const char *portName, const char *path)
     printf("Child is NULL\n");
   }
   else {
-  printf("Child found\n");
-  printf("Childl nelms:%d\n", c->getNelms());
   new AxiVersionDriver(portName, p, c->getNelms());
   }
   return(asynSuccess);
