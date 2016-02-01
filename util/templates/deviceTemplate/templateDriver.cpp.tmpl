@@ -57,12 +57,12 @@ asynStatus ${name}Driver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 #for $c in $commands
   #if $first == True
     if( function == p_C_${c.name} ) {
-        ${c.name}();
+        status = ${c.name}();
     }
     #set $first=False
   #else
     else if( function == p_C_${c.name} ) {
-        ${c.name}();
+        status = ${c.name}();
     }
   #end if
 #end for
