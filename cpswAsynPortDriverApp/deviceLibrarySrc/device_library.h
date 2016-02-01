@@ -18,5 +18,6 @@
 #include <JesdRx.h>
 #include <Lmk04828.h>
 #include <Pgp2bAxi.h>
+#include <JesdRxDaq.h>
 
 #endif
