@@ -33,7 +33,7 @@ ${name}Impl v = CShObj::create<${name}Impl>(name);
         return v;
 }
 
-C${name}Impl::C${name}Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x01000000 , LE)
+C${name}Impl::C${name}Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x90000000 , LE)
 {
 }
 
