@@ -11,6 +11,9 @@
 # Pickup variable definitions to be used below:
 include $(TOP)/RELEASE_SITE
 
+TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
+
+
 # =============================================================
 # If you don't want to install into $(TOP) then
 # define INSTALL_LOCATION_APP here
