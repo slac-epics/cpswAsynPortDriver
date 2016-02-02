@@ -184,7 +184,7 @@ asynStatus Lmk04828Driver::writeConfig()
        /* Poweron SYNC */
        ScalVals[p_SYNC_DIS]->setVal( &u32, 1 );
 
-       epicsThreadSleep(1);
+       epicsThreadSleep(0.1);
 
        /* toggle SYNC bit */
        u32 = 1;
