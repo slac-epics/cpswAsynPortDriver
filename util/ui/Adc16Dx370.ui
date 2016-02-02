@@ -340,6 +340,23 @@
           </property>
          </widget>
         </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="SYS_EN">
+          <property name="text">
+           <string> SYS_EN </string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):SYS_EN">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):SYS_EN</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
         <item row="16" column="0">
          <widget class="QLabel" name="AdcReg0x0000">
           <property name="text">
