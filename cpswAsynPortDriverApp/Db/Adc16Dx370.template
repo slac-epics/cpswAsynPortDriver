@@ -118,6 +118,14 @@ record(ai, "$(DEVICE):$(PORT):Link_active")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
+record(ao, "$(DEVICE):$(PORT):SYS_EN")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) SYS_EN")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
 record(ao, "$(DEVICE):$(PORT):AdcReg0x0000")
 {
     field(PINI, "YES")

@@ -64,7 +64,7 @@ d = { 'name': "Adc16Dx370",
                     'address' : "0x12",
                     'size'    : "1",
                     'lsBit'   : "2",
-                    'type'    : "Calibration"}  ] ,
+                    'type'    : "Configuration"}  ] ,
      'commands': [{ 'name'   : "CalibrateADC"} ]
 }
 
