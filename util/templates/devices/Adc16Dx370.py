@@ -64,7 +64,7 @@ d = { 'name': "Adc16Dx370",
 }
 
 
-for i in range(0x100, 0x17D):
+for i in range(0x0, 0x71):
 	if (i == 0x01):
 		pass
 	elif (i>= 0x7 and i<= 0xB):
