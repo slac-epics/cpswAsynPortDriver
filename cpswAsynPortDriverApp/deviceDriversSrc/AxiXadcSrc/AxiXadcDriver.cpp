@@ -89,8 +89,6 @@ extern "C" int AxiXadcCreate(const char *portName, const char *path)
     printf("Child is NULL\n");
   }
   else {
-  printf("Child found\n");
-  printf("Childl nelms:%d\n", c->getNelms());
   new AxiXadcDriver(portName, p, c->getNelms());
   }
   return(asynSuccess);

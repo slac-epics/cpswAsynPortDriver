@@ -75,8 +75,6 @@ extern "C" int TenGigEthRegCreate(const char *portName, const char *path)
     printf("Child is NULL\n");
   }
   else {
-  printf("Child found\n");
-  printf("Childl nelms:%d\n", c->getNelms());
   new TenGigEthRegDriver(portName, p, c->getNelms());
   }
   return(asynSuccess);

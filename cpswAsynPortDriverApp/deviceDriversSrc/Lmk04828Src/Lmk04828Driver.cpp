@@ -215,8 +215,6 @@ extern "C" int Lmk04828Create(const char *portName, const char *path)
     printf("Child is NULL\n");
   }
   else {
-  printf("Child found\n");
-  printf("Childl nelms:%d\n", c->getNelms());
   new Lmk04828Driver(portName, p, c->getNelms());
   }
   return(asynSuccess);

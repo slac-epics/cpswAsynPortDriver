@@ -155,8 +155,6 @@ extern "C" int Dac38J84Create(const char *portName, const char *path)
     printf("Child is NULL\n");
   }
   else {
-  printf("Child found\n");
-  printf("Childl nelms:%d\n", c->getNelms());
   new Dac38J84Driver(portName, p, c->getNelms());
   }
   return(asynSuccess);
