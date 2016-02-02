@@ -37,6 +37,7 @@ Adc16Dx370Driver::Adc16Dx370Driver(const char *portName, Path p, int nelms)
    createParam(Realigned_to_sysrefString, asynParamInt32, &p_Realigned_to_sysref, IScalVal::create);
    createParam(Sync_form_FPGAString, asynParamInt32, &p_Sync_form_FPGA, IScalVal::create);
    createParam(Link_activeString, asynParamInt32, &p_Link_active, IScalVal::create);
+   createParam(SYS_ENString, asynParamInt32, &p_SYS_EN, IScalVal::create);
    createParam(AdcReg0x0000String, asynParamInt32, &p_AdcReg0x0000, IScalVal::create);
    createParam(AdcReg0x0002String, asynParamInt32, &p_AdcReg0x0002, IScalVal::create);
    createParam(AdcReg0x0003String, asynParamInt32, &p_AdcReg0x0003, IScalVal::create);
@@ -83,7 +84,6 @@ asynStatus Adc16Dx370Driver::writeInt32(asynUser *pasynUser, epicsInt32 value)
 
     return status;
 }
-
 
 asynStatus Adc16Dx370Driver::CalibrateADC()
 {

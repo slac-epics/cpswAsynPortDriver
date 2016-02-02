@@ -13,6 +13,7 @@
 #define ID_VNDR_UPPERString "ID_VNDR_UPPER"
 #define ID_VNDR_LOWERString "ID_VNDR_LOWER"
 #define SYS_REF_MUXString "SYS_REF_MUX"
+#define SYNC_MODEString "SYNC_MODE"
 #define SYNC_ENString "SYNC_EN"
 #define SYNC_DISString "SYNC_DIS"
 #define LmkReg0x0100String "LmkReg0x0100"
@@ -147,6 +148,7 @@ protected:
     int p_ID_VNDR_UPPER;
     int p_ID_VNDR_LOWER;
     int p_SYS_REF_MUX;
+    int p_SYNC_MODE;
     int p_SYNC_EN;
     int p_SYNC_DIS;
     int p_LmkReg0x0100;

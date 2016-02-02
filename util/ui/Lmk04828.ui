@@ -205,13 +205,30 @@
          </widget>
         </item>
         <item row="7" column="0">
+         <widget class="QLabel" name="SYNC_MODE">
+          <property name="text">
+           <string> SYNC_MODE </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):SYNC_MODE">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):SYNC_MODE</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
          <widget class="QLabel" name="SYNC_EN">
           <property name="text">
            <string> SYNC_EN </string>
           </property>
          </widget>
         </item>
-        <item row="7" column="1">
+        <item row="8" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):SYNC_EN">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):SYNC_EN</string>
@@ -221,14 +238,14 @@
           </property>
          </widget>
         </item>
-        <item row="8" column="0">
+        <item row="9" column="0">
          <widget class="QLabel" name="SYNC_DIS">
           <property name="text">
            <string> SYNC_DIS </string>
           </property>
          </widget>
         </item>
-        <item row="8" column="1">
+        <item row="9" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):SYNC_DIS">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):SYNC_DIS</string>
@@ -238,14 +255,14 @@
           </property>
          </widget>
         </item>
-        <item row="9" column="0">
+        <item row="10" column="0">
          <widget class="QLabel" name="LmkReg0x0100">
           <property name="text">
            <string> LmkReg0x0100 </string>
           </property>
          </widget>
         </item>
-        <item row="9" column="1">
+        <item row="10" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0100">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0100</string>
@@ -255,14 +272,14 @@
           </property>
          </widget>
         </item>
-        <item row="10" column="0">
+        <item row="11" column="0">
          <widget class="QLabel" name="LmkReg0x0101">
           <property name="text">
            <string> LmkReg0x0101 </string>
           </property>
          </widget>
         </item>
-        <item row="10" column="1">
+        <item row="11" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0101">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0101</string>
@@ -272,14 +289,14 @@
           </property>
          </widget>
         </item>
-        <item row="11" column="0">
+        <item row="12" column="0">
          <widget class="QLabel" name="LmkReg0x0103">
           <property name="text">
            <string> LmkReg0x0103 </string>
           </property>
          </widget>
         </item>
-        <item row="11" column="1">
+        <item row="12" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0103">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0103</string>
@@ -289,14 +306,14 @@
           </property>
          </widget>
         </item>
-        <item row="12" column="0">
+        <item row="13" column="0">
          <widget class="QLabel" name="LmkReg0x0104">
           <property name="text">
            <string> LmkReg0x0104 </string>
           </property>
          </widget>
         </item>
-        <item row="12" column="1">
+        <item row="13" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0104">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0104</string>
@@ -306,14 +323,14 @@
           </property>
          </widget>
         </item>
-        <item row="13" column="0">
+        <item row="14" column="0">
          <widget class="QLabel" name="LmkReg0x0105">
           <property name="text">
            <string> LmkReg0x0105 </string>
           </property>
          </widget>
         </item>
-        <item row="13" column="1">
+        <item row="14" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0105">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0105</string>
@@ -323,14 +340,14 @@
           </property>
          </widget>
         </item>
-        <item row="14" column="0">
+        <item row="15" column="0">
          <widget class="QLabel" name="LmkReg0x0106">
           <property name="text">
            <string> LmkReg0x0106 </string>
           </property>
          </widget>
         </item>
-        <item row="14" column="1">
+        <item row="15" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0106">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0106</string>
@@ -340,14 +357,14 @@
           </property>
          </widget>
         </item>
-        <item row="15" column="0">
+        <item row="16" column="0">
          <widget class="QLabel" name="LmkReg0x0107">
           <property name="text">
            <string> LmkReg0x0107 </string>
           </property>
          </widget>
         </item>
-        <item row="15" column="1">
+        <item row="16" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0107">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0107</string>
@@ -357,14 +374,14 @@
           </property>
          </widget>
         </item>
-        <item row="16" column="0">
+        <item row="17" column="0">
          <widget class="QLabel" name="LmkReg0x0108">
           <property name="text">
            <string> LmkReg0x0108 </string>
           </property>
          </widget>
         </item>
-        <item row="16" column="1">
+        <item row="17" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0108">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0108</string>
@@ -374,14 +391,14 @@
           </property>
          </widget>
         </item>
-        <item row="17" column="0">
+        <item row="18" column="0">
          <widget class="QLabel" name="LmkReg0x0109">
           <property name="text">
            <string> LmkReg0x0109 </string>
           </property>
          </widget>
         </item>
-        <item row="17" column="1">
+        <item row="18" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0109">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0109</string>
@@ -391,14 +408,14 @@
           </property>
          </widget>
         </item>
-        <item row="18" column="0">
+        <item row="19" column="0">
          <widget class="QLabel" name="LmkReg0x010b">
           <property name="text">
            <string> LmkReg0x010b </string>
           </property>
          </widget>
         </item>
-        <item row="18" column="1">
+        <item row="19" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x010b">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x010b</string>
@@ -408,14 +425,14 @@
           </property>
          </widget>
         </item>
-        <item row="19" column="0">
+        <item row="20" column="0">
          <widget class="QLabel" name="LmkReg0x010c">
           <property name="text">
            <string> LmkReg0x010c </string>
           </property>
          </widget>
         </item>
-        <item row="19" column="1">
+        <item row="20" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x010c">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x010c</string>
@@ -425,14 +442,14 @@
           </property>
          </widget>
         </item>
-        <item row="20" column="0">
+        <item row="21" column="0">
          <widget class="QLabel" name="LmkReg0x010d">
           <property name="text">
            <string> LmkReg0x010d </string>
           </property>
          </widget>
         </item>
-        <item row="20" column="1">
+        <item row="21" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x010d">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x010d</string>
@@ -442,14 +459,14 @@
           </property>
          </widget>
         </item>
-        <item row="21" column="0">
+        <item row="22" column="0">
          <widget class="QLabel" name="LmkReg0x010e">
           <property name="text">
            <string> LmkReg0x010e </string>
           </property>
          </widget>
         </item>
-        <item row="21" column="1">
+        <item row="22" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x010e">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x010e</string>
@@ -459,14 +476,14 @@
           </property>
          </widget>
         </item>
-        <item row="22" column="0">
+        <item row="23" column="0">
          <widget class="QLabel" name="LmkReg0x010f">
           <property name="text">
            <string> LmkReg0x010f </string>
           </property>
          </widget>
         </item>
-        <item row="22" column="1">
+        <item row="23" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x010f">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x010f</string>
@@ -476,14 +493,14 @@
           </property>
          </widget>
         </item>
-        <item row="23" column="0">
+        <item row="24" column="0">
          <widget class="QLabel" name="LmkReg0x0110">
           <property name="text">
            <string> LmkReg0x0110 </string>
           </property>
          </widget>
         </item>
-        <item row="23" column="1">
+        <item row="24" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0110">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0110</string>
@@ -493,14 +510,14 @@
           </property>
          </widget>
         </item>
-        <item row="24" column="0">
+        <item row="25" column="0">
          <widget class="QLabel" name="LmkReg0x0111">
           <property name="text">
            <string> LmkReg0x0111 </string>
           </property>
          </widget>
         </item>
-        <item row="24" column="1">
+        <item row="25" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0111">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0111</string>
@@ -510,14 +527,14 @@
           </property>
          </widget>
         </item>
-        <item row="25" column="0">
+        <item row="26" column="0">
          <widget class="QLabel" name="LmkReg0x0113">
           <property name="text">
            <string> LmkReg0x0113 </string>
           </property>
          </widget>
         </item>
-        <item row="25" column="1">
+        <item row="26" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0113">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0113</string>
@@ -527,14 +544,14 @@
           </property>
          </widget>
         </item>
-        <item row="26" column="0">
+        <item row="27" column="0">
          <widget class="QLabel" name="LmkReg0x0114">
           <property name="text">
            <string> LmkReg0x0114 </string>
           </property>
          </widget>
         </item>
-        <item row="26" column="1">
+        <item row="27" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0114">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0114</string>
@@ -544,14 +561,14 @@
           </property>
          </widget>
         </item>
-        <item row="27" column="0">
+        <item row="28" column="0">
          <widget class="QLabel" name="LmkReg0x0115">
           <property name="text">
            <string> LmkReg0x0115 </string>
           </property>
          </widget>
         </item>
-        <item row="27" column="1">
+        <item row="28" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0115">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0115</string>
@@ -561,14 +578,14 @@
           </property>
          </widget>
         </item>
-        <item row="28" column="0">
+        <item row="29" column="0">
          <widget class="QLabel" name="LmkReg0x0116">
           <property name="text">
            <string> LmkReg0x0116 </string>
           </property>
          </widget>
         </item>
-        <item row="28" column="1">
+        <item row="29" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0116">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0116</string>
@@ -578,14 +595,14 @@
           </property>
          </widget>
         </item>
-        <item row="29" column="0">
+        <item row="30" column="0">
          <widget class="QLabel" name="LmkReg0x0117">
           <property name="text">
            <string> LmkReg0x0117 </string>
           </property>
          </widget>
         </item>
-        <item row="29" column="1">
+        <item row="30" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0117">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0117</string>
@@ -595,14 +612,14 @@
           </property>
          </widget>
         </item>
-        <item row="30" column="0">
+        <item row="31" column="0">
          <widget class="QLabel" name="LmkReg0x0118">
           <property name="text">
            <string> LmkReg0x0118 </string>
           </property>
          </widget>
         </item>
-        <item row="30" column="1">
+        <item row="31" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0118">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0118</string>
@@ -612,14 +629,14 @@
           </property>
          </widget>
         </item>
-        <item row="31" column="0">
+        <item row="32" column="0">
          <widget class="QLabel" name="LmkReg0x0119">
           <property name="text">
            <string> LmkReg0x0119 </string>
           </property>
          </widget>
         </item>
-        <item row="31" column="1">
+        <item row="32" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0119">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0119</string>
@@ -629,14 +646,14 @@
           </property>
          </widget>
         </item>
-        <item row="32" column="0">
+        <item row="33" column="0">
          <widget class="QLabel" name="LmkReg0x011a">
           <property name="text">
            <string> LmkReg0x011a </string>
           </property>
          </widget>
         </item>
-        <item row="32" column="1">
+        <item row="33" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x011a">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x011a</string>
@@ -646,14 +663,14 @@
           </property>
          </widget>
         </item>
-        <item row="33" column="0">
+        <item row="34" column="0">
          <widget class="QLabel" name="LmkReg0x011b">
           <property name="text">
            <string> LmkReg0x011b </string>
           </property>
          </widget>
         </item>
-        <item row="33" column="1">
+        <item row="34" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x011b">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x011b</string>
@@ -663,14 +680,14 @@
           </property>
          </widget>
         </item>
-        <item row="34" column="0">
+        <item row="35" column="0">
          <widget class="QLabel" name="LmkReg0x011c">
           <property name="text">
            <string> LmkReg0x011c </string>
           </property>
          </widget>
         </item>
-        <item row="34" column="1">
+        <item row="35" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x011c">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x011c</string>
@@ -680,14 +697,14 @@
           </property>
          </widget>
         </item>
-        <item row="35" column="0">
+        <item row="36" column="0">
          <widget class="QLabel" name="LmkReg0x011d">
           <property name="text">
            <string> LmkReg0x011d </string>
           </property>
          </widget>
         </item>
-        <item row="35" column="1">
+        <item row="36" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x011d">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x011d</string>
@@ -697,14 +714,14 @@
           </property>
          </widget>
         </item>
-        <item row="36" column="0">
+        <item row="37" column="0">
          <widget class="QLabel" name="LmkReg0x011e">
           <property name="text">
            <string> LmkReg0x011e </string>
           </property>
          </widget>
         </item>
-        <item row="36" column="1">
+        <item row="37" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x011e">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x011e</string>
@@ -714,14 +731,14 @@
           </property>
          </widget>
         </item>
-        <item row="37" column="0">
+        <item row="38" column="0">
          <widget class="QLabel" name="LmkReg0x011f">
           <property name="text">
            <string> LmkReg0x011f </string>
           </property>
          </widget>
         </item>
-        <item row="37" column="1">
+        <item row="38" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x011f">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x011f</string>
@@ -731,14 +748,14 @@
           </property>
          </widget>
         </item>
-        <item row="38" column="0">
+        <item row="39" column="0">
          <widget class="QLabel" name="LmkReg0x0120">
           <property name="text">
            <string> LmkReg0x0120 </string>
           </property>
          </widget>
         </item>
-        <item row="38" column="1">
+        <item row="39" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0120">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0120</string>
@@ -748,14 +765,14 @@
           </property>
          </widget>
         </item>
-        <item row="39" column="0">
+        <item row="40" column="0">
          <widget class="QLabel" name="LmkReg0x0121">
           <property name="text">
            <string> LmkReg0x0121 </string>
           </property>
          </widget>
         </item>
-        <item row="39" column="1">
+        <item row="40" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0121">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0121</string>
@@ -765,14 +782,14 @@
           </property>
          </widget>
         </item>
-        <item row="40" column="0">
+        <item row="41" column="0">
          <widget class="QLabel" name="LmkReg0x0123">
           <property name="text">
            <string> LmkReg0x0123 </string>
           </property>
          </widget>
         </item>
-        <item row="40" column="1">
+        <item row="41" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0123">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0123</string>
@@ -782,14 +799,14 @@
           </property>
          </widget>
         </item>
-        <item row="41" column="0">
+        <item row="42" column="0">
          <widget class="QLabel" name="LmkReg0x0124">
           <property name="text">
            <string> LmkReg0x0124 </string>
           </property>
          </widget>
         </item>
-        <item row="41" column="1">
+        <item row="42" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0124">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0124</string>
@@ -799,14 +816,14 @@
           </property>
          </widget>
         </item>
-        <item row="42" column="0">
+        <item row="43" column="0">
          <widget class="QLabel" name="LmkReg0x0125">
           <property name="text">
            <string> LmkReg0x0125 </string>
           </property>
          </widget>
         </item>
-        <item row="42" column="1">
+        <item row="43" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0125">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0125</string>
@@ -816,14 +833,14 @@
           </property>
          </widget>
         </item>
-        <item row="43" column="0">
+        <item row="44" column="0">
          <widget class="QLabel" name="LmkReg0x0126">
           <property name="text">
            <string> LmkReg0x0126 </string>
           </property>
          </widget>
         </item>
-        <item row="43" column="1">
+        <item row="44" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0126">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0126</string>
@@ -833,14 +850,14 @@
           </property>
          </widget>
         </item>
-        <item row="44" column="0">
+        <item row="45" column="0">
          <widget class="QLabel" name="LmkReg0x0127">
           <property name="text">
            <string> LmkReg0x0127 </string>
           </property>
          </widget>
         </item>
-        <item row="44" column="1">
+        <item row="45" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0127">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0127</string>
@@ -850,14 +867,14 @@
           </property>
          </widget>
         </item>
-        <item row="45" column="0">
+        <item row="46" column="0">
          <widget class="QLabel" name="LmkReg0x0128">
           <property name="text">
            <string> LmkReg0x0128 </string>
           </property>
          </widget>
         </item>
-        <item row="45" column="1">
+        <item row="46" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0128">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0128</string>
@@ -867,14 +884,14 @@
           </property>
          </widget>
         </item>
-        <item row="46" column="0">
+        <item row="47" column="0">
          <widget class="QLabel" name="LmkReg0x0129">
           <property name="text">
            <string> LmkReg0x0129 </string>
           </property>
          </widget>
         </item>
-        <item row="46" column="1">
+        <item row="47" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0129">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0129</string>
@@ -884,14 +901,14 @@
           </property>
          </widget>
         </item>
-        <item row="47" column="0">
+        <item row="48" column="0">
          <widget class="QLabel" name="LmkReg0x012b">
           <property name="text">
            <string> LmkReg0x012b </string>
           </property>
          </widget>
         </item>
-        <item row="47" column="1">
+        <item row="48" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x012b">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x012b</string>
@@ -901,14 +918,14 @@
           </property>
          </widget>
         </item>
-        <item row="48" column="0">
+        <item row="49" column="0">
          <widget class="QLabel" name="LmkReg0x012c">
           <property name="text">
            <string> LmkReg0x012c </string>
           </property>
          </widget>
         </item>
-        <item row="48" column="1">
+        <item row="49" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x012c">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x012c</string>
@@ -918,14 +935,14 @@
           </property>
          </widget>
         </item>
-        <item row="49" column="0">
+        <item row="50" column="0">
          <widget class="QLabel" name="LmkReg0x012d">
           <property name="text">
            <string> LmkReg0x012d </string>
           </property>
          </widget>
         </item>
-        <item row="49" column="1">
+        <item row="50" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x012d">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x012d</string>
@@ -935,14 +952,14 @@
           </property>
          </widget>
         </item>
-        <item row="50" column="0">
+        <item row="51" column="0">
          <widget class="QLabel" name="LmkReg0x012e">
           <property name="text">
            <string> LmkReg0x012e </string>
           </property>
          </widget>
         </item>
-        <item row="50" column="1">
+        <item row="51" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x012e">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x012e</string>
@@ -952,14 +969,14 @@
           </property>
          </widget>
         </item>
-        <item row="51" column="0">
+        <item row="52" column="0">
          <widget class="QLabel" name="LmkReg0x012f">
           <property name="text">
            <string> LmkReg0x012f </string>
           </property>
          </widget>
         </item>
-        <item row="51" column="1">
+        <item row="52" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x012f">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x012f</string>
@@ -969,14 +986,14 @@
           </property>
          </widget>
         </item>
-        <item row="52" column="0">
+        <item row="53" column="0">
          <widget class="QLabel" name="LmkReg0x0130">
           <property name="text">
            <string> LmkReg0x0130 </string>
           </property>
          </widget>
         </item>
-        <item row="52" column="1">
+        <item row="53" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0130">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0130</string>
@@ -986,14 +1003,14 @@
           </property>
          </widget>
         </item>
-        <item row="53" column="0">
+        <item row="54" column="0">
          <widget class="QLabel" name="LmkReg0x0131">
           <property name="text">
            <string> LmkReg0x0131 </string>
           </property>
          </widget>
         </item>
-        <item row="53" column="1">
+        <item row="54" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0131">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0131</string>
@@ -1003,14 +1020,14 @@
           </property>
          </widget>
         </item>
-        <item row="54" column="0">
+        <item row="55" column="0">
          <widget class="QLabel" name="LmkReg0x0133">
           <property name="text">
            <string> LmkReg0x0133 </string>
           </property>
          </widget>
         </item>
-        <item row="54" column="1">
+        <item row="55" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0133">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0133</string>
@@ -1020,14 +1037,14 @@
           </property>
          </widget>
         </item>
-        <item row="55" column="0">
+        <item row="56" column="0">
          <widget class="QLabel" name="LmkReg0x0134">
           <property name="text">
            <string> LmkReg0x0134 </string>
           </property>
          </widget>
         </item>
-        <item row="55" column="1">
+        <item row="56" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0134">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0134</string>
@@ -1037,14 +1054,14 @@
           </property>
          </widget>
         </item>
-        <item row="56" column="0">
+        <item row="57" column="0">
          <widget class="QLabel" name="LmkReg0x0135">
           <property name="text">
            <string> LmkReg0x0135 </string>
           </property>
          </widget>
         </item>
-        <item row="56" column="1">
+        <item row="57" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0135">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0135</string>
@@ -1054,14 +1071,14 @@
           </property>
          </widget>
         </item>
-        <item row="57" column="0">
+        <item row="58" column="0">
          <widget class="QLabel" name="LmkReg0x0136">
           <property name="text">
            <string> LmkReg0x0136 </string>
           </property>
          </widget>
         </item>
-        <item row="57" column="1">
+        <item row="58" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0136">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0136</string>
@@ -1071,14 +1088,14 @@
           </property>
          </widget>
         </item>
-        <item row="58" column="0">
+        <item row="59" column="0">
          <widget class="QLabel" name="LmkReg0x0137">
           <property name="text">
            <string> LmkReg0x0137 </string>
           </property>
          </widget>
         </item>
-        <item row="58" column="1">
+        <item row="59" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0137">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0137</string>
@@ -1088,14 +1105,14 @@
           </property>
          </widget>
         </item>
-        <item row="59" column="0">
+        <item row="60" column="0">
          <widget class="QLabel" name="LmkReg0x0138">
           <property name="text">
            <string> LmkReg0x0138 </string>
           </property>
          </widget>
         </item>
-        <item row="59" column="1">
+        <item row="60" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0138">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0138</string>
@@ -1105,14 +1122,14 @@
           </property>
          </widget>
         </item>
-        <item row="60" column="0">
+        <item row="61" column="0">
          <widget class="QLabel" name="LmkReg0x0139">
           <property name="text">
            <string> LmkReg0x0139 </string>
           </property>
          </widget>
         </item>
-        <item row="60" column="1">
+        <item row="61" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0139">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0139</string>
@@ -1122,14 +1139,14 @@
           </property>
          </widget>
         </item>
-        <item row="61" column="0">
+        <item row="62" column="0">
          <widget class="QLabel" name="LmkReg0x013a">
           <property name="text">
            <string> LmkReg0x013a </string>
           </property>
          </widget>
         </item>
-        <item row="61" column="1">
+        <item row="62" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x013a">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x013a</string>
@@ -1139,14 +1156,14 @@
           </property>
          </widget>
         </item>
-        <item row="62" column="0">
+        <item row="63" column="0">
          <widget class="QLabel" name="LmkReg0x013b">
           <property name="text">
            <string> LmkReg0x013b </string>
           </property>
          </widget>
         </item>
-        <item row="62" column="1">
+        <item row="63" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x013b">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x013b</string>
@@ -1156,14 +1173,14 @@
           </property>
          </widget>
         </item>
-        <item row="63" column="0">
+        <item row="64" column="0">
          <widget class="QLabel" name="LmkReg0x013c">
           <property name="text">
            <string> LmkReg0x013c </string>
           </property>
          </widget>
         </item>
-        <item row="63" column="1">
+        <item row="64" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x013c">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x013c</string>
@@ -1173,14 +1190,14 @@
           </property>
          </widget>
         </item>
-        <item row="64" column="0">
+        <item row="65" column="0">
          <widget class="QLabel" name="LmkReg0x013d">
           <property name="text">
            <string> LmkReg0x013d </string>
           </property>
          </widget>
         </item>
-        <item row="64" column="1">
+        <item row="65" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x013d">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x013d</string>
@@ -1190,14 +1207,14 @@
           </property>
          </widget>
         </item>
-        <item row="65" column="0">
+        <item row="66" column="0">
          <widget class="QLabel" name="LmkReg0x013e">
           <property name="text">
            <string> LmkReg0x013e </string>
           </property>
          </widget>
         </item>
-        <item row="65" column="1">
+        <item row="66" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x013e">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x013e</string>
@@ -1207,14 +1224,14 @@
           </property>
          </widget>
         </item>
-        <item row="66" column="0">
+        <item row="67" column="0">
          <widget class="QLabel" name="LmkReg0x013f">
           <property name="text">
            <string> LmkReg0x013f </string>
           </property>
          </widget>
         </item>
-        <item row="66" column="1">
+        <item row="67" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x013f">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x013f</string>
@@ -1224,14 +1241,14 @@
           </property>
          </widget>
         </item>
-        <item row="67" column="0">
+        <item row="68" column="0">
          <widget class="QLabel" name="LmkReg0x0140">
           <property name="text">
            <string> LmkReg0x0140 </string>
           </property>
          </widget>
         </item>
-        <item row="67" column="1">
+        <item row="68" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0140">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0140</string>
@@ -1241,14 +1258,14 @@
           </property>
          </widget>
         </item>
-        <item row="68" column="0">
+        <item row="69" column="0">
          <widget class="QLabel" name="LmkReg0x0141">
           <property name="text">
            <string> LmkReg0x0141 </string>
           </property>
          </widget>
         </item>
-        <item row="68" column="1">
+        <item row="69" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0141">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0141</string>
@@ -1258,14 +1275,14 @@
           </property>
          </widget>
         </item>
-        <item row="69" column="0">
+        <item row="70" column="0">
          <widget class="QLabel" name="LmkReg0x0142">
           <property name="text">
            <string> LmkReg0x0142 </string>
           </property>
          </widget>
         </item>
-        <item row="69" column="1">
+        <item row="70" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0142">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0142</string>
@@ -1275,14 +1292,14 @@
           </property>
          </widget>
         </item>
-        <item row="70" column="0">
+        <item row="71" column="0">
          <widget class="QLabel" name="LmkReg0x0143">
           <property name="text">
            <string> LmkReg0x0143 </string>
           </property>
          </widget>
         </item>
-        <item row="70" column="1">
+        <item row="71" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0143">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0143</string>
@@ -1292,14 +1309,14 @@
           </property>
          </widget>
         </item>
-        <item row="71" column="0">
+        <item row="72" column="0">
          <widget class="QLabel" name="LmkReg0x0144">
           <property name="text">
            <string> LmkReg0x0144 </string>
           </property>
          </widget>
         </item>
-        <item row="71" column="1">
+        <item row="72" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0144">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0144</string>
@@ -1309,14 +1326,14 @@
           </property>
          </widget>
         </item>
-        <item row="72" column="0">
+        <item row="73" column="0">
          <widget class="QLabel" name="LmkReg0x0145">
           <property name="text">
            <string> LmkReg0x0145 </string>
           </property>
          </widget>
         </item>
-        <item row="72" column="1">
+        <item row="73" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0145">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0145</string>
@@ -1326,14 +1343,14 @@
           </property>
          </widget>
         </item>
-        <item row="73" column="0">
+        <item row="74" column="0">
          <widget class="QLabel" name="LmkReg0x0146">
           <property name="text">
            <string> LmkReg0x0146 </string>
           </property>
          </widget>
         </item>
-        <item row="73" column="1">
+        <item row="74" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0146">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0146</string>
@@ -1343,14 +1360,14 @@
           </property>
          </widget>
         </item>
-        <item row="74" column="0">
+        <item row="75" column="0">
          <widget class="QLabel" name="LmkReg0x0147">
           <property name="text">
            <string> LmkReg0x0147 </string>
           </property>
          </widget>
         </item>
-        <item row="74" column="1">
+        <item row="75" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0147">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0147</string>
@@ -1360,14 +1377,14 @@
           </property>
          </widget>
         </item>
-        <item row="75" column="0">
+        <item row="76" column="0">
          <widget class="QLabel" name="LmkReg0x0148">
           <property name="text">
            <string> LmkReg0x0148 </string>
           </property>
          </widget>
         </item>
-        <item row="75" column="1">
+        <item row="76" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0148">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0148</string>
@@ -1377,14 +1394,14 @@
           </property>
          </widget>
         </item>
-        <item row="76" column="0">
+        <item row="77" column="0">
          <widget class="QLabel" name="LmkReg0x0149">
           <property name="text">
            <string> LmkReg0x0149 </string>
           </property>
          </widget>
         </item>
-        <item row="76" column="1">
+        <item row="77" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0149">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0149</string>
@@ -1394,14 +1411,14 @@
           </property>
          </widget>
         </item>
-        <item row="77" column="0">
+        <item row="78" column="0">
          <widget class="QLabel" name="LmkReg0x014a">
           <property name="text">
            <string> LmkReg0x014a </string>
           </property>
          </widget>
         </item>
-        <item row="77" column="1">
+        <item row="78" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x014a">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x014a</string>
@@ -1411,14 +1428,14 @@
           </property>
          </widget>
         </item>
-        <item row="78" column="0">
+        <item row="79" column="0">
          <widget class="QLabel" name="LmkReg0x014b">
           <property name="text">
            <string> LmkReg0x014b </string>
           </property>
          </widget>
         </item>
-        <item row="78" column="1">
+        <item row="79" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x014b">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x014b</string>
@@ -1428,14 +1445,14 @@
           </property>
          </widget>
         </item>
-        <item row="79" column="0">
+        <item row="80" column="0">
          <widget class="QLabel" name="LmkReg0x014c">
           <property name="text">
            <string> LmkReg0x014c </string>
           </property>
          </widget>
         </item>
-        <item row="79" column="1">
+        <item row="80" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x014c">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x014c</string>
@@ -1445,14 +1462,14 @@
           </property>
          </widget>
         </item>
-        <item row="80" column="0">
+        <item row="81" column="0">
          <widget class="QLabel" name="LmkReg0x014d">
           <property name="text">
            <string> LmkReg0x014d </string>
           </property>
          </widget>
         </item>
-        <item row="80" column="1">
+        <item row="81" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x014d">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x014d</string>
@@ -1462,14 +1479,14 @@
           </property>
          </widget>
         </item>
-        <item row="81" column="0">
+        <item row="82" column="0">
          <widget class="QLabel" name="LmkReg0x014e">
           <property name="text">
            <string> LmkReg0x014e </string>
           </property>
          </widget>
         </item>
-        <item row="81" column="1">
+        <item row="82" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x014e">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x014e</string>
@@ -1479,14 +1496,14 @@
           </property>
          </widget>
         </item>
-        <item row="82" column="0">
+        <item row="83" column="0">
          <widget class="QLabel" name="LmkReg0x014f">
           <property name="text">
            <string> LmkReg0x014f </string>
           </property>
          </widget>
         </item>
-        <item row="82" column="1">
+        <item row="83" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x014f">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x014f</string>
@@ -1496,14 +1513,14 @@
           </property>
          </widget>
         </item>
-        <item row="83" column="0">
+        <item row="84" column="0">
          <widget class="QLabel" name="LmkReg0x0150">
           <property name="text">
            <string> LmkReg0x0150 </string>
           </property>
          </widget>
         </item>
-        <item row="83" column="1">
+        <item row="84" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0150">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0150</string>
@@ -1513,14 +1530,14 @@
           </property>
          </widget>
         </item>
-        <item row="84" column="0">
+        <item row="85" column="0">
          <widget class="QLabel" name="LmkReg0x0151">
           <property name="text">
            <string> LmkReg0x0151 </string>
           </property>
          </widget>
         </item>
-        <item row="84" column="1">
+        <item row="85" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0151">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0151</string>
@@ -1530,14 +1547,14 @@
           </property>
          </widget>
         </item>
-        <item row="85" column="0">
+        <item row="86" column="0">
          <widget class="QLabel" name="LmkReg0x0152">
           <property name="text">
            <string> LmkReg0x0152 </string>
           </property>
          </widget>
         </item>
-        <item row="85" column="1">
+        <item row="86" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0152">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0152</string>
@@ -1547,14 +1564,14 @@
           </property>
          </widget>
         </item>
-        <item row="86" column="0">
+        <item row="87" column="0">
          <widget class="QLabel" name="LmkReg0x0153">
           <property name="text">
            <string> LmkReg0x0153 </string>
           </property>
          </widget>
         </item>
-        <item row="86" column="1">
+        <item row="87" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0153">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0153</string>
@@ -1564,14 +1581,14 @@
           </property>
          </widget>
         </item>
-        <item row="87" column="0">
+        <item row="88" column="0">
          <widget class="QLabel" name="LmkReg0x0154">
           <property name="text">
            <string> LmkReg0x0154 </string>
           </property>
          </widget>
         </item>
-        <item row="87" column="1">
+        <item row="88" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0154">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0154</string>
@@ -1581,14 +1598,14 @@
           </property>
          </widget>
         </item>
-        <item row="88" column="0">
+        <item row="89" column="0">
          <widget class="QLabel" name="LmkReg0x0155">
           <property name="text">
            <string> LmkReg0x0155 </string>
           </property>
          </widget>
         </item>
-        <item row="88" column="1">
+        <item row="89" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0155">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0155</string>
@@ -1598,14 +1615,14 @@
           </property>
          </widget>
         </item>
-        <item row="89" column="0">
+        <item row="90" column="0">
          <widget class="QLabel" name="LmkReg0x0156">
           <property name="text">
            <string> LmkReg0x0156 </string>
           </property>
          </widget>
         </item>
-        <item row="89" column="1">
+        <item row="90" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0156">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0156</string>
@@ -1615,14 +1632,14 @@
           </property>
          </widget>
         </item>
-        <item row="90" column="0">
+        <item row="91" column="0">
          <widget class="QLabel" name="LmkReg0x0157">
           <property name="text">
            <string> LmkReg0x0157 </string>
           </property>
          </widget>
         </item>
-        <item row="90" column="1">
+        <item row="91" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0157">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0157</string>
@@ -1632,14 +1649,14 @@
           </property>
          </widget>
         </item>
-        <item row="91" column="0">
+        <item row="92" column="0">
          <widget class="QLabel" name="LmkReg0x0158">
           <property name="text">
            <string> LmkReg0x0158 </string>
           </property>
          </widget>
         </item>
-        <item row="91" column="1">
+        <item row="92" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0158">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0158</string>
@@ -1649,14 +1666,14 @@
           </property>
          </widget>
         </item>
-        <item row="92" column="0">
+        <item row="93" column="0">
          <widget class="QLabel" name="LmkReg0x0159">
           <property name="text">
            <string> LmkReg0x0159 </string>
           </property>
          </widget>
         </item>
-        <item row="92" column="1">
+        <item row="93" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0159">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0159</string>
@@ -1666,14 +1683,14 @@
           </property>
          </widget>
         </item>
-        <item row="93" column="0">
+        <item row="94" column="0">
          <widget class="QLabel" name="LmkReg0x015a">
           <property name="text">
            <string> LmkReg0x015a </string>
           </property>
          </widget>
         </item>
-        <item row="93" column="1">
+        <item row="94" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x015a">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x015a</string>
@@ -1683,14 +1700,14 @@
           </property>
          </widget>
         </item>
-        <item row="94" column="0">
+        <item row="95" column="0">
          <widget class="QLabel" name="LmkReg0x015b">
           <property name="text">
            <string> LmkReg0x015b </string>
           </property>
          </widget>
         </item>
-        <item row="94" column="1">
+        <item row="95" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x015b">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x015b</string>
@@ -1700,14 +1717,14 @@
           </property>
          </widget>
         </item>
-        <item row="95" column="0">
+        <item row="96" column="0">
          <widget class="QLabel" name="LmkReg0x015c">
           <property name="text">
            <string> LmkReg0x015c </string>
           </property>
          </widget>
         </item>
-        <item row="95" column="1">
+        <item row="96" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x015c">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x015c</string>
@@ -1717,14 +1734,14 @@
           </property>
          </widget>
         </item>
-        <item row="96" column="0">
+        <item row="97" column="0">
          <widget class="QLabel" name="LmkReg0x015d">
           <property name="text">
            <string> LmkReg0x015d </string>
           </property>
          </widget>
         </item>
-        <item row="96" column="1">
+        <item row="97" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x015d">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x015d</string>
@@ -1734,14 +1751,14 @@
           </property>
          </widget>
         </item>
-        <item row="97" column="0">
+        <item row="98" column="0">
          <widget class="QLabel" name="LmkReg0x015e">
           <property name="text">
            <string> LmkReg0x015e </string>
           </property>
          </widget>
         </item>
-        <item row="97" column="1">
+        <item row="98" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x015e">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x015e</string>
@@ -1751,14 +1768,14 @@
           </property>
          </widget>
         </item>
-        <item row="98" column="0">
+        <item row="99" column="0">
          <widget class="QLabel" name="LmkReg0x015f">
           <property name="text">
            <string> LmkReg0x015f </string>
           </property>
          </widget>
         </item>
-        <item row="98" column="1">
+        <item row="99" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x015f">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x015f</string>
@@ -1768,14 +1785,14 @@
           </property>
          </widget>
         </item>
-        <item row="99" column="0">
+        <item row="100" column="0">
          <widget class="QLabel" name="LmkReg0x0160">
           <property name="text">
            <string> LmkReg0x0160 </string>
           </property>
          </widget>
         </item>
-        <item row="99" column="1">
+        <item row="100" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0160">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0160</string>
@@ -1785,14 +1802,14 @@
           </property>
          </widget>
         </item>
-        <item row="100" column="0">
+        <item row="101" column="0">
          <widget class="QLabel" name="LmkReg0x0161">
           <property name="text">
            <string> LmkReg0x0161 </string>
           </property>
          </widget>
         </item>
-        <item row="100" column="1">
+        <item row="101" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0161">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0161</string>
@@ -1802,14 +1819,14 @@
           </property>
          </widget>
         </item>
-        <item row="101" column="0">
+        <item row="102" column="0">
          <widget class="QLabel" name="LmkReg0x0162">
           <property name="text">
            <string> LmkReg0x0162 </string>
           </property>
          </widget>
         </item>
-        <item row="101" column="1">
+        <item row="102" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0162">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0162</string>
@@ -1819,14 +1836,14 @@
           </property>
          </widget>
         </item>
-        <item row="102" column="0">
+        <item row="103" column="0">
          <widget class="QLabel" name="LmkReg0x0163">
           <property name="text">
            <string> LmkReg0x0163 </string>
           </property>
          </widget>
         </item>
-        <item row="102" column="1">
+        <item row="103" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0163">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0163</string>
@@ -1836,14 +1853,14 @@
           </property>
          </widget>
         </item>
-        <item row="103" column="0">
+        <item row="104" column="0">
          <widget class="QLabel" name="LmkReg0x0164">
           <property name="text">
            <string> LmkReg0x0164 </string>
           </property>
          </widget>
         </item>
-        <item row="103" column="1">
+        <item row="104" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0164">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0164</string>
@@ -1853,14 +1870,14 @@
           </property>
          </widget>
         </item>
-        <item row="104" column="0">
+        <item row="105" column="0">
          <widget class="QLabel" name="LmkReg0x0165">
           <property name="text">
            <string> LmkReg0x0165 </string>
           </property>
          </widget>
         </item>
-        <item row="104" column="1">
+        <item row="105" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0165">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0165</string>
@@ -1870,14 +1887,14 @@
           </property>
          </widget>
         </item>
-        <item row="105" column="0">
+        <item row="106" column="0">
          <widget class="QLabel" name="LmkReg0x0166">
           <property name="text">
            <string> LmkReg0x0166 </string>
           </property>
          </widget>
         </item>
-        <item row="105" column="1">
+        <item row="106" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0166">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0166</string>
@@ -1887,14 +1904,14 @@
           </property>
          </widget>
         </item>
-        <item row="106" column="0">
+        <item row="107" column="0">
          <widget class="QLabel" name="LmkReg0x0167">
           <property name="text">
            <string> LmkReg0x0167 </string>
           </property>
          </widget>
         </item>
-        <item row="106" column="1">
+        <item row="107" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0167">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0167</string>
@@ -1904,14 +1921,14 @@
           </property>
          </widget>
         </item>
-        <item row="107" column="0">
+        <item row="108" column="0">
          <widget class="QLabel" name="LmkReg0x0168">
           <property name="text">
            <string> LmkReg0x0168 </string>
           </property>
          </widget>
         </item>
-        <item row="107" column="1">
+        <item row="108" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0168">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0168</string>
@@ -1921,14 +1938,14 @@
           </property>
          </widget>
         </item>
-        <item row="108" column="0">
+        <item row="109" column="0">
          <widget class="QLabel" name="LmkReg0x0169">
           <property name="text">
            <string> LmkReg0x0169 </string>
           </property>
          </widget>
         </item>
-        <item row="108" column="1">
+        <item row="109" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0169">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0169</string>
@@ -1938,14 +1955,14 @@
           </property>
          </widget>
         </item>
-        <item row="109" column="0">
+        <item row="110" column="0">
          <widget class="QLabel" name="LmkReg0x016a">
           <property name="text">
            <string> LmkReg0x016a </string>
           </property>
          </widget>
         </item>
-        <item row="109" column="1">
+        <item row="110" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x016a">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x016a</string>
@@ -1955,14 +1972,14 @@
           </property>
          </widget>
         </item>
-        <item row="110" column="0">
+        <item row="111" column="0">
          <widget class="QLabel" name="LmkReg0x016b">
           <property name="text">
            <string> LmkReg0x016b </string>
           </property>
          </widget>
         </item>
-        <item row="110" column="1">
+        <item row="111" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x016b">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x016b</string>
@@ -1972,14 +1989,14 @@
           </property>
          </widget>
         </item>
-        <item row="111" column="0">
+        <item row="112" column="0">
          <widget class="QLabel" name="LmkReg0x016c">
           <property name="text">
            <string> LmkReg0x016c </string>
           </property>
          </widget>
         </item>
-        <item row="111" column="1">
+        <item row="112" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x016c">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x016c</string>
@@ -1989,14 +2006,14 @@
           </property>
          </widget>
         </item>
-        <item row="112" column="0">
+        <item row="113" column="0">
          <widget class="QLabel" name="LmkReg0x016d">
           <property name="text">
            <string> LmkReg0x016d </string>
           </property>
          </widget>
         </item>
-        <item row="112" column="1">
+        <item row="113" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x016d">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x016d</string>
@@ -2006,14 +2023,14 @@
           </property>
          </widget>
         </item>
-        <item row="113" column="0">
+        <item row="114" column="0">
          <widget class="QLabel" name="LmkReg0x016e">
           <property name="text">
            <string> LmkReg0x016e </string>
           </property>
          </widget>
         </item>
-        <item row="113" column="1">
+        <item row="114" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x016e">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x016e</string>
@@ -2023,14 +2040,14 @@
           </property>
          </widget>
         </item>
-        <item row="114" column="0">
+        <item row="115" column="0">
          <widget class="QLabel" name="LmkReg0x0173">
           <property name="text">
            <string> LmkReg0x0173 </string>
           </property>
          </widget>
         </item>
-        <item row="114" column="1">
+        <item row="115" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0173">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0173</string>
@@ -2040,14 +2057,14 @@
           </property>
          </widget>
         </item>
-        <item row="115" column="0">
+        <item row="116" column="0">
          <widget class="QLabel" name="LmkReg0x0174">
           <property name="text">
            <string> LmkReg0x0174 </string>
           </property>
          </widget>
         </item>
-        <item row="115" column="1">
+        <item row="116" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x0174">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x0174</string>
@@ -2057,14 +2074,14 @@
           </property>
          </widget>
         </item>
-        <item row="116" column="0">
+        <item row="117" column="0">
          <widget class="QLabel" name="LmkReg0x017c">
           <property name="text">
            <string> LmkReg0x017c </string>
           </property>
          </widget>
         </item>
-        <item row="116" column="1">
+        <item row="117" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkReg0x017c">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkReg0x017c</string>
@@ -2074,14 +2091,14 @@
           </property>
          </widget>
         </item>
-        <item row="117" column="0">
+        <item row="118" column="0">
          <widget class="QLabel" name="LmkReg0x017c">
           <property name="text">
            <string> SyncClks </string>
           </property>
          </widget>
         </item>
-        <item row="117" column="1">
+        <item row="118" column="1">
          <widget class="caMessageButton" name="SyncClks">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):C_SyncClks.PROC</string>
@@ -2097,14 +2114,14 @@
           </property>
          </widget>
         </item>
-        <item row="118" column="0">
+        <item row="119" column="0">
          <widget class="QLabel" name="LmkReg0x017c">
           <property name="text">
            <string> writeConfig </string>
           </property>
          </widget>
         </item>
-        <item row="118" column="1">
+        <item row="119" column="1">
          <widget class="caMessageButton" name="writeConfig">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):C_writeConfig.PROC</string>

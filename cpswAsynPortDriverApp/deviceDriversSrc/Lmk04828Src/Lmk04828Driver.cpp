@@ -18,7 +18,7 @@ static const char *driverName = "Lmk04828Driver";
 
 
 Lmk04828Driver::Lmk04828Driver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName("Lmk04828"), nelms, NUM_LMK04828_PARAMS)
+                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_LMK04828_PARAMS)
 {
 
 /* Registers */
@@ -29,6 +29,7 @@ Lmk04828Driver::Lmk04828Driver(const char *portName, Path p, int nelms)
    createParam(ID_VNDR_UPPERString, asynParamInt32, &p_ID_VNDR_UPPER, IScalVal::create);
    createParam(ID_VNDR_LOWERString, asynParamInt32, &p_ID_VNDR_LOWER, IScalVal::create);
    createParam(SYS_REF_MUXString, asynParamInt32, &p_SYS_REF_MUX, IScalVal::create);
+   createParam(SYNC_MODEString, asynParamInt32, &p_SYNC_MODE, IScalVal::create);
    createParam(SYNC_ENString, asynParamInt32, &p_SYNC_EN, IScalVal::create);
    createParam(SYNC_DISString, asynParamInt32, &p_SYNC_DIS, IScalVal::create);
    createParam(LmkReg0x0100String, asynParamInt32, &p_LmkReg0x0100, IScalVal::create);
@@ -171,6 +172,7 @@ asynStatus Lmk04828Driver::SyncClks()
    writeConfig();
    return status;
 }
+
 asynStatus Lmk04828Driver::writeConfig()
 {
    asynStatus status = asynSuccess;
@@ -204,7 +206,6 @@ asynStatus Lmk04828Driver::writeConfig()
 
    return status;
 }
-
 extern "C" int Lmk04828Create(const char *portName, const char *path)
 {
   

@@ -21,6 +21,7 @@
 #define Realigned_to_sysrefString "Realigned_to_sysref"
 #define Sync_form_FPGAString "Sync_form_FPGA"
 #define Link_activeString "Link_active"
+#define SYS_ENString "SYS_EN"
 #define AdcReg0x0000String "AdcReg0x0000"
 #define AdcReg0x0002String "AdcReg0x0002"
 #define AdcReg0x0003String "AdcReg0x0003"
@@ -78,6 +79,7 @@ protected:
     int p_Realigned_to_sysref;
     int p_Sync_form_FPGA;
     int p_Link_active;
+    int p_SYS_EN;
     int p_AdcReg0x0000;
     int p_AdcReg0x0002;
     int p_AdcReg0x0003;

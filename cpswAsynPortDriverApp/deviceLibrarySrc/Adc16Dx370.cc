@@ -36,6 +36,8 @@ Field f;
         v->CMMIODevImpl::addAtAddress( f , 0x6C*addrSize);
         f = IIntField::create("Link_active", 1, false, 6);
         v->CMMIODevImpl::addAtAddress( f , 0x6C*addrSize);
+        f = IIntField::create("SYS_EN", 1, false, 2);
+        v->CMMIODevImpl::addAtAddress( f , 0x12*addrSize);
         f = IIntField::create("AdcReg0x0000", 32, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x0000*addrSize);
         f = IIntField::create("AdcReg0x0002", 32, false, 0);

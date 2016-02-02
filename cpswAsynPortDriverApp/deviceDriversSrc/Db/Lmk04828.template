@@ -54,6 +54,14 @@ record(ao, "$(DEVICE):$(PORT):SYS_REF_MUX")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
+record(ao, "$(DEVICE):$(PORT):SYNC_MODE")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) SYNC_MODE")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
 record(ao, "$(DEVICE):$(PORT):SYNC_EN")
 {
     field(PINI, "YES")

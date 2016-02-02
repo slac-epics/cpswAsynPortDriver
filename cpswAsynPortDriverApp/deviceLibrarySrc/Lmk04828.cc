@@ -20,6 +20,8 @@ Field f;
         v->CMMIODevImpl::addAtAddress( f , 0x00D*addrSize);
         f = IIntField::create("SYS_REF_MUX", 2, false, 0);
         v->CMMIODevImpl::addAtAddress( f , 0x139*addrSize);
+        f = IIntField::create("SYNC_MODE", 2, false, 0);
+        v->CMMIODevImpl::addAtAddress( f , 0x143*addrSize);
         f = IIntField::create("SYNC_EN", 1, false, 4);
         v->CMMIODevImpl::addAtAddress( f , 0x143*addrSize);
         f = IIntField::create("SYNC_DIS", 8, false, 0);
@@ -243,7 +245,7 @@ Field f;
         return v;
 }
 
-CLmk04828Impl::CLmk04828Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000 >> 2, LE)
+CLmk04828Impl::CLmk04828Impl(Key &key, const char *name) : CMMIODevImpl(key, name, 0x00010000, LE)
 {
 }
 
