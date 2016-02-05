@@ -18,7 +18,7 @@ static const char *driverName = "AxiVersionDriver";
 
 
 AxiVersionDriver::AxiVersionDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_AXIVERSION_PARAMS)
+                 :cpswAsynDriver(portName, p, nelms, NUM_AXIVERSION_PARAMS)
 {
 
 /* Registers */
@@ -111,16 +111,15 @@ asynStatus AxiVersionDriver::CounterReset()
 extern "C" int AxiVersionCreate(const char *portName, const char *path)
 {
   
-  Path p = IDev::getRootDev()->findByName(path);
-  p->dump( stdout ); fputc('\n', stdout);
-  Child c = p->tail();
-  if (c == NULL) {
-    printf("Child is NULL\n");
+  Path p = IPath::create();
+  try {  
+    p = p->findByName(path);
+  } catch( CPSWError &e ) {
+    printf("CPSWError: %s\n", e.getInfo().c_str());     
+    return -1;
   }
-  else {
-  new AxiVersionDriver(portName, p, c->getNelms());
-  }
-  return(asynSuccess);
+  new AxiVersionDriver(portName, p, 0);
+  return 1;
 }
 
 

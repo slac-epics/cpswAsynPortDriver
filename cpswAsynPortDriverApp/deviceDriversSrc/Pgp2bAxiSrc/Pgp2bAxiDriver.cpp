@@ -18,7 +18,7 @@ static const char *driverName = "Pgp2bAxiDriver";
 
 
 Pgp2bAxiDriver::Pgp2bAxiDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_PGP2BAXI_PARAMS)
+                 :cpswAsynDriver(portName, p, nelms, NUM_PGP2BAXI_PARAMS)
 {
 
 /* Registers */
@@ -118,16 +118,15 @@ asynStatus Pgp2bAxiDriver::Flush()
 extern "C" int Pgp2bAxiCreate(const char *portName, const char *path)
 {
   
-  Path p = IDev::getRootDev()->findByName(path);
-  p->dump( stdout ); fputc('\n', stdout);
-  Child c = p->tail();
-  if (c == NULL) {
-    printf("Child is NULL\n");
+  Path p = IPath::create();
+  try {  
+    p = p->findByName(path);
+  } catch( CPSWError &e ) {
+    printf("CPSWError: %s\n", e.getInfo().c_str());     
+    return -1;
   }
-  else {
-  new Pgp2bAxiDriver(portName, p, c->getNelms());
-  }
-  return(asynSuccess);
+  new Pgp2bAxiDriver(portName, p, 0);
+  return 1;
 }
 
 

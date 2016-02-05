@@ -1,0 +1,68 @@
+record(ai, "$(DEVICE):$(PORT):WaveformSize")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) WaveformSize")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):RAM_ADDR_WIDTH_G")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) RAM_ADDR_WIDTH_G")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):ExtdataLogClr")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) ExtdataLogClr")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):ExtDataLogEn")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) ExtDataLogEn")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):IntdataLogClr")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) IntdataLogClr")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):IntDataLogEn")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) IntDataLogEn")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ai, "$(DEVICE):$(PORT):Reg0x0000")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) Reg0x0000")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(waveform, "$(DEVICE):$(PORT):RingBuffer")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32ArrayIn")
+    field(FTVL, "ULONG")
+    field(NELM, "2046")
+    field(INP,  "@asyn($(PORT),0) RingBuffer")
+    field(SCAN, "Passive")
+}
+
+
+

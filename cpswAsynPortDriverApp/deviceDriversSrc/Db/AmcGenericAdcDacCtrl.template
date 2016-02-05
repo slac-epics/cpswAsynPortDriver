@@ -38,195 +38,51 @@ record(ai, "$(DEVICE):$(PORT):StatusReg")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):Adc0_t0")
+record(ai, "$(DEVICE):$(PORT):Adc0")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc0_t0")
+    field(INP,  "@asyn($(PORT),0) Adc0")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):Adc0_t1")
+record(ai, "$(DEVICE):$(PORT):Adc1")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc0_t1")
+    field(INP,  "@asyn($(PORT),0) Adc1")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):Adc0_t2")
+record(ai, "$(DEVICE):$(PORT):Adc2")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc0_t2")
+    field(INP,  "@asyn($(PORT),0) Adc2")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):Adc0_t3")
+record(ai, "$(DEVICE):$(PORT):Adc3")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc0_t3")
+    field(INP,  "@asyn($(PORT),0) Adc3")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):Adc1_t0")
+record(ai, "$(DEVICE):$(PORT):Dac0")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc1_t0")
+    field(INP,  "@asyn($(PORT),0) Dac0")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
-record(ai, "$(DEVICE):$(PORT):Adc1_t1")
+record(ai, "$(DEVICE):$(PORT):Dac1")
 {
     field(PINI, "YES")
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc1_t1")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc1_t2")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc1_t2")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc1_t3")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc1_t3")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc2_t0")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc2_t0")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc2_t1")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc2_t1")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc2_t2")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc2_t2")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc2_t3")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc2_t3")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc3_t0")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc3_t0")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc3_t1")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc3_t1")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc3_t2")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc3_t2")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Adc3_t3")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Adc3_t3")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Dac0_t0")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Dac0_t0")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Dac0_t1")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Dac0_t1")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Dac0_t2")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Dac0_t2")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Dac0_t3")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Dac0_t3")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Dac1_t0")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Dac1_t0")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Dac1_t1")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Dac1_t1")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Dac1_t2")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Dac1_t2")
-    field(SCAN, "Passive")
-    info(asyn:READBACK, "1")
-}
-record(ai, "$(DEVICE):$(PORT):Dac1_t3")
-{
-    field(PINI, "YES")
-    field(DTYP, "asynInt32")
-    field(INP,  "@asyn($(PORT),0) Dac1_t3")
+    field(INP,  "@asyn($(PORT),0) Dac1")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }
@@ -291,6 +147,30 @@ record(ao, "$(DEVICE):$(PORT):CounterReset")
     field(PINI, "YES")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) CounterReset")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):LmkMuxSel")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) LmkMuxSel")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):DebugLogEn")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) DebugLogEn")
+    field(SCAN, "Passive")
+    info(asyn:READBACK, "1")
+}
+record(ao, "$(DEVICE):$(PORT):DebugLogClr")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) DebugLogClr")
     field(SCAN, "Passive")
     info(asyn:READBACK, "1")
 }

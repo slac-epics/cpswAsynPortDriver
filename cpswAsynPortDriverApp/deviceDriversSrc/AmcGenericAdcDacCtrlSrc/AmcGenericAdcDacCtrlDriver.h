@@ -11,30 +11,12 @@
 #define AdcValid2String "AdcValid2"
 #define AdcValid3String "AdcValid3"
 #define StatusRegString "StatusReg"
-#define Adc0_t0String "Adc0_t0"
-#define Adc0_t1String "Adc0_t1"
-#define Adc0_t2String "Adc0_t2"
-#define Adc0_t3String "Adc0_t3"
-#define Adc1_t0String "Adc1_t0"
-#define Adc1_t1String "Adc1_t1"
-#define Adc1_t2String "Adc1_t2"
-#define Adc1_t3String "Adc1_t3"
-#define Adc2_t0String "Adc2_t0"
-#define Adc2_t1String "Adc2_t1"
-#define Adc2_t2String "Adc2_t2"
-#define Adc2_t3String "Adc2_t3"
-#define Adc3_t0String "Adc3_t0"
-#define Adc3_t1String "Adc3_t1"
-#define Adc3_t2String "Adc3_t2"
-#define Adc3_t3String "Adc3_t3"
-#define Dac0_t0String "Dac0_t0"
-#define Dac0_t1String "Dac0_t1"
-#define Dac0_t2String "Dac0_t2"
-#define Dac0_t3String "Dac0_t3"
-#define Dac1_t0String "Dac1_t0"
-#define Dac1_t1String "Dac1_t1"
-#define Dac1_t2String "Dac1_t2"
-#define Dac1_t3String "Dac1_t3"
+#define Adc0String "Adc0"
+#define Adc1String "Adc1"
+#define Adc2String "Adc2"
+#define Adc3String "Adc3"
+#define Dac0String "Dac0"
+#define Dac1String "Dac1"
 #define DacVcoString "DacVco"
 #define AmcClkFreqString "AmcClkFreq"
 #define LmkClkSelString "LmkClkSel"
@@ -43,6 +25,9 @@
 #define LmkStatusString "LmkStatus"
 #define loopbackString "loopback"
 #define CounterResetString "CounterReset"
+#define LmkMuxSelString "LmkMuxSel"
+#define DebugLogEnString "DebugLogEn"
+#define DebugLogClrString "DebugLogClr"
 
 /* Commands */
 
@@ -62,30 +47,12 @@ protected:
     int p_AdcValid2;
     int p_AdcValid3;
     int p_StatusReg;
-    int p_Adc0_t0;
-    int p_Adc0_t1;
-    int p_Adc0_t2;
-    int p_Adc0_t3;
-    int p_Adc1_t0;
-    int p_Adc1_t1;
-    int p_Adc1_t2;
-    int p_Adc1_t3;
-    int p_Adc2_t0;
-    int p_Adc2_t1;
-    int p_Adc2_t2;
-    int p_Adc2_t3;
-    int p_Adc3_t0;
-    int p_Adc3_t1;
-    int p_Adc3_t2;
-    int p_Adc3_t3;
-    int p_Dac0_t0;
-    int p_Dac0_t1;
-    int p_Dac0_t2;
-    int p_Dac0_t3;
-    int p_Dac1_t0;
-    int p_Dac1_t1;
-    int p_Dac1_t2;
-    int p_Dac1_t3;
+    int p_Adc0;
+    int p_Adc1;
+    int p_Adc2;
+    int p_Adc3;
+    int p_Dac0;
+    int p_Dac1;
     int p_DacVco;
     int p_AmcClkFreq;
     int p_LmkClkSel;
@@ -94,7 +61,10 @@ protected:
     int p_LmkStatus;
     int p_loopback;
     int p_CounterReset;
-    #define LAST_AMCGENERICADCDACCTRL_PARAM p_CounterReset
+    int p_LmkMuxSel;
+    int p_DebugLogEn;
+    int p_DebugLogClr;
+    #define LAST_AMCGENERICADCDACCTRL_PARAM p_DebugLogClr
 
 
     #define NUM_AMCGENERICADCDACCTRL_PARAMS (&LAST_AMCGENERICADCDACCTRL_PARAM - &FIRST_AMCGENERICADCDACCTRL_PARAM + 1)

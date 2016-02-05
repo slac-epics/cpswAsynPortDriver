@@ -15,4 +15,5 @@ DB += Dac38J84.db
 DB += Pgp2bAxi.db
 DB += AmcGenericAdcDacCtrl.db
 DB += JesdRxDaq.db
+DB += RingBuffer.db
 include $(TOP)/configure/RULES

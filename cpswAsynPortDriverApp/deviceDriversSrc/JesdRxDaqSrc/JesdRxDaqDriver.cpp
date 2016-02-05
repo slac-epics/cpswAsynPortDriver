@@ -18,7 +18,7 @@ static const char *driverName = "JesdRxDaqDriver";
 
 
 JesdRxDaqDriver::JesdRxDaqDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_JESDRXDAQ_PARAMS)
+                 :cpswAsynDriver(portName, p, nelms, NUM_JESDRXDAQ_PARAMS)
 {
 
 /* Registers */
@@ -86,16 +86,15 @@ asynStatus JesdRxDaqDriver::TriggerDAQ()
 extern "C" int JesdRxDaqCreate(const char *portName, const char *path)
 {
   
-  Path p = IDev::getRootDev()->findByName(path);
-  p->dump( stdout ); fputc('\n', stdout);
-  Child c = p->tail();
-  if (c == NULL) {
-    printf("Child is NULL\n");
+  Path p = IPath::create();
+  try {  
+    p = p->findByName(path);
+  } catch( CPSWError &e ) {
+    printf("CPSWError: %s\n", e.getInfo().c_str());     
+    return -1;
   }
-  else {
-  new JesdRxDaqDriver(portName, p, c->getNelms());
-  }
-  return(asynSuccess);
+  new JesdRxDaqDriver(portName, p, 0);
+  return 1;
 }
 
 

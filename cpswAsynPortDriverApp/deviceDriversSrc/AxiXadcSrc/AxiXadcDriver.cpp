@@ -18,7 +18,7 @@ static const char *driverName = "AxiXadcDriver";
 
 
 AxiXadcDriver::AxiXadcDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName("AxiXadc"), nelms, NUM_AXIXADC_PARAMS)
+                 :cpswAsynDriver(portName, p, nelms, NUM_AXIXADC_PARAMS)
 {
 
 /* Registers */
@@ -82,16 +82,15 @@ AxiXadcDriver::AxiXadcDriver(const char *portName, Path p, int nelms)
 extern "C" int AxiXadcCreate(const char *portName, const char *path)
 {
   
-  Path p = IDev::getRootDev()->findByName(path);
-  p->dump( stdout ); fputc('\n', stdout);
-  Child c = p->tail();
-  if (c == NULL) {
-    printf("Child is NULL\n");
+  Path p = IPath::create();
+  try {  
+    p = p->findByName(path);
+  } catch( CPSWError &e ) {
+    printf("CPSWError: %s\n", e.getInfo().c_str());     
+    return -1;
   }
-  else {
-  new AxiXadcDriver(portName, p, c->getNelms());
-  }
-  return(asynSuccess);
+  new AxiXadcDriver(portName, p, 0);
+  return 1;
 }
 
 

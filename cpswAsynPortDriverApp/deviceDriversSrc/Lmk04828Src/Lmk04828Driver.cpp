@@ -18,7 +18,7 @@ static const char *driverName = "Lmk04828Driver";
 
 
 Lmk04828Driver::Lmk04828Driver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_LMK04828_PARAMS)
+                 :cpswAsynDriver(portName, p, nelms, NUM_LMK04828_PARAMS)
 {
 
 /* Registers */
@@ -209,16 +209,15 @@ asynStatus Lmk04828Driver::writeConfig()
 extern "C" int Lmk04828Create(const char *portName, const char *path)
 {
   
-  Path p = IDev::getRootDev()->findByName(path);
-  p->dump( stdout ); fputc('\n', stdout);
-  Child c = p->tail();
-  if (c == NULL) {
-    printf("Child is NULL\n");
+  Path p = IPath::create();
+  try {  
+    p = p->findByName(path);
+  } catch( CPSWError &e ) {
+    printf("CPSWError: %s\n", e.getInfo().c_str());     
+    return -1;
   }
-  else {
-  new Lmk04828Driver(portName, p, c->getNelms());
-  }
-  return(asynSuccess);
+  new Lmk04828Driver(portName, p, 0);
+  return 1;
 }
 
 

@@ -18,7 +18,7 @@ static const char *driverName = "Adc16Dx370Driver";
 
 
 Adc16Dx370Driver::Adc16Dx370Driver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_ADC16DX370_PARAMS)
+                 :cpswAsynDriver(portName, p, nelms, NUM_ADC16DX370_PARAMS)
 {
 
 /* Registers */
@@ -106,16 +106,15 @@ asynStatus Adc16Dx370Driver::CalibrateADC()
 extern "C" int Adc16Dx370Create(const char *portName, const char *path)
 {
   
-  Path p = IDev::getRootDev()->findByName(path);
-  p->dump( stdout ); fputc('\n', stdout);
-  Child c = p->tail();
-  if (c == NULL) {
-    printf("Child is NULL\n");
+  Path p = IPath::create();
+  try {  
+    p = p->findByName(path);
+  } catch( CPSWError &e ) {
+    printf("CPSWError: %s\n", e.getInfo().c_str());     
+    return -1;
   }
-  else {
-  new Adc16Dx370Driver(portName, p, c->getNelms());
-  }
-  return(asynSuccess);
+  new Adc16Dx370Driver(portName, p, 0);
+  return 1;
 }
 
 

@@ -18,7 +18,7 @@ static const char *driverName = "AmcGenericAdcDacCtrlDriver";
 
 
 AmcGenericAdcDacCtrlDriver::AmcGenericAdcDacCtrlDriver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_AMCGENERICADCDACCTRL_PARAMS)
+                 :cpswAsynDriver(portName, p, nelms, NUM_AMCGENERICADCDACCTRL_PARAMS)
 {
 
 /* Registers */
@@ -27,30 +27,12 @@ AmcGenericAdcDacCtrlDriver::AmcGenericAdcDacCtrlDriver(const char *portName, Pat
    createParam(AdcValid2String, asynParamInt32, &p_AdcValid2, IScalVal::create);
    createParam(AdcValid3String, asynParamInt32, &p_AdcValid3, IScalVal::create);
    createParam(StatusRegString, asynParamInt32, &p_StatusReg, IScalVal::create);
-   createParam(Adc0_t0String, asynParamInt32, &p_Adc0_t0, IScalVal::create);
-   createParam(Adc0_t1String, asynParamInt32, &p_Adc0_t1, IScalVal::create);
-   createParam(Adc0_t2String, asynParamInt32, &p_Adc0_t2, IScalVal::create);
-   createParam(Adc0_t3String, asynParamInt32, &p_Adc0_t3, IScalVal::create);
-   createParam(Adc1_t0String, asynParamInt32, &p_Adc1_t0, IScalVal::create);
-   createParam(Adc1_t1String, asynParamInt32, &p_Adc1_t1, IScalVal::create);
-   createParam(Adc1_t2String, asynParamInt32, &p_Adc1_t2, IScalVal::create);
-   createParam(Adc1_t3String, asynParamInt32, &p_Adc1_t3, IScalVal::create);
-   createParam(Adc2_t0String, asynParamInt32, &p_Adc2_t0, IScalVal::create);
-   createParam(Adc2_t1String, asynParamInt32, &p_Adc2_t1, IScalVal::create);
-   createParam(Adc2_t2String, asynParamInt32, &p_Adc2_t2, IScalVal::create);
-   createParam(Adc2_t3String, asynParamInt32, &p_Adc2_t3, IScalVal::create);
-   createParam(Adc3_t0String, asynParamInt32, &p_Adc3_t0, IScalVal::create);
-   createParam(Adc3_t1String, asynParamInt32, &p_Adc3_t1, IScalVal::create);
-   createParam(Adc3_t2String, asynParamInt32, &p_Adc3_t2, IScalVal::create);
-   createParam(Adc3_t3String, asynParamInt32, &p_Adc3_t3, IScalVal::create);
-   createParam(Dac0_t0String, asynParamInt32, &p_Dac0_t0, IScalVal::create);
-   createParam(Dac0_t1String, asynParamInt32, &p_Dac0_t1, IScalVal::create);
-   createParam(Dac0_t2String, asynParamInt32, &p_Dac0_t2, IScalVal::create);
-   createParam(Dac0_t3String, asynParamInt32, &p_Dac0_t3, IScalVal::create);
-   createParam(Dac1_t0String, asynParamInt32, &p_Dac1_t0, IScalVal::create);
-   createParam(Dac1_t1String, asynParamInt32, &p_Dac1_t1, IScalVal::create);
-   createParam(Dac1_t2String, asynParamInt32, &p_Dac1_t2, IScalVal::create);
-   createParam(Dac1_t3String, asynParamInt32, &p_Dac1_t3, IScalVal::create);
+   createParam(Adc0String, asynParamInt32, &p_Adc0, IScalVal::create);
+   createParam(Adc1String, asynParamInt32, &p_Adc1, IScalVal::create);
+   createParam(Adc2String, asynParamInt32, &p_Adc2, IScalVal::create);
+   createParam(Adc3String, asynParamInt32, &p_Adc3, IScalVal::create);
+   createParam(Dac0String, asynParamInt32, &p_Dac0, IScalVal::create);
+   createParam(Dac1String, asynParamInt32, &p_Dac1, IScalVal::create);
    createParam(DacVcoString, asynParamInt32, &p_DacVco, IScalVal::create);
    createParam(AmcClkFreqString, asynParamInt32, &p_AmcClkFreq, IScalVal::create);
    createParam(LmkClkSelString, asynParamInt32, &p_LmkClkSel, IScalVal::create);
@@ -59,6 +41,9 @@ AmcGenericAdcDacCtrlDriver::AmcGenericAdcDacCtrlDriver(const char *portName, Pat
    createParam(LmkStatusString, asynParamInt32, &p_LmkStatus, IScalVal::create);
    createParam(loopbackString, asynParamInt32, &p_loopback, IScalVal::create);
    createParam(CounterResetString, asynParamInt32, &p_CounterReset, IScalVal::create);
+   createParam(LmkMuxSelString, asynParamInt32, &p_LmkMuxSel, IScalVal::create);
+   createParam(DebugLogEnString, asynParamInt32, &p_DebugLogEn, IScalVal::create);
+   createParam(DebugLogClrString, asynParamInt32, &p_DebugLogClr, IScalVal::create);
 }
 
 
@@ -66,16 +51,15 @@ AmcGenericAdcDacCtrlDriver::AmcGenericAdcDacCtrlDriver(const char *portName, Pat
 extern "C" int AmcGenericAdcDacCtrlCreate(const char *portName, const char *path)
 {
   
-  Path p = IDev::getRootDev()->findByName(path);
-  p->dump( stdout ); fputc('\n', stdout);
-  Child c = p->tail();
-  if (c == NULL) {
-    printf("Child is NULL\n");
+  Path p = IPath::create();
+  try {  
+    p = p->findByName(path);
+  } catch( CPSWError &e ) {
+    printf("CPSWError: %s\n", e.getInfo().c_str());     
+    return -1;
   }
-  else {
-  new AmcGenericAdcDacCtrlDriver(portName, p, c->getNelms());
-  }
-  return(asynSuccess);
+  new AmcGenericAdcDacCtrlDriver(portName, p, 0);
+  return 1;
 }
 
 

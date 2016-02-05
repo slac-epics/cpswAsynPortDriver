@@ -89,7 +89,7 @@ record(ao, "$(DEVICE):$(PORT):FpgaReloadHalt")
 record(waveform, "$(DEVICE):$(PORT):UserConstants")
 {
     field(PINI, "YES")
-    field(DTYP, "asynInt32ArrayOut")
+    field(DTYP, "asynInt32ArrayIn")
     field(FTVL, "ULONG")
     field(NELM, "64")
     field(INP,  "@asyn($(PORT),0) UserConstants")
