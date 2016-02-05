@@ -17,3 +17,10 @@ clean:
 			rm -rf $$i ; \
 		fi ; \
 	done  ; \
+
+%_install: %
+	cp -rf $^/$^Src ../../../cpswAsynPortDriverApp/deviceDriversSrc/.
+	cp -f $^/ui/$^.ui ../../ui/.
+	cp -f $^/Db/$^.template ../../../cpswAsynPortDriverApp/deviceDriversSrc/Db/.
+	cp -f $^/Db/$^.template ../../../cpswAsynPortDriverApp/Db/.
+	cp -f $^/deviceLibrary/$^.* ../../../cpswAsynPortDriverApp/deviceLibrarySrc/.
