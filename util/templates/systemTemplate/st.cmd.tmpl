@@ -13,7 +13,7 @@ ${name}Create("192.168.2.10")
 
 
 #for $p in $peripherals
-${p.name}Create("${p.name}", "root/${name}" )
+${p.name}Create("${p.name}", "root/${name}/${p.name}" )
 #end for
 
 #for $p in $peripherals

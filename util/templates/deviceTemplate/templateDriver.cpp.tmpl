@@ -18,7 +18,7 @@ static const char *driverName = "${name}Driver";
 
 
 ${name}Driver::${name}Driver(const char *portName, Path p, int nelms)
-                 :cpswAsynDriver(portName, p->findByName(portName), nelms, NUM_${name.upper()}_PARAMS)
+                 :cpswAsynDriver(portName, p, nelms, NUM_${name.upper()}_PARAMS)
 {
 
 /* Registers */
@@ -91,16 +91,15 @@ asynStatus ${name}Driver::${c.name}()
 extern "C" int ${name}Create(const char *portName, const char *path)
 {
   
-  Path p = IDev::getRootDev()->findByName(path);
-  p->dump( stdout ); fputc('\n', stdout);
-  Child c = p->tail();
-  if (c == NULL) {
-    printf("Child is NULL\n");
+  Path p = IPath::create();
+  try {  
+    p = p->findByName(path);
+  } catch( CPSWError &e ) {
+    printf("CPSWError: %s\n", e.getInfo().c_str());     
+    return -1;
   }
-  else {
-  new ${name}Driver(portName, p, c->getNelms());
-  }
-  return(asynSuccess);
+  new ${name}Driver(portName, p, 0);
+  return 1;
 }
 
 
