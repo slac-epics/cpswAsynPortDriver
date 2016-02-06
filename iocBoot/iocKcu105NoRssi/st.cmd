@@ -11,9 +11,9 @@ Kcu105NoRssiApp_registerRecordDeviceDriver(pdbbase)
 Kcu105NoRssiCreate("192.168.2.10")
 
 
-AxiVersionCreate("AxiVersion", "root/Kcu105NoRssi" )
-TenGigEthRegCreate("TenGigEthReg", "root/Kcu105NoRssi" )
-PrbsTxCreate("PrbsTx", "root/Kcu105NoRssi" )
+AxiVersionCreate("AxiVersion", "root/Kcu105NoRssi/AxiVersion" )
+TenGigEthRegCreate("TenGigEthReg", "root/Kcu105NoRssi/TenGigEthReg" )
+PrbsTxCreate("PrbsTx", "root/Kcu105NoRssi/PrbsTx" )
 
 dbLoadRecords("db/AxiVersion.db", "DEVICE=TEST,PORT=AxiVersion")
 dbLoadRecords("db/TenGigEthReg.db", "DEVICE=TEST,PORT=TenGigEthReg")

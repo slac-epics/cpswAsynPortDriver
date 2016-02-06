@@ -11,11 +11,11 @@ Kc705TenGigEthApp_registerRecordDeviceDriver(pdbbase)
 Kc705TenGigEthCreate("192.168.2.10")
 
 
-AxiVersionCreate("AxiVersion", "root/Kc705TenGigEth" )
-AxiXadcCreate("AxiXadc", "root/Kc705TenGigEth" )
+AxiVersionCreate("AxiVersion", "root/Kc705TenGigEth/AxiVersion" )
+AxiXadcCreate("AxiXadc", "root/Kc705TenGigEth/AxiXadc" )
 
-dbLoadRecords("db/AxiVersion.db")
-dbLoadRecords("db/AxiXadc.db")
+dbLoadRecords("db/AxiVersion.db", "DEVICE=TEST,PORT=AxiVersion")
+dbLoadRecords("db/AxiXadc.db", "DEVICE=TEST,PORT=AxiXadc")
 
 iocInit()
 
