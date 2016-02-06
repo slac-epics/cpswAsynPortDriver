@@ -44,8 +44,8 @@ static void asynPollerC(void *drvPvt);
   * */
 cpswAsynDriver::cpswAsynDriver(const char *portName, Path p, int nelms, int nEntries) 
    : asynPortDriver(portName, 
-                    nelms, /* maxAddr */ 
-                    nEntries,
+                    0, /* maxAddr */ 
+                    (nEntries + 1),
                     asynInt32Mask | asynFloat64Mask | asynOctetMask | asynDrvUserMask | asynInt32ArrayMask, /* Interface mask */
                     asynInt32Mask | asynFloat64Mask | asynOctetMask | asynEnumMask | asynInt32ArrayMask,  /* Interrupt mask */
                     1, /* asynFlags.  This driver does block and it is not multi-device, so flag is 1 */
@@ -58,7 +58,10 @@ cpswAsynDriver::cpswAsynDriver(const char *portName, Path p, int nelms, int nEnt
     int i;
     const char *functionName = "cpswAsynDriver";
 
-    ScalVals.reserve(nEntries);
+    ScalVals.reserve(nEntries + 1);
+    ScalVals.resize(nEntries + 1);
+    
+    asynPortDriver::createParam(syncFromDevString, asynParamInt32, &p_syncFromDev);
 
     pollEventId_ = epicsEventMustCreate(epicsEventEmpty);
     path_ = p;
@@ -81,8 +84,10 @@ asynStatus cpswAsynDriver::writeInt32(asynUser *pasynUser, epicsInt32 value)
     
     /* Fetch the parameter string name for possible use in debugging */
     getParamName(function, &paramName);
-
-    if(ScalVals[function] != NULL) {
+    if( function == p_syncFromDev ) {
+        status = ScalValsToParam();
+    }
+    else if(ScalVals[function] != NULL) {
         try {
         ScalVals[function]->setVal( &u32, 1 );
         } catch (CPSWError &e ) {
@@ -220,6 +225,7 @@ asynStatus cpswAsynDriver::readInt32Array(asynUser *pasynUser, epicsInt32 *value
         }
     }
     catch (CPSWError &e) {
+        printf("CPSW Error: %s\n", e.getInfo().c_str());
         status = asynError;
     }
 
@@ -262,6 +268,7 @@ asynStatus cpswAsynDriver::writeInt32Array(asynUser *pasynUser, epicsInt32 *valu
         }
     }
     catch (CPSWError &e) {
+        printf("CPSW Error: %s\n", e.getInfo().c_str());
         status = asynError;
     }
 
@@ -294,10 +301,16 @@ asynStatus cpswAsynDriver::createParam(          const char *name, asynParamType
 asynStatus cpswAsynDriver::createParam(int list, const char *name, asynParamType type, int *index, ScalVal(*create)(Path p))
 {
     asynStatus status = asynSuccess;
-    Path pOut = path_->findByName(name);
-
     asynPortDriver::createParam(list, name, type, index);
-    ScalVals[*index] = create(pOut);
+    Path pOut;
+    try {
+       pOut = path_->findByName(name);
+       ScalVal sval = IScalVal::create(pOut);
+       ScalVals[*index] = sval;
+    } catch (CPSWError &e) {
+       printf("%s: CPSWError: %s\n", name, e.getInfo().c_str());     
+       return asynError;
+    }
     return status;
 }
 
@@ -387,6 +400,21 @@ asynStatus cpswAsynDriver::scalValToIntegerParam(int function, epicsInt32 *value
     callParamCallbacks();
 bail:
     unlock();
+    return status;
+}
+
+/** Get all ScalVals, set asyn params, do callbacks */
+
+asynStatus cpswAsynDriver::ScalValsToParam()
+{
+    asynStatus status = asynSuccess;
+    epicsInt32 value;
+    //for( std::vector<ScalVal>::iterator it = ScalVals.begin(); it != ScalVals.end(); it++ ) {
+    for( unsigned int i = 0; i < ScalVals.size(); i++ ) {
+        if( ScalVals[i] != NULL )
+            status = scalValToIntegerParam(i, &value);
+    }
+
     return status;
 }
 

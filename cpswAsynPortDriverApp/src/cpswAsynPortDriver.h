@@ -16,6 +16,8 @@
 #include <epicsTypes.h>
 
 
+#define syncFromDevString    "SYNC_FROM_DEV"
+
 /** Class that demonstrates the use of the asynPortDriver base class to greatly simplify the task
   * of writing an asyn port driver.
   * This class interfaces to the CPSW framework and uses the ScalVal interface for register access.
@@ -58,7 +60,9 @@ protected:
     virtual asynStatus scalValToIntegerParam(int function, epicsInt32 *value);
     virtual asynStatus integerParamToScalVal(int function, epicsInt32 *value);
 
+    virtual asynStatus ScalValsToParam();
 private:
     /* Our data */
+    int p_syncFromDev;
 };
 #endif
