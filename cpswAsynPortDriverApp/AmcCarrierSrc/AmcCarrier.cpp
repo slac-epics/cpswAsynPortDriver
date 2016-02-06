@@ -13,19 +13,13 @@
 #include <cpsw_api_builder.h>
 
 #include "AmcCarrier.h"
+#include "AmcGenericAdcDac.h"
 
 #define BAY0_BASE_ADDR_C   (0x80000000) 
 #define BAY1_BASE_ADDR_C   (0x80800000)
 
-#define AXIVERSION_BASE_ADDR_C   ( 0x00000000 )
-#define PGP2BAXI_BASE_ADDR_C   ( 0x0A000000 )
-#define JESDRX_BASE_ADDR_C   ( (BAY1_BASE_ADDR_C + 0x00000000)  )
-#define JESDTX_BASE_ADDR_C   ( (BAY1_BASE_ADDR_C + 0x00100000)  )
-#define LMK04828_BASE_ADDR_C   ( (BAY1_BASE_ADDR_C + 0x00200000)  )
-#define ADC16DX370_0_BASE_ADDR_C   ( (BAY1_BASE_ADDR_C + 0x00300000) )
-#define ADC16DX370_1_BASE_ADDR_C   ( (BAY1_BASE_ADDR_C + 0x00400000)  )
-#define DAC38J84_BASE_ADDR_C   ( (BAY1_BASE_ADDR_C + 0x00500000) )
-#define AMCGENERICADCDACCTRL_BASE_ADDR_C   ( (BAY1_BASE_ADDR_C + 0x00600000) )
+#define AXIVERSION_BASE_ADDR_C  ( 0x00000000 )
+#define PGP2BAXI_BASE_ADDR_C    ( 0x0A000000 )
 #define JESDRXDAQ_BASE_ADDR_C   ( 0x81000000  )
 
 AmcCarrier IAmcCarrier::create(const char *name)
@@ -38,26 +32,8 @@ AmcCarrierImpl v = CShObj::create<AmcCarrierImpl>(name);
         Pgp2bAxi p2 = IPgp2bAxi::create("Pgp2bAxi");
         v->CMMIODevImpl::addAtAddress( p2, PGP2BAXI_BASE_ADDR_C );
 
-        JesdRx p3 = IJesdRx::create("JesdRx");
-        v->CMMIODevImpl::addAtAddress( p3, JESDRX_BASE_ADDR_C );
-
-        JesdTx p4 = IJesdTx::create("JesdTx");
-        v->CMMIODevImpl::addAtAddress( p4, JESDTX_BASE_ADDR_C );
-
-        Lmk04828 p5 = ILmk04828::create("Lmk04828");
-        v->CMMIODevImpl::addAtAddress( p5, LMK04828_BASE_ADDR_C );
-
-        Adc16Dx370 p6 = IAdc16Dx370::create("Adc16Dx370_0");
-        v->CMMIODevImpl::addAtAddress( p6, ADC16DX370_0_BASE_ADDR_C );
-
-        Adc16Dx370 p7 = IAdc16Dx370::create("Adc16Dx370_1");
-        v->CMMIODevImpl::addAtAddress( p7, ADC16DX370_1_BASE_ADDR_C );
-
-        Dac38J84 p8 = IDac38J84::create("Dac38J84");
-        v->CMMIODevImpl::addAtAddress( p8, DAC38J84_BASE_ADDR_C );
-
-        AmcGenericAdcDacCtrl p9 = IAmcGenericAdcDacCtrl::create("AmcGenericAdcDacCtrl");
-        v->CMMIODevImpl::addAtAddress( p9, AMCGENERICADCDACCTRL_BASE_ADDR_C );
+        AmcGenericAdcDac p3 = IAmcGenericAdcDac::create("AmcGenericAdcDac");
+        v->CMMIODevImpl::addAtAddress( p3, BAY0_BASE_ADDR_C, 2 );
 
         JesdRxDaq p10 = IJesdRxDaq::create("JesdRxDaq");
         v->CMMIODevImpl::addAtAddress( p10, JESDRXDAQ_BASE_ADDR_C );

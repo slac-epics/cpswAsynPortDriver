@@ -11,6 +11,7 @@ include $(TOP)/configure/CONFIG
 LIBRARY_IOC += AmcCarrier
 DBD += AmcCarrierSupport.dbd
 # The following are compiled and added to the Support library
+AmcCarrier_SRCS += AmcGenericAdcDac.cc 
 AmcCarrier_SRCS += AmcCarrier.cc 
 AmcCarrier_LIBS += DeviceLibrary
 AmcCarrier_LIBS += $(EPICS_BASE_IOC_LIBS)
@@ -37,6 +38,7 @@ AmcCarrierApp_DBD += Adc16Dx370DriverSupport.dbd
 AmcCarrierApp_DBD += Dac38J84DriverSupport.dbd
 AmcCarrierApp_DBD += AmcGenericAdcDacCtrlDriverSupport.dbd
 AmcCarrierApp_DBD += JesdRxDaqDriverSupport.dbd
+AmcCarrierApp_DBD += RingBufferDriverSupport.dbd
 
 AmcCarrierApp_SRCS_DEFAULT += AmcCarrierApp_registerRecordDeviceDriver.cpp AmcCarrierAppMain.cpp 
 AmcCarrierApp_LIBS += AmcCarrier
@@ -50,6 +52,7 @@ AmcCarrierApp_LIBS += Adc16Dx370
 AmcCarrierApp_LIBS += Dac38J84
 AmcCarrierApp_LIBS += AmcGenericAdcDacCtrl
 AmcCarrierApp_LIBS += JesdRxDaq
+AmcCarrierApp_LIBS += RingBuffer
 AmcCarrierApp_LIBS += DeviceLibrary
 AmcCarrierApp_LIBS += cpswAsynPortDriverSupport
 AmcCarrierApp_LIBS += asyn
