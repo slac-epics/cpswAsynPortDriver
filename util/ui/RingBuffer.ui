@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="StatusVariables">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>193</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="WaveformSize">
+          <property name="text">
+           <string> WaveformSize </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):WaveformSize">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):WaveformSize</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="RAM_ADDR_WIDTH_G">
+          <property name="text">
+           <string> RAM_ADDR_WIDTH_G </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RAM_ADDR_WIDTH_G">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):RAM_ADDR_WIDTH_G</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="ExtdataLogClr">
+          <property name="text">
+           <string> ExtdataLogClr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ExtdataLogClr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):ExtdataLogClr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="ExtDataLogEn">
+          <property name="text">
+           <string> ExtDataLogEn </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):ExtDataLogEn">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):ExtDataLogEn</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="Reg0x0000">
+          <property name="text">
+           <string> Reg0x0000 </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Reg0x0000">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):Reg0x0000</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="RingBuffer">
+          <property name="text">
+           <string> RingBuffer </string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):RingBuffer">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):RingBuffer</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="ConfigurationVariables">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>435</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="4" column="0">
+         <widget class="QLabel" name="IntdataLogClr">
+          <property name="text">
+           <string> IntdataLogClr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):IntdataLogClr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):IntdataLogClr</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="IntDataLogEn">
+          <property name="text">
+           <string> IntDataLogEn </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):IntDataLogEn">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):IntDataLogEn</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>455</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
+

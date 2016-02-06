@@ -137,16 +137,16 @@
          </widget>
         </item>
         <item row="5" column="0">
-         <widget class="QLabel" name="Adc0_t0">
+         <widget class="QLabel" name="Adc0">
           <property name="text">
-           <string> Adc0_t0 </string>
+           <string> Adc0 </string>
           </property>
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc0_t0">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc0">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc0_t0</string>
+           <string notr="true">$(DEVICE):$(PORT):Adc0</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -154,16 +154,16 @@
          </widget>
         </item>
         <item row="6" column="0">
-         <widget class="QLabel" name="Adc0_t1">
+         <widget class="QLabel" name="Adc1">
           <property name="text">
-           <string> Adc0_t1 </string>
+           <string> Adc1 </string>
           </property>
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc0_t1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc1">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc0_t1</string>
+           <string notr="true">$(DEVICE):$(PORT):Adc1</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -171,16 +171,16 @@
          </widget>
         </item>
         <item row="7" column="0">
-         <widget class="QLabel" name="Adc0_t2">
+         <widget class="QLabel" name="Adc2">
           <property name="text">
-           <string> Adc0_t2 </string>
+           <string> Adc2 </string>
           </property>
          </widget>
         </item>
         <item row="7" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc0_t2">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc2">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc0_t2</string>
+           <string notr="true">$(DEVICE):$(PORT):Adc2</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -188,16 +188,16 @@
          </widget>
         </item>
         <item row="8" column="0">
-         <widget class="QLabel" name="Adc0_t3">
+         <widget class="QLabel" name="Adc3">
           <property name="text">
-           <string> Adc0_t3 </string>
+           <string> Adc3 </string>
           </property>
          </widget>
         </item>
         <item row="8" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc0_t3">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc3">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc0_t3</string>
+           <string notr="true">$(DEVICE):$(PORT):Adc3</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -205,16 +205,16 @@
          </widget>
         </item>
         <item row="9" column="0">
-         <widget class="QLabel" name="Adc1_t0">
+         <widget class="QLabel" name="Dac0">
           <property name="text">
-           <string> Adc1_t0 </string>
+           <string> Dac0 </string>
           </property>
          </widget>
         </item>
         <item row="9" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc1_t0">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac0">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc1_t0</string>
+           <string notr="true">$(DEVICE):$(PORT):Dac0</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -222,16 +222,16 @@
          </widget>
         </item>
         <item row="10" column="0">
-         <widget class="QLabel" name="Adc1_t1">
+         <widget class="QLabel" name="Dac1">
           <property name="text">
-           <string> Adc1_t1 </string>
+           <string> Dac1 </string>
           </property>
          </widget>
         </item>
         <item row="10" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc1_t1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac1">
           <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc1_t1</string>
+           <string notr="true">$(DEVICE):$(PORT):Dac1</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
@@ -239,319 +239,13 @@
          </widget>
         </item>
         <item row="11" column="0">
-         <widget class="QLabel" name="Adc1_t2">
-          <property name="text">
-           <string> Adc1_t2 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc1_t2">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc1_t2</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="12" column="0">
-         <widget class="QLabel" name="Adc1_t3">
-          <property name="text">
-           <string> Adc1_t3 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="12" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc1_t3">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc1_t3</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="13" column="0">
-         <widget class="QLabel" name="Adc2_t0">
-          <property name="text">
-           <string> Adc2_t0 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="13" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc2_t0">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc2_t0</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="14" column="0">
-         <widget class="QLabel" name="Adc2_t1">
-          <property name="text">
-           <string> Adc2_t1 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="14" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc2_t1">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc2_t1</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="15" column="0">
-         <widget class="QLabel" name="Adc2_t2">
-          <property name="text">
-           <string> Adc2_t2 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="15" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc2_t2">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc2_t2</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="16" column="0">
-         <widget class="QLabel" name="Adc2_t3">
-          <property name="text">
-           <string> Adc2_t3 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="16" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc2_t3">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc2_t3</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="17" column="0">
-         <widget class="QLabel" name="Adc3_t0">
-          <property name="text">
-           <string> Adc3_t0 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="17" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc3_t0">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc3_t0</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="0">
-         <widget class="QLabel" name="Adc3_t1">
-          <property name="text">
-           <string> Adc3_t1 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc3_t1">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc3_t1</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="19" column="0">
-         <widget class="QLabel" name="Adc3_t2">
-          <property name="text">
-           <string> Adc3_t2 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="19" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc3_t2">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc3_t2</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="20" column="0">
-         <widget class="QLabel" name="Adc3_t3">
-          <property name="text">
-           <string> Adc3_t3 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="20" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Adc3_t3">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Adc3_t3</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="21" column="0">
-         <widget class="QLabel" name="Dac0_t0">
-          <property name="text">
-           <string> Dac0_t0 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="21" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac0_t0">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Dac0_t0</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="22" column="0">
-         <widget class="QLabel" name="Dac0_t1">
-          <property name="text">
-           <string> Dac0_t1 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="22" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac0_t1">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Dac0_t1</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="23" column="0">
-         <widget class="QLabel" name="Dac0_t2">
-          <property name="text">
-           <string> Dac0_t2 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="23" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac0_t2">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Dac0_t2</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="24" column="0">
-         <widget class="QLabel" name="Dac0_t3">
-          <property name="text">
-           <string> Dac0_t3 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="24" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac0_t3">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Dac0_t3</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="25" column="0">
-         <widget class="QLabel" name="Dac1_t0">
-          <property name="text">
-           <string> Dac1_t0 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="25" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac1_t0">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Dac1_t0</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="26" column="0">
-         <widget class="QLabel" name="Dac1_t1">
-          <property name="text">
-           <string> Dac1_t1 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="26" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac1_t1">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Dac1_t1</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="27" column="0">
-         <widget class="QLabel" name="Dac1_t2">
-          <property name="text">
-           <string> Dac1_t2 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="27" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac1_t2">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Dac1_t2</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="28" column="0">
-         <widget class="QLabel" name="Dac1_t3">
-          <property name="text">
-           <string> Dac1_t3 </string>
-          </property>
-         </widget>
-        </item>
-        <item row="28" column="1">
-         <widget class="caLineEdit" name="$(DEVICE):$(PORT):Dac1_t3">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):Dac1_t3</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="29" column="0">
          <widget class="QLabel" name="DacVco">
           <property name="text">
            <string> DacVco </string>
           </property>
          </widget>
         </item>
-        <item row="29" column="1">
+        <item row="11" column="1">
          <widget class="caLineEdit" name="$(DEVICE):$(PORT):DacVco">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):DacVco</string>
@@ -561,14 +255,14 @@
           </property>
          </widget>
         </item>
-        <item row="30" column="0">
+        <item row="12" column="0">
          <widget class="QLabel" name="AmcClkFreq">
           <property name="text">
            <string> AmcClkFreq </string>
           </property>
          </widget>
         </item>
-        <item row="30" column="1">
+        <item row="12" column="1">
          <widget class="caLineEdit" name="$(DEVICE):$(PORT):AmcClkFreq">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):AmcClkFreq</string>
@@ -578,14 +272,14 @@
           </property>
          </widget>
         </item>
-        <item row="34" column="0">
+        <item row="16" column="0">
          <widget class="QLabel" name="LmkStatus">
           <property name="text">
            <string> LmkStatus </string>
           </property>
          </widget>
         </item>
-        <item row="34" column="1">
+        <item row="16" column="1">
          <widget class="caLineEdit" name="$(DEVICE):$(PORT):LmkStatus">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkStatus</string>
@@ -629,14 +323,14 @@
         <property name="spacing">
          <number>6</number>
         </property>
-        <item row="31" column="0">
+        <item row="13" column="0">
          <widget class="QLabel" name="LmkClkSel">
           <property name="text">
            <string> LmkClkSel </string>
           </property>
          </widget>
         </item>
-        <item row="31" column="1">
+        <item row="13" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkClkSel">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkClkSel</string>
@@ -646,14 +340,14 @@
           </property>
          </widget>
         </item>
-        <item row="32" column="0">
+        <item row="14" column="0">
          <widget class="QLabel" name="LmkRst">
           <property name="text">
            <string> LmkRst </string>
           </property>
          </widget>
         </item>
-        <item row="32" column="1">
+        <item row="14" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkRst">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):LmkRst</string>
@@ -663,14 +357,14 @@
           </property>
          </widget>
         </item>
-        <item row="33" column="0">
+        <item row="15" column="0">
          <widget class="QLabel" name="lmkSync">
           <property name="text">
            <string> lmkSync </string>
           </property>
          </widget>
         </item>
-        <item row="33" column="1">
+        <item row="15" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):lmkSync">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):lmkSync</string>
@@ -680,14 +374,14 @@
           </property>
          </widget>
         </item>
-        <item row="35" column="0">
+        <item row="17" column="0">
          <widget class="QLabel" name="loopback">
           <property name="text">
            <string> loopback </string>
           </property>
          </widget>
         </item>
-        <item row="35" column="1">
+        <item row="17" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):loopback">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):loopback</string>
@@ -697,17 +391,68 @@
           </property>
          </widget>
         </item>
-        <item row="36" column="0">
+        <item row="18" column="0">
          <widget class="QLabel" name="CounterReset">
           <property name="text">
            <string> CounterReset </string>
           </property>
          </widget>
         </item>
-        <item row="36" column="1">
+        <item row="18" column="1">
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):CounterReset">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):CounterReset</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="LmkMuxSel">
+          <property name="text">
+           <string> LmkMuxSel </string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):LmkMuxSel">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):LmkMuxSel</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="DebugLogEn">
+          <property name="text">
+           <string> DebugLogEn </string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DebugLogEn">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):DebugLogEn</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="DebugLogClr">
+          <property name="text">
+           <string> DebugLogClr </string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="caTextEntry" name="$(DEVICE):$(PORT):DebugLogClr">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):DebugLogClr</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>

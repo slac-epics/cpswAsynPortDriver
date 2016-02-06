@@ -19,5 +19,6 @@
 #include <Lmk04828.h>
 #include <Pgp2bAxi.h>
 #include <JesdRxDaq.h>
+#include <RingBuffer.h>
 
 #endif

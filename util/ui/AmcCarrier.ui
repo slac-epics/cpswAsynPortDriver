@@ -80,10 +80,10 @@
       </widget>
       <widget class="caInclude" name="Adc16Dx370">
        <attribute name="title">
-        <string>Adc16Dx370_0</string>
+        <string>Adc16Dx370[0]</string>
        </attribute>
        <property name="macro">
-        <string notr="true">DEVICE=$(DEVICE),PORT=Adc16Dx370_0</string>
+        <string notr="true">DEVICE=$(DEVICE),PORT=Adc16Dx370[0]</string>
        </property>
        <property name="filename" stdset="0">
         <string notr="true">Adc16Dx370.ui</string>
@@ -91,10 +91,10 @@
       </widget>
       <widget class="caInclude" name="Adc16Dx370">
        <attribute name="title">
-        <string>Adc16Dx370_1</string>
+        <string>Adc16Dx370[1]</string>
        </attribute>
        <property name="macro">
-        <string notr="true">DEVICE=$(DEVICE),PORT=Adc16Dx370_1</string>
+        <string notr="true">DEVICE=$(DEVICE),PORT=Adc16Dx370[1]</string>
        </property>
        <property name="filename" stdset="0">
         <string notr="true">Adc16Dx370.ui</string>
@@ -131,6 +131,72 @@
        </property>
        <property name="filename" stdset="0">
         <string notr="true">JesdRxDaq.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="RingBuffer1">
+       <attribute name="title">
+        <string>AdcDebug[0]</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=AdcDebug[0]</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">RingBuffer.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="RingBuffer2">
+       <attribute name="title">
+        <string>AdcDebug[1]</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=AdcDebug[1]</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">RingBuffer.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="DacRingBuffer0">
+       <attribute name="title">
+        <string>AdcDebug[2]</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=AdcDebug[2]</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">RingBuffer.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="DacRingBuffer0">
+       <attribute name="title">
+        <string>AdcDebug[3]</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=AdcDebug[3]</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">RingBuffer.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="DacRingBuffer1">
+       <attribute name="title">
+        <string>DacDebug[0]</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=AdcDebug[0]</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">RingBuffer.ui</string>
+       </property>
+      </widget>
+      <widget class="caInclude" name="RingBuffer0">
+       <attribute name="title">
+        <string>DacDebug[1]</string>
+       </attribute>
+       <property name="macro">
+        <string notr="true">DEVICE=$(DEVICE),PORT=DacDebug[1]</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string notr="true">RingBuffer.ui</string>
        </property>
       </widget>
      </widget>
