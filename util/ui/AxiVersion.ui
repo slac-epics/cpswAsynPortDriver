@@ -153,6 +153,23 @@
           </property>
          </widget>
         </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="UserConstants">
+          <property name="text">
+           <string> UserConstants </string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="caLineEdit" name="$(DEVICE):$(PORT):UserConstants">
+          <property name="channel" stdset="0">
+           <string notr="true">$(DEVICE):$(PORT):UserConstants</string>
+          </property>
+          <property name="formatType">
+           <enum>caLineEdit::hexadecimal</enum>
+          </property>
+         </widget>
+        </item>
         <item row="12" column="0">
          <widget class="QLabel" name="BuildStamp">
           <property name="text">
@@ -283,23 +300,6 @@
          <widget class="caTextEntry" name="$(DEVICE):$(PORT):FpgaReloadHalt">
           <property name="channel" stdset="0">
            <string notr="true">$(DEVICE):$(PORT):FpgaReloadHalt</string>
-          </property>
-          <property name="formatType">
-           <enum>caLineEdit::hexadecimal</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="0">
-         <widget class="QLabel" name="UserConstants">
-          <property name="text">
-           <string> UserConstants </string>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="1">
-         <widget class="caTextEntry" name="$(DEVICE):$(PORT):UserConstants">
-          <property name="channel" stdset="0">
-           <string notr="true">$(DEVICE):$(PORT):UserConstants</string>
           </property>
           <property name="formatType">
            <enum>caLineEdit::hexadecimal</enum>
